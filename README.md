@@ -54,6 +54,14 @@ bool WriteProcessMemory<T>(IntPtr handle, IntPtr baseAddress, T[] buffer);
 bool WriteProcessMemory<T>(IntPtr handle, IntPtr baseAddress, T[] buffer, ref IntPtr numberOfBytesWritten);
 ```
 
+### Error Handling
+
+Please use the reference parameter "numberOfBytesRead" and "numberOfBytesWritten" to determine the error state.
+
+The number of bytes returned by these methods will be zero if no data could be read or written to the process (access denied).
+
+The number of bytes returned by these methods will be smaller than the size queried if only a partial copy happened.
+
 ### [Documentation](https://michel-pi.github.io/ProcessMemoryWrapper.Net/ "ProcessMemoryWrapper.Net Documentation")
 
 ## Contribute
