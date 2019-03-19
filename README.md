@@ -65,6 +65,8 @@ You can help by reporting issues, adding new features, fixing bugs and by provid
 
 ### Dependencies
 
+Dependencies are only used to build the project.
+
     Fody, InlineIL.Fody
 
 ## Donate
