@@ -3,6 +3,7 @@
 [![Nuget](https://img.shields.io/nuget/v/ProcessMemoryWrapper.Net.svg)](https://www.nuget.org/packages/ProcessMemoryWrapper.Net/ "ProcessMemoryWrapper.Net on NuGet") [![Nuget](https://img.shields.io/nuget/dt/ProcessMemoryWrapper.Net.svg)](https://www.nuget.org/packages/ProcessMemoryWrapper.Net/ "Downloads on NuGet") [![Open issues](https://img.shields.io/github/issues-raw/michel-pi/ProcessMemoryWrapper.Net.svg)](https://github.com/michel-pi/ProcessMemoryWrapper.Net/issues "Open issues on Github") [![Closed issues](https://img.shields.io/github/issues-closed-raw/michel-pi/ProcessMemoryWrapper.Net.svg)](https://github.com/michel-pi/ProcessMemoryWrapper.Net/issues?q=is%3Aissue+is%3Aclosed "Closed issues on Github") [![MIT License](https://img.shields.io/github/license/michel-pi/ProcessMemoryWrapper.Net.svg)](https://github.com/michel-pi/ProcessMemoryWrapper.Net/blob/master/LICENSE "ProcessMemoryWrapper.Net license")
 
 Implements performant Read- and WriteProcessMemory using InlineIL.
+
 Only .Net Framework 4.7 or higher is currently supported.
 
 ## NuGet
