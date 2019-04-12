@@ -1,4 +1,6 @@
-﻿using System;
+﻿#pragma warning disable IDE0060 // Remove unused parameter
+
+using System;
 using System.Runtime.InteropServices;
 using System.Runtime.CompilerServices;
 
@@ -645,3 +647,5 @@ namespace ProcessMemoryWrapper
         }
     }
 }
+
+#pragma warning restore IDE0060 // Remove unused parameter
