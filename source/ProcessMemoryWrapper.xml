@@ -1,0 +1,295 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ProcessMemoryWrapper</name>
+    </assembly>
+    <members>
+        <member name="T:ProcessMemoryWrapper.ProcessWrapper">
+            <summary>
+            Implements performant Read- and WriteProcessMemory using InlineIL.
+            </summary>
+        </member>
+        <member name="F:ProcessMemoryWrapper.ProcessWrapper.ProcessReadAccess">
+            <summary>
+            Provides a constant for OpenProcess with read access.
+            </summary>
+        </member>
+        <member name="F:ProcessMemoryWrapper.ProcessWrapper.ProcessWriteAccess">
+            <summary>
+            Provides a constant for OpenProcess with write access.
+            </summary>
+        </member>
+        <member name="F:ProcessMemoryWrapper.ProcessWrapper.ProcessReadWriteAccess">
+            <summary>
+            Provides a constant for OpenProcess with read and write access.
+            </summary>
+        </member>
+        <member name="F:ProcessMemoryWrapper.ProcessWrapper.ProcessInformationAccess">
+            <summary>
+            Provides a constant for OpenProcess with information access.
+            </summary>
+        </member>
+        <member name="F:ProcessMemoryWrapper.ProcessWrapper.ProcessAllocateAccess">
+            <summary>
+            Provides a constant for OpenProcess with memory operation access.
+            </summary>
+        </member>
+        <member name="F:ProcessMemoryWrapper.ProcessWrapper.ProcessExecuteAccess">
+            <summary>
+            Provides a constant for OpenProcess with execute access.
+            </summary>
+        </member>
+        <member name="M:ProcessMemoryWrapper.ProcessWrapper.CloseProcess(System.IntPtr)">
+            <summary>
+            Closes an open object handle.
+            </summary>
+            <param name="handle">A valid handle to an open object.</param>
+            <returns>If the function succeeds, the return value is nonzero.</returns>
+        </member>
+        <member name="M:ProcessMemoryWrapper.ProcessWrapper.OpenProcess(ProcessMemoryWrapper.ProcessAccessFlags,System.Int32)">
+            <summary>
+            Opens an existing local process object.
+            </summary>
+            <param name="desiredAccess">The access to the process object. This access right is checked against the security descriptor for the process. This parameter can be one or more of the process access rights.</param>
+            <param name="processId">The identifier of the local process to be opened.</param>
+            <returns>If the function succeeds, the return value is an open handle to the specified process.</returns>
+        </member>
+        <member name="M:ProcessMemoryWrapper.ProcessWrapper.ReadProcessMemory(System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr)">
+            <summary>
+            Reads data from an area of memory in a specified process. The entire area to be read must be accessible or the operation fails.
+            </summary>
+            <param name="handle">A handle to the process with memory that is being read. The handle must have PROCESS_VM_READ access to the process.</param>
+            <param name="baseAddress">A pointer to the base address in the specified process from which to read. Before any data transfer occurs, the system verifies that all data in the base address and memory of the specified size is accessible for read access, and if it is not accessible the function fails.</param>
+            <param name="buffer">A pointer to a buffer that receives the contents from the address space of the specified process.</param>
+            <param name="size">The number of bytes to be read from the specified process.</param>
+            <returns>Returns a Boolean determining whether this method has succeeded.</returns>
+        </member>
+        <member name="M:ProcessMemoryWrapper.ProcessWrapper.ReadProcessMemory(System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr@)">
+            <summary>
+            Reads data from an area of memory in a specified process. The entire area to be read must be accessible or the operation fails.
+            </summary>
+            <param name="handle">A handle to the process with memory that is being read. The handle must have PROCESS_VM_READ access to the process.</param>
+            <param name="baseAddress">A pointer to the base address in the specified process from which to read. Before any data transfer occurs, the system verifies that all data in the base address and memory of the specified size is accessible for read access, and if it is not accessible the function fails.</param>
+            <param name="buffer">A pointer to a buffer that receives the contents from the address space of the specified process.</param>
+            <param name="size">The number of bytes to be read from the specified process.</param>
+            <param name="numberOfBytesRead">A IntPtr which receives the number of bytes read.</param>
+            <returns>Returns a Boolean determining whether this method has succeeded.</returns>
+        </member>
+        <member name="M:ProcessMemoryWrapper.ProcessWrapper.ReadProcessMemory(System.IntPtr,System.IntPtr,System.Int32)">
+            <summary>
+            Reads data from an area of memory in a specified process. The entire area to be read must be accessible or the operation fails.
+            </summary>
+            <param name="handle">A handle to the process with memory that is being read. The handle must have PROCESS_VM_READ access to the process.</param>
+            <param name="baseAddress">A pointer to the base address in the specified process from which to read. Before any data transfer occurs, the system verifies that all data in the base address and memory of the specified size is accessible for read access, and if it is not accessible the function fails.</param>
+            <param name="size">The number of bytes to be read from the specified process.</param>
+            <returns>An array of data.</returns>
+        </member>
+        <member name="M:ProcessMemoryWrapper.ProcessWrapper.ReadProcessMemory(System.IntPtr,System.IntPtr,System.Int32,System.IntPtr@)">
+            <summary>
+            Reads data from an area of memory in a specified process. The entire area to be read must be accessible or the operation fails.
+            </summary>
+            <param name="handle">A handle to the process with memory that is being read. The handle must have PROCESS_VM_READ access to the process.</param>
+            <param name="baseAddress">A pointer to the base address in the specified process from which to read. Before any data transfer occurs, the system verifies that all data in the base address and memory of the specified size is accessible for read access, and if it is not accessible the function fails.</param>
+            <param name="size">The number of bytes to be read from the specified process.</param>
+            <param name="numberOfBytesRead">A IntPtr which receives the number of bytes read.</param>
+            <returns>An array of data.</returns>
+        </member>
+        <member name="M:ProcessMemoryWrapper.ProcessWrapper.ReadProcessMemory``1(System.IntPtr,System.IntPtr)">
+            <summary>
+            Reads data from an area of memory in a specified process. The entire area to be read must be accessible or the operation fails.
+            </summary>
+            <typeparam name="T">The type of the data to return.</typeparam>
+            <param name="handle">A handle to the process with memory that is being read. The handle must have PROCESS_VM_READ access to the process.</param>
+            <param name="baseAddress">A pointer to the base address in the specified process from which to read. Before any data transfer occurs, the system verifies that all data in the base address and memory of the specified size is accessible for read access, and if it is not accessible the function fails.</param>
+            <returns>The data read from the process.</returns>
+        </member>
+        <member name="M:ProcessMemoryWrapper.ProcessWrapper.ReadProcessMemory``1(System.IntPtr,System.IntPtr,System.IntPtr@)">
+            <summary>
+            Reads data from an area of memory in a specified process. The entire area to be read must be accessible or the operation fails.
+            </summary>
+            <typeparam name="T">The type of the data to return.</typeparam>
+            <param name="handle">A handle to the process with memory that is being read. The handle must have PROCESS_VM_READ access to the process.</param>
+            <param name="baseAddress">A pointer to the base address in the specified process from which to read. Before any data transfer occurs, the system verifies that all data in the base address and memory of the specified size is accessible for read access, and if it is not accessible the function fails.</param>
+            <param name="numberOfBytesRead">A IntPtr which receives the number of bytes read.</param>
+            <returns>The data read from the process.</returns>
+        </member>
+        <member name="M:ProcessMemoryWrapper.ProcessWrapper.ReadProcessMemory``1(System.IntPtr,System.IntPtr,System.Int32)">
+            <summary>
+            Reads data from an area of memory in a specified process. The entire area to be read must be accessible or the operation fails.
+            </summary>
+            <typeparam name="T">The type of the data to return.</typeparam>
+            <param name="handle">A handle to the process with memory that is being read. The handle must have PROCESS_VM_READ access to the process.</param>
+            <param name="baseAddress">A pointer to the base address in the specified process from which to read. Before any data transfer occurs, the system verifies that all data in the base address and memory of the specified size is accessible for read access, and if it is not accessible the function fails.</param>
+            <param name="size">The number of bytes to be read from the specified process.</param>
+            <returns>An array of data.</returns>
+        </member>
+        <member name="M:ProcessMemoryWrapper.ProcessWrapper.ReadProcessMemory``1(System.IntPtr,System.IntPtr,System.Int32,System.IntPtr@)">
+            <summary>
+            Reads data from an area of memory in a specified process. The entire area to be read must be accessible or the operation fails.
+            </summary>
+            <typeparam name="T">The type of the data to return.</typeparam>
+            <param name="handle">A handle to the process with memory that is being read. The handle must have PROCESS_VM_READ access to the process.</param>
+            <param name="baseAddress">A pointer to the base address in the specified process from which to read. Before any data transfer occurs, the system verifies that all data in the base address and memory of the specified size is accessible for read access, and if it is not accessible the function fails.</param>
+            <param name="size">The number of bytes to be read from the specified process.</param>
+            <param name="numberOfBytesRead">A IntPtr which receives the number of bytes read.</param>
+            <returns>An array of data.</returns>
+        </member>
+        <member name="M:ProcessMemoryWrapper.ProcessWrapper.WriteProcessMemory(System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr)">
+            <summary>
+            Writes data to an area of memory in a specified process. The entire area to be written to must be accessible or the operation fails.
+            </summary>
+            <param name="handle">A handle to the process memory to be modified. The handle must have PROCESS_VM_WRITE and PROCESS_VM_OPERATION access to the process.</param>
+            <param name="baseAddress">A pointer to the base address in the specified process to which data is written. Before data transfer occurs, the system verifies that all data in the base address and memory of the specified size is accessible for write access, and if it is not accessible, the function fails.</param>
+            <param name="buffer">A pointer to the buffer that contains data to be written in the address space of the specified process.</param>
+            <param name="size">The number of bytes to be written to the specified process.</param>
+            <returns>A Boolean determining whether this method has succeeded.</returns>
+        </member>
+        <member name="M:ProcessMemoryWrapper.ProcessWrapper.WriteProcessMemory(System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr@)">
+            <summary>
+            Writes data to an area of memory in a specified process. The entire area to be written to must be accessible or the operation fails.
+            </summary>
+            <param name="handle">A handle to the process memory to be modified. The handle must have PROCESS_VM_WRITE and PROCESS_VM_OPERATION access to the process.</param>
+            <param name="baseAddress">A pointer to the base address in the specified process to which data is written. Before data transfer occurs, the system verifies that all data in the base address and memory of the specified size is accessible for write access, and if it is not accessible, the function fails.</param>
+            <param name="buffer">A pointer to the buffer that contains data to be written in the address space of the specified process.</param>
+            <param name="size">The number of bytes to be written to the specified process.</param>
+            <param name="numberOfBytesWritten">A IntPtr receiving the number of bytes written to the specified process.</param>
+            <returns>A Boolean determining whether this method has succeeded.</returns>
+        </member>
+        <member name="M:ProcessMemoryWrapper.ProcessWrapper.WriteProcessMemory(System.IntPtr,System.IntPtr,System.Byte[])">
+            <summary>
+            Writes data to an area of memory in a specified process. The entire area to be written to must be accessible or the operation fails.
+            </summary>
+            <param name="handle">A handle to the process memory to be modified. The handle must have PROCESS_VM_WRITE and PROCESS_VM_OPERATION access to the process.</param>
+            <param name="baseAddress">A pointer to the base address in the specified process to which data is written. Before data transfer occurs, the system verifies that all data in the base address and memory of the specified size is accessible for write access, and if it is not accessible, the function fails.</param>
+            <param name="buffer">A pointer to the buffer that contains data to be written in the address space of the specified process.</param>
+            <returns>A Boolean determining whether this method has succeeded.</returns>
+        </member>
+        <member name="M:ProcessMemoryWrapper.ProcessWrapper.WriteProcessMemory(System.IntPtr,System.IntPtr,System.Byte[],System.IntPtr@)">
+            <summary>
+            Writes data to an area of memory in a specified process. The entire area to be written to must be accessible or the operation fails.
+            </summary>
+            <param name="handle">A handle to the process memory to be modified. The handle must have PROCESS_VM_WRITE and PROCESS_VM_OPERATION access to the process.</param>
+            <param name="baseAddress">A pointer to the base address in the specified process to which data is written. Before data transfer occurs, the system verifies that all data in the base address and memory of the specified size is accessible for write access, and if it is not accessible, the function fails.</param>
+            <param name="buffer">A pointer to the buffer that contains data to be written in the address space of the specified process.</param>
+            <param name="numberOfBytesWritten">A IntPtr receiving the number of bytes written to the specified process.</param>
+            <returns>A Boolean determining whether this method has succeeded.</returns>
+        </member>
+        <member name="M:ProcessMemoryWrapper.ProcessWrapper.WriteProcessMemory``1(System.IntPtr,System.IntPtr,``0)">
+            <summary>
+            Writes data to an area of memory in a specified process. The entire area to be written to must be accessible or the operation fails.
+            </summary>
+            <typeparam name="T">The type of the data to write.</typeparam>
+            <param name="handle">A handle to the process memory to be modified. The handle must have PROCESS_VM_WRITE and PROCESS_VM_OPERATION access to the process.</param>
+            <param name="baseAddress">A pointer to the base address in the specified process to which data is written. Before data transfer occurs, the system verifies that all data in the base address and memory of the specified size is accessible for write access, and if it is not accessible, the function fails.</param>
+            <param name="buffer">A pointer to the buffer that contains data to be written in the address space of the specified process.</param>
+            <returns>A Boolean determining whether this method has succeeded.</returns>
+        </member>
+        <member name="M:ProcessMemoryWrapper.ProcessWrapper.WriteProcessMemory``1(System.IntPtr,System.IntPtr,``0,System.IntPtr@)">
+            <summary>
+            Writes data to an area of memory in a specified process. The entire area to be written to must be accessible or the operation fails.
+            </summary>
+            <typeparam name="T">The type of the data to write.</typeparam>
+            <param name="handle">A handle to the process memory to be modified. The handle must have PROCESS_VM_WRITE and PROCESS_VM_OPERATION access to the process.</param>
+            <param name="baseAddress">A pointer to the base address in the specified process to which data is written. Before data transfer occurs, the system verifies that all data in the base address and memory of the specified size is accessible for write access, and if it is not accessible, the function fails.</param>
+            <param name="buffer">A pointer to the buffer that contains data to be written in the address space of the specified process.</param>
+            <param name="numberOfBytesWritten">A IntPtr receiving the number of bytes written to the specified process.</param>
+            <returns>A Boolean determining whether this method has succeeded.</returns>
+        </member>
+        <member name="M:ProcessMemoryWrapper.ProcessWrapper.WriteProcessMemory``1(System.IntPtr,System.IntPtr,``0[])">
+            <summary>
+            Writes data to an area of memory in a specified process. The entire area to be written to must be accessible or the operation fails.
+            </summary>
+            <typeparam name="T">The type of the data to write.</typeparam>
+            <param name="handle">A handle to the process memory to be modified. The handle must have PROCESS_VM_WRITE and PROCESS_VM_OPERATION access to the process.</param>
+            <param name="baseAddress">A pointer to the base address in the specified process to which data is written. Before data transfer occurs, the system verifies that all data in the base address and memory of the specified size is accessible for write access, and if it is not accessible, the function fails.</param>
+            <param name="buffer">A pointer to the buffer that contains data to be written in the address space of the specified process.</param>
+            <returns>A Boolean determining whether this method has succeeded.</returns>
+        </member>
+        <member name="M:ProcessMemoryWrapper.ProcessWrapper.WriteProcessMemory``1(System.IntPtr,System.IntPtr,``0[],System.IntPtr@)">
+            <summary>
+            Writes data to an area of memory in a specified process. The entire area to be written to must be accessible or the operation fails.
+            </summary>
+            <typeparam name="T">The type of the data to write.</typeparam>
+            <param name="handle">A handle to the process memory to be modified. The handle must have PROCESS_VM_WRITE and PROCESS_VM_OPERATION access to the process.</param>
+            <param name="baseAddress">A pointer to the base address in the specified process to which data is written. Before data transfer occurs, the system verifies that all data in the base address and memory of the specified size is accessible for write access, and if it is not accessible, the function fails.</param>
+            <param name="buffer">A pointer to the buffer that contains data to be written in the address space of the specified process.</param>
+            <param name="numberOfBytesWritten">A IntPtr receiving the number of bytes written to the specified process.</param>
+            <returns>A Boolean determining whether this method has succeeded.</returns>
+        </member>
+        <member name="T:ProcessMemoryWrapper.ProcessAccessFlags">
+            <summary>
+            Process Security and Access Rights
+            </summary>
+        </member>
+        <member name="F:ProcessMemoryWrapper.ProcessAccessFlags.All">
+            <summary>
+            All possible access rights for a process object.Windows Server 2003 and Windows XP: The size of the PROCESS_ALL_ACCESS flag increased on Windows Server 2008 and Windows Vista. If an application compiled for Windows Server 2008 and Windows Vista is run on Windows Server 2003 or Windows XP, the PROCESS_ALL_ACCESS flag is too large and the function specifying this flag fails with ERROR_ACCESS_DENIED. To avoid this problem, specify the minimum set of access rights required for the operation. If PROCESS_ALL_ACCESS must be used, set _WIN32_WINNT to the minimum operating system targeted by your application (for example, #define _WIN32_WINNT _WIN32_WINNT_WINXP). For more information, see Using the Windows Headers. 
+            </summary>
+        </member>
+        <member name="F:ProcessMemoryWrapper.ProcessAccessFlags.Terminate">
+            <summary>
+            Required to terminate a process using TerminateProcess.
+            </summary>
+        </member>
+        <member name="F:ProcessMemoryWrapper.ProcessAccessFlags.CreateThread">
+            <summary>
+            Required to create a thread.
+            </summary>
+        </member>
+        <member name="F:ProcessMemoryWrapper.ProcessAccessFlags.VirtualMemoryOperation">
+            <summary>
+            Required to perform an operation on the address space of a process (see VirtualProtectEx and WriteProcessMemory).
+            </summary>
+        </member>
+        <member name="F:ProcessMemoryWrapper.ProcessAccessFlags.VirtualMemoryRead">
+            <summary>
+            Required to read memory in a process using ReadProcessMemory.
+            </summary>
+        </member>
+        <member name="F:ProcessMemoryWrapper.ProcessAccessFlags.VirtualMemoryWrite">
+            <summary>
+             	Required to write to memory in a process using WriteProcessMemory.
+            </summary>
+        </member>
+        <member name="F:ProcessMemoryWrapper.ProcessAccessFlags.DuplicateHandle">
+            <summary>
+            Required to duplicate a handle using DuplicateHandle.
+            </summary>
+        </member>
+        <member name="F:ProcessMemoryWrapper.ProcessAccessFlags.CreateProcess">
+            <summary>
+            Required to create a process.
+            </summary>
+        </member>
+        <member name="F:ProcessMemoryWrapper.ProcessAccessFlags.SetQuota">
+            <summary>
+            Required to set memory limits using SetProcessWorkingSetSize.
+            </summary>
+        </member>
+        <member name="F:ProcessMemoryWrapper.ProcessAccessFlags.SetInformation">
+            <summary>
+            Required to set certain information about a process, such as its priority class (see SetPriorityClass).
+            </summary>
+        </member>
+        <member name="F:ProcessMemoryWrapper.ProcessAccessFlags.QueryInformation">
+            <summary>
+            Required to retrieve certain information about a process, such as its token, exit code, and priority class (see OpenProcessToken).
+            </summary>
+        </member>
+        <member name="F:ProcessMemoryWrapper.ProcessAccessFlags.SuspendResume">
+            <summary>
+            Required to set memory limits using SetProcessWorkingSetSize.
+            </summary>
+        </member>
+        <member name="F:ProcessMemoryWrapper.ProcessAccessFlags.QueryLimitedInformation">
+            <summary>
+            Required to retrieve certain information about a process (see GetExitCodeProcess, GetPriorityClass, IsProcessInJob, QueryFullProcessImageName). A handle that has the PROCESS_QUERY_INFORMATION access right is automatically granted PROCESS_QUERY_LIMITED_INFORMATION.Windows Server 2003 and Windows XP: This access right is not supported.
+            </summary>
+        </member>
+        <member name="F:ProcessMemoryWrapper.ProcessAccessFlags.Synchronize">
+            <summary>
+            Required to wait for the process to terminate using the wait functions.
+            </summary>
+        </member>
+    </members>
+</doc>
