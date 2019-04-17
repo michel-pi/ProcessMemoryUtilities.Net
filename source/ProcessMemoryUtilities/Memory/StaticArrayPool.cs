@@ -6,7 +6,7 @@ namespace ProcessMemoryUtilities.Memory
 {
     public static class StaticArrayPool<T> where T : struct
     {
-        private static bool _isStruct;
+        private static readonly bool _isStruct;
         [ThreadStatic] private static Dictionary<int, List<T[]>> _pool;
 
         static StaticArrayPool()
@@ -40,7 +40,7 @@ namespace ProcessMemoryUtilities.Memory
         }
 
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        private static unsafe void ClearValueTypeArray(ref T[] array)
+        private static void ClearValueTypeArray(ref T[] array)
         {
             UnsafeMarshal.ZeroArray<T>(array);
         }

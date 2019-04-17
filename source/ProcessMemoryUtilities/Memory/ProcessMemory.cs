@@ -11,7 +11,7 @@ using static InlineIL.IL.Emit;
 
 namespace ProcessMemoryUtilities.Memory
 {
-    public static unsafe class ProcessMemory
+    public static class ProcessMemory
     {
         // https://gist.github.com/michel-pi/361f1f8bdca51235cb97aba0256d47e9
         private const int NT_STATUS_INFORMATION_MAX = 2147483647;
