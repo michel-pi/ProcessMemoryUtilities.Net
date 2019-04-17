@@ -8,11 +8,33 @@ namespace ProcessMemoryUtilities.Extensions
         private static readonly bool _x86 = IntPtr.Size == 4;
 
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public static bool IsAligned(this IntPtr ptr)
+        public static IntPtr Add(this IntPtr left, IntPtr right)
         {
-            var value = ptr.GetValue();
+            if (_x86)
+            {
+                return new IntPtr((uint)left + (uint)right);
+            }
+            else
+            {
+                ulong result = (ulong)left + (ulong)right;
 
-            return value == 1 || value % 1 == 0;
+                return new IntPtr((long)result);
+            }
+        }
+
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
+        public static IntPtr Divide(this IntPtr left, IntPtr right)
+        {
+            if (_x86)
+            {
+                return new IntPtr((uint)left / (uint)right);
+            }
+            else
+            {
+                ulong result = (ulong)left / (ulong)right;
+
+                return new IntPtr((long)result);
+            }
         }
 
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
@@ -29,9 +51,11 @@ namespace ProcessMemoryUtilities.Extensions
         }
 
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public static bool IsZero(this IntPtr ptr)
+        public static bool IsAligned(this IntPtr ptr)
         {
-            return ptr == IntPtr.Zero;
+            var value = ptr.GetValue();
+
+            return value == 1 || value % 2 == 0;
         }
 
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
@@ -58,33 +82,9 @@ namespace ProcessMemoryUtilities.Extensions
         }
 
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public static IntPtr Add(this IntPtr left, IntPtr right)
+        public static bool IsZero(this IntPtr ptr)
         {
-            if (_x86)
-            {
-                return new IntPtr((uint)left + (uint)right);
-            }
-            else
-            {
-                ulong result = (ulong)left + (ulong)right;
-
-                return new IntPtr((long)result);
-            }
-        }
-
-        [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public static IntPtr Subtract(this IntPtr left, IntPtr right)
-        {
-            if (_x86)
-            {
-                return new IntPtr((uint)left - (uint)right);
-            }
-            else
-            {
-                ulong result = (ulong)left - (ulong)right;
-
-                return new IntPtr((long)result);
-            }
+            return ptr == IntPtr.Zero;
         }
 
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
@@ -103,15 +103,15 @@ namespace ProcessMemoryUtilities.Extensions
         }
 
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public static IntPtr Divide(this IntPtr left, IntPtr right)
+        public static IntPtr Subtract(this IntPtr left, IntPtr right)
         {
             if (_x86)
             {
-                return new IntPtr((uint)left / (uint)right);
+                return new IntPtr((uint)left - (uint)right);
             }
             else
             {
-                ulong result = (ulong)left / (ulong)right;
+                ulong result = (ulong)left - (ulong)right;
 
                 return new IntPtr((long)result);
             }
