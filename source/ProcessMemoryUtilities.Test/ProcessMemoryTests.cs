@@ -10,11 +10,24 @@ namespace ProcessMemoryUtilities.Test
     [TestClass]
     public class ProcessMemoryTests
     {
+        public delegate void RemoteFunction();
+
         private readonly int _processId;
+        private readonly RemoteFunction _remoteFunctionDelegate;
+        private readonly IntPtr _remoteFunctionPointer;
+        private volatile int _counter;
 
         public ProcessMemoryTests()
         {
             _processId = Process.GetCurrentProcess().Id;
+
+            _remoteFunctionDelegate = new RemoteFunction(TestRemoteThread);
+            _remoteFunctionPointer = Marshal.GetFunctionPointerForDelegate(_remoteFunctionDelegate);
+        }
+
+        private void TestRemoteThread()
+        {
+            _counter++;
         }
 
         [TestMethod]
@@ -23,6 +36,28 @@ namespace ProcessMemoryUtilities.Test
             IntPtr handle = ProcessMemory.OpenProcess(ProcessAccessFlags.All, _processId);
 
             Assert.IsFalse(handle == IntPtr.Zero);
+
+            Assert.IsTrue(ProcessMemory.Close(handle));
+        }
+
+        [TestMethod]
+        public void CreateRemoteThreadEx()
+        {
+            var originalCounter = _counter;
+
+            IntPtr handle = ProcessMemory.OpenProcess(ProcessAccessFlags.All, _processId);
+
+            Assert.IsFalse(handle == IntPtr.Zero);
+
+            IntPtr hThread = ProcessMemory.CreateRemoteThreadEx(handle, _remoteFunctionPointer);
+
+            Assert.IsFalse(hThread == IntPtr.Zero);
+
+            Assert.IsTrue(ProcessMemory.WaitForSingleObject(hThread, ProcessMemory.WAIT_TIMEOUT_INFINITE) == WaitObjectResult.Success);
+
+            Assert.IsTrue(ProcessMemory.Close(hThread));
+
+            Assert.IsTrue(originalCounter + 1 == _counter);
 
             Assert.IsTrue(ProcessMemory.Close(handle));
         }
