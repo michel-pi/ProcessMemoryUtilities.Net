@@ -19,8 +19,6 @@ namespace ProcessMemoryUtilities.Memory
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static T[] AllocateArray<T>(int length) where T : struct
         {
-            if (length < 0) throw new ArgumentOutOfRangeException(nameof(length));
-
             return new T[length];
         }
 
@@ -117,24 +115,6 @@ namespace ProcessMemoryUtilities.Memory
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static T Read<T>(byte[] array) where T : struct
         {
-            if (array == null) throw new ArgumentNullException(nameof(array));
-
-            Ldarg(nameof(array));
-            Ldlen();
-
-            Sizeof(typeof(T));
-
-            Clt();
-
-            Brfalse("success");
-
-            Ldstr(nameof(array));
-            Newobj(new MethodRef(typeof(IndexOutOfRangeException), ".ctor", typeof(string)));
-
-            Throw();
-
-            IL.MarkLabel("success");
-
             Ldarg(nameof(array));
             Ldc_I4_0();
             Ldelema(typeof(byte));
@@ -148,29 +128,6 @@ namespace ProcessMemoryUtilities.Memory
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static T Read<T>(byte[] array, int offset) where T : struct
         {
-            if (array == null) throw new ArgumentNullException(nameof(array));
-            if (offset < 0) throw new ArgumentOutOfRangeException(nameof(offset));
-
-            Ldarg(nameof(array));
-            Ldlen();
-
-            Ldarg(nameof(offset));
-
-            Sub();
-
-            Sizeof(typeof(T));
-
-            Clt();
-
-            Brfalse("success");
-
-            Ldstr(nameof(array));
-            Newobj(new MethodRef(typeof(IndexOutOfRangeException), ".ctor", typeof(string)));
-
-            Throw();
-
-            IL.MarkLabel("success");
-
             Ldarg(nameof(array));
             Ldarg(nameof(offset));
             Ldelema(typeof(byte));
@@ -226,24 +183,6 @@ namespace ProcessMemoryUtilities.Memory
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static void Write<T>(byte[] buffer, T value) where T : struct
         {
-            if (buffer == null) throw new ArgumentNullException(nameof(buffer));
-
-            Ldarg(nameof(buffer));
-            Ldlen();
-
-            Sizeof(typeof(T));
-
-            Clt();
-
-            Brfalse("success");
-
-            Ldstr(nameof(buffer));
-            Newobj(new MethodRef(typeof(IndexOutOfRangeException), ".ctor", typeof(string)));
-
-            Throw();
-
-            IL.MarkLabel("success");
-
             Ldarg(nameof(buffer));
             Ldc_I4_0();
             Ldelema(typeof(byte));
@@ -257,25 +196,6 @@ namespace ProcessMemoryUtilities.Memory
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static void Write<T>(byte[] buffer, int offset, T value) where T : struct
         {
-            if (buffer == null) throw new ArgumentNullException(nameof(buffer));
-            if (offset < 0) throw new ArgumentOutOfRangeException(nameof(offset));
-
-            Ldarg(nameof(buffer));
-            Ldlen();
-
-            Sizeof(typeof(T));
-
-            Clt();
-
-            Brfalse("success");
-
-            Ldstr(nameof(buffer));
-            Newobj(new MethodRef(typeof(IndexOutOfRangeException), ".ctor", typeof(string)));
-
-            Throw();
-
-            IL.MarkLabel("success");
-
             Ldarg(nameof(buffer));
             Ldarg(nameof(offset));
             Ldelema(typeof(byte));
