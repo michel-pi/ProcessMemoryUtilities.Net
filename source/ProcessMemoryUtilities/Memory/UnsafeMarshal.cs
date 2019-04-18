@@ -13,7 +13,7 @@ namespace ProcessMemoryUtilities.Memory
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static T Allocate<T>() where T : struct
         {
-            return default(T);
+            return default;
         }
 
         [MethodImpl(MethodImplOptions.AggressiveInlining)]

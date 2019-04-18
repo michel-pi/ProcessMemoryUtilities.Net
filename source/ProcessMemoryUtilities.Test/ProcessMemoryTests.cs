@@ -165,7 +165,8 @@ namespace ProcessMemoryUtilities.Test
 
             IntPtr address = ProcessMemory.VirtualAllocEx(handle, IntPtr.Zero, (IntPtr)1024, AllocationType.Reserve | AllocationType.Commit, MemoryProtectionFlags.ExecuteReadWrite);
 
-            Assert.IsTrue(ProcessMemory.VirtualProtectEx(handle, address, (IntPtr)1024, MemoryProtectionFlags.NoAccess, out var oldProtection));
+            MemoryProtectionFlags oldProtection = default;
+            Assert.IsTrue(ProcessMemory.VirtualProtectEx(handle, address, (IntPtr)1024, MemoryProtectionFlags.NoAccess, ref oldProtection));
 
             Assert.IsTrue(oldProtection == MemoryProtectionFlags.ExecuteReadWrite);
 
