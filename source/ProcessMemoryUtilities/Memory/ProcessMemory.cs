@@ -16,10 +16,13 @@ namespace ProcessMemoryUtilities.Memory
         // https://gist.github.com/michel-pi/361f1f8bdca51235cb97aba0256d47e9
         private const int NT_STATUS_INFORMATION_MAX = 2147483647;
 
+        private static readonly IntPtr _ntAllocateVirtualMemory;
         private static readonly IntPtr _ntClose;
+        private static readonly IntPtr _ntFreeVirtualMemory;
         private static readonly IntPtr _ntOpenProcess;
         private static readonly IntPtr _ntProtectVirtualMemory;
         private static readonly IntPtr _ntReadVirtualMemory;
+        private static readonly IntPtr _ntWaitForSingleObject;
         private static readonly IntPtr _ntWriteVirtualMemory;
 
         /// <summary>
@@ -56,11 +59,54 @@ namespace ProcessMemoryUtilities.Memory
         {
             var ntdll = DynamicImport.ImportLibrary("ntdll.dll");
 
+            _ntAllocateVirtualMemory = DynamicImport.ImportMethod(ntdll, "NtAllocateVirtualMemory");
             _ntClose = DynamicImport.ImportMethod(ntdll, "NtClose");
+            _ntFreeVirtualMemory = DynamicImport.ImportMethod(ntdll, "NtFreeVirtualMemory");
             _ntOpenProcess = DynamicImport.ImportMethod(ntdll, "NtOpenProcess");
             _ntProtectVirtualMemory = DynamicImport.ImportMethod(ntdll, "NtProtectVirtualMemory");
             _ntReadVirtualMemory = DynamicImport.ImportMethod(ntdll, "NtReadVirtualMemory");
+            _ntWaitForSingleObject = DynamicImport.ImportMethod(ntdll, "NtWaitForSingleObject");
             _ntWriteVirtualMemory = DynamicImport.ImportMethod(ntdll, "NtWriteVirtualMemory");
+        }
+
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
+        private static WaitObjectResult ConvertStatusToWaitObject(uint status)
+        {
+            Ldarg(nameof(status));
+            Ldc_I4_0();
+            Bne_Un_S("IL_0005");
+
+            Ldc_I4_0();
+            Ret();
+
+            IL.MarkLabel("IL_0005");
+
+            Ldarg(nameof(status));
+            Ldc_I4(257);
+            Beq("IL_0015");
+
+            Ldarg(nameof(status));
+            Ldc_I4(192);
+            Bne_Un_S("IL_001B");
+
+            IL.MarkLabel("IL_0015");
+
+            Ldc_I4(128);
+            Ret();
+
+            IL.MarkLabel("IL_001B");
+
+            Ldarg(nameof(status));
+            Ldc_I4(258);
+            Bne_Un_S("IL_0029");
+
+            Ldc_I4(258);
+            Ret();
+
+            IL.MarkLabel("IL_0029");
+
+            Ldc_I4(128);
+            return IL.Return<WaitObjectResult>();
         }
 
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
@@ -86,11 +132,16 @@ namespace ProcessMemoryUtilities.Memory
                 new LocalVar("objectAttributes", typeof(ObjectAttributes)),
                 new LocalVar("clientID", typeof(ClientID)));
 
-            Ldloca("handle");
-            Initobj(typeof(IntPtr));
+            Ldc_I4_0();
+            Conv_I();
+            Stloc("handle");
 
             Ldloca("objectAttributes");
             Initobj(typeof(ObjectAttributes));
+
+            Ldloca("objectAttributes");
+            Sizeof(typeof(ObjectAttributes));
+            Stfld(new FieldRef(typeof(ObjectAttributes), "Length"));
 
             Ldloca("clientID");
             Initobj(typeof(ClientID));
@@ -100,10 +151,6 @@ namespace ProcessMemoryUtilities.Memory
             Conv_I();
             Stfld(new FieldRef(typeof(ClientID), "UniqueProcess"));
 
-            Ldloca("objectAttributes");
-            Sizeof(typeof(ObjectAttributes));
-            Stfld(new FieldRef(typeof(ObjectAttributes), "Length"));
-
             Ldloca("handle");
             Ldarg(nameof(desiredAccess));
             Ldloca("objectAttributes");
@@ -112,7 +159,15 @@ namespace ProcessMemoryUtilities.Memory
             Ldsfld(new FieldRef(typeof(ProcessMemory), nameof(_ntOpenProcess)));
             Calli(new StandAloneMethodSig(CallingConvention.StdCall, typeof(uint), typeof(IntPtr), typeof(uint), typeof(IntPtr), typeof(IntPtr)));
 
-            Pop();
+            Ldc_I4(NT_STATUS_INFORMATION_MAX);
+            Conv_U4();
+            Blt_Un_S("success");
+
+            Ldc_I4_0();
+            Conv_I();
+            Ret();
+
+            IL.MarkLabel("success");
 
             Ldloc("handle");
             return IL.Return<IntPtr>();
@@ -264,6 +319,151 @@ namespace ProcessMemoryUtilities.Memory
             Clt();
 
             return IL.Return<bool>();
+        }
+
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
+        public static IntPtr VirtualAllocEx(IntPtr handle, IntPtr baseAddress, IntPtr size, AllocationType allocationType, MemoryProtectionFlags memoryProtection)
+        {
+            Ldarg(nameof(handle));
+
+            Ldarga(nameof(baseAddress));
+            Conv_I();
+
+            Ldc_I4_0();
+            Conv_U4();
+
+            Ldarga(nameof(size));
+            Conv_I();
+
+            Ldarg(nameof(allocationType));
+            Conv_U4();
+            Ldarg(nameof(memoryProtection));
+            Conv_U4();
+
+            Ldsfld(new FieldRef(typeof(ProcessMemory), nameof(_ntAllocateVirtualMemory)));
+            Calli(new StandAloneMethodSig(CallingConvention.StdCall, typeof(uint), typeof(IntPtr), typeof(IntPtr), typeof(uint), typeof(IntPtr), typeof(uint), typeof(uint)));
+
+            Ldc_I4(NT_STATUS_INFORMATION_MAX);
+            Conv_U4();
+
+            Blt_Un_S("success");
+
+            Ldc_I4_0();
+            Conv_I();
+            Ret();
+
+            IL.MarkLabel("success");
+
+            Ldarg(nameof(baseAddress));
+            return IL.Return<IntPtr>();
+        }
+
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
+        public static bool VirtualFreeEx(IntPtr handle, IntPtr address, IntPtr size, FreeType freeType)
+        {
+            IL.DeclareLocals(new LocalVar("regionSize", typeof(uint)));
+
+            Ldarg(nameof(size));
+            Conv_U4();
+            Stloc("regionSize");
+
+            Ldarg(nameof(handle));
+
+            Ldarga(nameof(address));
+            Conv_I();
+
+            Ldloca("regionSize");
+            Conv_I();
+
+            Ldarg(nameof(freeType));
+            Conv_U4();
+
+            Ldsfld(new FieldRef(typeof(ProcessMemory), nameof(_ntFreeVirtualMemory)));
+            Calli(new StandAloneMethodSig(CallingConvention.StdCall, typeof(uint), typeof(IntPtr), typeof(IntPtr), typeof(IntPtr), typeof(uint)));
+
+            Ldc_I4(NT_STATUS_INFORMATION_MAX);
+            Conv_U4();
+
+            Clt();
+
+            return IL.Return<bool>();
+        }
+
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
+        public static bool VirtualProtectEx(IntPtr handle, IntPtr address, IntPtr size, MemoryProtectionFlags newProtect, out MemoryProtectionFlags oldProtect)
+        {
+            IL.DeclareLocals(new LocalVar("regionSize", typeof(uint)));
+
+            Ldc_I4_0();
+            Ldc_I4_0();
+            Ceq();
+            Brtrue("jump");
+
+            oldProtect = 0;
+
+            IL.MarkLabel("jump");
+
+            Ldarg(nameof(size));
+            Conv_U4();
+            Stloc("regionSize");
+
+            Ldarg(nameof(handle));
+
+            Ldarga(nameof(address));
+            Conv_I();
+
+            Ldloca("regionSize");
+            Conv_I();
+
+            Ldarg(nameof(newProtect));
+            Conv_U4();
+
+            Ldarg(nameof(oldProtect));
+
+            Ldsfld(new FieldRef(typeof(ProcessMemory), nameof(_ntProtectVirtualMemory)));
+            Calli(new StandAloneMethodSig(CallingConvention.StdCall, typeof(uint), typeof(IntPtr), typeof(IntPtr), typeof(IntPtr), typeof(uint), typeof(IntPtr)));
+
+            Ldc_I4(NT_STATUS_INFORMATION_MAX);
+            Conv_U4();
+
+            Clt();
+
+            return IL.Return<bool>();
+        }
+
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
+        public static WaitObjectResult WaitForSingleObject(IntPtr handle, uint timeout)
+        {
+            IL.DeclareLocals(new LocalVar("largeTimeout", typeof(long)));
+
+            Ldarg(nameof(timeout));
+            Ldc_I4_M1();
+            Bne_Un_S("jump");
+
+            Ldc_I4_0();
+            Conv_U4();
+            Starg(nameof(timeout));
+
+            IL.MarkLabel("jump");
+
+            Ldarg(nameof(timeout));
+            Conv_I8();
+            Stloc("largeTimeout");
+
+            Ldarg(nameof(handle));
+
+            Ldc_I4_1();
+            Conv_U1();
+
+            Ldloca("largeTimeout");
+            Conv_I();
+
+            Ldsfld(new FieldRef(typeof(ProcessMemory), nameof(_ntWaitForSingleObject)));
+            Calli(new StandAloneMethodSig(CallingConvention.StdCall, typeof(uint), typeof(IntPtr), typeof(byte), typeof(IntPtr)));
+
+            IL.Pop(out uint status);
+
+            return ConvertStatusToWaitObject(status);
         }
 
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
