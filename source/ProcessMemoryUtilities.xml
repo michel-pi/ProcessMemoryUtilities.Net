@@ -41,15 +41,7 @@
         </member>
         <member name="F:ProcessMemoryUtilities.Memory.ProcessAccessFlags.All">
             <summary>
-            All possible access rights for a process object.Windows Server 2003 and Windows XP: The
-            size of the PROCESS_ALL_ACCESS flag increased on Windows Server 2008 and Windows Vista.
-            If an application compiled for Windows Server 2008 and Windows Vista is run on Windows
-            Server 2003 or Windows XP, the PROCESS_ALL_ACCESS flag is too large and the function
-            specifying this flag fails with ERROR_ACCESS_DENIED. To avoid this problem, specify the
-            minimum set of access rights required for the operation. If PROCESS_ALL_ACCESS must be
-            used, set _WIN32_WINNT to the minimum operating system targeted by your application (for
-            example, #define _WIN32_WINNT _WIN32_WINNT_WINXP). For more information, see Using the
-            Windows Headers.
+            All possible access rights for a process object.Windows Server 2003 and Windows XP: The size of the PROCESS_ALL_ACCESS flag increased on Windows Server 2008 and Windows Vista. If an application compiled for Windows Server 2008 and Windows Vista is run on Windows Server 2003 or Windows XP, the PROCESS_ALL_ACCESS flag is too large and the function specifying this flag fails with ERROR_ACCESS_DENIED. To avoid this problem, specify the minimum set of access rights required for the operation. If PROCESS_ALL_ACCESS must be used, set _WIN32_WINNT to the minimum operating system targeted by your application (for example, #define _WIN32_WINNT _WIN32_WINNT_WINXP). For more information, see Using the Windows Headers.
             </summary>
         </member>
         <member name="F:ProcessMemoryUtilities.Memory.ProcessAccessFlags.Terminate">
@@ -64,8 +56,7 @@
         </member>
         <member name="F:ProcessMemoryUtilities.Memory.ProcessAccessFlags.VirtualMemoryOperation">
             <summary>
-            Required to perform an operation on the address space of a process (see VirtualProtectEx
-            and WriteProcessMemory).
+            Required to perform an operation on the address space of a process (see VirtualProtectEx and WriteProcessMemory).
             </summary>
         </member>
         <member name="F:ProcessMemoryUtilities.Memory.ProcessAccessFlags.VirtualMemoryRead">
@@ -100,8 +91,7 @@
         </member>
         <member name="F:ProcessMemoryUtilities.Memory.ProcessAccessFlags.QueryInformation">
             <summary>
-            Required to retrieve certain information about a process, such as its token, exit code,
-            and priority class (see OpenProcessToken).
+            Required to retrieve certain information about a process, such as its token, exit code, and priority class (see OpenProcessToken).
             </summary>
         </member>
         <member name="F:ProcessMemoryUtilities.Memory.ProcessAccessFlags.SuspendResume">
