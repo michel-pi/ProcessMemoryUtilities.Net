@@ -25,6 +25,69 @@ namespace ProcessMemoryUtilities.Test
             _remoteFunctionPointer = Marshal.GetFunctionPointerForDelegate(_remoteFunctionDelegate);
         }
 
+        private void TestCreateRemoteThread_1(IntPtr hProcess)
+        {
+            var originalCounter = _counter;
+
+            IntPtr hThread = ProcessMemory.CreateRemoteThreadEx(hProcess, _remoteFunctionPointer);
+
+            Assert.IsFalse(hThread == IntPtr.Zero);
+
+            Assert.IsTrue(ProcessMemory.WaitForSingleObject(hThread, ProcessMemory.WAIT_TIMEOUT_INFINITE) == WaitObjectResult.Success);
+
+            Assert.IsTrue(ProcessMemory.Close(hThread));
+
+            Assert.IsTrue(originalCounter + 1 == _counter);
+        }
+
+        private void TestCreateRemoteThread_2(IntPtr hProcess)
+        {
+            var originalCounter = _counter;
+
+            IntPtr hThread = ProcessMemory.CreateRemoteThreadEx(hProcess, _remoteFunctionPointer, IntPtr.Zero);
+
+            Assert.IsFalse(hThread == IntPtr.Zero);
+
+            Assert.IsTrue(ProcessMemory.WaitForSingleObject(hThread, ProcessMemory.WAIT_TIMEOUT_INFINITE) == WaitObjectResult.Success);
+
+            Assert.IsTrue(ProcessMemory.Close(hThread));
+
+            Assert.IsTrue(originalCounter + 1 == _counter);
+        }
+
+        private void TestCreateRemoteThread_3(IntPtr hProcess)
+        {
+            var originalCounter = _counter;
+
+            IntPtr hThread = ProcessMemory.CreateRemoteThreadEx(hProcess, IntPtr.Zero, IntPtr.Zero, _remoteFunctionPointer, IntPtr.Zero, ThreadCreationFlags.Immediately, IntPtr.Zero);
+
+            Assert.IsFalse(hThread == IntPtr.Zero);
+
+            Assert.IsTrue(ProcessMemory.WaitForSingleObject(hThread, ProcessMemory.WAIT_TIMEOUT_INFINITE) == WaitObjectResult.Success);
+
+            Assert.IsTrue(ProcessMemory.Close(hThread));
+
+            Assert.IsTrue(originalCounter + 1 == _counter);
+        }
+
+        private void TestCreateRemoteThread_4(IntPtr hProcess)
+        {
+            var originalCounter = _counter;
+
+            uint threadId = 0;
+            IntPtr hThread = ProcessMemory.CreateRemoteThreadEx(hProcess, IntPtr.Zero, IntPtr.Zero, _remoteFunctionPointer, IntPtr.Zero, ThreadCreationFlags.Immediately, IntPtr.Zero, ref threadId);
+
+            Assert.IsFalse(hThread == IntPtr.Zero);
+
+            Assert.IsFalse(threadId == 0);
+
+            Assert.IsTrue(ProcessMemory.WaitForSingleObject(hThread, ProcessMemory.WAIT_TIMEOUT_INFINITE) == WaitObjectResult.Success);
+
+            Assert.IsTrue(ProcessMemory.Close(hThread));
+
+            Assert.IsTrue(originalCounter + 1 == _counter);
+        }
+
         private void TestRemoteThread()
         {
             _counter++;
@@ -43,21 +106,14 @@ namespace ProcessMemoryUtilities.Test
         [TestMethod]
         public void CreateRemoteThreadEx()
         {
-            var originalCounter = _counter;
-
             IntPtr handle = ProcessMemory.OpenProcess(ProcessAccessFlags.All, _processId);
 
             Assert.IsFalse(handle == IntPtr.Zero);
 
-            IntPtr hThread = ProcessMemory.CreateRemoteThreadEx(handle, _remoteFunctionPointer);
-
-            Assert.IsFalse(hThread == IntPtr.Zero);
-
-            Assert.IsTrue(ProcessMemory.WaitForSingleObject(hThread, ProcessMemory.WAIT_TIMEOUT_INFINITE) == WaitObjectResult.Success);
-
-            Assert.IsTrue(ProcessMemory.Close(hThread));
-
-            Assert.IsTrue(originalCounter + 1 == _counter);
+            TestCreateRemoteThread_1(handle);
+            TestCreateRemoteThread_2(handle);
+            TestCreateRemoteThread_3(handle);
+            TestCreateRemoteThread_4(handle);
 
             Assert.IsTrue(ProcessMemory.Close(handle));
         }
