@@ -14,10 +14,11 @@ namespace ProcessMemoryUtilities.Memory
     public static class ProcessMemory
     {
         // https://gist.github.com/michel-pi/361f1f8bdca51235cb97aba0256d47e9
-        private const int NT_STATUS_INFORMATION_MAX = 2147483647;
+        private const int NT_STATUS_WARNING_START = 2147483647;
 
         private static readonly IntPtr _kernelCreateRemoteThreadEx;
         private static readonly IntPtr _kernelOpenProcess;
+        private static readonly IntPtr _kernelWaitForSingleObject;
 
         private static readonly IntPtr _ntAllocateVirtualMemory;
         private static readonly IntPtr _ntClose;
@@ -25,38 +26,39 @@ namespace ProcessMemoryUtilities.Memory
         private static readonly IntPtr _ntOpenProcess;
         private static readonly IntPtr _ntProtectVirtualMemory;
         private static readonly IntPtr _ntReadVirtualMemory;
-        private static readonly IntPtr _ntWaitForSingleObject;
         private static readonly IntPtr _ntWriteVirtualMemory;
 
         /// <summary>
         /// Provides a constant for OpenProcess with memory operation access.
         /// </summary>
-        public const ProcessAccessFlags ProcessAllocateAccess = ProcessAccessFlags.VirtualMemoryOperation;
+        public const ProcessAccessFlags PROCESS_ALLOCATE_ACCESS = ProcessAccessFlags.VirtualMemoryOperation;
 
         /// <summary>
         /// Provides a constant for OpenProcess with execute access.
         /// </summary>
-        public const ProcessAccessFlags ProcessExecuteAccess = ProcessReadWriteAccess | ProcessInformationAccess | ProcessAccessFlags.CreateThread;
+        public const ProcessAccessFlags PROCESS_EXECUTE_ACCESS = PROCESS_READ_WRITE_ACCESS | PROCESS_INFORMATION_ACCESS | ProcessAccessFlags.CreateThread;
 
         /// <summary>
         /// Provides a constant for OpenProcess with information access.
         /// </summary>
-        public const ProcessAccessFlags ProcessInformationAccess = ProcessAccessFlags.QueryInformation | ProcessAccessFlags.QueryLimitedInformation;
+        public const ProcessAccessFlags PROCESS_INFORMATION_ACCESS = ProcessAccessFlags.QueryInformation | ProcessAccessFlags.QueryLimitedInformation;
 
         /// <summary>
         /// Provides a constant for OpenProcess with read access.
         /// </summary>
-        public const ProcessAccessFlags ProcessReadAccess = ProcessAccessFlags.VirtualMemoryRead;
+        public const ProcessAccessFlags PROCESS_READ_ACCESS = ProcessAccessFlags.VirtualMemoryRead;
 
         /// <summary>
         /// Provides a constant for OpenProcess with read and write access.
         /// </summary>
-        public const ProcessAccessFlags ProcessReadWriteAccess = ProcessReadAccess | ProcessWriteAccess;
+        public const ProcessAccessFlags PROCESS_READ_WRITE_ACCESS = PROCESS_READ_ACCESS | PROCESS_WRITE_ACCESS;
 
         /// <summary>
         /// Provides a constant for OpenProcess with write access.
         /// </summary>
-        public const ProcessAccessFlags ProcessWriteAccess = ProcessAccessFlags.VirtualMemoryOperation | ProcessAccessFlags.VirtualMemoryWrite;
+        public const ProcessAccessFlags PROCESS_WRITE_ACCESS = ProcessAccessFlags.VirtualMemoryOperation | ProcessAccessFlags.VirtualMemoryWrite;
+
+        public const uint WAIT_TIMEOUT_INFINITE = uint.MaxValue;
 
         static ProcessMemory()
         {
@@ -64,6 +66,7 @@ namespace ProcessMemoryUtilities.Memory
 
             _kernelCreateRemoteThreadEx = DynamicImport.ImportMethod(kernel, "CreateRemoteThreadEx");
             _kernelOpenProcess = DynamicImport.ImportMethod(kernel, "OpenProcess");
+            _kernelWaitForSingleObject = DynamicImport.ImportMethod(kernel, "WaitForSingleObject");
 
             var ntdll = DynamicImport.ImportLibrary("ntdll.dll");
 
@@ -73,48 +76,7 @@ namespace ProcessMemoryUtilities.Memory
             _ntOpenProcess = DynamicImport.ImportMethod(ntdll, "NtOpenProcess");
             _ntProtectVirtualMemory = DynamicImport.ImportMethod(ntdll, "NtProtectVirtualMemory");
             _ntReadVirtualMemory = DynamicImport.ImportMethod(ntdll, "NtReadVirtualMemory");
-            _ntWaitForSingleObject = DynamicImport.ImportMethod(ntdll, "NtWaitForSingleObject");
             _ntWriteVirtualMemory = DynamicImport.ImportMethod(ntdll, "NtWriteVirtualMemory");
-        }
-
-        [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        private static WaitObjectResult ConvertStatusToWaitObject(uint status)
-        {
-            Ldarg(nameof(status));
-            Ldc_I4_0();
-            Bne_Un_S("IL_0005");
-
-            Ldc_I4_0();
-            Ret();
-
-            IL.MarkLabel("IL_0005");
-
-            Ldarg(nameof(status));
-            Ldc_I4(257);
-            Beq("IL_0015");
-
-            Ldarg(nameof(status));
-            Ldc_I4(192);
-            Bne_Un_S("IL_001B");
-
-            IL.MarkLabel("IL_0015");
-
-            Ldc_I4(128);
-            Ret();
-
-            IL.MarkLabel("IL_001B");
-
-            Ldarg(nameof(status));
-            Ldc_I4(258);
-            Bne_Un_S("IL_0029");
-
-            Ldc_I4(258);
-            Ret();
-
-            IL.MarkLabel("IL_0029");
-
-            Ldc_I4(128);
-            return IL.Return<WaitObjectResult>();
         }
 
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
@@ -125,7 +87,7 @@ namespace ProcessMemoryUtilities.Memory
             Ldsfld(new FieldRef(typeof(ProcessMemory), nameof(_ntClose)));
             Calli(new StandAloneMethodSig(CallingConvention.StdCall, typeof(uint), typeof(IntPtr)));
 
-            Ldc_I4(NT_STATUS_INFORMATION_MAX);
+            Ldc_I4(NT_STATUS_WARNING_START);
             Conv_U4();
             Clt();
 
@@ -268,7 +230,7 @@ namespace ProcessMemoryUtilities.Memory
             Ldsfld(new FieldRef(typeof(ProcessMemory), nameof(_ntOpenProcess)));
             Calli(new StandAloneMethodSig(CallingConvention.StdCall, typeof(uint), typeof(IntPtr), typeof(uint), typeof(IntPtr), typeof(IntPtr)));
 
-            Ldc_I4(NT_STATUS_INFORMATION_MAX);
+            Ldc_I4(NT_STATUS_WARNING_START);
             Conv_U4();
             Blt_Un_S("success");
 
@@ -311,7 +273,7 @@ namespace ProcessMemoryUtilities.Memory
             Ldsfld(new FieldRef(typeof(ProcessMemory), nameof(_ntReadVirtualMemory)));
             Calli(new StandAloneMethodSig(CallingConvention.StdCall, typeof(uint), typeof(IntPtr), typeof(IntPtr), typeof(IntPtr), typeof(IntPtr), typeof(IntPtr)));
 
-            Ldc_I4(NT_STATUS_INFORMATION_MAX);
+            Ldc_I4(NT_STATUS_WARNING_START);
             Conv_U4();
             Clt();
 
@@ -330,7 +292,7 @@ namespace ProcessMemoryUtilities.Memory
             Ldsfld(new FieldRef(typeof(ProcessMemory), nameof(_ntReadVirtualMemory)));
             Calli(new StandAloneMethodSig(CallingConvention.StdCall, typeof(uint), typeof(IntPtr), typeof(IntPtr), typeof(IntPtr), typeof(IntPtr), typeof(IntPtr)));
 
-            Ldc_I4(NT_STATUS_INFORMATION_MAX);
+            Ldc_I4(NT_STATUS_WARNING_START);
             Conv_U4();
             Clt();
 
@@ -353,7 +315,7 @@ namespace ProcessMemoryUtilities.Memory
             Ldsfld(new FieldRef(typeof(ProcessMemory), nameof(_ntReadVirtualMemory)));
             Calli(new StandAloneMethodSig(CallingConvention.StdCall, typeof(uint), typeof(IntPtr), typeof(IntPtr), typeof(IntPtr), typeof(IntPtr), typeof(IntPtr)));
 
-            Ldc_I4(NT_STATUS_INFORMATION_MAX);
+            Ldc_I4(NT_STATUS_WARNING_START);
             Conv_U4();
             Clt();
 
@@ -375,7 +337,7 @@ namespace ProcessMemoryUtilities.Memory
             Ldsfld(new FieldRef(typeof(ProcessMemory), nameof(_ntReadVirtualMemory)));
             Calli(new StandAloneMethodSig(CallingConvention.StdCall, typeof(uint), typeof(IntPtr), typeof(IntPtr), typeof(IntPtr), typeof(IntPtr), typeof(IntPtr)));
 
-            Ldc_I4(NT_STATUS_INFORMATION_MAX);
+            Ldc_I4(NT_STATUS_WARNING_START);
             Conv_U4();
             Clt();
 
@@ -407,7 +369,7 @@ namespace ProcessMemoryUtilities.Memory
             Ldsfld(new FieldRef(typeof(ProcessMemory), nameof(_ntReadVirtualMemory)));
             Calli(new StandAloneMethodSig(CallingConvention.StdCall, typeof(uint), typeof(IntPtr), typeof(IntPtr), typeof(IntPtr), typeof(IntPtr), typeof(IntPtr)));
 
-            Ldc_I4(NT_STATUS_INFORMATION_MAX);
+            Ldc_I4(NT_STATUS_WARNING_START);
             Conv_U4();
             Clt();
 
@@ -438,7 +400,7 @@ namespace ProcessMemoryUtilities.Memory
             Ldsfld(new FieldRef(typeof(ProcessMemory), nameof(_ntReadVirtualMemory)));
             Calli(new StandAloneMethodSig(CallingConvention.StdCall, typeof(uint), typeof(IntPtr), typeof(IntPtr), typeof(IntPtr), typeof(IntPtr), typeof(IntPtr)));
 
-            Ldc_I4(NT_STATUS_INFORMATION_MAX);
+            Ldc_I4(NT_STATUS_WARNING_START);
             Conv_U4();
             Clt();
 
@@ -467,7 +429,7 @@ namespace ProcessMemoryUtilities.Memory
             Ldsfld(new FieldRef(typeof(ProcessMemory), nameof(_ntAllocateVirtualMemory)));
             Calli(new StandAloneMethodSig(CallingConvention.StdCall, typeof(uint), typeof(IntPtr), typeof(IntPtr), typeof(uint), typeof(IntPtr), typeof(uint), typeof(uint)));
 
-            Ldc_I4(NT_STATUS_INFORMATION_MAX);
+            Ldc_I4(NT_STATUS_WARNING_START);
             Conv_U4();
 
             Blt_Un_S("success");
@@ -505,7 +467,7 @@ namespace ProcessMemoryUtilities.Memory
             Ldsfld(new FieldRef(typeof(ProcessMemory), nameof(_ntFreeVirtualMemory)));
             Calli(new StandAloneMethodSig(CallingConvention.StdCall, typeof(uint), typeof(IntPtr), typeof(IntPtr), typeof(IntPtr), typeof(uint)));
 
-            Ldc_I4(NT_STATUS_INFORMATION_MAX);
+            Ldc_I4(NT_STATUS_WARNING_START);
             Conv_U4();
 
             Clt();
@@ -538,7 +500,7 @@ namespace ProcessMemoryUtilities.Memory
             Ldsfld(new FieldRef(typeof(ProcessMemory), nameof(_ntProtectVirtualMemory)));
             Calli(new StandAloneMethodSig(CallingConvention.StdCall, typeof(uint), typeof(IntPtr), typeof(IntPtr), typeof(IntPtr), typeof(uint), typeof(IntPtr)));
 
-            Ldc_I4(NT_STATUS_INFORMATION_MAX);
+            Ldc_I4(NT_STATUS_WARNING_START);
             Conv_U4();
 
             Clt();
@@ -549,36 +511,13 @@ namespace ProcessMemoryUtilities.Memory
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static WaitObjectResult WaitForSingleObject(IntPtr handle, uint timeout)
         {
-            IL.DeclareLocals(new LocalVar("largeTimeout", typeof(long)));
-
-            Ldarg(nameof(timeout));
-            Ldc_I4_M1();
-            Bne_Un_S("jump");
-
-            Ldc_I4_0();
-            Conv_U4();
-            Starg(nameof(timeout));
-
-            IL.MarkLabel("jump");
-
-            Ldarg(nameof(timeout));
-            Conv_I8();
-            Stloc("largeTimeout");
-
             Ldarg(nameof(handle));
+            Ldarg(nameof(timeout));
 
-            Ldc_I4_1();
-            Conv_U1();
+            Ldsfld(new FieldRef(typeof(ProcessMemory), nameof(_kernelWaitForSingleObject)));
+            Calli(new StandAloneMethodSig(CallingConvention.StdCall, typeof(WaitObjectResult), typeof(IntPtr), typeof(uint)));
 
-            Ldloca("largeTimeout");
-            Conv_I();
-
-            Ldsfld(new FieldRef(typeof(ProcessMemory), nameof(_ntWaitForSingleObject)));
-            Calli(new StandAloneMethodSig(CallingConvention.StdCall, typeof(uint), typeof(IntPtr), typeof(byte), typeof(IntPtr)));
-
-            IL.Pop(out uint status);
-
-            return ConvertStatusToWaitObject(status);
+            return IL.Return<WaitObjectResult>();
         }
 
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
@@ -595,7 +534,7 @@ namespace ProcessMemoryUtilities.Memory
             Ldsfld(new FieldRef(typeof(ProcessMemory), nameof(_ntWriteVirtualMemory)));
             Calli(new StandAloneMethodSig(CallingConvention.StdCall, typeof(uint), typeof(IntPtr), typeof(IntPtr), typeof(IntPtr), typeof(IntPtr), typeof(IntPtr)));
 
-            Ldc_I4(NT_STATUS_INFORMATION_MAX);
+            Ldc_I4(NT_STATUS_WARNING_START);
             Conv_U4();
             Clt();
 
@@ -614,7 +553,7 @@ namespace ProcessMemoryUtilities.Memory
             Ldsfld(new FieldRef(typeof(ProcessMemory), nameof(_ntWriteVirtualMemory)));
             Calli(new StandAloneMethodSig(CallingConvention.StdCall, typeof(uint), typeof(IntPtr), typeof(IntPtr), typeof(IntPtr), typeof(IntPtr), typeof(IntPtr)));
 
-            Ldc_I4(NT_STATUS_INFORMATION_MAX);
+            Ldc_I4(NT_STATUS_WARNING_START);
             Conv_U4();
             Clt();
 
@@ -639,7 +578,7 @@ namespace ProcessMemoryUtilities.Memory
             Ldsfld(new FieldRef(typeof(ProcessMemory), nameof(_ntWriteVirtualMemory)));
             Calli(new StandAloneMethodSig(CallingConvention.StdCall, typeof(uint), typeof(IntPtr), typeof(IntPtr), typeof(IntPtr), typeof(IntPtr), typeof(IntPtr)));
 
-            Ldc_I4(NT_STATUS_INFORMATION_MAX);
+            Ldc_I4(NT_STATUS_WARNING_START);
             Conv_U4();
             Clt();
 
@@ -663,7 +602,7 @@ namespace ProcessMemoryUtilities.Memory
             Ldsfld(new FieldRef(typeof(ProcessMemory), nameof(_ntWriteVirtualMemory)));
             Calli(new StandAloneMethodSig(CallingConvention.StdCall, typeof(uint), typeof(IntPtr), typeof(IntPtr), typeof(IntPtr), typeof(IntPtr), typeof(IntPtr)));
 
-            Ldc_I4(NT_STATUS_INFORMATION_MAX);
+            Ldc_I4(NT_STATUS_WARNING_START);
             Conv_U4();
             Clt();
 
@@ -695,7 +634,7 @@ namespace ProcessMemoryUtilities.Memory
             Ldsfld(new FieldRef(typeof(ProcessMemory), nameof(_ntWriteVirtualMemory)));
             Calli(new StandAloneMethodSig(CallingConvention.StdCall, typeof(uint), typeof(IntPtr), typeof(IntPtr), typeof(IntPtr), typeof(IntPtr), typeof(IntPtr)));
 
-            Ldc_I4(NT_STATUS_INFORMATION_MAX);
+            Ldc_I4(NT_STATUS_WARNING_START);
             Conv_U4();
             Clt();
 
@@ -726,7 +665,7 @@ namespace ProcessMemoryUtilities.Memory
             Ldsfld(new FieldRef(typeof(ProcessMemory), nameof(_ntWriteVirtualMemory)));
             Calli(new StandAloneMethodSig(CallingConvention.StdCall, typeof(uint), typeof(IntPtr), typeof(IntPtr), typeof(IntPtr), typeof(IntPtr), typeof(IntPtr)));
 
-            Ldc_I4(NT_STATUS_INFORMATION_MAX);
+            Ldc_I4(NT_STATUS_WARNING_START);
             Conv_U4();
             Clt();
 
