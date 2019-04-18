@@ -10,7 +10,7 @@ namespace ProcessMemoryUtilities.Test
     [TestClass]
     public class ProcessMemoryTests
     {
-        private int _processId;
+        private readonly int _processId;
 
         public ProcessMemoryTests()
         {
@@ -132,6 +132,55 @@ namespace ProcessMemoryUtilities.Test
             Assert.IsTrue(ProcessMemory.Close(handle));
 
             Marshal.FreeHGlobal(baseAddress);
+        }
+
+        [TestMethod]
+        public void VirtualAllocAndFree()
+        {
+            IntPtr handle = ProcessMemory.OpenProcess(ProcessAccessFlags.All, _processId);
+
+            Assert.IsFalse(handle == IntPtr.Zero);
+
+            IntPtr address = ProcessMemory.VirtualAllocEx(handle, IntPtr.Zero, (IntPtr)1024, AllocationType.Reserve | AllocationType.Commit, MemoryProtectionFlags.ExecuteReadWrite);
+
+            Assert.IsFalse(address == IntPtr.Zero);
+
+            Assert.IsTrue(Marshal.ReadInt32(address) == 0);
+
+            Marshal.WriteInt32(address, 1337);
+
+            Assert.IsTrue(Marshal.ReadInt32(address) == 1337);
+
+            Assert.IsTrue(ProcessMemory.VirtualFreeEx(handle, address, IntPtr.Zero, FreeType.Release));
+
+            ProcessMemory.Close(handle);
+        }
+
+        [TestMethod]
+        public void VirtualProtectEx()
+        {
+            IntPtr handle = ProcessMemory.OpenProcess(ProcessAccessFlags.All, _processId);
+
+            Assert.IsFalse(handle == IntPtr.Zero);
+
+            IntPtr address = ProcessMemory.VirtualAllocEx(handle, IntPtr.Zero, (IntPtr)1024, AllocationType.Reserve | AllocationType.Commit, MemoryProtectionFlags.ExecuteReadWrite);
+
+            Assert.IsTrue(ProcessMemory.VirtualProtectEx(handle, address, (IntPtr)1024, MemoryProtectionFlags.NoAccess, out var oldProtection));
+
+            Assert.IsTrue(oldProtection == MemoryProtectionFlags.ExecuteReadWrite);
+
+            try
+            {
+                Marshal.WriteInt32(address, 1337);
+                throw new Exception();
+            }
+            catch
+            {
+            }
+
+            Assert.IsTrue(ProcessMemory.VirtualFreeEx(handle, address, IntPtr.Zero, FreeType.Release));
+
+            ProcessMemory.Close(handle);
         }
 
         [TestMethod]
