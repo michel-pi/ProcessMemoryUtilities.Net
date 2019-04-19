@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['virtualmemoryoperation',['VirtualMemoryOperation',['../namespace_process_memory_wrapper.html#aef749782ce509ad61b185268fc5fa09ba03fce4e381fb206d3b66fa0efeaa65b9',1,'ProcessMemoryWrapper']]],
-  ['virtualmemoryread',['VirtualMemoryRead',['../namespace_process_memory_wrapper.html#aef749782ce509ad61b185268fc5fa09ba1097d94adf1ffb4f72859958d1e143fc',1,'ProcessMemoryWrapper']]],
-  ['virtualmemorywrite',['VirtualMemoryWrite',['../namespace_process_memory_wrapper.html#aef749782ce509ad61b185268fc5fa09bad81b2f1b0d561c67eac1cfb40ee3b092',1,'ProcessMemoryWrapper']]]
+  ['memoryprotectionflags',['MemoryProtectionFlags',['../namespace_process_memory_utilities_1_1_memory.html#abd2d2d8645ab563c46f8236ab8fe5c0b',1,'ProcessMemoryUtilities::Memory']]],
+  ['multiply',['Multiply',['../class_process_memory_utilities_1_1_extensions_1_1_int_ptr_extensions.html#abf7160c97dcd32a657ad79609afaced6',1,'ProcessMemoryUtilities::Extensions::IntPtrExtensions']]]
 ];

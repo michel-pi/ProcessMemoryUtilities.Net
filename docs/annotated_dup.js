@@ -1,4 +1,4 @@
 var annotated_dup =
 [
-    [ "ProcessMemoryWrapper", "namespace_process_memory_wrapper.html", "namespace_process_memory_wrapper" ]
+    [ "ProcessMemoryUtilities", "namespace_process_memory_utilities.html", "namespace_process_memory_utilities" ]
 ];

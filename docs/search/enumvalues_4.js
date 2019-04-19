@@ -1,7 +1,4 @@
 var searchData=
 [
-  ['setinformation',['SetInformation',['../namespace_process_memory_wrapper.html#aef749782ce509ad61b185268fc5fa09bafd76c8a174c8459590eb48380c4edc40',1,'ProcessMemoryWrapper']]],
-  ['setquota',['SetQuota',['../namespace_process_memory_wrapper.html#aef749782ce509ad61b185268fc5fa09bacd7befb4aef8f46bbb823af1d99cde83',1,'ProcessMemoryWrapper']]],
-  ['suspendresume',['SuspendResume',['../namespace_process_memory_wrapper.html#aef749782ce509ad61b185268fc5fa09ba225c7a85340534236811e3cae22e885e',1,'ProcessMemoryWrapper']]],
-  ['synchronize',['Synchronize',['../namespace_process_memory_wrapper.html#aef749782ce509ad61b185268fc5fa09bab18b960c57a784907dc1cd97ba8a8065',1,'ProcessMemoryWrapper']]]
+  ['failed',['Failed',['../namespace_process_memory_utilities_1_1_memory.html#ae642cfe8e18ac29f66f74344aac5b302ad7c8c85bf79bbe1b7188497c32c3b0ca',1,'ProcessMemoryUtilities::Memory']]]
 ];
