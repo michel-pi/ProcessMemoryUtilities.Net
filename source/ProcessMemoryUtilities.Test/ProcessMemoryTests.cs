@@ -35,7 +35,7 @@ namespace ProcessMemoryUtilities.Test
 
             Assert.IsTrue(ProcessMemory.WaitForSingleObject(hThread, ProcessMemory.WAIT_TIMEOUT_INFINITE) == WaitObjectResult.Success);
 
-            Assert.IsTrue(ProcessMemory.Close(hThread));
+            Assert.IsTrue(ProcessMemory.CloseHandle(hThread));
 
             Assert.IsTrue(originalCounter + 1 == _counter);
         }
@@ -50,7 +50,7 @@ namespace ProcessMemoryUtilities.Test
 
             Assert.IsTrue(ProcessMemory.WaitForSingleObject(hThread, ProcessMemory.WAIT_TIMEOUT_INFINITE) == WaitObjectResult.Success);
 
-            Assert.IsTrue(ProcessMemory.Close(hThread));
+            Assert.IsTrue(ProcessMemory.CloseHandle(hThread));
 
             Assert.IsTrue(originalCounter + 1 == _counter);
         }
@@ -65,7 +65,7 @@ namespace ProcessMemoryUtilities.Test
 
             Assert.IsTrue(ProcessMemory.WaitForSingleObject(hThread, ProcessMemory.WAIT_TIMEOUT_INFINITE) == WaitObjectResult.Success);
 
-            Assert.IsTrue(ProcessMemory.Close(hThread));
+            Assert.IsTrue(ProcessMemory.CloseHandle(hThread));
 
             Assert.IsTrue(originalCounter + 1 == _counter);
         }
@@ -83,7 +83,7 @@ namespace ProcessMemoryUtilities.Test
 
             Assert.IsTrue(ProcessMemory.WaitForSingleObject(hThread, ProcessMemory.WAIT_TIMEOUT_INFINITE) == WaitObjectResult.Success);
 
-            Assert.IsTrue(ProcessMemory.Close(hThread));
+            Assert.IsTrue(ProcessMemory.CloseHandle(hThread));
 
             Assert.IsTrue(originalCounter + 1 == _counter);
         }
@@ -100,7 +100,7 @@ namespace ProcessMemoryUtilities.Test
 
             Assert.IsFalse(handle == IntPtr.Zero);
 
-            Assert.IsTrue(ProcessMemory.Close(handle));
+            Assert.IsTrue(ProcessMemory.CloseHandle(handle));
         }
 
         [TestMethod]
@@ -115,7 +115,7 @@ namespace ProcessMemoryUtilities.Test
             TestCreateRemoteThread_3(handle);
             TestCreateRemoteThread_4(handle);
 
-            Assert.IsTrue(ProcessMemory.Close(handle));
+            Assert.IsTrue(ProcessMemory.CloseHandle(handle));
         }
 
         [TestMethod]
@@ -125,7 +125,7 @@ namespace ProcessMemoryUtilities.Test
 
             Assert.IsFalse(handle == IntPtr.Zero);
 
-            ProcessMemory.Close(handle);
+            ProcessMemory.CloseHandle(handle);
         }
 
         [TestMethod]
@@ -151,7 +151,7 @@ namespace ProcessMemoryUtilities.Test
             Assert.IsTrue(Marshal.ReadInt32(baseAddress) == Marshal.ReadInt32(buffer));
             Assert.IsTrue(bytesRead == (IntPtr)4);
 
-            Assert.IsTrue(ProcessMemory.Close(handle));
+            Assert.IsTrue(ProcessMemory.CloseHandle(handle));
 
             Marshal.FreeHGlobal(baseAddress);
             Marshal.FreeHGlobal(buffer);
@@ -180,7 +180,7 @@ namespace ProcessMemoryUtilities.Test
             Assert.IsTrue(buffer == Marshal.ReadInt32(baseAddress));
             Assert.IsTrue(bytesRead == (IntPtr)4);
 
-            Assert.IsTrue(ProcessMemory.Close(handle));
+            Assert.IsTrue(ProcessMemory.CloseHandle(handle));
 
             Marshal.FreeHGlobal(baseAddress);
         }
@@ -220,7 +220,7 @@ namespace ProcessMemoryUtilities.Test
                 Assert.IsTrue(buffer[i] == Marshal.ReadInt32(baseAddress, i * 4));
             }
 
-            Assert.IsTrue(ProcessMemory.Close(handle));
+            Assert.IsTrue(ProcessMemory.CloseHandle(handle));
 
             Marshal.FreeHGlobal(baseAddress);
         }
@@ -244,7 +244,7 @@ namespace ProcessMemoryUtilities.Test
 
             Assert.IsTrue(ProcessMemory.VirtualFreeEx(handle, address, IntPtr.Zero, FreeType.Release));
 
-            ProcessMemory.Close(handle);
+            ProcessMemory.CloseHandle(handle);
         }
 
         [TestMethod]
@@ -272,7 +272,7 @@ namespace ProcessMemoryUtilities.Test
 
             Assert.IsTrue(ProcessMemory.VirtualFreeEx(handle, address, IntPtr.Zero, FreeType.Release));
 
-            ProcessMemory.Close(handle);
+            ProcessMemory.CloseHandle(handle);
         }
 
         [TestMethod]
@@ -298,7 +298,7 @@ namespace ProcessMemoryUtilities.Test
             Assert.IsTrue(Marshal.ReadInt32(baseAddress) == Marshal.ReadInt32(buffer));
             Assert.IsTrue(bytesWritten == (IntPtr)4);
 
-            Assert.IsTrue(ProcessMemory.Close(handle));
+            Assert.IsTrue(ProcessMemory.CloseHandle(handle));
 
             Marshal.FreeHGlobal(baseAddress);
             Marshal.FreeHGlobal(buffer);
@@ -326,7 +326,7 @@ namespace ProcessMemoryUtilities.Test
             Assert.IsTrue(Marshal.ReadInt32(baseAddress) == buffer);
             Assert.IsTrue(bytesWritten == (IntPtr)4);
 
-            Assert.IsTrue(ProcessMemory.Close(handle));
+            Assert.IsTrue(ProcessMemory.CloseHandle(handle));
 
             Marshal.FreeHGlobal(baseAddress);
         }
@@ -365,7 +365,7 @@ namespace ProcessMemoryUtilities.Test
                 Assert.IsTrue(Marshal.ReadInt32(baseAddress, i * 4) == 1337);
             }
 
-            Assert.IsTrue(ProcessMemory.Close(handle));
+            Assert.IsTrue(ProcessMemory.CloseHandle(handle));
 
             Marshal.FreeHGlobal(baseAddress);
         }
