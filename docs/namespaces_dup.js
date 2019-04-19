@@ -1,4 +1,4 @@
 var namespaces_dup =
 [
-    [ "ProcessMemoryWrapper", "namespace_process_memory_wrapper.html", null ]
+    [ "ProcessMemoryUtilities", "namespace_process_memory_utilities.html", "namespace_process_memory_utilities" ]
 ];

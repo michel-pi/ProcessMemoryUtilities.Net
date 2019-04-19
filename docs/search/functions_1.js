@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['openprocess',['OpenProcess',['../class_process_memory_wrapper_1_1_process_wrapper.html#a7394f0310c8a731e80f6289bfd4d8333',1,'ProcessMemoryWrapper::ProcessWrapper']]]
+  ['bytestostring',['BytesToString',['../class_process_memory_utilities_1_1_memory_1_1_string_marshal.html#a057c36bc3c1258053d2206c71fb32232',1,'ProcessMemoryUtilities::Memory::StringMarshal']]]
 ];

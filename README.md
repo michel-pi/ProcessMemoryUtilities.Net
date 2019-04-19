@@ -1,68 +1,97 @@
-# ProcessMemoryWrapper.Net
+<div align="center">
 
-[![Nuget](https://img.shields.io/nuget/v/ProcessMemoryWrapper.Net.svg)](https://www.nuget.org/packages/ProcessMemoryWrapper.Net/ "ProcessMemoryWrapper.Net on NuGet") [![Nuget](https://img.shields.io/nuget/dt/ProcessMemoryWrapper.Net.svg)](https://www.nuget.org/packages/ProcessMemoryWrapper.Net/ "Downloads on NuGet") [![Open issues](https://img.shields.io/github/issues-raw/michel-pi/ProcessMemoryWrapper.Net.svg)](https://github.com/michel-pi/ProcessMemoryWrapper.Net/issues "Open issues on Github") [![Closed issues](https://img.shields.io/github/issues-closed-raw/michel-pi/ProcessMemoryWrapper.Net.svg)](https://github.com/michel-pi/ProcessMemoryWrapper.Net/issues?q=is%3Aissue+is%3Aclosed "Closed issues on Github") [![MIT License](https://img.shields.io/github/license/michel-pi/ProcessMemoryWrapper.Net.svg)](https://github.com/michel-pi/ProcessMemoryWrapper.Net/blob/master/LICENSE "ProcessMemoryWrapper.Net license")
+# ProcessMemoryUtilities.Net
 
-Implements performant ReadProcessMemory and WriteProcessMemory using InlineIL
+[![Nuget](https://img.shields.io/nuget/v/ProcessMemoryUtilities.Net.svg)](https://www.nuget.org/packages/ProcessMemoryUtilities.Net/ "ProcessMemoryUtilities.Net on NuGet") [![Nuget](https://img.shields.io/nuget/dt/ProcessMemoryUtilities.Net.svg)](https://www.nuget.org/packages/ProcessMemoryUtilities.Net/ "Downloads on NuGet") [![Open issues](https://img.shields.io/github/issues-raw/michel-pi/ProcessMemoryUtilities.Net.svg)](https://github.com/michel-pi/ProcessMemoryUtilities.Net/issues "Open issues on Github") [![Closed issues](https://img.shields.io/github/issues-closed-raw/michel-pi/ProcessMemoryUtilities.Net.svg)](https://github.com/michel-pi/ProcessMemoryUtilities.Net/issues?q=is%3Aissue+is%3Aclosed "Closed issues on Github") [![MIT License](https://img.shields.io/github/license/michel-pi/ProcessMemoryUtilities.Net.svg)](https://github.com/michel-pi/ProcessMemoryUtilities.Net/blob/master/LICENSE "ProcessMemoryUtilities.Net license")
 
-Compiled with .NET Framework 4.5.2 and .NET Standard 2.0
+![Net Framework 4.52](https://img.shields.io/badge/.Net-4.52-informational.svg) ![Net Framework 4.7](https://img.shields.io/badge/.Net-4.7-informational.svg) ![Net Framework 4.72](https://img.shields.io/badge/.Net-4.72-informational.svg) ![Net Standard 2.0](https://img.shields.io/badge/.Net_Standard-2.0-informational.svg)
+</div>
+
+This library implements performant ReadProcessMemory and WriteProcessMemory with generic type parameters using InlineIL and also offers methods required to open processes, create remote threads and marshal value types and strings.
+
+All methods are tested and working under 32bit and 64bit windows.
 
 ## NuGet
 
-    Install-Package ProcessMemoryWrapper.Net
+    Install-Package ProcessMemoryUtilities.Net
 
 ## Features
 
-- OpenProcess and CloseProcess
-- Generic ReadProcessMemory and WriteProcessMemory
-- Read and write arrays
+All methods are implemented in a way to be a drop in replacement for their `kernel32` equivalents even when they are implemented using their `ntdll` equivalent.
+
+Enums used by these methods are definied in a correct way and provide XML documentation.
+
+- CloseHandle
+- CreateRemoteThreadEx
+- OpenProcess
+- Generic ReadProcessMemory
+- VirtualAllocEx
+- VirtualFreeEx
+- VirtualProtectEx
+- WaitForSingleObject
+- Generic WriteProcessMemory
+
+Every native method is implemented using the `calli` IL instruction and bypasses type limitations introduced in C#.
+
+Some important improvements are:
+
 - Direct calls to WinAPI methods
-- Using Nt* methods instead of Kernel32
+- Using `ntdll` methods instead of `kernel32` whenever possible
 - No performance loss due to marshalling or delegates
 - Optimized memory allocation
 
+## Marshalling
+
+The `UnsafeMarshal` class provides methods to dereference pointers, get the size of a value type and gerneric replacements methods for the `Bitconverter` class.
+
+The `StringMarshal` class not only converts strings and byte arrays but also handles the null bytes typically contained at the end of an unmanaged string.
+
 ## Methods
 
+Here are some method signatures to provide a quick overview on what is actually possible when using this library.
+
 ```cs
-// Open and Close handles
-bool CloseProcess(IntPtr handle);
-IntPtr OpenProcess(ProcessAccessFlags desiredAccess, int processId);
+// CreateRemoteThreadEx with a reduced set of parameters for easier usage
+IntPtr CreateRemoteThreadEx(IntPtr handle, IntPtr startAddress);
+// compared to this one which is also available
+IntPtr CreateRemoteThreadEx(IntPtr handle, IntPtr threadAttributes, IntPtr stackSize, IntPtr startAddress, IntPtr parameter, ThreadCreationFlags creationFlags, IntPtr attributeList, ref uint threadId);
 
 // ReadProcessMemory
-bool ReadProcessMemory(IntPtr handle, IntPtr baseAddress, IntPtr buffer, IntPtr size);
-bool ReadProcessMemory(IntPtr handle, IntPtr baseAddress, IntPtr buffer, IntPtr size, ref IntPtr numberOfBytesRead);
+bool ReadProcessMemory<T>(IntPtr handle, IntPtr baseAddress, ref T buffer);
+bool ReadProcessMemory<T>(IntPtr handle, IntPtr baseAddress, T[] buffer);
 
-byte[] ReadProcessMemory(IntPtr handle, IntPtr baseAddress, int size);
-byte[] ReadProcessMemory(IntPtr handle, IntPtr baseAddress, int size, ref IntPtr numberOfBytesRead);
+// Additional methods
+IntPtr VirtualAllocEx(IntPtr handle, IntPtr baseAddress, IntPtr size, AllocationType allocationType, MemoryProtectionFlags memoryProtection);
 
-T ReadProcessMemory<T>(IntPtr handle, IntPtr baseAddress);
-T ReadProcessMemory<T>(IntPtr handle, IntPtr baseAddress, ref IntPtr numberOfBytesRead);
+bool VirtualFreeEx(IntPtr handle, IntPtr address, IntPtr size, FreeType freeType);
+bool VirtualProtectEx(IntPtr handle, IntPtr address, IntPtr size, MemoryProtectionFlags newProtect, ref MemoryProtectionFlags oldProtect);
 
-T[] ReadProcessMemory<T>(IntPtr handle, IntPtr baseAddress, int size);
-T[] ReadProcessMemory<T>(IntPtr handle, IntPtr baseAddress, int size, ref IntPtr numberOfBytesRead);
+WaitObjectResult WaitForSingleObject(IntPtr handle, uint timeout);
 
 // WriteProcessMemory
-bool WriteProcessMemory(IntPtr handle, IntPtr baseAddress, IntPtr buffer, IntPtr size);
-bool WriteProcessMemory(IntPtr handle, IntPtr baseAddress, IntPtr buffer, IntPtr size, ref IntPtr numberOfBytesWritten);
-
-bool WriteProcessMemory(IntPtr handle, IntPtr baseAddress, byte[] buffer);
-bool WriteProcessMemory(IntPtr handle, IntPtr baseAddress, byte[] buffer, ref IntPtr numberOfBytesWritten);
-
-bool WriteProcessMemory<T>(IntPtr handle, IntPtr baseAddress, T buffer);
-bool WriteProcessMemory<T>(IntPtr handle, IntPtr baseAddress, T buffer, ref IntPtr numberOfBytesWritten);
-
-bool WriteProcessMemory<T>(IntPtr handle, IntPtr baseAddress, T[] buffer);
-bool WriteProcessMemory<T>(IntPtr handle, IntPtr baseAddress, T[] buffer, ref IntPtr numberOfBytesWritten);
+bool WriteProcessMemory<T>(IntPtr handle, IntPtr baseAddress, T buffer)
+public static bool WriteProcessMemory<T>(IntPtr handle, IntPtr baseAddress, T[] buffer)
 ```
+
+### [Documentation](https://michel-pi.github.io/ProcessMemoryUtilities.Net/ "ProcessMemoryUtilities.Net Documentation")
 
 ### Error Handling
 
-Please use the reference parameter "numberOfBytesRead" and "numberOfBytesWritten" to determine the error state.
+Because the ReadProcessMemory and WriteProcessMemory methods are implemented using their `ntdll` equivalents they do not provide error codes using `GetLastError`.
 
-The number of bytes returned by these methods will be zero if no data could be read or written to the process (access denied).
+However, their behaviour is simple.
 
-The number of bytes returned by these methods will be smaller than the size queried if only a partial copy happened.
+Whenever one of these two methods return false you can check if their `numberOfBytesRead` or `numberOfBytesWritten` is
 
-### [Documentation](https://michel-pi.github.io/ProcessMemoryWrapper.Net/ "ProcessMemoryWrapper.Net Documentation")
+`0` which means that one of the following errors occured:
+
+- The given process handle is invalid.
+- The target process is currently terminating.
+- The requested memory was not accessible through it's protection flags.
+- The requested operation tried to query kernel memory.
+- The requested operation crossed a memory boundary from usermode to kernel mode memory.
+
+`not 0` which means that only a part of the data has been queried successfully. You can try to query it again using the same parameters or by only requesting the remaining bytes.
 
 ## Contribute
 
@@ -74,7 +103,7 @@ You can help by reporting issues, adding new features, fixing bugs and by provid
 
 ### Dependencies
 
-Following dependencies are used to build the project.
+Following dependencies are used to build the project but are **NOT** included in the NuGet package.
 
     Fody, InlineIL.Fody
 
@@ -94,6 +123,6 @@ ETH     0xd9E2CB12d310E7BF5E72F591D7A2b8820adced04
 
 ## License
 
-- [ProcessMemoryWrapper.Net License](https://github.com/michel-pi/ProcessMemoryWrapper.Net/blob/master/LICENSE "ProcessMemoryWrapper.Net License")
+- [ProcessMemoryUtilities.Net License](https://github.com/michel-pi/ProcessMemoryUtilities.Net/blob/master/LICENSE "ProcessMemoryUtilities.Net License")
 - [Fody License](https://github.com/Fody/Fody/blob/master/License.txt "Fody License")
 - [InlineIL.Fody License](https://github.com/ltrzesniewski/InlineIL.Fody/blob/master/LICENSE "InlineIL.Fody License")

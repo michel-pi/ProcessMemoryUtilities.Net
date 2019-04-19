@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['processaccessflags',['ProcessAccessFlags',['../namespace_process_memory_wrapper.html#aef749782ce509ad61b185268fc5fa09b',1,'ProcessMemoryWrapper']]]
+  ['allocationtype',['AllocationType',['../namespace_process_memory_utilities_1_1_memory.html#af0a9f9efd6fdb043adf94b1e4d29aff5',1,'ProcessMemoryUtilities::Memory']]]
 ];

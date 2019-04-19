@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['terminate',['Terminate',['../namespace_process_memory_wrapper.html#aef749782ce509ad61b185268fc5fa09ba056fa3d840f48b7bfbbd68c19a4797b3',1,'ProcessMemoryWrapper']]]
+  ['guardmodifierflag',['GuardModifierflag',['../namespace_process_memory_utilities_1_1_memory.html#abd2d2d8645ab563c46f8236ab8fe5c0ba0d53f148d8db8df28fc4b554bfc8ac6a',1,'ProcessMemoryUtilities::Memory']]]
 ];
