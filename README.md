@@ -42,7 +42,7 @@ Some important improvements are:
 
 ## Marshalling
 
-The `UnsafeMarshal` class provides methods to dereference pointers, get the size of a value type and gerneric replacements methods for the methods conatined in the `Bitconverter` class.
+The `UnsafeMarshal` class provides methods to dereference pointers, get the size of a value type and gerneric replacements methods for the `Bitconverter` class.
 
 The `StringMarshal` class not only converts strings and byte arrays but also handles the null bytes typically contained at the end of an unmanaged string.
 
