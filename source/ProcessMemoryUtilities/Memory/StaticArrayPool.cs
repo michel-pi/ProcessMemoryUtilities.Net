@@ -4,6 +4,10 @@ using System.Runtime.CompilerServices;
 
 namespace ProcessMemoryUtilities.Memory
 {
+    /// <summary>
+    /// Provides a generic, thread safe and static implementation of a pool of arrays.
+    /// </summary>
+    /// <typeparam name="T">The type of the array.</typeparam>
     public static class StaticArrayPool<T> where T : struct
     {
         private static readonly bool _isStruct;
@@ -51,6 +55,11 @@ namespace ProcessMemoryUtilities.Memory
             _pool = new Dictionary<int, List<T[]>>();
         }
 
+        /// <summary>
+        /// Adds an already allocated array to the StaticArrayPool.
+        /// </summary>
+        /// <param name="array">The array to add.</param>
+        /// <param name="clearArray">Indicates whether the values in the array should be cleared before adding it.</param>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static void Fill(T[] array, bool clearArray = false)
         {
@@ -69,6 +78,11 @@ namespace ProcessMemoryUtilities.Memory
             _pool[array.Length].Add(array);
         }
 
+        /// <summary>
+        /// Adds a sequence of arrays to the StaticArrayPool.
+        /// </summary>
+        /// <param name="sequence">A sequence of arrays.</param>
+        /// <param name="clearArray">Indicates whether the values of each array should be cleared before adding it.</param>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static void FillSequence(IEnumerable<T[]> sequence, bool clearArray = false)
         {
@@ -80,6 +94,11 @@ namespace ProcessMemoryUtilities.Memory
             }
         }
 
+        /// <summary>
+        /// Retrieves a buffer the requested length.
+        /// </summary>
+        /// <param name="size">The length of the requested buffer.</param>
+        /// <returns>An array from the StaticArrayPool.</returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static T[] Rent(int size)
         {
@@ -108,6 +127,11 @@ namespace ProcessMemoryUtilities.Memory
             return array;
         }
 
+        /// <summary>
+        /// Returns a previously rented array to the StaticArrayPool.
+        /// </summary>
+        /// <param name="array">The array to return.</param>
+        /// <param name="clearArray">Indicates whether the values of the array should be cleared before returning it.</param>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static void Return(T[] array, bool clearArray = false)
         {
