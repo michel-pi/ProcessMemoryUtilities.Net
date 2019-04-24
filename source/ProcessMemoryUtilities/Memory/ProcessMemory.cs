@@ -546,7 +546,7 @@ namespace ProcessMemoryUtilities.Memory
         /// <param name="buffer">A pointer to a buffer that receives the contents from the address space of the specified process.</param>
         /// <returns><see langword="true"/> if the function succeeds; otherwise, <see langword="false"/>.</returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public static bool ReadProcessMemory<T>(IntPtr handle, IntPtr baseAddress, T[] buffer) where T : struct
+        public static bool ReadProcessMemoryArray<T>(IntPtr handle, IntPtr baseAddress, T[] buffer) where T : struct
         {
             Ldarg(nameof(handle));
             Ldarg(nameof(baseAddress));
@@ -592,7 +592,7 @@ namespace ProcessMemoryUtilities.Memory
         /// <param name="numberOfBytesRead">A pointer to a variable that receives the number of bytes transferred into the specified buffer.</param>
         /// <returns><see langword="true"/> if the function succeeds; otherwise, <see langword="false"/>.</returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public static bool ReadProcessMemory<T>(IntPtr handle, IntPtr baseAddress, T[] buffer, ref IntPtr numberOfBytesRead) where T : struct
+        public static bool ReadProcessMemoryArray<T>(IntPtr handle, IntPtr baseAddress, T[] buffer, ref IntPtr numberOfBytesRead) where T : struct
         {
             Ldarg(nameof(handle));
             Ldarg(nameof(baseAddress));
@@ -638,7 +638,7 @@ namespace ProcessMemoryUtilities.Memory
         /// <param name="length">The length of the buffer to fill after the offset.</param>
         /// <returns><see langword="true"/> if the function succeeds; otherwise, <see langword="false"/>.</returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public static bool ReadProcessMemory<T>(IntPtr handle, IntPtr baseAddress, T[] buffer, int offset, int length) where T : struct
+        public static bool ReadProcessMemoryArray<T>(IntPtr handle, IntPtr baseAddress, T[] buffer, int offset, int length) where T : struct
         {
             Ldarg(nameof(handle));
             Ldarg(nameof(baseAddress));
@@ -684,7 +684,7 @@ namespace ProcessMemoryUtilities.Memory
         /// <param name="numberOfBytesRead">A pointer to a variable that receives the number of bytes transferred into the specified buffer.</param>
         /// <returns><see langword="true"/> if the function succeeds; otherwise, <see langword="false"/>.</returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public static bool ReadProcessMemory<T>(IntPtr handle, IntPtr baseAddress, T[] buffer, int offset, int length, ref IntPtr numberOfBytesRead) where T : struct
+        public static bool ReadProcessMemoryArray<T>(IntPtr handle, IntPtr baseAddress, T[] buffer, int offset, int length, ref IntPtr numberOfBytesRead) where T : struct
         {
             Ldarg(nameof(handle));
             Ldarg(nameof(baseAddress));
@@ -1046,7 +1046,7 @@ namespace ProcessMemoryUtilities.Memory
         /// <param name="buffer">A pointer to the buffer that contains data to be written in the address space of the specified process.</param>
         /// <returns>A pointer to a variable that receives the number of bytes transferred into the specified process.</returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public static bool WriteProcessMemory<T>(IntPtr handle, IntPtr baseAddress, T[] buffer) where T : struct
+        public static bool WriteProcessMemoryArray<T>(IntPtr handle, IntPtr baseAddress, T[] buffer) where T : struct
         {
             Ldarg(nameof(handle));
             Ldarg(nameof(baseAddress));
@@ -1094,7 +1094,7 @@ namespace ProcessMemoryUtilities.Memory
         /// </param>
         /// <returns><see langword="true"/> if the function succeeds; otherwise, <see langword="false"/>.</returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public static bool WriteProcessMemory<T>(IntPtr handle, IntPtr baseAddress, T[] buffer, ref IntPtr numberOfBytesWritten) where T : struct
+        public static bool WriteProcessMemoryArray<T>(IntPtr handle, IntPtr baseAddress, T[] buffer, ref IntPtr numberOfBytesWritten) where T : struct
         {
             Ldarg(nameof(handle));
             Ldarg(nameof(baseAddress));
@@ -1140,7 +1140,7 @@ namespace ProcessMemoryUtilities.Memory
         /// <param name="length">The length of the the buffer to write starting from the offset.</param>
         /// <returns><see langword="true"/> if the function succeeds; otherwise, <see langword="false"/>.</returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public static bool WriteProcessMemory<T>(IntPtr handle, IntPtr baseAddress, T[] buffer, int offset, int length) where T : struct
+        public static bool WriteProcessMemoryArray<T>(IntPtr handle, IntPtr baseAddress, T[] buffer, int offset, int length) where T : struct
         {
             Ldarg(nameof(handle));
             Ldarg(nameof(baseAddress));
@@ -1188,7 +1188,7 @@ namespace ProcessMemoryUtilities.Memory
         /// </param>
         /// <returns><see langword="true"/> if the function succeeds; otherwise, <see langword="false"/>.</returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public static bool WriteProcessMemory<T>(IntPtr handle, IntPtr baseAddress, T[] buffer, int offset, int length, ref IntPtr numberOfBytesWritten) where T : struct
+        public static bool WriteProcessMemoryArray<T>(IntPtr handle, IntPtr baseAddress, T[] buffer, int offset, int length, ref IntPtr numberOfBytesWritten) where T : struct
         {
             Ldarg(nameof(handle));
             Ldarg(nameof(baseAddress));

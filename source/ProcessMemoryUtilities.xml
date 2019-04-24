@@ -320,7 +320,7 @@
             <param name="numberOfBytesRead">A pointer to a variable that receives the number of bytes transferred into the specified buffer.</param>
             <returns><see langword="true"/> if the function succeeds; otherwise, <see langword="false"/>.</returns>
         </member>
-        <member name="M:ProcessMemoryUtilities.Memory.ProcessMemory.ReadProcessMemory``1(System.IntPtr,System.IntPtr,``0[])">
+        <member name="M:ProcessMemoryUtilities.Memory.ProcessMemory.ReadProcessMemoryArray``1(System.IntPtr,System.IntPtr,``0[])">
             <summary>
             Reads data from an area of memory in a specified process. The entire area to be read must be accessible or the operation fails.
             </summary>
@@ -335,7 +335,7 @@
             <param name="buffer">A pointer to a buffer that receives the contents from the address space of the specified process.</param>
             <returns><see langword="true"/> if the function succeeds; otherwise, <see langword="false"/>.</returns>
         </member>
-        <member name="M:ProcessMemoryUtilities.Memory.ProcessMemory.ReadProcessMemory``1(System.IntPtr,System.IntPtr,``0[],System.IntPtr@)">
+        <member name="M:ProcessMemoryUtilities.Memory.ProcessMemory.ReadProcessMemoryArray``1(System.IntPtr,System.IntPtr,``0[],System.IntPtr@)">
             <summary>
             Reads data from an area of memory in a specified process. The entire area to be read must be accessible or the operation fails.
             </summary>
@@ -351,7 +351,7 @@
             <param name="numberOfBytesRead">A pointer to a variable that receives the number of bytes transferred into the specified buffer.</param>
             <returns><see langword="true"/> if the function succeeds; otherwise, <see langword="false"/>.</returns>
         </member>
-        <member name="M:ProcessMemoryUtilities.Memory.ProcessMemory.ReadProcessMemory``1(System.IntPtr,System.IntPtr,``0[],System.Int32,System.Int32)">
+        <member name="M:ProcessMemoryUtilities.Memory.ProcessMemory.ReadProcessMemoryArray``1(System.IntPtr,System.IntPtr,``0[],System.Int32,System.Int32)">
             <summary>
             Reads data from an area of memory in a specified process. The entire area to be read must be accessible or the operation fails.
             </summary>
@@ -368,7 +368,7 @@
             <param name="length">The length of the buffer to fill after the offset.</param>
             <returns><see langword="true"/> if the function succeeds; otherwise, <see langword="false"/>.</returns>
         </member>
-        <member name="M:ProcessMemoryUtilities.Memory.ProcessMemory.ReadProcessMemory``1(System.IntPtr,System.IntPtr,``0[],System.Int32,System.Int32,System.IntPtr@)">
+        <member name="M:ProcessMemoryUtilities.Memory.ProcessMemory.ReadProcessMemoryArray``1(System.IntPtr,System.IntPtr,``0[],System.Int32,System.Int32,System.IntPtr@)">
             <summary>
             Reads data from an area of memory in a specified process. The entire area to be read must be accessible or the operation fails.
             </summary>
@@ -520,7 +520,7 @@
             </param>
             <returns><see langword="true"/> if the function succeeds; otherwise, <see langword="false"/>.</returns>
         </member>
-        <member name="M:ProcessMemoryUtilities.Memory.ProcessMemory.WriteProcessMemory``1(System.IntPtr,System.IntPtr,``0[])">
+        <member name="M:ProcessMemoryUtilities.Memory.ProcessMemory.WriteProcessMemoryArray``1(System.IntPtr,System.IntPtr,``0[])">
             <summary>
             Writes data to an area of memory in a specified process. The entire area to be written to must be accessible or the operation fails.
             </summary>
@@ -535,7 +535,7 @@
             <param name="buffer">A pointer to the buffer that contains data to be written in the address space of the specified process.</param>
             <returns>A pointer to a variable that receives the number of bytes transferred into the specified process.</returns>
         </member>
-        <member name="M:ProcessMemoryUtilities.Memory.ProcessMemory.WriteProcessMemory``1(System.IntPtr,System.IntPtr,``0[],System.IntPtr@)">
+        <member name="M:ProcessMemoryUtilities.Memory.ProcessMemory.WriteProcessMemoryArray``1(System.IntPtr,System.IntPtr,``0[],System.IntPtr@)">
             <summary>
             Writes data to an area of memory in a specified process. The entire area to be written to must be accessible or the operation fails.
             </summary>
@@ -553,7 +553,7 @@
             </param>
             <returns><see langword="true"/> if the function succeeds; otherwise, <see langword="false"/>.</returns>
         </member>
-        <member name="M:ProcessMemoryUtilities.Memory.ProcessMemory.WriteProcessMemory``1(System.IntPtr,System.IntPtr,``0[],System.Int32,System.Int32)">
+        <member name="M:ProcessMemoryUtilities.Memory.ProcessMemory.WriteProcessMemoryArray``1(System.IntPtr,System.IntPtr,``0[],System.Int32,System.Int32)">
             <summary>
             Writes data to an area of memory in a specified process. The entire area to be written to must be accessible or the operation fails.
             </summary>
@@ -570,7 +570,7 @@
             <param name="length">The length of the the buffer to write starting from the offset.</param>
             <returns><see langword="true"/> if the function succeeds; otherwise, <see langword="false"/>.</returns>
         </member>
-        <member name="M:ProcessMemoryUtilities.Memory.ProcessMemory.WriteProcessMemory``1(System.IntPtr,System.IntPtr,``0[],System.Int32,System.Int32,System.IntPtr@)">
+        <member name="M:ProcessMemoryUtilities.Memory.ProcessMemory.WriteProcessMemoryArray``1(System.IntPtr,System.IntPtr,``0[],System.Int32,System.Int32,System.IntPtr@)">
             <summary>
             Writes data to an area of memory in a specified process. The entire area to be written to must be accessible or the operation fails.
             </summary>
