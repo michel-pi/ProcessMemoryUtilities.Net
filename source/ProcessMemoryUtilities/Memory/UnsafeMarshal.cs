@@ -130,6 +130,68 @@ namespace ProcessMemoryUtilities.Memory
         }
 
         /// <summary>
+        /// Copies the bytes from source into the destination array.
+        /// </summary>
+        /// <typeparam name="T">The type of the array.</typeparam>
+        /// <param name="source">A pointer to the bytes to copy.</param>
+        /// <param name="destination">The location to copy to.</param>
+        public static void CopyArray<T>(IntPtr source, T[] destination) where T : struct
+        {
+            IL.DeclareLocals(new LocalVar("pinnedArray", typeof(T).MakeByRefType()).Pinned());
+
+            Ldarg(nameof(destination));
+            Ldc_I4_0();
+            Ldelema(typeof(T));
+
+            Stloc("pinnedArray");
+
+            Ldloc("pinnedArray");
+            Conv_U();
+
+            Ldarg(nameof(source));
+            Conv_I();
+
+            Ldarg(nameof(destination));
+            Ldlen();
+            Sizeof(typeof(T));
+            Mul();
+            Conv_U4();
+
+            Cpblk();
+        }
+
+        /// <summary>
+        /// Copies the bytes from the source array to the destination buffer.
+        /// </summary>
+        /// <typeparam name="T">The type of the array.</typeparam>
+        /// <param name="source">The array to copy from.</param>
+        /// <param name="destination">The location to copy to.</param>
+        public static void CopyArray<T>(T[] source, IntPtr destination) where T : struct
+        {
+            IL.DeclareLocals(new LocalVar("pinnedArray", typeof(T).MakeByRefType()).Pinned());
+
+            Ldarg(nameof(source));
+            Ldc_I4_0();
+            Ldelema(typeof(T));
+
+            Stloc("pinnedArray");
+
+            Ldarg(nameof(destination));
+            Conv_I();
+
+            Ldloc("pinnedArray");
+            Conv_U();
+
+            Ldarg(nameof(source));
+            Ldlen();
+            Sizeof(typeof(T));
+            Mul();
+            Conv_U4();
+
+            Cpblk();
+        }
+
+        /// <summary>
         /// Reads a value of type <typeparamref name="T">T</typeparamref> from the given location.
         /// </summary>
         /// <typeparam name="T">The type to read.</typeparam>
@@ -177,10 +239,16 @@ namespace ProcessMemoryUtilities.Memory
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static T Read<T>(byte[] array) where T : struct
         {
+            IL.DeclareLocals(new LocalVar("pinnedArray", typeof(byte).MakeByRefType()).Pinned());
+
             Ldarg(nameof(array));
             Ldc_I4_0();
             Ldelema(typeof(byte));
-            Conv_I();
+
+            Stloc("pinnedArray");
+
+            Ldloc("pinnedArray");
+            Conv_U();
 
             Ldobj(typeof(T));
 
@@ -197,10 +265,16 @@ namespace ProcessMemoryUtilities.Memory
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static T Read<T>(byte[] array, int offset) where T : struct
         {
+            IL.DeclareLocals(new LocalVar("pinnedArray", typeof(byte).MakeByRefType()).Pinned());
+
             Ldarg(nameof(array));
             Ldarg(nameof(offset));
             Ldelema(typeof(byte));
-            Conv_I();
+
+            Stloc("pinnedArray");
+
+            Ldloc("pinnedArray");
+            Conv_U();
 
             Ldobj(typeof(T));
 
@@ -283,10 +357,16 @@ namespace ProcessMemoryUtilities.Memory
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static void Write<T>(byte[] buffer, T value) where T : struct
         {
+            IL.DeclareLocals(new LocalVar("pinnedArray", typeof(byte).MakeByRefType()).Pinned());
+
             Ldarg(nameof(buffer));
             Ldc_I4_0();
             Ldelema(typeof(byte));
-            Conv_I();
+
+            Stloc("pinnedArray");
+
+            Ldloc("pinnedArray");
+            Conv_U();
 
             Ldarg(nameof(value));
 
@@ -303,10 +383,16 @@ namespace ProcessMemoryUtilities.Memory
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static void Write<T>(byte[] buffer, int offset, T value) where T : struct
         {
+            IL.DeclareLocals(new LocalVar("pinnedArray", typeof(byte).MakeByRefType()).Pinned());
+
             Ldarg(nameof(buffer));
             Ldarg(nameof(offset));
             Ldelema(typeof(byte));
-            Conv_I();
+
+            Stloc("pinnedArray");
+
+            Ldloc("pinnedArray");
+            Conv_U();
 
             Ldarg(nameof(value));
 
@@ -321,9 +407,15 @@ namespace ProcessMemoryUtilities.Memory
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static void ZeroArray<T>(T[] array) where T : struct
         {
+            IL.DeclareLocals(new LocalVar("pinnedArray", typeof(T).MakeByRefType()).Pinned());
+
             Ldarg(nameof(array));
             Ldc_I4_0();
             Ldelema(typeof(T));
+
+            Stloc("pinnedArray");
+
+            Ldloc("pinnedArray");
             Conv_U();
 
             Ldc_I4_0();

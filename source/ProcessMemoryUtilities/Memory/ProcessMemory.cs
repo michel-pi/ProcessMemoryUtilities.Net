@@ -548,13 +548,19 @@ namespace ProcessMemoryUtilities.Memory
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static bool ReadProcessMemoryArray<T>(IntPtr handle, IntPtr baseAddress, T[] buffer) where T : struct
         {
-            Ldarg(nameof(handle));
-            Ldarg(nameof(baseAddress));
+            IL.DeclareLocals(new LocalVar("pinnedArray", typeof(T).MakeByRefType()).Pinned());
 
             Ldarg(nameof(buffer));
             Ldc_I4_0();
             Ldelema(typeof(T));
-            Conv_I();
+
+            Stloc("pinnedArray");
+
+            Ldarg(nameof(handle));
+            Ldarg(nameof(baseAddress));
+
+            Ldloc("pinnedArray");
+            Conv_U();
 
             Ldarg(nameof(buffer));
             Ldlen();
@@ -594,13 +600,19 @@ namespace ProcessMemoryUtilities.Memory
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static bool ReadProcessMemoryArray<T>(IntPtr handle, IntPtr baseAddress, T[] buffer, ref IntPtr numberOfBytesRead) where T : struct
         {
-            Ldarg(nameof(handle));
-            Ldarg(nameof(baseAddress));
+            IL.DeclareLocals(new LocalVar("pinnedArray", typeof(T).MakeByRefType()).Pinned());
 
             Ldarg(nameof(buffer));
             Ldc_I4_0();
             Ldelema(typeof(T));
-            Conv_I();
+
+            Stloc("pinnedArray");
+
+            Ldarg(nameof(handle));
+            Ldarg(nameof(baseAddress));
+
+            Ldloc("pinnedArray");
+            Conv_U();
 
             Ldarg(nameof(buffer));
             Ldlen();
@@ -640,13 +652,19 @@ namespace ProcessMemoryUtilities.Memory
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static bool ReadProcessMemoryArray<T>(IntPtr handle, IntPtr baseAddress, T[] buffer, int offset, int length) where T : struct
         {
-            Ldarg(nameof(handle));
-            Ldarg(nameof(baseAddress));
+            IL.DeclareLocals(new LocalVar("pinnedArray", typeof(T).MakeByRefType()).Pinned());
 
             Ldarg(nameof(buffer));
             Ldarg(nameof(offset));
             Ldelema(typeof(T));
-            Conv_I();
+
+            Stloc("pinnedArray");
+
+            Ldarg(nameof(handle));
+            Ldarg(nameof(baseAddress));
+
+            Ldloc("pinnedArray");
+            Conv_U();
 
             Ldarg(nameof(length));
             Sizeof(typeof(T));
@@ -686,13 +704,19 @@ namespace ProcessMemoryUtilities.Memory
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static bool ReadProcessMemoryArray<T>(IntPtr handle, IntPtr baseAddress, T[] buffer, int offset, int length, ref IntPtr numberOfBytesRead) where T : struct
         {
-            Ldarg(nameof(handle));
-            Ldarg(nameof(baseAddress));
+            IL.DeclareLocals(new LocalVar("pinnedArray", typeof(T).MakeByRefType()).Pinned());
 
             Ldarg(nameof(buffer));
             Ldarg(nameof(offset));
             Ldelema(typeof(T));
-            Conv_I();
+
+            Stloc("pinnedArray");
+
+            Ldarg(nameof(handle));
+            Ldarg(nameof(baseAddress));
+
+            Ldloc("pinnedArray");
+            Conv_U();
 
             Ldarg(nameof(length));
             Sizeof(typeof(T));
@@ -1048,13 +1072,19 @@ namespace ProcessMemoryUtilities.Memory
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static bool WriteProcessMemoryArray<T>(IntPtr handle, IntPtr baseAddress, T[] buffer) where T : struct
         {
-            Ldarg(nameof(handle));
-            Ldarg(nameof(baseAddress));
+            IL.DeclareLocals(new LocalVar("pinnedArray", typeof(T).MakeByRefType()).Pinned());
 
             Ldarg(nameof(buffer));
             Ldc_I4_0();
             Ldelema(typeof(T));
-            Conv_I();
+
+            Stloc("pinnedArray");
+
+            Ldarg(nameof(handle));
+            Ldarg(nameof(baseAddress));
+
+            Ldloc("pinnedArray");
+            Conv_U();
 
             Ldarg(nameof(buffer));
             Ldlen();
@@ -1096,13 +1126,19 @@ namespace ProcessMemoryUtilities.Memory
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static bool WriteProcessMemoryArray<T>(IntPtr handle, IntPtr baseAddress, T[] buffer, ref IntPtr numberOfBytesWritten) where T : struct
         {
-            Ldarg(nameof(handle));
-            Ldarg(nameof(baseAddress));
+            IL.DeclareLocals(new LocalVar("pinnedArray", typeof(T).MakeByRefType()).Pinned());
 
             Ldarg(nameof(buffer));
             Ldc_I4_0();
             Ldelema(typeof(T));
-            Conv_I();
+
+            Stloc("pinnedArray");
+
+            Ldarg(nameof(handle));
+            Ldarg(nameof(baseAddress));
+
+            Ldloc("pinnedArray");
+            Conv_U();
 
             Ldarg(nameof(buffer));
             Ldlen();
@@ -1142,13 +1178,19 @@ namespace ProcessMemoryUtilities.Memory
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static bool WriteProcessMemoryArray<T>(IntPtr handle, IntPtr baseAddress, T[] buffer, int offset, int length) where T : struct
         {
-            Ldarg(nameof(handle));
-            Ldarg(nameof(baseAddress));
+            IL.DeclareLocals(new LocalVar("pinnedArray", typeof(T).MakeByRefType()).Pinned());
 
             Ldarg(nameof(buffer));
             Ldarg(nameof(offset));
             Ldelema(typeof(T));
-            Conv_I();
+
+            Stloc("pinnedArray");
+
+            Ldarg(nameof(handle));
+            Ldarg(nameof(baseAddress));
+
+            Ldloc("pinnedArray");
+            Conv_U();
 
             Ldarg(nameof(length));
             Sizeof(typeof(T));
@@ -1190,13 +1232,19 @@ namespace ProcessMemoryUtilities.Memory
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static bool WriteProcessMemoryArray<T>(IntPtr handle, IntPtr baseAddress, T[] buffer, int offset, int length, ref IntPtr numberOfBytesWritten) where T : struct
         {
-            Ldarg(nameof(handle));
-            Ldarg(nameof(baseAddress));
+            IL.DeclareLocals(new LocalVar("pinnedArray", typeof(T).MakeByRefType()).Pinned());
 
             Ldarg(nameof(buffer));
             Ldarg(nameof(offset));
             Ldelema(typeof(T));
-            Conv_I();
+
+            Stloc("pinnedArray");
+
+            Ldarg(nameof(handle));
+            Ldarg(nameof(baseAddress));
+
+            Ldloc("pinnedArray");
+            Conv_U();
 
             Ldarg(nameof(length));
             Sizeof(typeof(T));

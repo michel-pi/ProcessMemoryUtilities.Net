@@ -1037,6 +1037,22 @@
             <param name="source">A pointer to the value to copy.</param>
             <param name="destination">The location to copy to.</param>
         </member>
+        <member name="M:ProcessMemoryUtilities.Memory.UnsafeMarshal.CopyArray``1(System.IntPtr,``0[])">
+            <summary>
+            Copies the bytes from source into the destination array.
+            </summary>
+            <typeparam name="T">The type of the array.</typeparam>
+            <param name="source">A pointer to the bytes to copy.</param>
+            <param name="destination">The location to copy to.</param>
+        </member>
+        <member name="M:ProcessMemoryUtilities.Memory.UnsafeMarshal.CopyArray``1(``0[],System.IntPtr)">
+            <summary>
+            Copies the bytes from the source array to the destination buffer.
+            </summary>
+            <typeparam name="T">The type of the array.</typeparam>
+            <param name="source">The array to copy from.</param>
+            <param name="destination">The location to copy to.</param>
+        </member>
         <member name="M:ProcessMemoryUtilities.Memory.UnsafeMarshal.Read``1(System.IntPtr)">
             <summary>
             Reads a value of type <typeparamref name="T">T</typeparamref> from the given location.
