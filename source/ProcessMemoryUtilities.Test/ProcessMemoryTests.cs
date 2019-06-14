@@ -201,7 +201,7 @@ namespace ProcessMemoryUtilities.Test
 
             int[] buffer = new int[4];
 
-            Assert.IsTrue(ProcessMemory.ReadProcessMemory(handle, baseAddress, buffer));
+            Assert.IsTrue(ProcessMemory.ReadProcessMemoryArray(handle, baseAddress, buffer));
 
             for (int i = 0; i < buffer.Length; i++)
             {
@@ -212,7 +212,7 @@ namespace ProcessMemoryUtilities.Test
 
             IntPtr bytesRead = IntPtr.Zero;
 
-            Assert.IsTrue(ProcessMemory.ReadProcessMemory(handle, baseAddress, buffer, ref bytesRead));
+            Assert.IsTrue(ProcessMemory.ReadProcessMemoryArray(handle, baseAddress, buffer, ref bytesRead));
             Assert.IsTrue(bytesRead == (IntPtr)(buffer.Length * 4));
 
             for (int i = 0; i < buffer.Length; i++)
@@ -308,7 +308,7 @@ namespace ProcessMemoryUtilities.Test
         public void WriteProcessMemory_T()
         {
             IntPtr baseAddress = Marshal.AllocHGlobal(4);
-            int buffer = 1337;
+            const int buffer = 1337;
             Marshal.WriteInt32(baseAddress, 0);
 
             IntPtr handle = ProcessMemory.OpenProcess(ProcessAccessFlags.All, _processId);
@@ -347,7 +347,7 @@ namespace ProcessMemoryUtilities.Test
 
             Assert.IsFalse(handle == IntPtr.Zero);
 
-            Assert.IsTrue(ProcessMemory.WriteProcessMemory(handle, baseAddress, buffer));
+            Assert.IsTrue(ProcessMemory.WriteProcessMemoryArray(handle, baseAddress, buffer));
 
             for (int i = 0; i < buffer.Length; i++)
             {
@@ -357,7 +357,7 @@ namespace ProcessMemoryUtilities.Test
 
             IntPtr bytesWritten = IntPtr.Zero;
 
-            Assert.IsTrue(ProcessMemory.WriteProcessMemory(handle, baseAddress, buffer, ref bytesWritten));
+            Assert.IsTrue(ProcessMemory.WriteProcessMemoryArray(handle, baseAddress, buffer, ref bytesWritten));
             Assert.IsTrue(bytesWritten == (IntPtr)16);
 
             for (int i = 0; i < buffer.Length; i++)
