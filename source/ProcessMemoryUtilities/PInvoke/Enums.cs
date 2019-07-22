@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace ProcessMemoryUtilities.Memory
+namespace ProcessMemoryUtilities.PInvoke
 {
     /// <summary>
     /// Defines the different types of memory allocations.

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Runtime.InteropServices;
 
-namespace ProcessMemoryUtilities.PInvoke
+namespace ProcessMemoryUtilities.Internal
 {
     [StructLayout(LayoutKind.Sequential)]
     internal struct ObjectAttributes
