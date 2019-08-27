@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace ProcessMemoryUtilities.PInvoke
+namespace ProcessMemoryUtilities.Native
 {
     /// <summary>
     /// Defines the different types of memory allocations.
@@ -8,6 +8,11 @@ namespace ProcessMemoryUtilities.PInvoke
     [Flags]
     public enum AllocationType : uint
     {
+        /// <summary>
+        /// An invalid value.
+        /// </summary>
+        Invalid = 0,
+
         /// <summary>
         /// Allocates memory charges (from the overall size of memory and the paging files on disk) for the specified reserved memory pages. The
         /// function also guarantees that when the caller later initially accesses the memory, the contents will be zero. Actual physical pages are not
@@ -38,12 +43,6 @@ namespace ProcessMemoryUtilities.PInvoke
         Reset = 0x80000,
 
         /// <summary>
-        /// Reserves an address range that can be used to map Address Windowing Extensions (AWE) pages. This value must be used with MEM_RESERVE and no
-        /// other values.
-        /// </summary>
-        Physical = 0x400000,
-
-        /// <summary>
         /// Allocates memory at the highest possible address. This can be slower than regular allocations, especially when there are many allocations.
         /// </summary>
         TopDown = 0x100000,
@@ -55,6 +54,12 @@ namespace ProcessMemoryUtilities.PInvoke
         /// enabled for the memory region until the region is freed.
         /// </summary>
         WriteWatch = 0x200000,
+
+        /// <summary>
+        /// Reserves an address range that can be used to map Address Windowing Extensions (AWE) pages. This value must be used with MEM_RESERVE and no
+        /// other values.
+        /// </summary>
+        Physical = 0x400000,
 
         /// <summary>
         /// MEM_RESET_UNDO should only be called on an address range to which MEM_RESET was successfully applied earlier. It indicates that the data in
@@ -81,6 +86,11 @@ namespace ProcessMemoryUtilities.PInvoke
     [Flags]
     public enum FreeType : uint
     {
+        /// <summary>
+        /// An invalid value.
+        /// </summary>
+        Invalid = 0,
+
         /// <summary>
         /// To coalesce two adjacent placeholders, specify MEM_RELEASE | MEM_COALESCE_PLACEHOLDERS. When you coalesce placeholders, lpAddress and
         /// dwSize must exactly match those of the placeholder.
@@ -119,32 +129,9 @@ namespace ProcessMemoryUtilities.PInvoke
     public enum MemoryProtectionFlags : uint
     {
         /// <summary>
-        /// Enables execute access to the committed region of pages. An attempt to write to the committed region results in an access violation. This
-        /// flag is not supported by the CreateFileMapping function.
+        /// An invalid value.
         /// </summary>
-        Execute = 0x10,
-
-        /// <summary>
-        /// Enables execute or read-only access to the committed region of pages. An attempt to write to the committed region results in an access
-        /// violation. Windows Server 2003 and Windows XP: This attribute is not supported by the CreateFileMapping function until Windows XP with SP2
-        /// and Windows Server 2003 with SP1.
-        /// </summary>
-        ExecuteRead = 0x20,
-
-        /// <summary>
-        /// Enables execute, read-only, or read/write access to the committed region of pages. Windows Server 2003 and Windows XP: This attribute is
-        /// not supported by the CreateFileMapping function until Windows XP with SP2 and Windows Server 2003 with SP1.
-        /// </summary>
-        ExecuteReadWrite = 0x40,
-
-        /// <summary>
-        /// Enables execute, read-only, or copy-on-write access to a mapped view of a file mapping object. An attempt to write to a committed
-        /// copy-on-write page results in a private copy of the page being made for the process. The private page is marked as PAGE_EXECUTE_READWRITE,
-        /// and the change is written to the new page. This flag is not supported by the VirtualAlloc or VirtualAllocEx functions. Windows Vista,
-        /// Windows Server 2003 and Windows XP: This attribute is not supported by the CreateFileMapping function until Windows Vista with SP1 and
-        /// Windows Server 2008.
-        /// </summary>
-        ExecuteWriteCopy = 0x80,
+        Invalid = 0,
 
         /// <summary>
         /// Disables all access to the committed region of pages. An attempt to read from, write to, or execute the committed region results in an
@@ -171,6 +158,34 @@ namespace ProcessMemoryUtilities.PInvoke
         /// violation. This flag is not supported by the VirtualAlloc or VirtualAllocEx functions.
         /// </summary>
         WriteCopy = 0x08,
+
+        /// <summary>
+        /// Enables execute access to the committed region of pages. An attempt to write to the committed region results in an access violation. This
+        /// flag is not supported by the CreateFileMapping function.
+        /// </summary>
+        Execute = 0x10,
+
+        /// <summary>
+        /// Enables execute or read-only access to the committed region of pages. An attempt to write to the committed region results in an access
+        /// violation. Windows Server 2003 and Windows XP: This attribute is not supported by the CreateFileMapping function until Windows XP with SP2
+        /// and Windows Server 2003 with SP1.
+        /// </summary>
+        ExecuteRead = 0x20,
+
+        /// <summary>
+        /// Enables execute, read-only, or read/write access to the committed region of pages. Windows Server 2003 and Windows XP: This attribute is
+        /// not supported by the CreateFileMapping function until Windows XP with SP2 and Windows Server 2003 with SP1.
+        /// </summary>
+        ExecuteReadWrite = 0x40,
+
+        /// <summary>
+        /// Enables execute, read-only, or copy-on-write access to a mapped view of a file mapping object. An attempt to write to a committed
+        /// copy-on-write page results in a private copy of the page being made for the process. The private page is marked as PAGE_EXECUTE_READWRITE,
+        /// and the change is written to the new page. This flag is not supported by the VirtualAlloc or VirtualAllocEx functions. Windows Vista,
+        /// Windows Server 2003 and Windows XP: This attribute is not supported by the CreateFileMapping function until Windows Vista with SP1 and
+        /// Windows Server 2008.
+        /// </summary>
+        ExecuteWriteCopy = 0x80,
 
         /// <summary>
         /// Pages in the region become guard pages. Any attempt to access a guard page causes the system to raise a STATUS_GUARD_PAGE_VIOLATION
@@ -202,20 +217,70 @@ namespace ProcessMemoryUtilities.PInvoke
     }
 
     /// <summary>
+    /// Contains all NTSTATUS codes that could possibly happen when using this library. These may be incomplete.
+    /// </summary>
+    public enum NtStatus : uint
+    {
+        /* Complete list https://gist.github.com/michel-pi/361f1f8bdca51235cb97aba0256d47e9#file-ntstatushelper-cs-L197
+         * Only add those that actually could happen
+        */
+
+        /// <summary>
+        /// STATUS_SUCCESS
+        /// </summary>
+        SUCCESS = 0x0,
+
+        /// <summary>
+        /// A datatype misalignment was detected in a load or store instruction.
+        /// </summary>
+        DATATYPE_MISALIGNMENT = 0x80000002u,
+
+        /// <summary>
+        /// Due to protection conflicts not all the requested bytes could be copied.
+        /// </summary>
+        PARTIAL_COPY = 0x8000000Du,
+
+        /// <summary>
+        /// The instruction at 0x%p referenced memory at 0x%p. The memory could not be %s.
+        /// </summary>
+        ACCESS_VIOLATION = 0xC0000005u,
+
+        /// <summary>
+        /// An invalid HANDLE was specified.
+        /// </summary>
+        INVALID_HANDLE = 0xC0000008u,
+
+        /// <summary>
+        /// A process has requested access to an object, but has not been granted those access rights.
+        /// </summary>
+        ACCESS_DENIED = 0xC0000022u,
+
+        /// <summary>
+        /// There is a mismatch between the type of object required by the requested operation and the type of object that is specified in the request.
+        /// </summary>
+        OBJECT_TYPE_MISMATCH = 0xC0000024u,
+
+        /// <summary>
+        /// Insufficient system resources exist to complete the API.
+        /// </summary>
+        INSUFFICIENT_RESOURCES = 0xC000009Au,
+
+        /// <summary>
+        /// An attempt was made to access an exiting process.
+        /// </summary>
+        PROCESS_IS_TERMINATING = 0xC000010Au,
+    }
+
+    /// <summary>
     /// Defines process security and access rights.
     /// </summary>
     [Flags]
     public enum ProcessAccessFlags : uint
     {
         /// <summary>
-        /// All possible access rights for a process object.Windows Server 2003 and Windows XP: The size of the PROCESS_ALL_ACCESS flag increased on
-        /// Windows Server 2008 and Windows Vista. If an application compiled for Windows Server 2008 and Windows Vista is run on Windows Server 2003
-        /// or Windows XP, the PROCESS_ALL_ACCESS flag is too large and the function specifying this flag fails with ERROR_ACCESS_DENIED. To avoid this
-        /// problem, specify the minimum set of access rights required for the operation. If PROCESS_ALL_ACCESS must be used, set _WIN32_WINNT to the
-        /// minimum operating system targeted by your application (for example, #define _WIN32_WINNT _WIN32_WINNT_WINXP). For more information, see
-        /// Using the Windows Headers.
+        /// An invalid value.
         /// </summary>
-        All = 0x001FFFFF,
+        Invalid = 0,
 
         /// <summary>
         /// Required to terminate a process using TerminateProcess.
@@ -228,6 +293,11 @@ namespace ProcessMemoryUtilities.PInvoke
         CreateThread = 0x00000002,
 
         /// <summary>
+        /// Required to allocate memory in the address space of another process.
+        /// </summary>
+        Allocate = VirtualMemoryOperation,
+
+        /// <summary>
         /// Required to perform an operation on the address space of a process (see VirtualProtectEx and WriteProcessMemory).
         /// </summary>
         VirtualMemoryOperation = 0x00000008,
@@ -235,12 +305,27 @@ namespace ProcessMemoryUtilities.PInvoke
         /// <summary>
         /// Required to read memory in a process using ReadProcessMemory.
         /// </summary>
+        Read = VirtualMemoryRead,
+
+        /// <summary>
+        /// Required to read memory in a process using ReadProcessMemory.
+        /// </summary>
         VirtualMemoryRead = 0x00000010,
+
+        /// <summary>
+        /// Combine with VirtualMemoryOperation for Write access.
+        /// </summary>
+        VirtualMemoryWrite = 0x00000020,
 
         /// <summary>
         /// Required to write to memory in a process using WriteProcessMemory.
         /// </summary>
-        VirtualMemoryWrite = 0x00000020,
+        Write = VirtualMemoryWrite | VirtualMemoryOperation,
+
+        /// <summary>
+        /// Combines read and write access of a process memory.
+        /// </summary>
+        ReadWrite = VirtualMemoryRead | VirtualMemoryWrite | VirtualMemoryOperation,
 
         /// <summary>
         /// Required to duplicate a handle using DuplicateHandle.
@@ -280,9 +365,29 @@ namespace ProcessMemoryUtilities.PInvoke
         QueryLimitedInformation = 0x00001000,
 
         /// <summary>
+        /// Required to query information from another process.
+        /// </summary>
+        Information = QueryInformation | QueryLimitedInformation,
+
+        /// <summary>
+        /// Required when using CreateRemoteThread(Ex) to execute code in a another process.
+        /// </summary>
+        Execute = VirtualMemoryRead | VirtualMemoryWrite | VirtualMemoryOperation | QueryInformation | QueryLimitedInformation | CreateThread,
+
+        /// <summary>
         /// Required to wait for the process to terminate using the wait functions.
         /// </summary>
-        Synchronize = 0x00100000
+        Synchronize = 0x00100000,
+
+        /// <summary>
+        /// All possible access rights for a process object.Windows Server 2003 and Windows XP: The size of the PROCESS_ALL_ACCESS flag increased on
+        /// Windows Server 2008 and Windows Vista. If an application compiled for Windows Server 2008 and Windows Vista is run on Windows Server 2003
+        /// or Windows XP, the PROCESS_ALL_ACCESS flag is too large and the function specifying this flag fails with ERROR_ACCESS_DENIED. To avoid this
+        /// problem, specify the minimum set of access rights required for the operation. If PROCESS_ALL_ACCESS must be used, set _WIN32_WINNT to the
+        /// minimum operating system targeted by your application (for example, #define _WIN32_WINNT _WIN32_WINNT_WINXP). For more information, see
+        /// Using the Windows Headers.
+        /// </summary>
+        All = 0x001FFFFF
     }
 
     /// <summary>
@@ -314,16 +419,16 @@ namespace ProcessMemoryUtilities.PInvoke
     public enum WaitObjectResult : uint
     {
         /// <summary>
+        /// The state of the specified object is signaled.
+        /// </summary>
+        Success = 0x0,
+
+        /// <summary>
         /// The specified object is a mutex object that was not released by the thread that owned the mutex object before the owning thread terminated.
         /// Ownership of the mutex object is granted to the calling thread and the mutex state is set to nonsignaled. If the mutex was protecting
         /// persistent state information, you should check it for consistency.
         /// </summary>
         Abandoned = 0x80,
-
-        /// <summary>
-        /// The state of the specified object is signaled.
-        /// </summary>
-        Success = 0x0,
 
         /// <summary>
         /// The time-out interval elapsed, and the object's state is nonsignaled.
