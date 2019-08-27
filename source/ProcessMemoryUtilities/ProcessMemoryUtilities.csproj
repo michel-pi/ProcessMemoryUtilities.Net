@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFrameworks>net452;net47;net48;netstandard2.0</TargetFrameworks>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Version>1.2.0</Version>
+    <Version>1.3.0</Version>
     <Authors>michel-pi</Authors>
     <PackageId>ProcessMemoryUtilities.Net</PackageId>
     <Product>ProcessMemoryUtilities.Net</Product>
@@ -11,7 +11,7 @@
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
     <PackageProjectUrl>https://github.com/michel-pi/ProcessMemoryUtilities.Net</PackageProjectUrl>
     <RepositoryUrl>https://github.com/michel-pi/ProcessMemoryUtilities.Net</RepositoryUrl>
-    <Description>This library implements performant ReadProcessMemory and WriteProcessMemory with generic type parameters using InlineIL and also offers methods required to open processes, create remote threads and marshal value types and strings.</Description>
+    <Description>This library implements performant ReadProcessMemory and WriteProcessMemory with generic type parameters using InlineIL and also offers methods required to open processes and create remote threads.</Description>
     <PackageTags>ReadProcessMemory WriteProcessMemory InlineIL ProcessMemoryUtilities ProcessMemoryWrapper michel-pi yato yatodev rpm wpm generic</PackageTags>
   </PropertyGroup>
 
