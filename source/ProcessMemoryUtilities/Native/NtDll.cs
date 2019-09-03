@@ -40,7 +40,7 @@ namespace ProcessMemoryUtilities.Native
         }
 
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        private static int SizeOfHelper<T>() where T : struct
+        private static int SizeOfHelper<T>() where T : unmanaged
         {
             Sizeof(typeof(T));
             return IL.Return<int>();

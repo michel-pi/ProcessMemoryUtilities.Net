@@ -125,7 +125,7 @@ namespace ProcessMemoryUtilities.Native
         public static uint NtReadVirtualMemory<T>(
             IntPtr handle,
             IntPtr baseAddress,
-            ref T buffer) where T : struct
+            ref T buffer) where T : unmanaged
         {
             IL.DeclareLocals(
                 new LocalVar("pinnedBuffer", typeof(T).MakeByRefType()).Pinned());
@@ -171,7 +171,7 @@ namespace ProcessMemoryUtilities.Native
             IntPtr handle,
             IntPtr baseAddress,
             ref T buffer,
-            out IntPtr numberOfBytesRead) where T : struct
+            out IntPtr numberOfBytesRead) where T : unmanaged
         {
             IL.DeclareLocals(
                 new LocalVar("result", typeof(uint)),
@@ -233,7 +233,7 @@ namespace ProcessMemoryUtilities.Native
             IntPtr baseAddress,
             T[] buffer,
             int offset,
-            int length) where T : struct
+            int length) where T : unmanaged
         {
             IL.DeclareLocals(
                 new LocalVar("pinnedBuffer", typeof(T).MakeByRefType()).Pinned());
@@ -287,7 +287,7 @@ namespace ProcessMemoryUtilities.Native
             T[] buffer,
             int offset,
             int length,
-            out IntPtr numberOfBytesRead) where T : struct
+            out IntPtr numberOfBytesRead) where T : unmanaged
         {
             IL.DeclareLocals(
                 new LocalVar("result", typeof(uint)),
@@ -351,7 +351,7 @@ namespace ProcessMemoryUtilities.Native
             IntPtr handle,
             IntPtr baseAddress,
             T[] buffer,
-            int offset) where T : struct
+            int offset) where T : unmanaged
             => NtReadVirtualMemoryArray(handle, baseAddress, buffer, offset, buffer.Length - offset);
 
         /// <summary>
@@ -369,7 +369,7 @@ namespace ProcessMemoryUtilities.Native
             IntPtr baseAddress,
             T[] buffer,
             int offset,
-            out IntPtr numberOfBytesRead) where T : struct
+            out IntPtr numberOfBytesRead) where T : unmanaged
             => NtReadVirtualMemoryArray(handle, baseAddress, buffer, offset, buffer.Length - offset, out numberOfBytesRead);
 
         /// <summary>
@@ -383,7 +383,7 @@ namespace ProcessMemoryUtilities.Native
         public static uint NtReadVirtualMemoryArray<T>(
             IntPtr handle,
             IntPtr baseAddress,
-            T[] buffer) where T : struct
+            T[] buffer) where T : unmanaged
             => NtReadVirtualMemoryArray(handle, baseAddress, buffer, 0, buffer.Length);
 
         /// <summary>
@@ -399,7 +399,7 @@ namespace ProcessMemoryUtilities.Native
             IntPtr handle,
             IntPtr baseAddress,
             T[] buffer,
-            out IntPtr numberOfBytesRead) where T : struct
+            out IntPtr numberOfBytesRead) where T : unmanaged
             => NtReadVirtualMemoryArray(handle, baseAddress, buffer, 0, buffer.Length, out numberOfBytesRead);
 
         /// <summary>
@@ -417,7 +417,7 @@ namespace ProcessMemoryUtilities.Native
             IntPtr baseAddress,
             ref T buffer,
             int offset,
-            int length) where T : struct
+            int length) where T : unmanaged
         {
             IL.DeclareLocals(
                 new LocalVar("pinnedBuffer", typeof(T).MakeByRefType()).Pinned(),
@@ -473,7 +473,7 @@ namespace ProcessMemoryUtilities.Native
             ref T buffer,
             int offset,
             int length,
-            out IntPtr numberOfBytesRead) where T : struct
+            out IntPtr numberOfBytesRead) where T : unmanaged
         {
             IL.DeclareLocals(
                 new LocalVar("result", typeof(uint)),
@@ -539,7 +539,7 @@ namespace ProcessMemoryUtilities.Native
             IntPtr handle,
             IntPtr baseAddress,
             ref T buffer,
-            int offset) where T : struct
+            int offset) where T : unmanaged
             => NtReadVirtualMemoryPartial(handle, baseAddress, ref buffer, offset, SizeOfHelper<T>() - offset);
 
         /// <summary>
@@ -557,7 +557,7 @@ namespace ProcessMemoryUtilities.Native
             IntPtr baseAddress,
             ref T buffer,
             int offset,
-            out IntPtr numberOfBytesRead) where T : struct
+            out IntPtr numberOfBytesRead) where T : unmanaged
             => NtReadVirtualMemoryPartial(handle, baseAddress, ref buffer, offset, SizeOfHelper<T>() - offset, out numberOfBytesRead);
     }
 }
