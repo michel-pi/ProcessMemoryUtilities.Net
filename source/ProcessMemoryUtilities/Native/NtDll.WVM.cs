@@ -540,7 +540,7 @@ namespace ProcessMemoryUtilities.Native
             IntPtr baseAddress,
             ref T buffer,
             int offset) where T : unmanaged
-            => NtWriteVirtualMemoryPartial(handle, baseAddress, ref buffer, offset, SizeOfHelper<T>() - offset);
+            => NtWriteVirtualMemoryPartial(handle, baseAddress, ref buffer, offset, InternalHelper.SizeOf<T>() - offset);
 
         /// <summary>
         /// WriteProcessMemory copies the data from the specified buffer in the current process to the address range of the specified process. Any process that has a handle with PROCESS_VM_WRITE and PROCESS_VM_OPERATION access to the process to be written to can call the function. Typically but not always, the process with address space that is being written to is being debugged. The entire area to be written to must be accessible, and if it is not accessible, the function fails.
@@ -558,6 +558,6 @@ namespace ProcessMemoryUtilities.Native
             ref T buffer,
             int offset,
             out IntPtr numberOfBytesWritten) where T : unmanaged
-            => NtWriteVirtualMemoryPartial(handle, baseAddress, ref buffer, offset, SizeOfHelper<T>() - offset, out numberOfBytesWritten);
+            => NtWriteVirtualMemoryPartial(handle, baseAddress, ref buffer, offset, InternalHelper.SizeOf<T>() - offset, out numberOfBytesWritten);
     }
 }

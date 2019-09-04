@@ -39,13 +39,6 @@ namespace ProcessMemoryUtilities.Native
             _rtlNtStatusToDosError = DynamicImport.ImportMethod(lib, "RtlNtStatusToDosError");
         }
 
-        [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        private static int SizeOfHelper<T>() where T : unmanaged
-        {
-            Sizeof(typeof(T));
-            return IL.Return<int>();
-        }
-
         /// <summary>
         /// Converts the specified NTSTATUS code to its equivalent system error code.
         /// </summary>

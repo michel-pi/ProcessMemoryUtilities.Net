@@ -540,7 +540,7 @@ namespace ProcessMemoryUtilities.Native
             IntPtr baseAddress,
             ref T buffer,
             int offset) where T : unmanaged
-            => NtReadVirtualMemoryPartial(handle, baseAddress, ref buffer, offset, SizeOfHelper<T>() - offset);
+            => NtReadVirtualMemoryPartial(handle, baseAddress, ref buffer, offset, InternalHelper.SizeOf<T>() - offset);
 
         /// <summary>
         /// ReadProcessMemory copies the data in the specified address range from the address space of the specified process into the specified buffer of the current process. Any process that has a handle with PROCESS_VM_READ access can call the function. The entire area to be read must be accessible, and if it is not accessible, the function fails.
@@ -558,6 +558,6 @@ namespace ProcessMemoryUtilities.Native
             ref T buffer,
             int offset,
             out IntPtr numberOfBytesRead) where T : unmanaged
-            => NtReadVirtualMemoryPartial(handle, baseAddress, ref buffer, offset, SizeOfHelper<T>() - offset, out numberOfBytesRead);
+            => NtReadVirtualMemoryPartial(handle, baseAddress, ref buffer, offset, InternalHelper.SizeOf<T>() - offset, out numberOfBytesRead);
     }
 }
