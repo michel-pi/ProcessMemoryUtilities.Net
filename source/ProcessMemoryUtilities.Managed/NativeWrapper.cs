@@ -12,8 +12,8 @@ namespace ProcessMemoryUtilities.Managed
     [SuppressUnmanagedCodeSecurity]
     public static partial class NativeWrapper
     {
-        [ThreadStatic] private static uint _lastError;
         private static volatile bool _captureErrors = true;
+        [ThreadStatic] private static uint _lastError;
 
         /// <summary>
         /// Determines whether to capture the "LastError".
