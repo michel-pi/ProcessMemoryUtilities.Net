@@ -353,6 +353,7 @@ namespace ProcessMemoryUtilities.Managed
         /// <param name="baseAddress">A pointer to the base address in the specified process to which data is written. Before data transfer occurs, the system verifies that all data in the base address and memory of the specified size is accessible for write access, and if it is not accessible, the function fails.</param>
         /// <param name="buffer">A pointer to the buffer that contains data to be written in the address space of the specified process.</param>
         /// <param name="offset">A byte offset from inside the array to copy from.</param>
+        /// <param name="length">The number of bytes to copy to the buffer.</param>
         /// <returns>Returns true when the function succeeds; otherwise false. To get extended error information, call GetLastError.</returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static bool WriteProcessMemoryPartial<T>(
@@ -388,6 +389,7 @@ namespace ProcessMemoryUtilities.Managed
         /// <param name="baseAddress">A pointer to the base address in the specified process to which data is written. Before data transfer occurs, the system verifies that all data in the base address and memory of the specified size is accessible for write access, and if it is not accessible, the function fails.</param>
         /// <param name="buffer">A pointer to the buffer that contains data to be written in the address space of the specified process.</param>
         /// <param name="offset">A byte offset from inside the array to copy from.</param>
+        /// <param name="length">The number of bytes to copy to the buffer.</param>
         /// <param name="numberOfBytesWritten">A pointer to a variable that receives the number of bytes transferred into the specified buffer.</param>
         /// <returns>Returns true when the function succeeds; otherwise false. To get extended error information, call GetLastError.</returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
