@@ -9,6 +9,14 @@ namespace ProcessMemoryUtilities.Managed
 {
     public static partial class NativeWrapper
     {
+        /// <summary>
+        /// WriteProcessMemory copies the data from the specified buffer in the current process to the address range of the specified process. Any process that has a handle with PROCESS_VM_WRITE and PROCESS_VM_OPERATION access to the process to be written to can call the function. Typically but not always, the process with address space that is being written to is being debugged. The entire area to be written to must be accessible, and if it is not accessible, the function fails.
+        /// </summary>
+        /// <param name="handle">A handle to the process memory to be modified. The handle must have PROCESS_VM_WRITE and PROCESS_VM_OPERATION access to the process.</param>
+        /// <param name="baseAddress">A pointer to the base address in the specified process to which data is written. Before data transfer occurs, the system verifies that all data in the base address and memory of the specified size is accessible for write access, and if it is not accessible, the function fails.</param>
+        /// <param name="buffer">A pointer to the buffer that contains data to be written in the address space of the specified process.</param>
+        /// <param name="size">The number of bytes to be written to the specified process.</param>
+        /// <returns>Returns true when the function succeeds; otherwise false. To get extended error information, call GetLastError.</returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static bool WriteProcessMemory(
             IntPtr handle,
@@ -17,6 +25,15 @@ namespace ProcessMemoryUtilities.Managed
             IntPtr size)
             => WriteProcessMemory(handle, baseAddress, buffer, size, IntPtr.Zero);
 
+        /// <summary>
+        /// WriteProcessMemory copies the data from the specified buffer in the current process to the address range of the specified process. Any process that has a handle with PROCESS_VM_WRITE and PROCESS_VM_OPERATION access to the process to be written to can call the function. Typically but not always, the process with address space that is being written to is being debugged. The entire area to be written to must be accessible, and if it is not accessible, the function fails.
+        /// </summary>
+        /// <param name="handle">A handle to the process memory to be modified. The handle must have PROCESS_VM_WRITE and PROCESS_VM_OPERATION access to the process.</param>
+        /// <param name="baseAddress">A pointer to the base address in the specified process to which data is written. Before data transfer occurs, the system verifies that all data in the base address and memory of the specified size is accessible for write access, and if it is not accessible, the function fails.</param>
+        /// <param name="buffer">A pointer to the buffer that contains data to be written in the address space of the specified process.</param>
+        /// <param name="size">The number of bytes to be written to the specified process.</param>
+        /// <param name="numberOfBytesWritten">A pointer to a variable that receives the number of bytes transferred into the specified process. This parameter is optional. If lpNumberOfBytesWritten is IntPtr.Zero, the parameter is ignored.</param>
+        /// <returns>Returns true when the function succeeds; otherwise false. To get extended error information, call GetLastError.</returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static bool WriteProcessMemory(
             IntPtr handle,
@@ -37,6 +54,15 @@ namespace ProcessMemoryUtilities.Managed
             return result;
         }
 
+        /// <summary>
+        /// WriteProcessMemory copies the data from the specified buffer in the current process to the address range of the specified process. Any process that has a handle with PROCESS_VM_WRITE and PROCESS_VM_OPERATION access to the process to be written to can call the function. Typically but not always, the process with address space that is being written to is being debugged. The entire area to be written to must be accessible, and if it is not accessible, the function fails.
+        /// </summary>
+        /// <param name="handle">A handle to the process memory to be modified. The handle must have PROCESS_VM_WRITE and PROCESS_VM_OPERATION access to the process.</param>
+        /// <param name="baseAddress">A pointer to the base address in the specified process to which data is written. Before data transfer occurs, the system verifies that all data in the base address and memory of the specified size is accessible for write access, and if it is not accessible, the function fails.</param>
+        /// <param name="buffer">A pointer to the buffer that contains data to be written in the address space of the specified process.</param>
+        /// <param name="size">The number of bytes to be written to the specified process.</param>
+        /// <param name="numberOfBytesWritten">A pointer to a variable that receives the number of bytes transferred into the specified process. This parameter is optional. If lpNumberOfBytesWritten is IntPtr.Zero, the parameter is ignored.</param>
+        /// <returns>Returns true when the function succeeds; otherwise false. To get extended error information, call GetLastError.</returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static bool WriteProcessMemory(
             IntPtr handle,
@@ -107,6 +133,13 @@ namespace ProcessMemoryUtilities.Managed
             return false;
         }
 
+        /// <summary>
+        /// WriteProcessMemory copies the data from the specified buffer in the current process to the address range of the specified process. Any process that has a handle with PROCESS_VM_WRITE and PROCESS_VM_OPERATION access to the process to be written to can call the function. Typically but not always, the process with address space that is being written to is being debugged. The entire area to be written to must be accessible, and if it is not accessible, the function fails.
+        /// </summary>
+        /// <param name="handle">A handle to the process memory to be modified. The handle must have PROCESS_VM_WRITE and PROCESS_VM_OPERATION access to the process.</param>
+        /// <param name="baseAddress">A pointer to the base address in the specified process to which data is written. Before data transfer occurs, the system verifies that all data in the base address and memory of the specified size is accessible for write access, and if it is not accessible, the function fails.</param>
+        /// <param name="buffer">A pointer to the buffer that contains data to be written in the address space of the specified process.</param>
+        /// <returns>Returns true when the function succeeds; otherwise false. To get extended error information, call GetLastError.</returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static bool WriteProcessMemory<T>(
             IntPtr handle,
@@ -114,6 +147,14 @@ namespace ProcessMemoryUtilities.Managed
             ref T buffer) where T : unmanaged
             => WriteProcessMemory(handle, baseAddress, ref buffer, out var _);
 
+        /// <summary>
+        /// WriteProcessMemory copies the data from the specified buffer in the current process to the address range of the specified process. Any process that has a handle with PROCESS_VM_WRITE and PROCESS_VM_OPERATION access to the process to be written to can call the function. Typically but not always, the process with address space that is being written to is being debugged. The entire area to be written to must be accessible, and if it is not accessible, the function fails.
+        /// </summary>
+        /// <param name="handle">A handle to the process memory to be modified. The handle must have PROCESS_VM_WRITE and PROCESS_VM_OPERATION access to the process.</param>
+        /// <param name="baseAddress">A pointer to the base address in the specified process to which data is written. Before data transfer occurs, the system verifies that all data in the base address and memory of the specified size is accessible for write access, and if it is not accessible, the function fails.</param>
+        /// <param name="buffer">A pointer to the buffer that contains data to be written in the address space of the specified process.</param>
+        /// <param name="numberOfBytesWritten">A pointer to a variable that receives the number of bytes transferred into the specified process. This parameter is optional. If lpNumberOfBytesWritten is IntPtr.Zero, the parameter is ignored.</param>
+        /// <returns>Returns true when the function succeeds; otherwise false. To get extended error information, call GetLastError.</returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static bool WriteProcessMemory<T>(
             IntPtr handle,
@@ -154,6 +195,13 @@ namespace ProcessMemoryUtilities.Managed
             return result;
         }
 
+        /// <summary>
+        /// WriteProcessMemory copies the data from the specified buffer in the current process to the address range of the specified process. Any process that has a handle with PROCESS_VM_WRITE and PROCESS_VM_OPERATION access to the process to be written to can call the function. Typically but not always, the process with address space that is being written to is being debugged. The entire area to be written to must be accessible, and if it is not accessible, the function fails.
+        /// </summary>
+        /// <param name="handle">A handle to the process memory to be modified. The handle must have PROCESS_VM_WRITE and PROCESS_VM_OPERATION access to the process.</param>
+        /// <param name="baseAddress">A pointer to the base address in the specified process to which data is written. Before data transfer occurs, the system verifies that all data in the base address and memory of the specified size is accessible for write access, and if it is not accessible, the function fails.</param>
+        /// <param name="buffer">A pointer to the buffer that contains data to be written in the address space of the specified process.</param>
+        /// <returns>Returns true when the function succeeds; otherwise false. To get extended error information, call GetLastError.</returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static bool WriteProcessMemoryArray<T>(
             IntPtr handle,
@@ -161,6 +209,14 @@ namespace ProcessMemoryUtilities.Managed
             T[] buffer) where T : unmanaged
             => WriteProcessMemoryArray(handle, baseAddress, buffer, 0, buffer.Length, out var _);
 
+        /// <summary>
+        /// WriteProcessMemory copies the data from the specified buffer in the current process to the address range of the specified process. Any process that has a handle with PROCESS_VM_WRITE and PROCESS_VM_OPERATION access to the process to be written to can call the function. Typically but not always, the process with address space that is being written to is being debugged. The entire area to be written to must be accessible, and if it is not accessible, the function fails.
+        /// </summary>
+        /// <param name="handle">A handle to the process memory to be modified. The handle must have PROCESS_VM_WRITE and PROCESS_VM_OPERATION access to the process.</param>
+        /// <param name="baseAddress">A pointer to the base address in the specified process to which data is written. Before data transfer occurs, the system verifies that all data in the base address and memory of the specified size is accessible for write access, and if it is not accessible, the function fails.</param>
+        /// <param name="buffer">A pointer to the buffer that contains data to be written in the address space of the specified process.</param>
+        /// <param name="offset">A byte offset from inside the array to copy from.</param>
+        /// <returns>Returns true when the function succeeds; otherwise false. To get extended error information, call GetLastError.</returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static bool WriteProcessMemoryArray<T>(
             IntPtr handle,
@@ -169,6 +225,14 @@ namespace ProcessMemoryUtilities.Managed
             int offset) where T : unmanaged
             => WriteProcessMemoryArray(handle, baseAddress, buffer, offset, buffer.Length - offset, out var _);
 
+        /// <summary>
+        /// WriteProcessMemory copies the data from the specified buffer in the current process to the address range of the specified process. Any process that has a handle with PROCESS_VM_WRITE and PROCESS_VM_OPERATION access to the process to be written to can call the function. Typically but not always, the process with address space that is being written to is being debugged. The entire area to be written to must be accessible, and if it is not accessible, the function fails.
+        /// </summary>
+        /// <param name="handle">A handle to the process memory to be modified. The handle must have PROCESS_VM_WRITE and PROCESS_VM_OPERATION access to the process.</param>
+        /// <param name="baseAddress">A pointer to the base address in the specified process to which data is written. Before data transfer occurs, the system verifies that all data in the base address and memory of the specified size is accessible for write access, and if it is not accessible, the function fails.</param>
+        /// <param name="buffer">A pointer to the buffer that contains data to be written in the address space of the specified process.</param>
+        /// <param name="numberOfBytesWritten">A pointer to a variable that receives the number of bytes transferred into the specified process. This parameter is optional. If lpNumberOfBytesWritten is IntPtr.Zero, the parameter is ignored.</param>
+        /// <returns>Returns true when the function succeeds; otherwise false. To get extended error information, call GetLastError.</returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static bool WriteProcessMemoryArray<T>(
             IntPtr handle,
@@ -177,6 +241,15 @@ namespace ProcessMemoryUtilities.Managed
             out IntPtr numberOfBytesWritten) where T : unmanaged
             => WriteProcessMemoryArray(handle, baseAddress, buffer, 0, buffer.Length, out numberOfBytesWritten);
 
+        /// <summary>
+        /// WriteProcessMemory copies the data from the specified buffer in the current process to the address range of the specified process. Any process that has a handle with PROCESS_VM_WRITE and PROCESS_VM_OPERATION access to the process to be written to can call the function. Typically but not always, the process with address space that is being written to is being debugged. The entire area to be written to must be accessible, and if it is not accessible, the function fails.
+        /// </summary>
+        /// <param name="handle">A handle to the process memory to be modified. The handle must have PROCESS_VM_WRITE and PROCESS_VM_OPERATION access to the process.</param>
+        /// <param name="baseAddress">A pointer to the base address in the specified process to which data is written. Before data transfer occurs, the system verifies that all data in the base address and memory of the specified size is accessible for write access, and if it is not accessible, the function fails.</param>
+        /// <param name="buffer">A pointer to the buffer that contains data to be written in the address space of the specified process.</param>
+        /// <param name="offset">A byte offset from inside the array to copy from.</param>
+        /// <param name="length">The number of bytes to copy from the array.</param>
+        /// <returns>Returns true when the function succeeds; otherwise false. To get extended error information, call GetLastError.</returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static bool WriteProcessMemoryArray<T>(
             IntPtr handle,
@@ -186,6 +259,15 @@ namespace ProcessMemoryUtilities.Managed
             int length) where T : unmanaged
             => WriteProcessMemoryArray(handle, baseAddress, buffer, offset, length, out var _);
 
+        /// <summary>
+        /// WriteProcessMemory copies the data from the specified buffer in the current process to the address range of the specified process. Any process that has a handle with PROCESS_VM_WRITE and PROCESS_VM_OPERATION access to the process to be written to can call the function. Typically but not always, the process with address space that is being written to is being debugged. The entire area to be written to must be accessible, and if it is not accessible, the function fails.
+        /// </summary>
+        /// <param name="handle">A handle to the process memory to be modified. The handle must have PROCESS_VM_WRITE and PROCESS_VM_OPERATION access to the process.</param>
+        /// <param name="baseAddress">A pointer to the base address in the specified process to which data is written. Before data transfer occurs, the system verifies that all data in the base address and memory of the specified size is accessible for write access, and if it is not accessible, the function fails.</param>
+        /// <param name="buffer">A pointer to the buffer that contains data to be written in the address space of the specified process.</param>
+        /// <param name="offset">A byte offset from inside the array to copy from.</param>
+        /// <param name="numberOfBytesWritten">A pointer to a variable that receives the number of bytes transferred into the specified process. This parameter is optional. If lpNumberOfBytesWritten is IntPtr.Zero, the parameter is ignored.</param>
+        /// <returns>Returns true when the function succeeds; otherwise false. To get extended error information, call GetLastError.</returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static bool WriteProcessMemoryArray<T>(
             IntPtr handle,
@@ -195,6 +277,16 @@ namespace ProcessMemoryUtilities.Managed
             out IntPtr numberOfBytesWritten) where T : unmanaged
             => WriteProcessMemoryArray(handle, baseAddress, buffer, offset, buffer.Length - offset, out numberOfBytesWritten);
 
+        /// <summary>
+        /// WriteProcessMemory copies the data from the specified buffer in the current process to the address range of the specified process. Any process that has a handle with PROCESS_VM_WRITE and PROCESS_VM_OPERATION access to the process to be written to can call the function. Typically but not always, the process with address space that is being written to is being debugged. The entire area to be written to must be accessible, and if it is not accessible, the function fails.
+        /// </summary>
+        /// <param name="handle">A handle to the process memory to be modified. The handle must have PROCESS_VM_WRITE and PROCESS_VM_OPERATION access to the process.</param>
+        /// <param name="baseAddress">A pointer to the base address in the specified process to which data is written. Before data transfer occurs, the system verifies that all data in the base address and memory of the specified size is accessible for write access, and if it is not accessible, the function fails.</param>
+        /// <param name="buffer">A pointer to the buffer that contains data to be written in the address space of the specified process.</param>
+        /// <param name="offset">A byte offset from inside the array to copy from.</param>
+        /// <param name="length">The number of bytes to copy from the array.</param>
+        /// <param name="numberOfBytesWritten">A pointer to a variable that receives the number of bytes transferred into the specified process. This parameter is optional. If lpNumberOfBytesWritten is IntPtr.Zero, the parameter is ignored.</param>
+        /// <returns>Returns true when the function succeeds; otherwise false. To get extended error information, call GetLastError.</returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static bool WriteProcessMemoryArray<T>(
             IntPtr handle,
@@ -238,6 +330,14 @@ namespace ProcessMemoryUtilities.Managed
             return result;
         }
 
+        /// <summary>
+        /// WriteProcessMemory copies the data from the specified buffer in the current process to the address range of the specified process. Any process that has a handle with PROCESS_VM_WRITE and PROCESS_VM_OPERATION access to the process to be written to can call the function. Typically but not always, the process with address space that is being written to is being debugged. The entire area to be written to must be accessible, and if it is not accessible, the function fails.
+        /// </summary>
+        /// <param name="handle">A handle to the process memory to be modified. The handle must have PROCESS_VM_WRITE and PROCESS_VM_OPERATION access to the process.</param>
+        /// <param name="baseAddress">A pointer to the base address in the specified process to which data is written. Before data transfer occurs, the system verifies that all data in the base address and memory of the specified size is accessible for write access, and if it is not accessible, the function fails.</param>
+        /// <param name="buffer">A pointer to the buffer that contains data to be written in the address space of the specified process.</param>
+        /// <param name="offset">A byte offset from inside the array to copy from.</param>
+        /// <returns>Returns true when the function succeeds; otherwise false. To get extended error information, call GetLastError.</returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static bool WriteProcessMemoryPartial<T>(
             IntPtr handle,
@@ -246,6 +346,14 @@ namespace ProcessMemoryUtilities.Managed
             int offset) where T : unmanaged
             => WriteProcessMemoryPartial(handle, baseAddress, ref buffer, offset, out var _);
 
+        /// <summary>
+        /// WriteProcessMemory copies the data from the specified buffer in the current process to the address range of the specified process. Any process that has a handle with PROCESS_VM_WRITE and PROCESS_VM_OPERATION access to the process to be written to can call the function. Typically but not always, the process with address space that is being written to is being debugged. The entire area to be written to must be accessible, and if it is not accessible, the function fails.
+        /// </summary>
+        /// <param name="handle">A handle to the process memory to be modified. The handle must have PROCESS_VM_WRITE and PROCESS_VM_OPERATION access to the process.</param>
+        /// <param name="baseAddress">A pointer to the base address in the specified process to which data is written. Before data transfer occurs, the system verifies that all data in the base address and memory of the specified size is accessible for write access, and if it is not accessible, the function fails.</param>
+        /// <param name="buffer">A pointer to the buffer that contains data to be written in the address space of the specified process.</param>
+        /// <param name="offset">A byte offset from inside the array to copy from.</param>
+        /// <returns>Returns true when the function succeeds; otherwise false. To get extended error information, call GetLastError.</returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static bool WriteProcessMemoryPartial<T>(
             IntPtr handle,
@@ -255,6 +363,15 @@ namespace ProcessMemoryUtilities.Managed
             int length) where T : unmanaged
             => WriteProcessMemoryPartial(handle, baseAddress, ref buffer, offset, length, out var _);
 
+        /// <summary>
+        /// WriteProcessMemory copies the data from the specified buffer in the current process to the address range of the specified process. Any process that has a handle with PROCESS_VM_WRITE and PROCESS_VM_OPERATION access to the process to be written to can call the function. Typically but not always, the process with address space that is being written to is being debugged. The entire area to be written to must be accessible, and if it is not accessible, the function fails.
+        /// </summary>
+        /// <param name="handle">A handle to the process memory to be modified. The handle must have PROCESS_VM_WRITE and PROCESS_VM_OPERATION access to the process.</param>
+        /// <param name="baseAddress">A pointer to the base address in the specified process to which data is written. Before data transfer occurs, the system verifies that all data in the base address and memory of the specified size is accessible for write access, and if it is not accessible, the function fails.</param>
+        /// <param name="buffer">A pointer to the buffer that contains data to be written in the address space of the specified process.</param>
+        /// <param name="offset">A byte offset from inside the array to copy from.</param>
+        /// <param name="numberOfBytesWritten">A pointer to a variable that receives the number of bytes transferred into the specified buffer.</param>
+        /// <returns>Returns true when the function succeeds; otherwise false. To get extended error information, call GetLastError.</returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static bool WriteProcessMemoryPartial<T>(
             IntPtr handle,
@@ -264,6 +381,15 @@ namespace ProcessMemoryUtilities.Managed
             out IntPtr numberOfBytesWritten) where T : unmanaged
             => WriteProcessMemoryPartial(handle, baseAddress, ref buffer, offset, InternalHelper.SizeOf<T>() - offset, out numberOfBytesWritten);
 
+        /// <summary>
+        /// WriteProcessMemory copies the data from the specified buffer in the current process to the address range of the specified process. Any process that has a handle with PROCESS_VM_WRITE and PROCESS_VM_OPERATION access to the process to be written to can call the function. Typically but not always, the process with address space that is being written to is being debugged. The entire area to be written to must be accessible, and if it is not accessible, the function fails.
+        /// </summary>
+        /// <param name="handle">A handle to the process memory to be modified. The handle must have PROCESS_VM_WRITE and PROCESS_VM_OPERATION access to the process.</param>
+        /// <param name="baseAddress">A pointer to the base address in the specified process to which data is written. Before data transfer occurs, the system verifies that all data in the base address and memory of the specified size is accessible for write access, and if it is not accessible, the function fails.</param>
+        /// <param name="buffer">A pointer to the buffer that contains data to be written in the address space of the specified process.</param>
+        /// <param name="offset">A byte offset from inside the array to copy from.</param>
+        /// <param name="numberOfBytesWritten">A pointer to a variable that receives the number of bytes transferred into the specified buffer.</param>
+        /// <returns>Returns true when the function succeeds; otherwise false. To get extended error information, call GetLastError.</returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static bool WriteProcessMemoryPartial<T>(
             IntPtr handle,

@@ -9,6 +9,14 @@ namespace ProcessMemoryUtilities.Managed
 {
     public static partial class NativeWrapper
     {
+        /// <summary>
+        /// ReadProcessMemory copies the data in the specified address range from the address space of the specified process into the specified buffer of the current process. Any process that has a handle with PROCESS_VM_READ access can call the function. The entire area to be read must be accessible, and if it is not accessible, the function fails.
+        /// </summary>
+        /// <param name="handle">A handle to the process with memory that is being read. The handle must have PROCESS_VM_READ access to the process.</param>
+        /// <param name="baseAddress">A pointer to the base address in the specified process from which to read. Before any data transfer occurs, the system verifies that all data in the base address and memory of the specified size is accessible for read access, and if it is not accessible the function fails.</param>
+        /// <param name="buffer">A pointer to a buffer that receives the contents from the address space of the specified process.</param>
+        /// <param name="size">The number of bytes to be read from the specified process.</param>
+        /// <returns>Returns true when the function succeeds; otherwise false. To get extended error information, call GetLastError.</returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static bool ReadProcessMemory(
             IntPtr handle,
@@ -17,6 +25,15 @@ namespace ProcessMemoryUtilities.Managed
             IntPtr size)
             => ReadProcessMemory(handle, baseAddress, buffer, size, IntPtr.Zero);
 
+        /// <summary>
+        /// ReadProcessMemory copies the data in the specified address range from the address space of the specified process into the specified buffer of the current process. Any process that has a handle with PROCESS_VM_READ access can call the function. The entire area to be read must be accessible, and if it is not accessible, the function fails.
+        /// </summary>
+        /// <param name="handle">A handle to the process with memory that is being read. The handle must have PROCESS_VM_READ access to the process.</param>
+        /// <param name="baseAddress">A pointer to the base address in the specified process from which to read. Before any data transfer occurs, the system verifies that all data in the base address and memory of the specified size is accessible for read access, and if it is not accessible the function fails.</param>
+        /// <param name="buffer">A pointer to a buffer that receives the contents from the address space of the specified process.</param>
+        /// <param name="size">The number of bytes to be read from the specified process.</param>
+        /// <param name="numberOfBytesRead">A pointer to a variable that receives the number of bytes transferred into the specified buffer.</param>
+        /// <returns>Returns true when the function succeeds; otherwise false. To get extended error information, call GetLastError.</returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static bool ReadProcessMemory(
             IntPtr handle,
@@ -37,6 +54,15 @@ namespace ProcessMemoryUtilities.Managed
             return result;
         }
 
+        /// <summary>
+        /// ReadProcessMemory copies the data in the specified address range from the address space of the specified process into the specified buffer of the current process. Any process that has a handle with PROCESS_VM_READ access can call the function. The entire area to be read must be accessible, and if it is not accessible, the function fails.
+        /// </summary>
+        /// <param name="handle">A handle to the process with memory that is being read. The handle must have PROCESS_VM_READ access to the process.</param>
+        /// <param name="baseAddress">A pointer to the base address in the specified process from which to read. Before any data transfer occurs, the system verifies that all data in the base address and memory of the specified size is accessible for read access, and if it is not accessible the function fails.</param>
+        /// <param name="buffer">A pointer to a buffer that receives the contents from the address space of the specified process.</param>
+        /// <param name="size">The number of bytes to be read from the specified process.</param>
+        /// <param name="numberOfBytesRead">A pointer to a variable that receives the number of bytes transferred into the specified buffer. If lpNumberOfBytesRead is IntPtr.Zero, the parameter is ignored.</param>
+        /// <returns>Returns true when the function succeeds; otherwise false. To get extended error information, call GetLastError.</returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static bool ReadProcessMemory(
             IntPtr handle,
@@ -107,6 +133,13 @@ namespace ProcessMemoryUtilities.Managed
             return false;
         }
 
+        /// <summary>
+        /// ReadProcessMemory copies the data in the specified address range from the address space of the specified process into the specified buffer of the current process. Any process that has a handle with PROCESS_VM_READ access can call the function. The entire area to be read must be accessible, and if it is not accessible, the function fails.
+        /// </summary>
+        /// <param name="handle">A handle to the process with memory that is being read. The handle must have PROCESS_VM_READ access to the process.</param>
+        /// <param name="baseAddress">A pointer to the base address in the specified process from which to read. Before any data transfer occurs, the system verifies that all data in the base address and memory of the specified size is accessible for read access, and if it is not accessible the function fails.</param>
+        /// <param name="buffer">A pointer to a buffer that receives the contents from the address space of the specified process.</param>
+        /// <returns>Returns true when the function succeeds; otherwise false. To get extended error information, call GetLastError.</returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static bool ReadProcessMemory<T>(
             IntPtr handle,
@@ -114,6 +147,14 @@ namespace ProcessMemoryUtilities.Managed
             ref T buffer) where T : unmanaged
             => ReadProcessMemory(handle, baseAddress, ref buffer, out var _);
 
+        /// <summary>
+        /// ReadProcessMemory copies the data in the specified address range from the address space of the specified process into the specified buffer of the current process. Any process that has a handle with PROCESS_VM_READ access can call the function. The entire area to be read must be accessible, and if it is not accessible, the function fails.
+        /// </summary>
+        /// <param name="handle">A handle to the process with memory that is being read. The handle must have PROCESS_VM_READ access to the process.</param>
+        /// <param name="baseAddress">A pointer to the base address in the specified process from which to read. Before any data transfer occurs, the system verifies that all data in the base address and memory of the specified size is accessible for read access, and if it is not accessible the function fails.</param>
+        /// <param name="buffer">A pointer to a buffer that receives the contents from the address space of the specified process.</param>
+        /// <param name="numberOfBytesRead">A pointer to a variable that receives the number of bytes transferred into the specified buffer. If lpNumberOfBytesRead is IntPtr.Zero, the parameter is ignored.</param>
+        /// <returns>Returns true when the function succeeds; otherwise false. To get extended error information, call GetLastError.</returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static bool ReadProcessMemory<T>(
             IntPtr handle,
@@ -154,6 +195,13 @@ namespace ProcessMemoryUtilities.Managed
             return result;
         }
 
+        /// <summary>
+        /// ReadProcessMemory copies the data in the specified address range from the address space of the specified process into the specified buffer of the current process. Any process that has a handle with PROCESS_VM_READ access can call the function. The entire area to be read must be accessible, and if it is not accessible, the function fails.
+        /// </summary>
+        /// <param name="handle">A handle to the process with memory that is being read. The handle must have PROCESS_VM_READ access to the process.</param>
+        /// <param name="baseAddress">A pointer to the base address in the specified process from which to read. Before any data transfer occurs, the system verifies that all data in the base address and memory of the specified size is accessible for read access, and if it is not accessible the function fails.</param>
+        /// <param name="buffer">A pointer to a buffer that receives the contents from the address space of the specified process.</param>
+        /// <returns>Returns true when the function succeeds; otherwise false. To get extended error information, call GetLastError.</returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static bool ReadProcessMemoryArray<T>(
             IntPtr handle,
@@ -161,6 +209,14 @@ namespace ProcessMemoryUtilities.Managed
             T[] buffer) where T : unmanaged
             => ReadProcessMemoryArray(handle, baseAddress, buffer, 0, buffer.Length, out var _);
 
+        /// <summary>
+        /// ReadProcessMemory copies the data in the specified address range from the address space of the specified process into the specified buffer of the current process. Any process that has a handle with PROCESS_VM_READ access can call the function. The entire area to be read must be accessible, and if it is not accessible, the function fails.
+        /// </summary>
+        /// <param name="handle">A handle to the process with memory that is being read. The handle must have PROCESS_VM_READ access to the process.</param>
+        /// <param name="baseAddress">A pointer to the base address in the specified process from which to read. Before any data transfer occurs, the system verifies that all data in the base address and memory of the specified size is accessible for read access, and if it is not accessible the function fails.</param>
+        /// <param name="buffer">A pointer to a buffer that receives the contents from the address space of the specified process.</param>
+        /// <param name="offset">A byte offset from inside the array to copy to.</param>
+        /// <returns>Returns true when the function succeeds; otherwise false. To get extended error information, call GetLastError.</returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static bool ReadProcessMemoryArray<T>(
             IntPtr handle,
@@ -169,6 +225,14 @@ namespace ProcessMemoryUtilities.Managed
             int offset) where T : unmanaged
             => ReadProcessMemoryArray(handle, baseAddress, buffer, offset, buffer.Length - offset, out var _);
 
+        /// <summary>
+        /// ReadProcessMemory copies the data in the specified address range from the address space of the specified process into the specified buffer of the current process. Any process that has a handle with PROCESS_VM_READ access can call the function. The entire area to be read must be accessible, and if it is not accessible, the function fails.
+        /// </summary>
+        /// <param name="handle">A handle to the process with memory that is being read. The handle must have PROCESS_VM_READ access to the process.</param>
+        /// <param name="baseAddress">A pointer to the base address in the specified process from which to read. Before any data transfer occurs, the system verifies that all data in the base address and memory of the specified size is accessible for read access, and if it is not accessible the function fails.</param>
+        /// <param name="buffer">A pointer to a buffer that receives the contents from the address space of the specified process.</param>
+        /// <param name="numberOfBytesRead">A pointer to a variable that receives the number of bytes transferred into the specified buffer. If lpNumberOfBytesRead is IntPtr.Zero, the parameter is ignored.</param>
+        /// <returns>Returns true when the function succeeds; otherwise false. To get extended error information, call GetLastError.</returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static bool ReadProcessMemoryArray<T>(
             IntPtr handle,
@@ -177,6 +241,15 @@ namespace ProcessMemoryUtilities.Managed
             out IntPtr numberOfBytesRead) where T : unmanaged
             => ReadProcessMemoryArray(handle, baseAddress, buffer, 0, buffer.Length, out numberOfBytesRead);
 
+        /// <summary>
+        /// ReadProcessMemory copies the data in the specified address range from the address space of the specified process into the specified buffer of the current process. Any process that has a handle with PROCESS_VM_READ access can call the function. The entire area to be read must be accessible, and if it is not accessible, the function fails.
+        /// </summary>
+        /// <param name="handle">A handle to the process with memory that is being read. The handle must have PROCESS_VM_READ access to the process.</param>
+        /// <param name="baseAddress">A pointer to the base address in the specified process from which to read. Before any data transfer occurs, the system verifies that all data in the base address and memory of the specified size is accessible for read access, and if it is not accessible the function fails.</param>
+        /// <param name="buffer">A pointer to a buffer that receives the contents from the address space of the specified process.</param>
+        /// <param name="offset">A byte offset from inside the array to copy to.</param>
+        /// <param name="length">The number of bytes to copy to the array.</param>
+        /// <returns>Returns true when the function succeeds; otherwise false. To get extended error information, call GetLastError.</returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static bool ReadProcessMemoryArray<T>(
             IntPtr handle,
@@ -186,6 +259,15 @@ namespace ProcessMemoryUtilities.Managed
             int length) where T : unmanaged
             => ReadProcessMemoryArray(handle, baseAddress, buffer, offset, length, out var _);
 
+        /// <summary>
+        /// ReadProcessMemory copies the data in the specified address range from the address space of the specified process into the specified buffer of the current process. Any process that has a handle with PROCESS_VM_READ access can call the function. The entire area to be read must be accessible, and if it is not accessible, the function fails.
+        /// </summary>
+        /// <param name="handle">A handle to the process with memory that is being read. The handle must have PROCESS_VM_READ access to the process.</param>
+        /// <param name="baseAddress">A pointer to the base address in the specified process from which to read. Before any data transfer occurs, the system verifies that all data in the base address and memory of the specified size is accessible for read access, and if it is not accessible the function fails.</param>
+        /// <param name="buffer">A pointer to a buffer that receives the contents from the address space of the specified process.</param>
+        /// <param name="offset">A byte offset from inside the array to copy to.</param>
+        /// <param name="numberOfBytesRead">A pointer to a variable that receives the number of bytes transferred into the specified buffer. If lpNumberOfBytesRead is IntPtr.Zero, the parameter is ignored.</param>
+        /// <returns>Returns true when the function succeeds; otherwise false. To get extended error information, call GetLastError.</returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static bool ReadProcessMemoryArray<T>(
             IntPtr handle,
@@ -195,6 +277,16 @@ namespace ProcessMemoryUtilities.Managed
             out IntPtr numberOfBytesRead) where T : unmanaged
             => ReadProcessMemoryArray(handle, baseAddress, buffer, offset, buffer.Length - offset, out numberOfBytesRead);
 
+        /// <summary>
+        /// ReadProcessMemory copies the data in the specified address range from the address space of the specified process into the specified buffer of the current process. Any process that has a handle with PROCESS_VM_READ access can call the function. The entire area to be read must be accessible, and if it is not accessible, the function fails.
+        /// </summary>
+        /// <param name="handle">A handle to the process with memory that is being read. The handle must have PROCESS_VM_READ access to the process.</param>
+        /// <param name="baseAddress">A pointer to the base address in the specified process from which to read. Before any data transfer occurs, the system verifies that all data in the base address and memory of the specified size is accessible for read access, and if it is not accessible the function fails.</param>
+        /// <param name="buffer">A pointer to a buffer that receives the contents from the address space of the specified process.</param>
+        /// <param name="offset">A byte offset from inside the array to copy to.</param>
+        /// <param name="length">The number of bytes to copy to the array.</param>
+        /// <param name="numberOfBytesRead">A pointer to a variable that receives the number of bytes transferred into the specified buffer. If lpNumberOfBytesRead is IntPtr.Zero, the parameter is ignored.</param>
+        /// <returns>Returns true when the function succeeds; otherwise false. To get extended error information, call GetLastError.</returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static bool ReadProcessMemoryArray<T>(
             IntPtr handle,
@@ -238,6 +330,14 @@ namespace ProcessMemoryUtilities.Managed
             return result;
         }
 
+        /// <summary>
+        /// ReadProcessMemory copies the data in the specified address range from the address space of the specified process into the specified buffer of the current process. Any process that has a handle with PROCESS_VM_READ access can call the function. The entire area to be read must be accessible, and if it is not accessible, the function fails.
+        /// </summary>
+        /// <param name="handle">A handle to the process with memory that is being read. The handle must have PROCESS_VM_READ access to the process.</param>
+        /// <param name="baseAddress">A pointer to the base address in the specified process from which to read. Before any data transfer occurs, the system verifies that all data in the base address and memory of the specified size is accessible for read access, and if it is not accessible the function fails.</param>
+        /// <param name="buffer">A pointer to a buffer that receives the contents from the address space of the specified process.</param>
+        /// <param name="offset">A byte offset from the start of the buffer.</param>
+        /// <returns>Returns true when the function succeeds; otherwise false. To get extended error information, call GetLastError.</returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static bool ReadProcessMemoryPartial<T>(
             IntPtr handle,
@@ -246,6 +346,15 @@ namespace ProcessMemoryUtilities.Managed
             int offset) where T : unmanaged
             => ReadProcessMemoryPartial(handle, baseAddress, ref buffer, offset, out var _);
 
+        /// <summary>
+        /// ReadProcessMemory copies the data in the specified address range from the address space of the specified process into the specified buffer of the current process. Any process that has a handle with PROCESS_VM_READ access can call the function. The entire area to be read must be accessible, and if it is not accessible, the function fails.
+        /// </summary>
+        /// <param name="handle">A handle to the process with memory that is being read. The handle must have PROCESS_VM_READ access to the process.</param>
+        /// <param name="baseAddress">A pointer to the base address in the specified process from which to read. Before any data transfer occurs, the system verifies that all data in the base address and memory of the specified size is accessible for read access, and if it is not accessible the function fails.</param>
+        /// <param name="buffer">A pointer to a buffer that receives the contents from the address space of the specified process.</param>
+        /// <param name="offset">A byte offset from the start of the buffer.</param>
+        /// <param name="length">The number of bytes to copy to the buffer.</param>
+        /// <returns>Returns true when the function succeeds; otherwise false. To get extended error information, call GetLastError.</returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static bool ReadProcessMemoryPartial<T>(
             IntPtr handle,
@@ -255,6 +364,15 @@ namespace ProcessMemoryUtilities.Managed
             int length) where T : unmanaged
             => ReadProcessMemoryPartial(handle, baseAddress, ref buffer, offset, length, out var _);
 
+        /// <summary>
+        /// ReadProcessMemory copies the data in the specified address range from the address space of the specified process into the specified buffer of the current process. Any process that has a handle with PROCESS_VM_READ access can call the function. The entire area to be read must be accessible, and if it is not accessible, the function fails.
+        /// </summary>
+        /// <param name="handle">A handle to the process with memory that is being read. The handle must have PROCESS_VM_READ access to the process.</param>
+        /// <param name="baseAddress">A pointer to the base address in the specified process from which to read. Before any data transfer occurs, the system verifies that all data in the base address and memory of the specified size is accessible for read access, and if it is not accessible the function fails.</param>
+        /// <param name="buffer">A pointer to a buffer that receives the contents from the address space of the specified process.</param>
+        /// <param name="offset">A byte offset from the start of the buffer.</param>
+        /// <param name="numberOfBytesRead">A pointer to a variable that receives the number of bytes transferred into the specified buffer.</param>
+        /// <returns>Returns true when the function succeeds; otherwise false. To get extended error information, call GetLastError.</returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static bool ReadProcessMemoryPartial<T>(
             IntPtr handle,
@@ -264,6 +382,16 @@ namespace ProcessMemoryUtilities.Managed
             out IntPtr numberOfBytesRead) where T : unmanaged
             => ReadProcessMemoryPartial(handle, baseAddress, ref buffer, offset, InternalHelper.SizeOf<T>() - offset, out numberOfBytesRead);
 
+        /// <summary>
+        /// ReadProcessMemory copies the data in the specified address range from the address space of the specified process into the specified buffer of the current process. Any process that has a handle with PROCESS_VM_READ access can call the function. The entire area to be read must be accessible, and if it is not accessible, the function fails.
+        /// </summary>
+        /// <param name="handle">A handle to the process with memory that is being read. The handle must have PROCESS_VM_READ access to the process.</param>
+        /// <param name="baseAddress">A pointer to the base address in the specified process from which to read. Before any data transfer occurs, the system verifies that all data in the base address and memory of the specified size is accessible for read access, and if it is not accessible the function fails.</param>
+        /// <param name="buffer">A pointer to a buffer that receives the contents from the address space of the specified process.</param>
+        /// <param name="offset">A byte offset from the start of the buffer.</param>
+        /// <param name="length">The number of bytes to copy to the buffer.</param>
+        /// <param name="numberOfBytesRead">A pointer to a variable that receives the number of bytes transferred into the specified buffer.</param>
+        /// <returns>Returns true when the function succeeds; otherwise false. To get extended error information, call GetLastError.</returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static bool ReadProcessMemoryPartial<T>(
             IntPtr handle,
