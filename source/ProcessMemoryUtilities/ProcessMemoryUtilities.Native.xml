@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <doc>
     <assembly>
-        <name>ProcessMemoryUtilities</name>
+        <name>ProcessMemoryUtilities.Native</name>
     </assembly>
     <members>
         <member name="T:ProcessMemoryUtilities.Native.AllocationType">

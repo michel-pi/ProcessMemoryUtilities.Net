@@ -4,16 +4,14 @@
     <TargetFrameworks>net452;net47;net48;netstandard2.0</TargetFrameworks>
   </PropertyGroup>
 
-  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net452|AnyCPU'">
-    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <DefineConstants>DEBUG;TRACE</DefineConstants>
   </PropertyGroup>
 
-  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net452|AnyCPU'">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
     <DefineConstants />
-    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
-    <DebugType>pdbonly</DebugType>
-    <DebugSymbols>true</DebugSymbols>
+    <DebugType>none</DebugType>
+    <DebugSymbols>false</DebugSymbols>
     <DocumentationFile>C:\Users\Michel\Documents\Github\Public\ProcessMemoryWrapper.Net\source\ProcessMemoryUtilities.Managed\ProcessMemoryUtilities.Managed.xml</DocumentationFile>
   </PropertyGroup>
 

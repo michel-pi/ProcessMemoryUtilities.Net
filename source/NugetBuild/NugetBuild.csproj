@@ -2,6 +2,7 @@
 
   <PropertyGroup>
     <TargetFrameworks>net452;net47;net48;netstandard2.0</TargetFrameworks>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Version>1.3.0</Version>
     <Authors>michel-pi</Authors>
     <PackageId>ProcessMemoryUtilities.Net</PackageId>
@@ -12,28 +13,39 @@
     <RepositoryUrl>https://github.com/michel-pi/ProcessMemoryUtilities.Net</RepositoryUrl>
     <Description>This library implements performant ReadProcessMemory and WriteProcessMemory with generic type parameters using InlineIL and also offers methods required to open processes and create remote threads.</Description>
     <PackageTags>ReadProcessMemory WriteProcessMemory InlineIL ProcessMemoryUtilities ProcessMemoryWrapper michel-pi yato yatodev rpm wpm generic</PackageTags>
-    <AssemblyName>ProcessMemoryUtilities.Native</AssemblyName>
+    <AssemblyName>ProcessMemoryUtilities</AssemblyName>
+    <RootNamespace>ProcessMemoryUtilities</RootNamespace>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <DefineConstants />
-    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
     <DefineConstants />
-    <DocumentationFile>C:\Users\Michel\Documents\Github\Public\ProcessMemoryWrapper.Net\source\ProcessMemoryUtilities\ProcessMemoryUtilities.Native.xml</DocumentationFile>
     <DebugType>none</DebugType>
     <DebugSymbols>false</DebugSymbols>
+    <DocumentationFile>C:\Users\Michel\Documents\Github\Public\ProcessMemoryWrapper.Net\source\NugetBuild\ProcessMemoryUtilities.xml</DocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Fody" Version="6.0.0">
+    <ProjectReference Include="..\ProcessMemoryUtilities.Managed\ProcessMemoryUtilities.Managed.csproj">
       <PrivateAssets>all</PrivateAssets>
-      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-    </PackageReference>
-    <PackageReference Include="InlineIL.Fody" Version="1.3.2">
+    </ProjectReference>
+    <ProjectReference Include="..\ProcessMemoryUtilities\ProcessMemoryUtilities.csproj">
+      <PrivateAssets>all</PrivateAssets>
+    </ProjectReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\LICENSE">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="ILRepack.Lib.MSBuild.Task" Version="2.0.17">
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
   </ItemGroup>
