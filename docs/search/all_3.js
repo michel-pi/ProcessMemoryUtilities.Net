@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['decommit',['Decommit',['../namespace_process_memory_utilities_1_1_memory.html#acc8b61a7fd031a58cd0679bb7830adcca0a86254d572293ae532e4a07c6f0675c',1,'ProcessMemoryUtilities::Memory']]],
-  ['defaultencoding',['DefaultEncoding',['../class_process_memory_utilities_1_1_memory_1_1_string_marshal.html#acf31be623a7cea68a8ae2eeebf58f309',1,'ProcessMemoryUtilities::Memory::StringMarshal']]],
-  ['divide',['Divide',['../class_process_memory_utilities_1_1_extensions_1_1_int_ptr_extensions.html#ad0e9722dba76dfbf90a47291debdd309',1,'ProcessMemoryUtilities::Extensions::IntPtrExtensions']]],
-  ['duplicatehandle',['DuplicateHandle',['../namespace_process_memory_utilities_1_1_memory.html#a9c35275ab4b1a7ff9064f72bf3d5f41aa14433c840778ea3194b1d7642df60317',1,'ProcessMemoryUtilities::Memory']]]
+  ['execute',['Execute',['../namespace_process_memory_utilities_1_1_native.html#a253e5867c7af9a40486194ce6ab3cf53a40cd014b7b6251e3a22e6a45a73a64e1',1,'ProcessMemoryUtilities.Native.Execute()'],['../namespace_process_memory_utilities_1_1_native.html#abdfccb438f768cae26c138a43489d2ffa40cd014b7b6251e3a22e6a45a73a64e1',1,'ProcessMemoryUtilities.Native.Execute()']]],
+  ['executeread',['ExecuteRead',['../namespace_process_memory_utilities_1_1_native.html#a253e5867c7af9a40486194ce6ab3cf53ac26b597863a6aed885013205f3049c58',1,'ProcessMemoryUtilities::Native']]],
+  ['executereadwrite',['ExecuteReadWrite',['../namespace_process_memory_utilities_1_1_native.html#a253e5867c7af9a40486194ce6ab3cf53ab4082047068113d3e76ff32df8842b38',1,'ProcessMemoryUtilities::Native']]],
+  ['executewritecopy',['ExecuteWriteCopy',['../namespace_process_memory_utilities_1_1_native.html#a253e5867c7af9a40486194ce6ab3cf53aeda67591cccf6542fcd62a113dadbf81',1,'ProcessMemoryUtilities::Native']]]
 ];
