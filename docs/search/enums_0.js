@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['allocationtype',['AllocationType',['../namespace_process_memory_utilities_1_1_memory.html#af0a9f9efd6fdb043adf94b1e4d29aff5',1,'ProcessMemoryUtilities::Memory']]]
+  ['allocationtype',['AllocationType',['../namespace_process_memory_utilities_1_1_native.html#a0729ee4af770ea067d43d9761df4cbdb',1,'ProcessMemoryUtilities::Native']]]
 ];

@@ -2,17 +2,7 @@
 
   <PropertyGroup>
     <TargetFrameworks>net452;net47;net48;netstandard2.0</TargetFrameworks>
-    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Version>1.2.0</Version>
-    <Authors>michel-pi</Authors>
-    <PackageId>ProcessMemoryUtilities.Net</PackageId>
-    <Product>ProcessMemoryUtilities.Net</Product>
-    <Copyright>Copyright (c) 2019 michel-pi</Copyright>
-    <PackageLicenseFile>LICENSE</PackageLicenseFile>
-    <PackageProjectUrl>https://github.com/michel-pi/ProcessMemoryUtilities.Net</PackageProjectUrl>
-    <RepositoryUrl>https://github.com/michel-pi/ProcessMemoryUtilities.Net</RepositoryUrl>
-    <Description>This library implements performant ReadProcessMemory and WriteProcessMemory with generic type parameters using InlineIL and also offers methods required to open processes, create remote threads and marshal value types and strings.</Description>
-    <PackageTags>ReadProcessMemory WriteProcessMemory InlineIL ProcessMemoryUtilities ProcessMemoryWrapper michel-pi yato yatodev rpm wpm generic</PackageTags>
+    <AssemblyName>ProcessMemoryUtilities.Native</AssemblyName>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
@@ -23,24 +13,17 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
     <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
     <DefineConstants />
-    <DocumentationFile>C:\Users\Michel\Documents\Github\Public\ProcessMemoryWrapper.Net\source\ProcessMemoryUtilities.xml</DocumentationFile>
+    <DocumentationFile>C:\Users\Michel\Documents\Github\Public\ProcessMemoryWrapper.Net\source\ProcessMemoryUtilities\ProcessMemoryUtilities.Native.xml</DocumentationFile>
     <DebugType>none</DebugType>
     <DebugSymbols>false</DebugSymbols>
   </PropertyGroup>
 
   <ItemGroup>
-    <None Include="..\..\LICENSE">
-      <Pack>True</Pack>
-      <PackagePath></PackagePath>
-    </None>
-  </ItemGroup>
-
-  <ItemGroup>
-    <PackageReference Include="Fody" Version="5.0.0">
+    <PackageReference Include="Fody" Version="6.0.0">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
-    <PackageReference Include="InlineIL.Fody" Version="1.1.2">
+    <PackageReference Include="InlineIL.Fody" Version="1.3.2">
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
   </ItemGroup>

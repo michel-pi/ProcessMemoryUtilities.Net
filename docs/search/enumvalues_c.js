@@ -1,10 +1,10 @@
 var searchData=
 [
-  ['setinformation',['SetInformation',['../namespace_process_memory_utilities_1_1_memory.html#a9c35275ab4b1a7ff9064f72bf3d5f41aafd76c8a174c8459590eb48380c4edc40',1,'ProcessMemoryUtilities::Memory']]],
-  ['setquota',['SetQuota',['../namespace_process_memory_utilities_1_1_memory.html#a9c35275ab4b1a7ff9064f72bf3d5f41aacd7befb4aef8f46bbb823af1d99cde83',1,'ProcessMemoryUtilities::Memory']]],
-  ['stacksizeparamisareservation',['StackSizeParamIsAReservation',['../namespace_process_memory_utilities_1_1_memory.html#a1435c2affc0afd3e35e72fbcc4c8fbb5af07c7c4657761b4e01a2ab20ed51855b',1,'ProcessMemoryUtilities::Memory']]],
-  ['success',['Success',['../namespace_process_memory_utilities_1_1_memory.html#ae642cfe8e18ac29f66f74344aac5b302a505a83f220c02df2f85c3810cd9ceb38',1,'ProcessMemoryUtilities::Memory']]],
-  ['suspended',['Suspended',['../namespace_process_memory_utilities_1_1_memory.html#a1435c2affc0afd3e35e72fbcc4c8fbb5a8bf906833cc7aea8084f552217ed9c1d',1,'ProcessMemoryUtilities::Memory']]],
-  ['suspendresume',['SuspendResume',['../namespace_process_memory_utilities_1_1_memory.html#a9c35275ab4b1a7ff9064f72bf3d5f41aa225c7a85340534236811e3cae22e885e',1,'ProcessMemoryUtilities::Memory']]],
-  ['synchronize',['Synchronize',['../namespace_process_memory_utilities_1_1_memory.html#a9c35275ab4b1a7ff9064f72bf3d5f41aab18b960c57a784907dc1cd97ba8a8065',1,'ProcessMemoryUtilities::Memory']]]
+  ['read',['Read',['../namespace_process_memory_utilities_1_1_native.html#abdfccb438f768cae26c138a43489d2ffa7a1a5f3e79fdc91edf2f5ead9d66abb4',1,'ProcessMemoryUtilities::Native']]],
+  ['readonly',['ReadOnly',['../namespace_process_memory_utilities_1_1_native.html#a253e5867c7af9a40486194ce6ab3cf53a131fb182a881796e7606ed6da27f1197',1,'ProcessMemoryUtilities::Native']]],
+  ['readwrite',['ReadWrite',['../namespace_process_memory_utilities_1_1_native.html#a253e5867c7af9a40486194ce6ab3cf53a70a2a84088d405a2e3f1e3accaa16723',1,'ProcessMemoryUtilities.Native.ReadWrite()'],['../namespace_process_memory_utilities_1_1_native.html#abdfccb438f768cae26c138a43489d2ffa70a2a84088d405a2e3f1e3accaa16723',1,'ProcessMemoryUtilities.Native.ReadWrite()']]],
+  ['release',['Release',['../namespace_process_memory_utilities_1_1_native.html#adb58001ff27279e48c274189fcab7293ab8e7b465df7c5979dc731d06e84ce2cf',1,'ProcessMemoryUtilities::Native']]],
+  ['reserve',['Reserve',['../namespace_process_memory_utilities_1_1_native.html#a0729ee4af770ea067d43d9761df4cbdba66f9c6c5b672ee16deeef6e4503cb4bc',1,'ProcessMemoryUtilities::Native']]],
+  ['reset',['Reset',['../namespace_process_memory_utilities_1_1_native.html#a0729ee4af770ea067d43d9761df4cbdba526d688f37a86d3c3f27d0c5016eb71d',1,'ProcessMemoryUtilities::Native']]],
+  ['resetundo',['ResetUndo',['../namespace_process_memory_utilities_1_1_native.html#a0729ee4af770ea067d43d9761df4cbdba93ddda9920613b51e016af4185c9bdfb',1,'ProcessMemoryUtilities::Native']]]
 ];

@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['failed',['Failed',['../namespace_process_memory_utilities_1_1_memory.html#ae642cfe8e18ac29f66f74344aac5b302ad7c8c85bf79bbe1b7188497c32c3b0ca',1,'ProcessMemoryUtilities::Memory']]],
-  ['fill',['Fill',['../class_process_memory_utilities_1_1_memory_1_1_static_array_pool.html#a578403b0296abf934ece24c70ab646cd',1,'ProcessMemoryUtilities::Memory::StaticArrayPool']]],
-  ['fillsequence',['FillSequence',['../class_process_memory_utilities_1_1_memory_1_1_static_array_pool.html#a73d60150ec3c001929b4345f21f35f0e',1,'ProcessMemoryUtilities::Memory::StaticArrayPool']]],
-  ['freetype',['FreeType',['../namespace_process_memory_utilities_1_1_memory.html#acc8b61a7fd031a58cd0679bb7830adcc',1,'ProcessMemoryUtilities::Memory']]]
+  ['getrealwaitobjectresult',['GetRealWaitObjectResult',['../class_process_memory_utilities_1_1_native_1_1_kernel32.html#af805fe8e3b97c62d3333c0fe8c66aaf8',1,'ProcessMemoryUtilities.Native.Kernel32.GetRealWaitObjectResult(WaitObjectResult value)'],['../class_process_memory_utilities_1_1_native_1_1_kernel32.html#ae5aff65887b15ee40aeee5ab3c7a8058',1,'ProcessMemoryUtilities.Native.Kernel32.GetRealWaitObjectResult(WaitObjectResult value, out int index)'],['../class_process_memory_utilities_1_1_managed_1_1_native_wrapper.html#a7c1c17e9a97888121a4156e65f6a8324',1,'ProcessMemoryUtilities.Managed.NativeWrapper.GetRealWaitObjectResult(WaitObjectResult value)'],['../class_process_memory_utilities_1_1_managed_1_1_native_wrapper.html#acbfb32f9450f7b5ac3368a1947364b2b',1,'ProcessMemoryUtilities.Managed.NativeWrapper.GetRealWaitObjectResult(WaitObjectResult value, out int index)']]],
+  ['guardmodifierflag',['GuardModifierflag',['../namespace_process_memory_utilities_1_1_native.html#a253e5867c7af9a40486194ce6ab3cf53a0d53f148d8db8df28fc4b554bfc8ac6a',1,'ProcessMemoryUtilities::Native']]]
 ];

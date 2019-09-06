@@ -1,5 +1,7 @@
 var searchData=
 [
-  ['queryinformation',['QueryInformation',['../namespace_process_memory_utilities_1_1_memory.html#a9c35275ab4b1a7ff9064f72bf3d5f41aa37e8a064723ac3f5eec1e7482f5037f7',1,'ProcessMemoryUtilities::Memory']]],
-  ['querylimitedinformation',['QueryLimitedInformation',['../namespace_process_memory_utilities_1_1_memory.html#a9c35275ab4b1a7ff9064f72bf3d5f41aa2bb5376eb8926e511abaa1f99fed558c',1,'ProcessMemoryUtilities::Memory']]]
+  ['partial_5fcopy',['PARTIAL_COPY',['../namespace_process_memory_utilities_1_1_native.html#a41790de5ba730eef87a43be26a6ca771a7578294c2394177f6fe01cda0999570a',1,'ProcessMemoryUtilities::Native']]],
+  ['physical',['Physical',['../namespace_process_memory_utilities_1_1_native.html#a0729ee4af770ea067d43d9761df4cbdbace898d62ed9ca7653a01fe0c781e97e9',1,'ProcessMemoryUtilities::Native']]],
+  ['preserveplaceholder',['PreservePlaceholder',['../namespace_process_memory_utilities_1_1_native.html#adb58001ff27279e48c274189fcab7293a88866f5d2196a28942c297c3b66a97ee',1,'ProcessMemoryUtilities::Native']]],
+  ['process_5fis_5fterminating',['PROCESS_IS_TERMINATING',['../namespace_process_memory_utilities_1_1_native.html#a41790de5ba730eef87a43be26a6ca771a8978834081ef19e57f9317a10fcf5a95',1,'ProcessMemoryUtilities::Native']]]
 ];

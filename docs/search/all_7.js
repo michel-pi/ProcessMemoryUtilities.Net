@@ -1,9 +1,9 @@
 var searchData=
 [
-  ['immediately',['Immediately',['../namespace_process_memory_utilities_1_1_memory.html#a1435c2affc0afd3e35e72fbcc4c8fbb5afd83e0ccb3e6312a62f888dd496dd0a5',1,'ProcessMemoryUtilities::Memory']]],
-  ['intptrextensions',['IntPtrExtensions',['../class_process_memory_utilities_1_1_extensions_1_1_int_ptr_extensions.html',1,'ProcessMemoryUtilities::Extensions']]],
-  ['isaligned',['IsAligned',['../class_process_memory_utilities_1_1_extensions_1_1_int_ptr_extensions.html#aede527f3712839973bc3962ddc1305a6',1,'ProcessMemoryUtilities::Extensions::IntPtrExtensions']]],
-  ['isnotzero',['IsNotZero',['../class_process_memory_utilities_1_1_extensions_1_1_int_ptr_extensions.html#a5fdc45e527f1eedd0b6d225ec9edf004',1,'ProcessMemoryUtilities::Extensions::IntPtrExtensions']]],
-  ['isvalid',['IsValid',['../class_process_memory_utilities_1_1_extensions_1_1_int_ptr_extensions.html#a71e058ec3e012214e740fc9d8e176b9c',1,'ProcessMemoryUtilities::Extensions::IntPtrExtensions']]],
-  ['iszero',['IsZero',['../class_process_memory_utilities_1_1_extensions_1_1_int_ptr_extensions.html#a4f4dc30f61f28bb655cd9334c60e763e',1,'ProcessMemoryUtilities::Extensions::IntPtrExtensions']]]
+  ['immediately',['Immediately',['../namespace_process_memory_utilities_1_1_native.html#a28a597a806a5662bfe6ef8a30725f3f6afd83e0ccb3e6312a62f888dd496dd0a5',1,'ProcessMemoryUtilities::Native']]],
+  ['infinite',['INFINITE',['../class_process_memory_utilities_1_1_native_1_1_kernel32.html#af5204fc60b34a4beb5f2805d291358f9',1,'ProcessMemoryUtilities.Native.Kernel32.INFINITE()'],['../class_process_memory_utilities_1_1_managed_1_1_native_wrapper.html#ae385d060ad80a299cceb4a8a25a9c10a',1,'ProcessMemoryUtilities.Managed.NativeWrapper.INFINITE()']]],
+  ['information',['Information',['../namespace_process_memory_utilities_1_1_native.html#abdfccb438f768cae26c138a43489d2ffaa82be0f551b8708bc08eb33cd9ded0cf',1,'ProcessMemoryUtilities::Native']]],
+  ['insufficient_5fresources',['INSUFFICIENT_RESOURCES',['../namespace_process_memory_utilities_1_1_native.html#a41790de5ba730eef87a43be26a6ca771a65d1d6f48a10e5dd3ec58098e285ada6',1,'ProcessMemoryUtilities::Native']]],
+  ['invalid',['Invalid',['../namespace_process_memory_utilities_1_1_native.html#a0729ee4af770ea067d43d9761df4cbdba4bbb8f967da6d1a610596d7257179c2b',1,'ProcessMemoryUtilities.Native.Invalid()'],['../namespace_process_memory_utilities_1_1_native.html#adb58001ff27279e48c274189fcab7293a4bbb8f967da6d1a610596d7257179c2b',1,'ProcessMemoryUtilities.Native.Invalid()'],['../namespace_process_memory_utilities_1_1_native.html#a253e5867c7af9a40486194ce6ab3cf53a4bbb8f967da6d1a610596d7257179c2b',1,'ProcessMemoryUtilities.Native.Invalid()'],['../namespace_process_memory_utilities_1_1_native.html#abdfccb438f768cae26c138a43489d2ffa4bbb8f967da6d1a610596d7257179c2b',1,'ProcessMemoryUtilities.Native.Invalid()']]],
+  ['invalid_5fhandle',['INVALID_HANDLE',['../namespace_process_memory_utilities_1_1_native.html#a41790de5ba730eef87a43be26a6ca771a91bf81a15031ab01510ec064d6004db5',1,'ProcessMemoryUtilities::Native']]]
 ];

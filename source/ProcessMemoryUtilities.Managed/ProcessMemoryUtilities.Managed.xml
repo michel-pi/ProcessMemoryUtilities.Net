@@ -1,0 +1,484 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ProcessMemoryUtilities.Managed</name>
+    </assembly>
+    <members>
+        <member name="T:ProcessMemoryUtilities.Managed.NativeWrapper">
+            <summary>
+            Provides methods that replicate the behaviour of Kernel32 by using NtDll methods and applies basic error checking.
+            </summary>
+        </member>
+        <member name="M:ProcessMemoryUtilities.Managed.NativeWrapper.CreateRemoteThread(System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr,ProcessMemoryUtilities.Native.ThreadCreationFlags,System.IntPtr)">
+            <summary>
+            Creates a thread that runs in the virtual address space of another process.
+            </summary>
+            <param name="handle">A handle to the process in which the thread is to be created. The handle must have the PROCESS_CREATE_THREAD, PROCESS_QUERY_INFORMATION, PROCESS_VM_OPERATION, PROCESS_VM_WRITE, and PROCESS_VM_READ access rights, and may fail without these rights on certain platforms. For more information, see Process Security and Access Rights.</param>
+            <param name="threadAttributes">A pointer to a SECURITY_ATTRIBUTES structure that specifies a security descriptor for the new thread and determines whether child processes can inherit the returned handle. If lpThreadAttributes is NULL, the thread gets a default security descriptor and the handle cannot be inherited. The access control lists (ACL) in the default security descriptor for a thread come from the primary token of the creator.</param>
+            <param name="stackSize">The initial size of the stack, in bytes. The system rounds this value to the nearest page. If this parameter is 0 (zero), the new thread uses the default size for the executable.</param>
+            <param name="startAddress">A pointer to the application-defined function of type LPTHREAD_START_ROUTINE to be executed by the thread and represents the starting address of the thread in the remote process. The function must exist in the remote process.</param>
+            <param name="parameter">A pointer to a variable to be passed to the thread function.</param>
+            <param name="creationFlags"></param>
+            <param name="threadId">A pointer to a variable that receives the thread identifier. If this parameter is NULL, the thread identifier is not returned.</param>
+            <returns>If the function succeeds, the return value is a handle to the new thread. If the function fails, the return value is IntPtr.Zero.To get extended error information, call GetLastError.</returns>
+        </member>
+        <member name="M:ProcessMemoryUtilities.Managed.NativeWrapper.CreateRemoteThread(System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr,ProcessMemoryUtilities.Native.ThreadCreationFlags,System.UInt32@)">
+            <summary>
+            Creates a thread that runs in the virtual address space of another process.
+            </summary>
+            <param name="handle">A handle to the process in which the thread is to be created. The handle must have the PROCESS_CREATE_THREAD, PROCESS_QUERY_INFORMATION, PROCESS_VM_OPERATION, PROCESS_VM_WRITE, and PROCESS_VM_READ access rights, and may fail without these rights on certain platforms. For more information, see Process Security and Access Rights.</param>
+            <param name="threadAttributes">A pointer to a SECURITY_ATTRIBUTES structure that specifies a security descriptor for the new thread and determines whether child processes can inherit the returned handle. If lpThreadAttributes is NULL, the thread gets a default security descriptor and the handle cannot be inherited. The access control lists (ACL) in the default security descriptor for a thread come from the primary token of the creator.</param>
+            <param name="stackSize">The initial size of the stack, in bytes. The system rounds this value to the nearest page. If this parameter is 0 (zero), the new thread uses the default size for the executable.</param>
+            <param name="startAddress">A pointer to the application-defined function of type LPTHREAD_START_ROUTINE to be executed by the thread and represents the starting address of the thread in the remote process. The function must exist in the remote process.</param>
+            <param name="parameter">A pointer to a variable to be passed to the thread function.</param>
+            <param name="creationFlags"></param>
+            <param name="threadId">A pointer to a variable that receives the thread identifier. If this parameter is NULL, the thread identifier is not returned.</param>
+            <returns>If the function succeeds, the return value is a handle to the new thread. If the function fails, the return value is IntPtr.Zero.To get extended error information, call GetLastError.</returns>
+        </member>
+        <member name="M:ProcessMemoryUtilities.Managed.NativeWrapper.CreateRemoteThread(System.IntPtr,System.IntPtr,System.IntPtr,ProcessMemoryUtilities.Native.ThreadCreationFlags)">
+            <summary>
+            Creates a thread that runs in the virtual address space of another process.
+            </summary>
+            <param name="handle">A handle to the process in which the thread is to be created. The handle must have the PROCESS_CREATE_THREAD, PROCESS_QUERY_INFORMATION, PROCESS_VM_OPERATION, PROCESS_VM_WRITE, and PROCESS_VM_READ access rights, and may fail without these rights on certain platforms. For more information, see Process Security and Access Rights.</param>
+            <param name="startAddress">A pointer to the application-defined function of type LPTHREAD_START_ROUTINE to be executed by the thread and represents the starting address of the thread in the remote process. The function must exist in the remote process.</param>
+            <param name="parameter">A pointer to a variable to be passed to the thread function.</param>
+            <param name="creationFlags"></param>
+            <returns>If the function succeeds, the return value is a handle to the new thread. If the function fails, the return value is IntPtr.Zero.To get extended error information, call GetLastError.</returns>
+        </member>
+        <member name="M:ProcessMemoryUtilities.Managed.NativeWrapper.CreateRemoteThread(System.IntPtr,System.IntPtr,System.IntPtr,ProcessMemoryUtilities.Native.ThreadCreationFlags,System.UInt32@)">
+            <summary>
+            Creates a thread that runs in the virtual address space of another process.
+            </summary>
+            <param name="handle">A handle to the process in which the thread is to be created. The handle must have the PROCESS_CREATE_THREAD, PROCESS_QUERY_INFORMATION, PROCESS_VM_OPERATION, PROCESS_VM_WRITE, and PROCESS_VM_READ access rights, and may fail without these rights on certain platforms. For more information, see Process Security and Access Rights.</param>
+            <param name="startAddress">A pointer to the application-defined function of type LPTHREAD_START_ROUTINE to be executed by the thread and represents the starting address of the thread in the remote process. The function must exist in the remote process.</param>
+            <param name="parameter">A pointer to a variable to be passed to the thread function.</param>
+            <param name="creationFlags"></param>
+            <param name="threadId">A pointer to a variable that receives the thread identifier. If this parameter is NULL, the thread identifier is not returned.</param>
+            <returns>If the function succeeds, the return value is a handle to the new thread. If the function fails, the return value is IntPtr.Zero.To get extended error information, call GetLastError.</returns>
+        </member>
+        <member name="M:ProcessMemoryUtilities.Managed.NativeWrapper.CreateRemoteThread(System.IntPtr,System.IntPtr,System.IntPtr)">
+            <summary>
+            Creates a thread that runs in the virtual address space of another process.
+            </summary>
+            <param name="handle">A handle to the process in which the thread is to be created. The handle must have the PROCESS_CREATE_THREAD, PROCESS_QUERY_INFORMATION, PROCESS_VM_OPERATION, PROCESS_VM_WRITE, and PROCESS_VM_READ access rights, and may fail without these rights on certain platforms. For more information, see Process Security and Access Rights.</param>
+            <param name="startAddress">A pointer to the application-defined function of type LPTHREAD_START_ROUTINE to be executed by the thread and represents the starting address of the thread in the remote process. The function must exist in the remote process.</param>
+            <param name="parameter">A pointer to a variable to be passed to the thread function.</param>
+            <returns>If the function succeeds, the return value is a handle to the new thread. If the function fails, the return value is IntPtr.Zero.To get extended error information, call GetLastError.</returns>
+        </member>
+        <member name="P:ProcessMemoryUtilities.Managed.NativeWrapper.CaptureErrors">
+            <summary>
+            Determines whether to capture the "LastError".
+            </summary>
+        </member>
+        <member name="P:ProcessMemoryUtilities.Managed.NativeWrapper.HasError">
+            <summary>
+            Determines if the previously called method on this thread was successful.
+            </summary>
+        </member>
+        <member name="P:ProcessMemoryUtilities.Managed.NativeWrapper.LastError">
+            <summary>
+            Returns the win32 error code set by the last failed method on this thread.
+            </summary>
+        </member>
+        <member name="F:ProcessMemoryUtilities.Managed.NativeWrapper.INFINITE">
+            <summary>
+            A constant used to specify an infinite waiting period
+            </summary>
+        </member>
+        <member name="M:ProcessMemoryUtilities.Managed.NativeWrapper.WaitForSingleObject(System.IntPtr,System.UInt32)">
+            <summary>
+            Waits until the specified object is in the signaled state or the time-out interval elapses.
+            </summary>
+            <param name="handle">A handle to the object.</param>
+            <param name="timeout">The time-out interval, in milliseconds. If a nonzero value is specified, the function waits until the object is signaled or the interval elapses. If dwMilliseconds is zero, the function does not enter a wait state if the object is not signaled; it always returns immediately. If dwMilliseconds is INFINITE, the function will return only when the object is signaled.</param>
+            <returns>If the function succeeds, the return value indicates the event that caused the function to return.</returns>
+        </member>
+        <member name="M:ProcessMemoryUtilities.Managed.NativeWrapper.GetRealWaitObjectResult(ProcessMemoryUtilities.Native.WaitObjectResult)">
+            <summary>
+            Turns the given WaitObjectResult into one of the defined enum values by stripping the objects index.
+            </summary>
+            <param name="value">A WaitObjectResult.</param>
+            <returns>A WaitObjectResult which is guaranteed to be one of the defined enum values.</returns>
+        </member>
+        <member name="M:ProcessMemoryUtilities.Managed.NativeWrapper.GetRealWaitObjectResult(ProcessMemoryUtilities.Native.WaitObjectResult,System.Int32@)">
+            <summary>
+            Turns the given WaitObjectResult into one of the defined enum values and returns the objects index.
+            </summary>
+            <param name="value">A WaitObjectResult</param>
+            <param name="index">A variable that receives the index of the awaited object.</param>
+            <returns>A WaitObjectResult which is guaranteed to be one of the defined enum values.</returns>
+        </member>
+        <member name="M:ProcessMemoryUtilities.Managed.NativeWrapper.CloseHandle(System.IntPtr)">
+            <summary>
+            Closes an open object handle.
+            </summary>
+            <param name="handle">A valid handle to an open object.</param>
+            <returns>If the function succeeds, the return value is nonzero. If the function fails, the return value is zero.To get extended error information, call GetLastError.</returns>
+        </member>
+        <member name="M:ProcessMemoryUtilities.Managed.NativeWrapper.OpenProcess(ProcessMemoryUtilities.Native.ProcessAccessFlags,System.Boolean,System.Int32)">
+            <summary>
+            Opens an existing local process object.
+            </summary>
+            <param name="desiredAccess">The access to the process object. This access right is checked against the security descriptor for the process.</param>
+            <param name="inheritHandle">If this value is TRUE, processes created by this process will inherit the handle. Otherwise, the processes do not inherit this handle.</param>
+            <param name="processId">The identifier of the local process to be opened.</param>
+            <returns>If the function succeeds, the return value is an open handle to the specified process. If the function fails, the return value is IntPtr.Zero. To get extended error information, call GetLastError.</returns>
+        </member>
+        <member name="M:ProcessMemoryUtilities.Managed.NativeWrapper.OpenProcess(ProcessMemoryUtilities.Native.ProcessAccessFlags,System.Int32)">
+            <summary>
+            Opens an existing local process object.
+            </summary>
+            <param name="desiredAccess">The access to the process object. This access right is checked against the security descriptor for the process.</param>
+            <param name="processId">The identifier of the local process to be opened.</param>
+            <returns>If the function succeeds, the return value is an open handle to the specified process. If the function fails, the return value is IntPtr.Zero. To get extended error information, call GetLastError.</returns>
+        </member>
+        <member name="M:ProcessMemoryUtilities.Managed.NativeWrapper.ReadProcessMemory(System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr)">
+            <summary>
+            ReadProcessMemory copies the data in the specified address range from the address space of the specified process into the specified buffer of the current process. Any process that has a handle with PROCESS_VM_READ access can call the function. The entire area to be read must be accessible, and if it is not accessible, the function fails.
+            </summary>
+            <param name="handle">A handle to the process with memory that is being read. The handle must have PROCESS_VM_READ access to the process.</param>
+            <param name="baseAddress">A pointer to the base address in the specified process from which to read. Before any data transfer occurs, the system verifies that all data in the base address and memory of the specified size is accessible for read access, and if it is not accessible the function fails.</param>
+            <param name="buffer">A pointer to a buffer that receives the contents from the address space of the specified process.</param>
+            <param name="size">The number of bytes to be read from the specified process.</param>
+            <returns>Returns true when the function succeeds; otherwise false. To get extended error information, call GetLastError.</returns>
+        </member>
+        <member name="M:ProcessMemoryUtilities.Managed.NativeWrapper.ReadProcessMemory(System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr)">
+            <summary>
+            ReadProcessMemory copies the data in the specified address range from the address space of the specified process into the specified buffer of the current process. Any process that has a handle with PROCESS_VM_READ access can call the function. The entire area to be read must be accessible, and if it is not accessible, the function fails.
+            </summary>
+            <param name="handle">A handle to the process with memory that is being read. The handle must have PROCESS_VM_READ access to the process.</param>
+            <param name="baseAddress">A pointer to the base address in the specified process from which to read. Before any data transfer occurs, the system verifies that all data in the base address and memory of the specified size is accessible for read access, and if it is not accessible the function fails.</param>
+            <param name="buffer">A pointer to a buffer that receives the contents from the address space of the specified process.</param>
+            <param name="size">The number of bytes to be read from the specified process.</param>
+            <param name="numberOfBytesRead">A pointer to a variable that receives the number of bytes transferred into the specified buffer.</param>
+            <returns>Returns true when the function succeeds; otherwise false. To get extended error information, call GetLastError.</returns>
+        </member>
+        <member name="M:ProcessMemoryUtilities.Managed.NativeWrapper.ReadProcessMemory(System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr@)">
+            <summary>
+            ReadProcessMemory copies the data in the specified address range from the address space of the specified process into the specified buffer of the current process. Any process that has a handle with PROCESS_VM_READ access can call the function. The entire area to be read must be accessible, and if it is not accessible, the function fails.
+            </summary>
+            <param name="handle">A handle to the process with memory that is being read. The handle must have PROCESS_VM_READ access to the process.</param>
+            <param name="baseAddress">A pointer to the base address in the specified process from which to read. Before any data transfer occurs, the system verifies that all data in the base address and memory of the specified size is accessible for read access, and if it is not accessible the function fails.</param>
+            <param name="buffer">A pointer to a buffer that receives the contents from the address space of the specified process.</param>
+            <param name="size">The number of bytes to be read from the specified process.</param>
+            <param name="numberOfBytesRead">A pointer to a variable that receives the number of bytes transferred into the specified buffer. If lpNumberOfBytesRead is IntPtr.Zero, the parameter is ignored.</param>
+            <returns>Returns true when the function succeeds; otherwise false. To get extended error information, call GetLastError.</returns>
+        </member>
+        <member name="M:ProcessMemoryUtilities.Managed.NativeWrapper.ReadProcessMemory``1(System.IntPtr,System.IntPtr,``0@)">
+            <summary>
+            ReadProcessMemory copies the data in the specified address range from the address space of the specified process into the specified buffer of the current process. Any process that has a handle with PROCESS_VM_READ access can call the function. The entire area to be read must be accessible, and if it is not accessible, the function fails.
+            </summary>
+            <param name="handle">A handle to the process with memory that is being read. The handle must have PROCESS_VM_READ access to the process.</param>
+            <param name="baseAddress">A pointer to the base address in the specified process from which to read. Before any data transfer occurs, the system verifies that all data in the base address and memory of the specified size is accessible for read access, and if it is not accessible the function fails.</param>
+            <param name="buffer">A pointer to a buffer that receives the contents from the address space of the specified process.</param>
+            <returns>Returns true when the function succeeds; otherwise false. To get extended error information, call GetLastError.</returns>
+        </member>
+        <member name="M:ProcessMemoryUtilities.Managed.NativeWrapper.ReadProcessMemory``1(System.IntPtr,System.IntPtr,``0@,System.IntPtr@)">
+            <summary>
+            ReadProcessMemory copies the data in the specified address range from the address space of the specified process into the specified buffer of the current process. Any process that has a handle with PROCESS_VM_READ access can call the function. The entire area to be read must be accessible, and if it is not accessible, the function fails.
+            </summary>
+            <param name="handle">A handle to the process with memory that is being read. The handle must have PROCESS_VM_READ access to the process.</param>
+            <param name="baseAddress">A pointer to the base address in the specified process from which to read. Before any data transfer occurs, the system verifies that all data in the base address and memory of the specified size is accessible for read access, and if it is not accessible the function fails.</param>
+            <param name="buffer">A pointer to a buffer that receives the contents from the address space of the specified process.</param>
+            <param name="numberOfBytesRead">A pointer to a variable that receives the number of bytes transferred into the specified buffer. If lpNumberOfBytesRead is IntPtr.Zero, the parameter is ignored.</param>
+            <returns>Returns true when the function succeeds; otherwise false. To get extended error information, call GetLastError.</returns>
+        </member>
+        <member name="M:ProcessMemoryUtilities.Managed.NativeWrapper.ReadProcessMemoryArray``1(System.IntPtr,System.IntPtr,``0[])">
+            <summary>
+            ReadProcessMemory copies the data in the specified address range from the address space of the specified process into the specified buffer of the current process. Any process that has a handle with PROCESS_VM_READ access can call the function. The entire area to be read must be accessible, and if it is not accessible, the function fails.
+            </summary>
+            <param name="handle">A handle to the process with memory that is being read. The handle must have PROCESS_VM_READ access to the process.</param>
+            <param name="baseAddress">A pointer to the base address in the specified process from which to read. Before any data transfer occurs, the system verifies that all data in the base address and memory of the specified size is accessible for read access, and if it is not accessible the function fails.</param>
+            <param name="buffer">A pointer to a buffer that receives the contents from the address space of the specified process.</param>
+            <returns>Returns true when the function succeeds; otherwise false. To get extended error information, call GetLastError.</returns>
+        </member>
+        <member name="M:ProcessMemoryUtilities.Managed.NativeWrapper.ReadProcessMemoryArray``1(System.IntPtr,System.IntPtr,``0[],System.Int32)">
+            <summary>
+            ReadProcessMemory copies the data in the specified address range from the address space of the specified process into the specified buffer of the current process. Any process that has a handle with PROCESS_VM_READ access can call the function. The entire area to be read must be accessible, and if it is not accessible, the function fails.
+            </summary>
+            <param name="handle">A handle to the process with memory that is being read. The handle must have PROCESS_VM_READ access to the process.</param>
+            <param name="baseAddress">A pointer to the base address in the specified process from which to read. Before any data transfer occurs, the system verifies that all data in the base address and memory of the specified size is accessible for read access, and if it is not accessible the function fails.</param>
+            <param name="buffer">A pointer to a buffer that receives the contents from the address space of the specified process.</param>
+            <param name="offset">A byte offset from inside the array to copy to.</param>
+            <returns>Returns true when the function succeeds; otherwise false. To get extended error information, call GetLastError.</returns>
+        </member>
+        <member name="M:ProcessMemoryUtilities.Managed.NativeWrapper.ReadProcessMemoryArray``1(System.IntPtr,System.IntPtr,``0[],System.IntPtr@)">
+            <summary>
+            ReadProcessMemory copies the data in the specified address range from the address space of the specified process into the specified buffer of the current process. Any process that has a handle with PROCESS_VM_READ access can call the function. The entire area to be read must be accessible, and if it is not accessible, the function fails.
+            </summary>
+            <param name="handle">A handle to the process with memory that is being read. The handle must have PROCESS_VM_READ access to the process.</param>
+            <param name="baseAddress">A pointer to the base address in the specified process from which to read. Before any data transfer occurs, the system verifies that all data in the base address and memory of the specified size is accessible for read access, and if it is not accessible the function fails.</param>
+            <param name="buffer">A pointer to a buffer that receives the contents from the address space of the specified process.</param>
+            <param name="numberOfBytesRead">A pointer to a variable that receives the number of bytes transferred into the specified buffer. If lpNumberOfBytesRead is IntPtr.Zero, the parameter is ignored.</param>
+            <returns>Returns true when the function succeeds; otherwise false. To get extended error information, call GetLastError.</returns>
+        </member>
+        <member name="M:ProcessMemoryUtilities.Managed.NativeWrapper.ReadProcessMemoryArray``1(System.IntPtr,System.IntPtr,``0[],System.Int32,System.Int32)">
+            <summary>
+            ReadProcessMemory copies the data in the specified address range from the address space of the specified process into the specified buffer of the current process. Any process that has a handle with PROCESS_VM_READ access can call the function. The entire area to be read must be accessible, and if it is not accessible, the function fails.
+            </summary>
+            <param name="handle">A handle to the process with memory that is being read. The handle must have PROCESS_VM_READ access to the process.</param>
+            <param name="baseAddress">A pointer to the base address in the specified process from which to read. Before any data transfer occurs, the system verifies that all data in the base address and memory of the specified size is accessible for read access, and if it is not accessible the function fails.</param>
+            <param name="buffer">A pointer to a buffer that receives the contents from the address space of the specified process.</param>
+            <param name="offset">A byte offset from inside the array to copy to.</param>
+            <param name="length">The number of bytes to copy to the array.</param>
+            <returns>Returns true when the function succeeds; otherwise false. To get extended error information, call GetLastError.</returns>
+        </member>
+        <member name="M:ProcessMemoryUtilities.Managed.NativeWrapper.ReadProcessMemoryArray``1(System.IntPtr,System.IntPtr,``0[],System.Int32,System.IntPtr@)">
+            <summary>
+            ReadProcessMemory copies the data in the specified address range from the address space of the specified process into the specified buffer of the current process. Any process that has a handle with PROCESS_VM_READ access can call the function. The entire area to be read must be accessible, and if it is not accessible, the function fails.
+            </summary>
+            <param name="handle">A handle to the process with memory that is being read. The handle must have PROCESS_VM_READ access to the process.</param>
+            <param name="baseAddress">A pointer to the base address in the specified process from which to read. Before any data transfer occurs, the system verifies that all data in the base address and memory of the specified size is accessible for read access, and if it is not accessible the function fails.</param>
+            <param name="buffer">A pointer to a buffer that receives the contents from the address space of the specified process.</param>
+            <param name="offset">A byte offset from inside the array to copy to.</param>
+            <param name="numberOfBytesRead">A pointer to a variable that receives the number of bytes transferred into the specified buffer. If lpNumberOfBytesRead is IntPtr.Zero, the parameter is ignored.</param>
+            <returns>Returns true when the function succeeds; otherwise false. To get extended error information, call GetLastError.</returns>
+        </member>
+        <member name="M:ProcessMemoryUtilities.Managed.NativeWrapper.ReadProcessMemoryArray``1(System.IntPtr,System.IntPtr,``0[],System.Int32,System.Int32,System.IntPtr@)">
+            <summary>
+            ReadProcessMemory copies the data in the specified address range from the address space of the specified process into the specified buffer of the current process. Any process that has a handle with PROCESS_VM_READ access can call the function. The entire area to be read must be accessible, and if it is not accessible, the function fails.
+            </summary>
+            <param name="handle">A handle to the process with memory that is being read. The handle must have PROCESS_VM_READ access to the process.</param>
+            <param name="baseAddress">A pointer to the base address in the specified process from which to read. Before any data transfer occurs, the system verifies that all data in the base address and memory of the specified size is accessible for read access, and if it is not accessible the function fails.</param>
+            <param name="buffer">A pointer to a buffer that receives the contents from the address space of the specified process.</param>
+            <param name="offset">A byte offset from inside the array to copy to.</param>
+            <param name="length">The number of bytes to copy to the array.</param>
+            <param name="numberOfBytesRead">A pointer to a variable that receives the number of bytes transferred into the specified buffer. If lpNumberOfBytesRead is IntPtr.Zero, the parameter is ignored.</param>
+            <returns>Returns true when the function succeeds; otherwise false. To get extended error information, call GetLastError.</returns>
+        </member>
+        <member name="M:ProcessMemoryUtilities.Managed.NativeWrapper.ReadProcessMemoryPartial``1(System.IntPtr,System.IntPtr,``0@,System.Int32)">
+            <summary>
+            ReadProcessMemory copies the data in the specified address range from the address space of the specified process into the specified buffer of the current process. Any process that has a handle with PROCESS_VM_READ access can call the function. The entire area to be read must be accessible, and if it is not accessible, the function fails.
+            </summary>
+            <param name="handle">A handle to the process with memory that is being read. The handle must have PROCESS_VM_READ access to the process.</param>
+            <param name="baseAddress">A pointer to the base address in the specified process from which to read. Before any data transfer occurs, the system verifies that all data in the base address and memory of the specified size is accessible for read access, and if it is not accessible the function fails.</param>
+            <param name="buffer">A pointer to a buffer that receives the contents from the address space of the specified process.</param>
+            <param name="offset">A byte offset from the start of the buffer.</param>
+            <returns>Returns true when the function succeeds; otherwise false. To get extended error information, call GetLastError.</returns>
+        </member>
+        <member name="M:ProcessMemoryUtilities.Managed.NativeWrapper.ReadProcessMemoryPartial``1(System.IntPtr,System.IntPtr,``0@,System.Int32,System.Int32)">
+            <summary>
+            ReadProcessMemory copies the data in the specified address range from the address space of the specified process into the specified buffer of the current process. Any process that has a handle with PROCESS_VM_READ access can call the function. The entire area to be read must be accessible, and if it is not accessible, the function fails.
+            </summary>
+            <param name="handle">A handle to the process with memory that is being read. The handle must have PROCESS_VM_READ access to the process.</param>
+            <param name="baseAddress">A pointer to the base address in the specified process from which to read. Before any data transfer occurs, the system verifies that all data in the base address and memory of the specified size is accessible for read access, and if it is not accessible the function fails.</param>
+            <param name="buffer">A pointer to a buffer that receives the contents from the address space of the specified process.</param>
+            <param name="offset">A byte offset from the start of the buffer.</param>
+            <param name="length">The number of bytes to copy to the buffer.</param>
+            <returns>Returns true when the function succeeds; otherwise false. To get extended error information, call GetLastError.</returns>
+        </member>
+        <member name="M:ProcessMemoryUtilities.Managed.NativeWrapper.ReadProcessMemoryPartial``1(System.IntPtr,System.IntPtr,``0@,System.Int32,System.IntPtr@)">
+            <summary>
+            ReadProcessMemory copies the data in the specified address range from the address space of the specified process into the specified buffer of the current process. Any process that has a handle with PROCESS_VM_READ access can call the function. The entire area to be read must be accessible, and if it is not accessible, the function fails.
+            </summary>
+            <param name="handle">A handle to the process with memory that is being read. The handle must have PROCESS_VM_READ access to the process.</param>
+            <param name="baseAddress">A pointer to the base address in the specified process from which to read. Before any data transfer occurs, the system verifies that all data in the base address and memory of the specified size is accessible for read access, and if it is not accessible the function fails.</param>
+            <param name="buffer">A pointer to a buffer that receives the contents from the address space of the specified process.</param>
+            <param name="offset">A byte offset from the start of the buffer.</param>
+            <param name="numberOfBytesRead">A pointer to a variable that receives the number of bytes transferred into the specified buffer.</param>
+            <returns>Returns true when the function succeeds; otherwise false. To get extended error information, call GetLastError.</returns>
+        </member>
+        <member name="M:ProcessMemoryUtilities.Managed.NativeWrapper.ReadProcessMemoryPartial``1(System.IntPtr,System.IntPtr,``0@,System.Int32,System.Int32,System.IntPtr@)">
+            <summary>
+            ReadProcessMemory copies the data in the specified address range from the address space of the specified process into the specified buffer of the current process. Any process that has a handle with PROCESS_VM_READ access can call the function. The entire area to be read must be accessible, and if it is not accessible, the function fails.
+            </summary>
+            <param name="handle">A handle to the process with memory that is being read. The handle must have PROCESS_VM_READ access to the process.</param>
+            <param name="baseAddress">A pointer to the base address in the specified process from which to read. Before any data transfer occurs, the system verifies that all data in the base address and memory of the specified size is accessible for read access, and if it is not accessible the function fails.</param>
+            <param name="buffer">A pointer to a buffer that receives the contents from the address space of the specified process.</param>
+            <param name="offset">A byte offset from the start of the buffer.</param>
+            <param name="length">The number of bytes to copy to the buffer.</param>
+            <param name="numberOfBytesRead">A pointer to a variable that receives the number of bytes transferred into the specified buffer.</param>
+            <returns>Returns true when the function succeeds; otherwise false. To get extended error information, call GetLastError.</returns>
+        </member>
+        <member name="M:ProcessMemoryUtilities.Managed.NativeWrapper.VirtualAllocEx(System.IntPtr,System.IntPtr,System.IntPtr,ProcessMemoryUtilities.Native.AllocationType,ProcessMemoryUtilities.Native.MemoryProtectionFlags)">
+            <summary>
+            Reserves, commits, or changes the state of a region of memory within the virtual address space of a specified process. The function initializes the memory it allocates to zero.
+            </summary>
+            <param name="handle">The handle to a process. The function allocates memory within the virtual address space of this process. The handle must have the PROCESS_VM_OPERATION access right.For more information, see Process Security and Access Rights.</param>
+            <param name="address">The pointer that specifies a desired starting address for the region of pages that you want to allocate. If you are reserving memory, the function rounds this address down to the nearest multiple of the allocation granularity. If you are committing memory that is already reserved, the function rounds this address down to the nearest page boundary.To determine the size of a page and the allocation granularity on the host computer, use the GetSystemInfo function. If lpAddress is NULL, the function determines where to allocate the region. If this address is within an enclave that you have not initialized by calling InitializeEnclave, VirtualAllocEx allocates a page of zeros for the enclave at that address.The page must be previously uncommitted, and will not be measured with the EEXTEND instruction of the Intel Software Guard Extensions programming model. If the address in within an enclave that you initialized, then the allocation operation fails with the ERROR_INVALID_ADDRESS error.</param>
+            <param name="size">The size of the region of memory to allocate, in bytes. If lpAddress is NULL, the function rounds dwSize up to the next page boundary. If lpAddress is not NULL, the function allocates all pages that contain one or more bytes in the range from lpAddress to lpAddress+dwSize.This means, for example, that a 2-byte range that straddles a page boundary causes the function to allocate both pages.</param>
+            <param name="allocationType">The type of memory allocation. This parameter must contain one of the following values.</param>
+            <param name="memoryProtection">The memory protection for the region of pages to be allocated. If the pages are being committed, you can specify any one of the memory protection constants.</param>
+            <returns>If the function succeeds, the return value is the base address of the allocated region of pages. If the function fails, the return value is NULL.To get extended error information, call GetLastError.</returns>
+        </member>
+        <member name="M:ProcessMemoryUtilities.Managed.NativeWrapper.VirtualFreeEx(System.IntPtr,System.IntPtr,System.IntPtr,ProcessMemoryUtilities.Native.FreeType)">
+            <summary>
+            Releases, decommits, or releases and decommits a region of memory within the virtual address space of a specified process.
+            </summary>
+            <param name="handle">A handle to a process. The function frees memory within the virtual address space of the process. The handle must have the PROCESS_VM_OPERATION access right.For more information, see Process Security and Access Rights.</param>
+            <param name="address">A pointer to the starting address of the region of memory to be freed. If the dwFreeType parameter is MEM_RELEASE, lpAddress must be the base address returned by the VirtualAllocEx function when the region is reserved.</param>
+            <param name="size">The size of the region of memory to free, in bytes. If the dwFreeType parameter is MEM_RELEASE, dwSize must be 0 (zero). The function frees the entire region that is reserved in the initial allocation call to VirtualAllocEx. If dwFreeType is MEM_DECOMMIT, the function decommits all memory pages that contain one or more bytes in the range from the lpAddress parameter to (lpAddress+dwSize). This means, for example, that a 2-byte region of memory that straddles a page boundary causes both pages to be decommitted.If lpAddress is the base address returned by VirtualAllocEx and dwSize is 0 (zero), the function decommits the entire region that is allocated by VirtualAllocEx.After that, the entire region is in the reserved state.</param>
+            <param name="freeType">The type of free operation.</param>
+            <returns>If the function succeeds, the return value is true. If the function fails, the return value is false. To get extended error information, call GetLastError.</returns>
+        </member>
+        <member name="M:ProcessMemoryUtilities.Managed.NativeWrapper.VirtualProtectEx(System.IntPtr,System.IntPtr,System.IntPtr,ProcessMemoryUtilities.Native.MemoryProtectionFlags,ProcessMemoryUtilities.Native.MemoryProtectionFlags@)">
+            <summary>
+            Changes the protection on a region of committed pages in the virtual address space of a specified process.
+            </summary>
+            <param name="handle">A handle to the process whose memory protection is to be changed. The handle must have the PROCESS_VM_OPERATION access right. For more information, see Process Security and Access Rights.</param>
+            <param name="address">A pointer to the base address of the region of pages whose access protection attributes are to be changed. All pages in the specified region must be within the same reserved region allocated when calling the VirtualAlloc or VirtualAllocEx function using MEM_RESERVE. The pages cannot span adjacent reserved regions that were allocated by separate calls to VirtualAlloc or VirtualAllocEx using MEM_RESERVE.</param>
+            <param name="size">The size of the region whose access protection attributes are changed, in bytes. The region of affected pages includes all pages containing one or more bytes in the range from the lpAddress parameter to (lpAddress+dwSize). This means that a 2-byte range straddling a page boundary causes the protection attributes of both pages to be changed.</param>
+            <param name="newProtect">The memory protection option. This parameter can be one of the memory protection constants. For mapped views, this value must be compatible with the access protection specified when the view was mapped(see MapViewOfFile, MapViewOfFileEx, and MapViewOfFileExNuma).</param>
+            <param name="oldProtect">A pointer to a variable that receives the previous access protection of the first page in the specified region of pages. If this parameter is NULL or does not point to a valid variable, the function fails.</param>
+            <returns>If the function succeeds, the return value is true. If the function fails, the return value is false. To get extended error information, call GetLastError.</returns>
+        </member>
+        <member name="M:ProcessMemoryUtilities.Managed.NativeWrapper.WriteProcessMemory(System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr)">
+            <summary>
+            WriteProcessMemory copies the data from the specified buffer in the current process to the address range of the specified process. Any process that has a handle with PROCESS_VM_WRITE and PROCESS_VM_OPERATION access to the process to be written to can call the function. Typically but not always, the process with address space that is being written to is being debugged. The entire area to be written to must be accessible, and if it is not accessible, the function fails.
+            </summary>
+            <param name="handle">A handle to the process memory to be modified. The handle must have PROCESS_VM_WRITE and PROCESS_VM_OPERATION access to the process.</param>
+            <param name="baseAddress">A pointer to the base address in the specified process to which data is written. Before data transfer occurs, the system verifies that all data in the base address and memory of the specified size is accessible for write access, and if it is not accessible, the function fails.</param>
+            <param name="buffer">A pointer to the buffer that contains data to be written in the address space of the specified process.</param>
+            <param name="size">The number of bytes to be written to the specified process.</param>
+            <returns>Returns true when the function succeeds; otherwise false. To get extended error information, call GetLastError.</returns>
+        </member>
+        <member name="M:ProcessMemoryUtilities.Managed.NativeWrapper.WriteProcessMemory(System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr)">
+            <summary>
+            WriteProcessMemory copies the data from the specified buffer in the current process to the address range of the specified process. Any process that has a handle with PROCESS_VM_WRITE and PROCESS_VM_OPERATION access to the process to be written to can call the function. Typically but not always, the process with address space that is being written to is being debugged. The entire area to be written to must be accessible, and if it is not accessible, the function fails.
+            </summary>
+            <param name="handle">A handle to the process memory to be modified. The handle must have PROCESS_VM_WRITE and PROCESS_VM_OPERATION access to the process.</param>
+            <param name="baseAddress">A pointer to the base address in the specified process to which data is written. Before data transfer occurs, the system verifies that all data in the base address and memory of the specified size is accessible for write access, and if it is not accessible, the function fails.</param>
+            <param name="buffer">A pointer to the buffer that contains data to be written in the address space of the specified process.</param>
+            <param name="size">The number of bytes to be written to the specified process.</param>
+            <param name="numberOfBytesWritten">A pointer to a variable that receives the number of bytes transferred into the specified process. This parameter is optional. If lpNumberOfBytesWritten is IntPtr.Zero, the parameter is ignored.</param>
+            <returns>Returns true when the function succeeds; otherwise false. To get extended error information, call GetLastError.</returns>
+        </member>
+        <member name="M:ProcessMemoryUtilities.Managed.NativeWrapper.WriteProcessMemory(System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr@)">
+            <summary>
+            WriteProcessMemory copies the data from the specified buffer in the current process to the address range of the specified process. Any process that has a handle with PROCESS_VM_WRITE and PROCESS_VM_OPERATION access to the process to be written to can call the function. Typically but not always, the process with address space that is being written to is being debugged. The entire area to be written to must be accessible, and if it is not accessible, the function fails.
+            </summary>
+            <param name="handle">A handle to the process memory to be modified. The handle must have PROCESS_VM_WRITE and PROCESS_VM_OPERATION access to the process.</param>
+            <param name="baseAddress">A pointer to the base address in the specified process to which data is written. Before data transfer occurs, the system verifies that all data in the base address and memory of the specified size is accessible for write access, and if it is not accessible, the function fails.</param>
+            <param name="buffer">A pointer to the buffer that contains data to be written in the address space of the specified process.</param>
+            <param name="size">The number of bytes to be written to the specified process.</param>
+            <param name="numberOfBytesWritten">A pointer to a variable that receives the number of bytes transferred into the specified process. This parameter is optional. If lpNumberOfBytesWritten is IntPtr.Zero, the parameter is ignored.</param>
+            <returns>Returns true when the function succeeds; otherwise false. To get extended error information, call GetLastError.</returns>
+        </member>
+        <member name="M:ProcessMemoryUtilities.Managed.NativeWrapper.WriteProcessMemory``1(System.IntPtr,System.IntPtr,``0@)">
+            <summary>
+            WriteProcessMemory copies the data from the specified buffer in the current process to the address range of the specified process. Any process that has a handle with PROCESS_VM_WRITE and PROCESS_VM_OPERATION access to the process to be written to can call the function. Typically but not always, the process with address space that is being written to is being debugged. The entire area to be written to must be accessible, and if it is not accessible, the function fails.
+            </summary>
+            <param name="handle">A handle to the process memory to be modified. The handle must have PROCESS_VM_WRITE and PROCESS_VM_OPERATION access to the process.</param>
+            <param name="baseAddress">A pointer to the base address in the specified process to which data is written. Before data transfer occurs, the system verifies that all data in the base address and memory of the specified size is accessible for write access, and if it is not accessible, the function fails.</param>
+            <param name="buffer">A pointer to the buffer that contains data to be written in the address space of the specified process.</param>
+            <returns>Returns true when the function succeeds; otherwise false. To get extended error information, call GetLastError.</returns>
+        </member>
+        <member name="M:ProcessMemoryUtilities.Managed.NativeWrapper.WriteProcessMemory``1(System.IntPtr,System.IntPtr,``0@,System.IntPtr@)">
+            <summary>
+            WriteProcessMemory copies the data from the specified buffer in the current process to the address range of the specified process. Any process that has a handle with PROCESS_VM_WRITE and PROCESS_VM_OPERATION access to the process to be written to can call the function. Typically but not always, the process with address space that is being written to is being debugged. The entire area to be written to must be accessible, and if it is not accessible, the function fails.
+            </summary>
+            <param name="handle">A handle to the process memory to be modified. The handle must have PROCESS_VM_WRITE and PROCESS_VM_OPERATION access to the process.</param>
+            <param name="baseAddress">A pointer to the base address in the specified process to which data is written. Before data transfer occurs, the system verifies that all data in the base address and memory of the specified size is accessible for write access, and if it is not accessible, the function fails.</param>
+            <param name="buffer">A pointer to the buffer that contains data to be written in the address space of the specified process.</param>
+            <param name="numberOfBytesWritten">A pointer to a variable that receives the number of bytes transferred into the specified process. This parameter is optional. If lpNumberOfBytesWritten is IntPtr.Zero, the parameter is ignored.</param>
+            <returns>Returns true when the function succeeds; otherwise false. To get extended error information, call GetLastError.</returns>
+        </member>
+        <member name="M:ProcessMemoryUtilities.Managed.NativeWrapper.WriteProcessMemoryArray``1(System.IntPtr,System.IntPtr,``0[])">
+            <summary>
+            WriteProcessMemory copies the data from the specified buffer in the current process to the address range of the specified process. Any process that has a handle with PROCESS_VM_WRITE and PROCESS_VM_OPERATION access to the process to be written to can call the function. Typically but not always, the process with address space that is being written to is being debugged. The entire area to be written to must be accessible, and if it is not accessible, the function fails.
+            </summary>
+            <param name="handle">A handle to the process memory to be modified. The handle must have PROCESS_VM_WRITE and PROCESS_VM_OPERATION access to the process.</param>
+            <param name="baseAddress">A pointer to the base address in the specified process to which data is written. Before data transfer occurs, the system verifies that all data in the base address and memory of the specified size is accessible for write access, and if it is not accessible, the function fails.</param>
+            <param name="buffer">A pointer to the buffer that contains data to be written in the address space of the specified process.</param>
+            <returns>Returns true when the function succeeds; otherwise false. To get extended error information, call GetLastError.</returns>
+        </member>
+        <member name="M:ProcessMemoryUtilities.Managed.NativeWrapper.WriteProcessMemoryArray``1(System.IntPtr,System.IntPtr,``0[],System.Int32)">
+            <summary>
+            WriteProcessMemory copies the data from the specified buffer in the current process to the address range of the specified process. Any process that has a handle with PROCESS_VM_WRITE and PROCESS_VM_OPERATION access to the process to be written to can call the function. Typically but not always, the process with address space that is being written to is being debugged. The entire area to be written to must be accessible, and if it is not accessible, the function fails.
+            </summary>
+            <param name="handle">A handle to the process memory to be modified. The handle must have PROCESS_VM_WRITE and PROCESS_VM_OPERATION access to the process.</param>
+            <param name="baseAddress">A pointer to the base address in the specified process to which data is written. Before data transfer occurs, the system verifies that all data in the base address and memory of the specified size is accessible for write access, and if it is not accessible, the function fails.</param>
+            <param name="buffer">A pointer to the buffer that contains data to be written in the address space of the specified process.</param>
+            <param name="offset">A byte offset from inside the array to copy from.</param>
+            <returns>Returns true when the function succeeds; otherwise false. To get extended error information, call GetLastError.</returns>
+        </member>
+        <member name="M:ProcessMemoryUtilities.Managed.NativeWrapper.WriteProcessMemoryArray``1(System.IntPtr,System.IntPtr,``0[],System.IntPtr@)">
+            <summary>
+            WriteProcessMemory copies the data from the specified buffer in the current process to the address range of the specified process. Any process that has a handle with PROCESS_VM_WRITE and PROCESS_VM_OPERATION access to the process to be written to can call the function. Typically but not always, the process with address space that is being written to is being debugged. The entire area to be written to must be accessible, and if it is not accessible, the function fails.
+            </summary>
+            <param name="handle">A handle to the process memory to be modified. The handle must have PROCESS_VM_WRITE and PROCESS_VM_OPERATION access to the process.</param>
+            <param name="baseAddress">A pointer to the base address in the specified process to which data is written. Before data transfer occurs, the system verifies that all data in the base address and memory of the specified size is accessible for write access, and if it is not accessible, the function fails.</param>
+            <param name="buffer">A pointer to the buffer that contains data to be written in the address space of the specified process.</param>
+            <param name="numberOfBytesWritten">A pointer to a variable that receives the number of bytes transferred into the specified process. This parameter is optional. If lpNumberOfBytesWritten is IntPtr.Zero, the parameter is ignored.</param>
+            <returns>Returns true when the function succeeds; otherwise false. To get extended error information, call GetLastError.</returns>
+        </member>
+        <member name="M:ProcessMemoryUtilities.Managed.NativeWrapper.WriteProcessMemoryArray``1(System.IntPtr,System.IntPtr,``0[],System.Int32,System.Int32)">
+            <summary>
+            WriteProcessMemory copies the data from the specified buffer in the current process to the address range of the specified process. Any process that has a handle with PROCESS_VM_WRITE and PROCESS_VM_OPERATION access to the process to be written to can call the function. Typically but not always, the process with address space that is being written to is being debugged. The entire area to be written to must be accessible, and if it is not accessible, the function fails.
+            </summary>
+            <param name="handle">A handle to the process memory to be modified. The handle must have PROCESS_VM_WRITE and PROCESS_VM_OPERATION access to the process.</param>
+            <param name="baseAddress">A pointer to the base address in the specified process to which data is written. Before data transfer occurs, the system verifies that all data in the base address and memory of the specified size is accessible for write access, and if it is not accessible, the function fails.</param>
+            <param name="buffer">A pointer to the buffer that contains data to be written in the address space of the specified process.</param>
+            <param name="offset">A byte offset from inside the array to copy from.</param>
+            <param name="length">The number of bytes to copy from the array.</param>
+            <returns>Returns true when the function succeeds; otherwise false. To get extended error information, call GetLastError.</returns>
+        </member>
+        <member name="M:ProcessMemoryUtilities.Managed.NativeWrapper.WriteProcessMemoryArray``1(System.IntPtr,System.IntPtr,``0[],System.Int32,System.IntPtr@)">
+            <summary>
+            WriteProcessMemory copies the data from the specified buffer in the current process to the address range of the specified process. Any process that has a handle with PROCESS_VM_WRITE and PROCESS_VM_OPERATION access to the process to be written to can call the function. Typically but not always, the process with address space that is being written to is being debugged. The entire area to be written to must be accessible, and if it is not accessible, the function fails.
+            </summary>
+            <param name="handle">A handle to the process memory to be modified. The handle must have PROCESS_VM_WRITE and PROCESS_VM_OPERATION access to the process.</param>
+            <param name="baseAddress">A pointer to the base address in the specified process to which data is written. Before data transfer occurs, the system verifies that all data in the base address and memory of the specified size is accessible for write access, and if it is not accessible, the function fails.</param>
+            <param name="buffer">A pointer to the buffer that contains data to be written in the address space of the specified process.</param>
+            <param name="offset">A byte offset from inside the array to copy from.</param>
+            <param name="numberOfBytesWritten">A pointer to a variable that receives the number of bytes transferred into the specified process. This parameter is optional. If lpNumberOfBytesWritten is IntPtr.Zero, the parameter is ignored.</param>
+            <returns>Returns true when the function succeeds; otherwise false. To get extended error information, call GetLastError.</returns>
+        </member>
+        <member name="M:ProcessMemoryUtilities.Managed.NativeWrapper.WriteProcessMemoryArray``1(System.IntPtr,System.IntPtr,``0[],System.Int32,System.Int32,System.IntPtr@)">
+            <summary>
+            WriteProcessMemory copies the data from the specified buffer in the current process to the address range of the specified process. Any process that has a handle with PROCESS_VM_WRITE and PROCESS_VM_OPERATION access to the process to be written to can call the function. Typically but not always, the process with address space that is being written to is being debugged. The entire area to be written to must be accessible, and if it is not accessible, the function fails.
+            </summary>
+            <param name="handle">A handle to the process memory to be modified. The handle must have PROCESS_VM_WRITE and PROCESS_VM_OPERATION access to the process.</param>
+            <param name="baseAddress">A pointer to the base address in the specified process to which data is written. Before data transfer occurs, the system verifies that all data in the base address and memory of the specified size is accessible for write access, and if it is not accessible, the function fails.</param>
+            <param name="buffer">A pointer to the buffer that contains data to be written in the address space of the specified process.</param>
+            <param name="offset">A byte offset from inside the array to copy from.</param>
+            <param name="length">The number of bytes to copy from the array.</param>
+            <param name="numberOfBytesWritten">A pointer to a variable that receives the number of bytes transferred into the specified process. This parameter is optional. If lpNumberOfBytesWritten is IntPtr.Zero, the parameter is ignored.</param>
+            <returns>Returns true when the function succeeds; otherwise false. To get extended error information, call GetLastError.</returns>
+        </member>
+        <member name="M:ProcessMemoryUtilities.Managed.NativeWrapper.WriteProcessMemoryPartial``1(System.IntPtr,System.IntPtr,``0@,System.Int32)">
+            <summary>
+            WriteProcessMemory copies the data from the specified buffer in the current process to the address range of the specified process. Any process that has a handle with PROCESS_VM_WRITE and PROCESS_VM_OPERATION access to the process to be written to can call the function. Typically but not always, the process with address space that is being written to is being debugged. The entire area to be written to must be accessible, and if it is not accessible, the function fails.
+            </summary>
+            <param name="handle">A handle to the process memory to be modified. The handle must have PROCESS_VM_WRITE and PROCESS_VM_OPERATION access to the process.</param>
+            <param name="baseAddress">A pointer to the base address in the specified process to which data is written. Before data transfer occurs, the system verifies that all data in the base address and memory of the specified size is accessible for write access, and if it is not accessible, the function fails.</param>
+            <param name="buffer">A pointer to the buffer that contains data to be written in the address space of the specified process.</param>
+            <param name="offset">A byte offset from inside the array to copy from.</param>
+            <returns>Returns true when the function succeeds; otherwise false. To get extended error information, call GetLastError.</returns>
+        </member>
+        <member name="M:ProcessMemoryUtilities.Managed.NativeWrapper.WriteProcessMemoryPartial``1(System.IntPtr,System.IntPtr,``0@,System.Int32,System.Int32)">
+            <summary>
+            WriteProcessMemory copies the data from the specified buffer in the current process to the address range of the specified process. Any process that has a handle with PROCESS_VM_WRITE and PROCESS_VM_OPERATION access to the process to be written to can call the function. Typically but not always, the process with address space that is being written to is being debugged. The entire area to be written to must be accessible, and if it is not accessible, the function fails.
+            </summary>
+            <param name="handle">A handle to the process memory to be modified. The handle must have PROCESS_VM_WRITE and PROCESS_VM_OPERATION access to the process.</param>
+            <param name="baseAddress">A pointer to the base address in the specified process to which data is written. Before data transfer occurs, the system verifies that all data in the base address and memory of the specified size is accessible for write access, and if it is not accessible, the function fails.</param>
+            <param name="buffer">A pointer to the buffer that contains data to be written in the address space of the specified process.</param>
+            <param name="offset">A byte offset from inside the array to copy from.</param>
+            <param name="length">The number of bytes to copy to the buffer.</param>
+            <returns>Returns true when the function succeeds; otherwise false. To get extended error information, call GetLastError.</returns>
+        </member>
+        <member name="M:ProcessMemoryUtilities.Managed.NativeWrapper.WriteProcessMemoryPartial``1(System.IntPtr,System.IntPtr,``0@,System.Int32,System.IntPtr@)">
+            <summary>
+            WriteProcessMemory copies the data from the specified buffer in the current process to the address range of the specified process. Any process that has a handle with PROCESS_VM_WRITE and PROCESS_VM_OPERATION access to the process to be written to can call the function. Typically but not always, the process with address space that is being written to is being debugged. The entire area to be written to must be accessible, and if it is not accessible, the function fails.
+            </summary>
+            <param name="handle">A handle to the process memory to be modified. The handle must have PROCESS_VM_WRITE and PROCESS_VM_OPERATION access to the process.</param>
+            <param name="baseAddress">A pointer to the base address in the specified process to which data is written. Before data transfer occurs, the system verifies that all data in the base address and memory of the specified size is accessible for write access, and if it is not accessible, the function fails.</param>
+            <param name="buffer">A pointer to the buffer that contains data to be written in the address space of the specified process.</param>
+            <param name="offset">A byte offset from inside the array to copy from.</param>
+            <param name="numberOfBytesWritten">A pointer to a variable that receives the number of bytes transferred into the specified buffer.</param>
+            <returns>Returns true when the function succeeds; otherwise false. To get extended error information, call GetLastError.</returns>
+        </member>
+        <member name="M:ProcessMemoryUtilities.Managed.NativeWrapper.WriteProcessMemoryPartial``1(System.IntPtr,System.IntPtr,``0@,System.Int32,System.Int32,System.IntPtr@)">
+            <summary>
+            WriteProcessMemory copies the data from the specified buffer in the current process to the address range of the specified process. Any process that has a handle with PROCESS_VM_WRITE and PROCESS_VM_OPERATION access to the process to be written to can call the function. Typically but not always, the process with address space that is being written to is being debugged. The entire area to be written to must be accessible, and if it is not accessible, the function fails.
+            </summary>
+            <param name="handle">A handle to the process memory to be modified. The handle must have PROCESS_VM_WRITE and PROCESS_VM_OPERATION access to the process.</param>
+            <param name="baseAddress">A pointer to the base address in the specified process to which data is written. Before data transfer occurs, the system verifies that all data in the base address and memory of the specified size is accessible for write access, and if it is not accessible, the function fails.</param>
+            <param name="buffer">A pointer to the buffer that contains data to be written in the address space of the specified process.</param>
+            <param name="offset">A byte offset from inside the array to copy from.</param>
+            <param name="length">The number of bytes to copy to the buffer.</param>
+            <param name="numberOfBytesWritten">A pointer to a variable that receives the number of bytes transferred into the specified buffer.</param>
+            <returns>Returns true when the function succeeds; otherwise false. To get extended error information, call GetLastError.</returns>
+        </member>
+    </members>
+</doc>
