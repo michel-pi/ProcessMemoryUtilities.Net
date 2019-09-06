@@ -1,8 +1,13 @@
 MIT License
 
 Copyright (c) 2019 michel-pi
-Copyright (c) 2018 Lucas Trzesniewski
-Copyright (c) Simon Cropp and contributors
+Copyright (c) 2018 Lucas Trzesniewski (https://github.com/ltrzesniewski/InlineIL.Fody)
+Copyright (c) Simon Cropp and contributors (https://github.com/Fody/Fody)
+Copyright (c) 2004, Evain Jb (jb@evain.net) (https://github.com/ravibpatel/ILRepack.Lib.MSBuild.Task)
+Copyright (c) Modified 2007 Marcus Griep (neoeinstein+boo@gmail.com) (https://github.com/ravibpatel/ILRepack.Lib.MSBuild.Task)
+Copyright (c) Modified 2013 Peter Sunde (peter.sunde@gmail.com) (https://github.com/ravibpatel/ILRepack.Lib.MSBuild.Task)
+Copyright (c) Modified 2016 Ravi Patel (www.rbsoft.org) (https://github.com/ravibpatel/ILRepack.Lib.MSBuild.Task)
+Copyright (c) BenchmarkDotNet (https://github.com/dotnet/BenchmarkDotNet)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
