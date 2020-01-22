@@ -17,6 +17,7 @@
         Union="true"
         Verbose="true"
         XmlDocumentation="true"
+        AllowedDuplicateNamespaces="Microsoft.CodeAnalysis,System.Runtime.CompilerServices"
     />
 
     </Target>
