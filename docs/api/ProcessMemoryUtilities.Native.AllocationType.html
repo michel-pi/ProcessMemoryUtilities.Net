@@ -1,0 +1,220 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Enum AllocationType
+   | ProcessMemoryUtilities.Net Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Enum AllocationType
+   | ProcessMemoryUtilities.Net Documentation ">
+    <meta name="generator" content="docfx 2.48.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="ProcessMemoryUtilities.Native.AllocationType">
+  
+  
+  <h1 id="ProcessMemoryUtilities_Native_AllocationType" data-uid="ProcessMemoryUtilities.Native.AllocationType" class="text-break">Enum AllocationType
+  </h1>
+  <div class="markdown level0 summary"><p>Defines the different types of memory allocations.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="ProcessMemoryUtilities.Native.html">ProcessMemoryUtilities.Native</a></h6>
+  <h6><strong>Assembly</strong>: ProcessMemoryUtilities.Native.dll</h6>
+  <h5 id="ProcessMemoryUtilities_Native_AllocationType_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Flags]
+public enum AllocationType : uint</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    <thead>
+    <tbody>
+      <tr>
+        <td id="ProcessMemoryUtilities_Native_AllocationType_Commit">Commit</td>
+        <td><p>Allocates memory charges (from the overall size of memory and the paging files on disk) for the specified reserved memory pages. The
+function also guarantees that when the caller later initially accesses the memory, the contents will be zero. Actual physical pages are not
+allocated unless/until the virtual addresses are actually accessed. To reserve and commit pages in one step, call VirtualAllocEx with
+MEM_COMMIT | MEM_RESERVE. Attempting to commit a specific address range by specifying MEM_COMMIT without MEM_RESERVE and a non-NULL
+lpAddress fails unless the entire range has already been reserved. The resulting error code is ERROR_INVALID_ADDRESS. An attempt to commit
+a page that is already committed does not cause the function to fail. This means that you can commit pages without first determining the
+current commitment state of each page. If lpAddress specifies an address within an enclave, flAllocationType must be MEM_COMMIT.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ProcessMemoryUtilities_Native_AllocationType_Invalid">Invalid</td>
+        <td><p>An invalid value.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ProcessMemoryUtilities_Native_AllocationType_LargePages">LargePages</td>
+        <td><p>Allocates memory using large page support. The size and alignment must be a multiple of the large-page minimum. To obtain this value, use
+the GetLargePageMinimum function. If you specify this value, you must also specify MEM_RESERVE and MEM_COMMIT.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ProcessMemoryUtilities_Native_AllocationType_Physical">Physical</td>
+        <td><p>Reserves an address range that can be used to map Address Windowing Extensions (AWE) pages. This value must be used with MEM_RESERVE and no
+other values.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ProcessMemoryUtilities_Native_AllocationType_Reserve">Reserve</td>
+        <td><p>Reserves a range of the process's virtual address space without allocating any actual physical storage in memory or in the paging file on
+disk. You commit reserved pages by calling VirtualAllocEx again with MEM_COMMIT. To reserve and commit pages in one step, call
+VirtualAllocEx with MEM_COMMIT | MEM_RESERVE. Other memory allocation functions, such as malloc and LocalAlloc, cannot use reserved memory
+until it has been released.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ProcessMemoryUtilities_Native_AllocationType_Reset">Reset</td>
+        <td><p>Indicates that data in the memory range specified by lpAddress and dwSize is no longer of interest. The pages should not be read from or
+written to the paging file. However, the memory block will be used again later, so it should not be decommitted. This value cannot be used
+with any other value. Using this value does not guarantee that the range operated on with MEM_RESET will contain zeros. If you want the
+range to contain zeros, decommit the memory and then recommit it. When you use MEM_RESET, the VirtualAllocEx function ignores the value of
+fProtect. However, you must still set fProtect to a valid protection value, such as PAGE_NOACCESS. VirtualAllocEx returns an error if you
+use MEM_RESET and the range of memory is mapped to a file. A shared view is only acceptable if it is mapped to a paging file.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ProcessMemoryUtilities_Native_AllocationType_ResetUndo">ResetUndo</td>
+        <td><p>MEM_RESET_UNDO should only be called on an address range to which MEM_RESET was successfully applied earlier. It indicates that the data in
+the specified memory range specified by lpAddress and dwSize is of interest to the caller and attempts to reverse the effects of MEM_RESET.
+If the function succeeds, that means all data in the specified address range is intact. If the function fails, at least some of the data in
+the address range has been replaced with zeroes. This value cannot be used with any other value. If MEM_RESET_UNDO is called on an address
+range which was not MEM_RESET earlier, the behavior is undefined. When you specify MEM_RESET, the VirtualAllocEx function ignores the value
+of flProtect. However, you must still set flProtect to a valid protection value, such as PAGE_NOACCESS. Windows Server 2008 R2, Windows 7,
+Windows Server 2008, Windows Vista, Windows Server 2003 and Windows XP: The MEM_RESET_UNDO flag is not supported until Windows 8 and
+Windows Server 2012.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ProcessMemoryUtilities_Native_AllocationType_TopDown">TopDown</td>
+        <td><p>Allocates memory at the highest possible address. This can be slower than regular allocations, especially when there are many allocations.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ProcessMemoryUtilities_Native_AllocationType_WriteWatch">WriteWatch</td>
+        <td><p>Causes the system to track pages that are written to in the allocated region. If you specify this value, you must also specify MEM_RESERVE.
+To retrieve the addresses of the pages that have been written to since the region was allocated or the write-tracking state was reset, call
+the GetWriteWatch function. To reset the write-tracking state, call GetWriteWatch or ResetWriteWatch. The write-tracking feature remains
+enabled for the memory region until the region is freed.</p>
+</td>
+      </tr>
+    </tbody>
+  </thead></thead></table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/michel-pi/ProcessMemoryUtilities.Net/new/master/apiSpec/new?filename=ProcessMemoryUtilities_Native_AllocationType.md&amp;value=---%0Auid%3A%20ProcessMemoryUtilities.Native.AllocationType%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/michel-pi/ProcessMemoryUtilities.Net/blob/master/source/ProcessMemoryUtilities/Native/Enums.cs/#L8" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            ProcessMemoryUtilities.Net (c) 2020
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

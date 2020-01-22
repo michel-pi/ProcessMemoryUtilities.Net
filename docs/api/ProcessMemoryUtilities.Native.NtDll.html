@@ -1,0 +1,3383 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class NtDll
+   | ProcessMemoryUtilities.Net Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class NtDll
+   | ProcessMemoryUtilities.Net Documentation ">
+    <meta name="generator" content="docfx 2.48.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="ProcessMemoryUtilities.Native.NtDll">
+  
+  
+  <h1 id="ProcessMemoryUtilities_Native_NtDll" data-uid="ProcessMemoryUtilities.Native.NtDll" class="text-break">Class NtDll
+  </h1>
+  <div class="markdown level0 summary"><p>Provides access to some methods of ntdll.dll</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><span class="xref">NtDll</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">Object.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_System_Object_">Object.Equals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.referenceequals#System_Object_ReferenceEquals_System_Object_System_Object_">Object.ReferenceEquals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gethashcode#System_Object_GetHashCode">Object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gettype#System_Object_GetType">Object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Object.MemberwiseClone()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="ProcessMemoryUtilities.Native.html">ProcessMemoryUtilities.Native</a></h6>
+  <h6><strong>Assembly</strong>: ProcessMemoryUtilities.Native.dll</h6>
+  <h5 id="ProcessMemoryUtilities_Native_NtDll_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class NtDll</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/michel-pi/ProcessMemoryUtilities.Net/new/master/apiSpec/new?filename=ProcessMemoryUtilities_Native_NtDll_NtAllocateVirtualMemory_System_IntPtr_System_IntPtr_ProcessMemoryUtilities_Native_AllocationType_ProcessMemoryUtilities_Native_MemoryProtectionFlags_System_IntPtr__.md&amp;value=---%0Auid%3A%20ProcessMemoryUtilities.Native.NtDll.NtAllocateVirtualMemory(System.IntPtr%2CSystem.IntPtr%2CProcessMemoryUtilities.Native.AllocationType%2CProcessMemoryUtilities.Native.MemoryProtectionFlags%2CSystem.IntPtr%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/michel-pi/ProcessMemoryUtilities.Net/blob/master/source/ProcessMemoryUtilities/Native/NtDll.V.cs/#L21">View Source</a>
+  </span>
+  <a id="ProcessMemoryUtilities_Native_NtDll_NtAllocateVirtualMemory_" data-uid="ProcessMemoryUtilities.Native.NtDll.NtAllocateVirtualMemory*"></a>
+  <h4 id="ProcessMemoryUtilities_Native_NtDll_NtAllocateVirtualMemory_System_IntPtr_System_IntPtr_ProcessMemoryUtilities_Native_AllocationType_ProcessMemoryUtilities_Native_MemoryProtectionFlags_System_IntPtr__" data-uid="ProcessMemoryUtilities.Native.NtDll.NtAllocateVirtualMemory(System.IntPtr,System.IntPtr,ProcessMemoryUtilities.Native.AllocationType,ProcessMemoryUtilities.Native.MemoryProtectionFlags,System.IntPtr@)">NtAllocateVirtualMemory(IntPtr, IntPtr, AllocationType, MemoryProtectionFlags, out IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Reserves, commits, or changes the state of a region of memory within the virtual address space of a specified process. The function initializes the memory it allocates to zero.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static uint NtAllocateVirtualMemory(IntPtr handle, IntPtr size, AllocationType allocationType, MemoryProtectionFlags memoryProtection, out IntPtr address)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><span class="parametername">handle</span></td>
+        <td><p>The handle to a process. The function allocates memory within the virtual address space of this process. The handle must have the PROCESS_VM_OPERATION access right.For more information, see Process Security and Access Rights.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><span class="parametername">size</span></td>
+        <td><p>The size of the region of memory to allocate, in bytes.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ProcessMemoryUtilities.Native.AllocationType.html">AllocationType</a></td>
+        <td><span class="parametername">allocationType</span></td>
+        <td><p>The type of memory allocation. Common flags are AllocationType.Commit | AllocationType.Reserve.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ProcessMemoryUtilities.Native.MemoryProtectionFlags.html">MemoryProtectionFlags</a></td>
+        <td><span class="parametername">memoryProtection</span></td>
+        <td><p>The memory protection for the region of pages to be allocated. If the pages are being committed, you can specify any one of the memory protection constants.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><span class="parametername">address</span></td>
+        <td><p>A pointer to a variable that receives the base address of the allocated region of pages.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint32">UInt32</a></td>
+        <td><p>Returns an NTSTATUS success or error code.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/michel-pi/ProcessMemoryUtilities.Net/new/master/apiSpec/new?filename=ProcessMemoryUtilities_Native_NtDll_NtClose_System_IntPtr_.md&amp;value=---%0Auid%3A%20ProcessMemoryUtilities.Native.NtDll.NtClose(System.IntPtr)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/michel-pi/ProcessMemoryUtilities.Net/blob/master/source/ProcessMemoryUtilities/Native/NtDll.OP.cs/#L19">View Source</a>
+  </span>
+  <a id="ProcessMemoryUtilities_Native_NtDll_NtClose_" data-uid="ProcessMemoryUtilities.Native.NtDll.NtClose*"></a>
+  <h4 id="ProcessMemoryUtilities_Native_NtDll_NtClose_System_IntPtr_" data-uid="ProcessMemoryUtilities.Native.NtDll.NtClose(System.IntPtr)">NtClose(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Closes an open object handle.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static uint NtClose(IntPtr handle)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><span class="parametername">handle</span></td>
+        <td><p>A valid handle to an open object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint32">UInt32</a></td>
+        <td><p>Returns an NTSTATUS success or error code.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/michel-pi/ProcessMemoryUtilities.Net/new/master/apiSpec/new?filename=ProcessMemoryUtilities_Native_NtDll_NtError_System_UInt32_.md&amp;value=---%0Auid%3A%20ProcessMemoryUtilities.Native.NtDll.NtError(System.UInt32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/michel-pi/ProcessMemoryUtilities.Net/blob/master/source/ProcessMemoryUtilities/Native/NtDll.cs/#L102">View Source</a>
+  </span>
+  <a id="ProcessMemoryUtilities_Native_NtDll_NtError_" data-uid="ProcessMemoryUtilities.Native.NtDll.NtError*"></a>
+  <h4 id="ProcessMemoryUtilities_Native_NtDll_NtError_System_UInt32_" data-uid="ProcessMemoryUtilities.Native.NtDll.NtError(System.UInt32)">NtError(UInt32)</h4>
+  <div class="markdown level1 summary"><p>Checks if the specified NTSTATUS is a error type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool NtError(uint value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint32">UInt32</a></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>A NTSTATUS value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p>Returns true if the specified NTSTATUS is a error type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/michel-pi/ProcessMemoryUtilities.Net/new/master/apiSpec/new?filename=ProcessMemoryUtilities_Native_NtDll_NtFreeVirtualMemory_System_IntPtr_System_IntPtr_System_IntPtr_ProcessMemoryUtilities_Native_FreeType_.md&amp;value=---%0Auid%3A%20ProcessMemoryUtilities.Native.NtDll.NtFreeVirtualMemory(System.IntPtr%2CSystem.IntPtr%2CSystem.IntPtr%2CProcessMemoryUtilities.Native.FreeType)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/michel-pi/ProcessMemoryUtilities.Net/blob/master/source/ProcessMemoryUtilities/Native/NtDll.V.cs/#L81">View Source</a>
+  </span>
+  <a id="ProcessMemoryUtilities_Native_NtDll_NtFreeVirtualMemory_" data-uid="ProcessMemoryUtilities.Native.NtDll.NtFreeVirtualMemory*"></a>
+  <h4 id="ProcessMemoryUtilities_Native_NtDll_NtFreeVirtualMemory_System_IntPtr_System_IntPtr_System_IntPtr_ProcessMemoryUtilities_Native_FreeType_" data-uid="ProcessMemoryUtilities.Native.NtDll.NtFreeVirtualMemory(System.IntPtr,System.IntPtr,System.IntPtr,ProcessMemoryUtilities.Native.FreeType)">NtFreeVirtualMemory(IntPtr, IntPtr, IntPtr, FreeType)</h4>
+  <div class="markdown level1 summary"><p>Releases, decommits, or releases and decommits a region of memory within the virtual address space of a specified process.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static uint NtFreeVirtualMemory(IntPtr handle, IntPtr address, IntPtr size, FreeType freeType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><span class="parametername">handle</span></td>
+        <td><p>A handle to a process. The function frees memory within the virtual address space of the process. The handle must have the PROCESS_VM_OPERATION access right.For more information, see Process Security and Access Rights.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><span class="parametername">address</span></td>
+        <td><p>A pointer to the starting address of the region of memory to be freed. If the dwFreeType parameter is MEM_RELEASE, lpAddress must be the base address returned by the VirtualAllocEx function when the region is reserved.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><span class="parametername">size</span></td>
+        <td><p>The size of the region of memory to free, in bytes. If the dwFreeType parameter is MEM_RELEASE, dwSize must be 0 (zero). The function frees the entire region that is reserved in the initial allocation call to VirtualAllocEx. If dwFreeType is MEM_DECOMMIT, the function decommits all memory pages that contain one or more bytes in the range from the lpAddress parameter to (lpAddress+dwSize). This means, for example, that a 2-byte region of memory that straddles a page boundary causes both pages to be decommitted. If lpAddress is the base address returned by VirtualAllocEx and dwSize is 0 (zero), the function decommits the entire region that is allocated by VirtualAllocEx. After that, the entire region is in the reserved state.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ProcessMemoryUtilities.Native.FreeType.html">FreeType</a></td>
+        <td><span class="parametername">freeType</span></td>
+        <td><p>The type of free operation. This parameter can be one of the FreeType values.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint32">UInt32</a></td>
+        <td><p>Returns an NTSTATUS success or error code.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/michel-pi/ProcessMemoryUtilities.Net/new/master/apiSpec/new?filename=ProcessMemoryUtilities_Native_NtDll_NtInformation_System_UInt32_.md&amp;value=---%0Auid%3A%20ProcessMemoryUtilities.Native.NtDll.NtInformation(System.UInt32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/michel-pi/ProcessMemoryUtilities.Net/blob/master/source/ProcessMemoryUtilities/Native/NtDll.cs/#L84">View Source</a>
+  </span>
+  <a id="ProcessMemoryUtilities_Native_NtDll_NtInformation_" data-uid="ProcessMemoryUtilities.Native.NtDll.NtInformation*"></a>
+  <h4 id="ProcessMemoryUtilities_Native_NtDll_NtInformation_System_UInt32_" data-uid="ProcessMemoryUtilities.Native.NtDll.NtInformation(System.UInt32)">NtInformation(UInt32)</h4>
+  <div class="markdown level1 summary"><p>Checks if the specified NTSTATUS is a informational type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool NtInformation(uint value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint32">UInt32</a></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>A NTSTATUS value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p>Returns true if the specified NTSTATUS is a informational type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/michel-pi/ProcessMemoryUtilities.Net/new/master/apiSpec/new?filename=ProcessMemoryUtilities_Native_NtDll_NtOpenProcess_ProcessMemoryUtilities_Native_ProcessAccessFlags_System_Boolean_System_Int32_System_IntPtr__.md&amp;value=---%0Auid%3A%20ProcessMemoryUtilities.Native.NtDll.NtOpenProcess(ProcessMemoryUtilities.Native.ProcessAccessFlags%2CSystem.Boolean%2CSystem.Int32%2CSystem.IntPtr%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/michel-pi/ProcessMemoryUtilities.Net/blob/master/source/ProcessMemoryUtilities/Native/NtDll.OP.cs/#L104">View Source</a>
+  </span>
+  <a id="ProcessMemoryUtilities_Native_NtDll_NtOpenProcess_" data-uid="ProcessMemoryUtilities.Native.NtDll.NtOpenProcess*"></a>
+  <h4 id="ProcessMemoryUtilities_Native_NtDll_NtOpenProcess_ProcessMemoryUtilities_Native_ProcessAccessFlags_System_Boolean_System_Int32_System_IntPtr__" data-uid="ProcessMemoryUtilities.Native.NtDll.NtOpenProcess(ProcessMemoryUtilities.Native.ProcessAccessFlags,System.Boolean,System.Int32,System.IntPtr@)">NtOpenProcess(ProcessAccessFlags, Boolean, Int32, out IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Opens an existing local process object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static uint NtOpenProcess(ProcessAccessFlags desiredAccess, bool inheritHandle, int processId, out IntPtr handle)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ProcessMemoryUtilities.Native.ProcessAccessFlags.html">ProcessAccessFlags</a></td>
+        <td><span class="parametername">desiredAccess</span></td>
+        <td><p>The access to the process object. This access right is checked against the security descriptor for the process. This parameter can be one or more of the process access rights.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">inheritHandle</span></td>
+        <td><p>If this value is TRUE, processes created by this process will inherit the handle. Otherwise, the processes do not inherit this handle.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">processId</span></td>
+        <td><p>The identifier of the local process to be opened.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><span class="parametername">handle</span></td>
+        <td><p>A variable that receives the opened handle.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint32">UInt32</a></td>
+        <td><p>Returns an NTSTATUS success or error code.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/michel-pi/ProcessMemoryUtilities.Net/new/master/apiSpec/new?filename=ProcessMemoryUtilities_Native_NtDll_NtOpenProcess_ProcessMemoryUtilities_Native_ProcessAccessFlags_System_Int32_System_IntPtr__.md&amp;value=---%0Auid%3A%20ProcessMemoryUtilities.Native.NtDll.NtOpenProcess(ProcessMemoryUtilities.Native.ProcessAccessFlags%2CSystem.Int32%2CSystem.IntPtr%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/michel-pi/ProcessMemoryUtilities.Net/blob/master/source/ProcessMemoryUtilities/Native/NtDll.OP.cs/#L40">View Source</a>
+  </span>
+  <a id="ProcessMemoryUtilities_Native_NtDll_NtOpenProcess_" data-uid="ProcessMemoryUtilities.Native.NtDll.NtOpenProcess*"></a>
+  <h4 id="ProcessMemoryUtilities_Native_NtDll_NtOpenProcess_ProcessMemoryUtilities_Native_ProcessAccessFlags_System_Int32_System_IntPtr__" data-uid="ProcessMemoryUtilities.Native.NtDll.NtOpenProcess(ProcessMemoryUtilities.Native.ProcessAccessFlags,System.Int32,System.IntPtr@)">NtOpenProcess(ProcessAccessFlags, Int32, out IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Opens an existing local process object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static uint NtOpenProcess(ProcessAccessFlags desiredAccess, int processId, out IntPtr handle)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ProcessMemoryUtilities.Native.ProcessAccessFlags.html">ProcessAccessFlags</a></td>
+        <td><span class="parametername">desiredAccess</span></td>
+        <td><p>The access to the process object. This access right is checked against the security descriptor for the process. This parameter can be one or more of the process access rights.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">processId</span></td>
+        <td><p>The identifier of the local process to be opened.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><span class="parametername">handle</span></td>
+        <td><p>A variable that receives the opened handle.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint32">UInt32</a></td>
+        <td><p>Returns an NTSTATUS success or error code.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/michel-pi/ProcessMemoryUtilities.Net/new/master/apiSpec/new?filename=ProcessMemoryUtilities_Native_NtDll_NtProtectVirtualMemory_System_IntPtr_System_IntPtr_System_IntPtr_ProcessMemoryUtilities_Native_MemoryProtectionFlags_ProcessMemoryUtilities_Native_MemoryProtectionFlags__.md&amp;value=---%0Auid%3A%20ProcessMemoryUtilities.Native.NtDll.NtProtectVirtualMemory(System.IntPtr%2CSystem.IntPtr%2CSystem.IntPtr%2CProcessMemoryUtilities.Native.MemoryProtectionFlags%2CProcessMemoryUtilities.Native.MemoryProtectionFlags%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/michel-pi/ProcessMemoryUtilities.Net/blob/master/source/ProcessMemoryUtilities/Native/NtDll.V.cs/#L112">View Source</a>
+  </span>
+  <a id="ProcessMemoryUtilities_Native_NtDll_NtProtectVirtualMemory_" data-uid="ProcessMemoryUtilities.Native.NtDll.NtProtectVirtualMemory*"></a>
+  <h4 id="ProcessMemoryUtilities_Native_NtDll_NtProtectVirtualMemory_System_IntPtr_System_IntPtr_System_IntPtr_ProcessMemoryUtilities_Native_MemoryProtectionFlags_ProcessMemoryUtilities_Native_MemoryProtectionFlags__" data-uid="ProcessMemoryUtilities.Native.NtDll.NtProtectVirtualMemory(System.IntPtr,System.IntPtr,System.IntPtr,ProcessMemoryUtilities.Native.MemoryProtectionFlags,ProcessMemoryUtilities.Native.MemoryProtectionFlags@)">NtProtectVirtualMemory(IntPtr, IntPtr, IntPtr, MemoryProtectionFlags, out MemoryProtectionFlags)</h4>
+  <div class="markdown level1 summary"><p>Changes the protection on a region of committed pages in the virtual address space of a specified process.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static uint NtProtectVirtualMemory(IntPtr handle, IntPtr address, IntPtr size, MemoryProtectionFlags newProtection, out MemoryProtectionFlags oldProtection)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><span class="parametername">handle</span></td>
+        <td><p>A handle to the process whose memory protection is to be changed. The handle must have the PROCESS_VM_OPERATION access right. For more information, see Process Security and Access Rights.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><span class="parametername">address</span></td>
+        <td><p>A pointer to the base address of the region of pages whose access protection attributes are to be changed. All pages in the specified region must be within the same reserved region allocated when calling the VirtualAlloc or VirtualAllocEx function using MEM_RESERVE. The pages cannot span adjacent reserved regions that were allocated by separate calls to VirtualAlloc or VirtualAllocEx using MEM_RESERVE.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><span class="parametername">size</span></td>
+        <td><p>The size of the region whose access protection attributes are changed, in bytes. The region of affected pages includes all pages containing one or more bytes in the range from the lpAddress parameter to (lpAddress+dwSize). This means that a 2-byte range straddling a page boundary causes the protection attributes of both pages to be changed.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ProcessMemoryUtilities.Native.MemoryProtectionFlags.html">MemoryProtectionFlags</a></td>
+        <td><span class="parametername">newProtection</span></td>
+        <td><p>The memory protection option. This parameter can be one of the MemoryProtectionFlags.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ProcessMemoryUtilities.Native.MemoryProtectionFlags.html">MemoryProtectionFlags</a></td>
+        <td><span class="parametername">oldProtection</span></td>
+        <td><p>A pointer to a variable that receives the previous MemoryProtectionFlags of the first page in the specified region of pages.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint32">UInt32</a></td>
+        <td><p>Returns an NTSTATUS success or error code.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/michel-pi/ProcessMemoryUtilities.Net/new/master/apiSpec/new?filename=ProcessMemoryUtilities_Native_NtDll_NtReadVirtualMemory_System_IntPtr_System_IntPtr_System_IntPtr_System_IntPtr_.md&amp;value=---%0Auid%3A%20ProcessMemoryUtilities.Native.NtDll.NtReadVirtualMemory(System.IntPtr%2CSystem.IntPtr%2CSystem.IntPtr%2CSystem.IntPtr)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/michel-pi/ProcessMemoryUtilities.Net/blob/master/source/ProcessMemoryUtilities/Native/NtDll.RVM.cs/#L109">View Source</a>
+  </span>
+  <a id="ProcessMemoryUtilities_Native_NtDll_NtReadVirtualMemory_" data-uid="ProcessMemoryUtilities.Native.NtDll.NtReadVirtualMemory*"></a>
+  <h4 id="ProcessMemoryUtilities_Native_NtDll_NtReadVirtualMemory_System_IntPtr_System_IntPtr_System_IntPtr_System_IntPtr_" data-uid="ProcessMemoryUtilities.Native.NtDll.NtReadVirtualMemory(System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr)">NtReadVirtualMemory(IntPtr, IntPtr, IntPtr, IntPtr)</h4>
+  <div class="markdown level1 summary"><p>ReadProcessMemory copies the data in the specified address range from the address space of the specified process into the specified buffer of the current process. Any process that has a handle with PROCESS_VM_READ access can call the function. The entire area to be read must be accessible, and if it is not accessible, the function fails.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static uint NtReadVirtualMemory(IntPtr handle, IntPtr baseAddress, IntPtr buffer, IntPtr size)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><span class="parametername">handle</span></td>
+        <td><p>A handle to the process with memory that is being read. The handle must have PROCESS_VM_READ access to the process.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><span class="parametername">baseAddress</span></td>
+        <td><p>A pointer to the base address in the specified process from which to read. Before any data transfer occurs, the system verifies that all data in the base address and memory of the specified size is accessible for read access, and if it is not accessible the function fails.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><span class="parametername">buffer</span></td>
+        <td><p>A pointer to a buffer that receives the contents from the address space of the specified process.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><span class="parametername">size</span></td>
+        <td><p>The number of bytes to be read from the specified process.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint32">UInt32</a></td>
+        <td><p>Returns an NTSTATUS success or error code.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/michel-pi/ProcessMemoryUtilities.Net/new/master/apiSpec/new?filename=ProcessMemoryUtilities_Native_NtDll_NtReadVirtualMemory_System_IntPtr_System_IntPtr_System_IntPtr_System_IntPtr_System_IntPtr_.md&amp;value=---%0Auid%3A%20ProcessMemoryUtilities.Native.NtDll.NtReadVirtualMemory(System.IntPtr%2CSystem.IntPtr%2CSystem.IntPtr%2CSystem.IntPtr%2CSystem.IntPtr)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/michel-pi/ProcessMemoryUtilities.Net/blob/master/source/ProcessMemoryUtilities/Native/NtDll.RVM.cs/#L21">View Source</a>
+  </span>
+  <a id="ProcessMemoryUtilities_Native_NtDll_NtReadVirtualMemory_" data-uid="ProcessMemoryUtilities.Native.NtDll.NtReadVirtualMemory*"></a>
+  <h4 id="ProcessMemoryUtilities_Native_NtDll_NtReadVirtualMemory_System_IntPtr_System_IntPtr_System_IntPtr_System_IntPtr_System_IntPtr_" data-uid="ProcessMemoryUtilities.Native.NtDll.NtReadVirtualMemory(System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr)">NtReadVirtualMemory(IntPtr, IntPtr, IntPtr, IntPtr, IntPtr)</h4>
+  <div class="markdown level1 summary"><p>ReadProcessMemory copies the data in the specified address range from the address space of the specified process into the specified buffer of the current process. Any process that has a handle with PROCESS_VM_READ access can call the function. The entire area to be read must be accessible, and if it is not accessible, the function fails.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static uint NtReadVirtualMemory(IntPtr handle, IntPtr baseAddress, IntPtr buffer, IntPtr size, IntPtr numberOfBytesRead)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><span class="parametername">handle</span></td>
+        <td><p>A handle to the process with memory that is being read. The handle must have PROCESS_VM_READ access to the process.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><span class="parametername">baseAddress</span></td>
+        <td><p>A pointer to the base address in the specified process from which to read. Before any data transfer occurs, the system verifies that all data in the base address and memory of the specified size is accessible for read access, and if it is not accessible the function fails.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><span class="parametername">buffer</span></td>
+        <td><p>A pointer to a buffer that receives the contents from the address space of the specified process.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><span class="parametername">size</span></td>
+        <td><p>The number of bytes to be read from the specified process.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><span class="parametername">numberOfBytesRead</span></td>
+        <td><p>A pointer to a variable that receives the number of bytes transferred into the specified buffer. If lpNumberOfBytesRead is IntPtr.Zero, the parameter is ignored.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint32">UInt32</a></td>
+        <td><p>Returns an NTSTATUS success or error code.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/michel-pi/ProcessMemoryUtilities.Net/new/master/apiSpec/new?filename=ProcessMemoryUtilities_Native_NtDll_NtReadVirtualMemory_System_IntPtr_System_IntPtr_System_IntPtr_System_IntPtr_System_IntPtr__.md&amp;value=---%0Auid%3A%20ProcessMemoryUtilities.Native.NtDll.NtReadVirtualMemory(System.IntPtr%2CSystem.IntPtr%2CSystem.IntPtr%2CSystem.IntPtr%2CSystem.IntPtr%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/michel-pi/ProcessMemoryUtilities.Net/blob/master/source/ProcessMemoryUtilities/Native/NtDll.RVM.cs/#L57">View Source</a>
+  </span>
+  <a id="ProcessMemoryUtilities_Native_NtDll_NtReadVirtualMemory_" data-uid="ProcessMemoryUtilities.Native.NtDll.NtReadVirtualMemory*"></a>
+  <h4 id="ProcessMemoryUtilities_Native_NtDll_NtReadVirtualMemory_System_IntPtr_System_IntPtr_System_IntPtr_System_IntPtr_System_IntPtr__" data-uid="ProcessMemoryUtilities.Native.NtDll.NtReadVirtualMemory(System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr@)">NtReadVirtualMemory(IntPtr, IntPtr, IntPtr, IntPtr, out IntPtr)</h4>
+  <div class="markdown level1 summary"><p>ReadProcessMemory copies the data in the specified address range from the address space of the specified process into the specified buffer of the current process. Any process that has a handle with PROCESS_VM_READ access can call the function. The entire area to be read must be accessible, and if it is not accessible, the function fails.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static uint NtReadVirtualMemory(IntPtr handle, IntPtr baseAddress, IntPtr buffer, IntPtr size, out IntPtr numberOfBytesRead)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><span class="parametername">handle</span></td>
+        <td><p>A handle to the process with memory that is being read. The handle must have PROCESS_VM_READ access to the process.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><span class="parametername">baseAddress</span></td>
+        <td><p>A pointer to the base address in the specified process from which to read. Before any data transfer occurs, the system verifies that all data in the base address and memory of the specified size is accessible for read access, and if it is not accessible the function fails.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><span class="parametername">buffer</span></td>
+        <td><p>A pointer to a buffer that receives the contents from the address space of the specified process.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><span class="parametername">size</span></td>
+        <td><p>The number of bytes to be read from the specified process.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><span class="parametername">numberOfBytesRead</span></td>
+        <td><p>A pointer to a variable that receives the number of bytes transferred into the specified buffer.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint32">UInt32</a></td>
+        <td><p>Returns an NTSTATUS success or error code.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/michel-pi/ProcessMemoryUtilities.Net/new/master/apiSpec/new?filename=ProcessMemoryUtilities_Native_NtDll_NtReadVirtualMemory__1_System_IntPtr_System_IntPtr___0__.md&amp;value=---%0Auid%3A%20ProcessMemoryUtilities.Native.NtDll.NtReadVirtualMemory%60%601(System.IntPtr%2CSystem.IntPtr%2C%60%600%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/michel-pi/ProcessMemoryUtilities.Net/blob/master/source/ProcessMemoryUtilities/Native/NtDll.RVM.cs/#L124">View Source</a>
+  </span>
+  <a id="ProcessMemoryUtilities_Native_NtDll_NtReadVirtualMemory_" data-uid="ProcessMemoryUtilities.Native.NtDll.NtReadVirtualMemory*"></a>
+  <h4 id="ProcessMemoryUtilities_Native_NtDll_NtReadVirtualMemory__1_System_IntPtr_System_IntPtr___0__" data-uid="ProcessMemoryUtilities.Native.NtDll.NtReadVirtualMemory``1(System.IntPtr,System.IntPtr,``0@)">NtReadVirtualMemory&lt;T&gt;(IntPtr, IntPtr, ref T)</h4>
+  <div class="markdown level1 summary"><p>ReadProcessMemory copies the data in the specified address range from the address space of the specified process into the specified buffer of the current process. Any process that has a handle with PROCESS_VM_READ access can call the function. The entire area to be read must be accessible, and if it is not accessible, the function fails.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static uint NtReadVirtualMemory&lt;T&gt;(IntPtr handle, IntPtr baseAddress, ref T buffer)
+    where T : struct</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><span class="parametername">handle</span></td>
+        <td><p>A handle to the process with memory that is being read. The handle must have PROCESS_VM_READ access to the process.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><span class="parametername">baseAddress</span></td>
+        <td><p>A pointer to the base address in the specified process from which to read. Before any data transfer occurs, the system verifies that all data in the base address and memory of the specified size is accessible for read access, and if it is not accessible the function fails.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">buffer</span></td>
+        <td><p>A pointer to a buffer that receives the contents from the address space of the specified process.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint32">UInt32</a></td>
+        <td><p>Returns an NTSTATUS success or error code.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/michel-pi/ProcessMemoryUtilities.Net/new/master/apiSpec/new?filename=ProcessMemoryUtilities_Native_NtDll_NtReadVirtualMemory__1_System_IntPtr_System_IntPtr___0__System_IntPtr__.md&amp;value=---%0Auid%3A%20ProcessMemoryUtilities.Native.NtDll.NtReadVirtualMemory%60%601(System.IntPtr%2CSystem.IntPtr%2C%60%600%40%2CSystem.IntPtr%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/michel-pi/ProcessMemoryUtilities.Net/blob/master/source/ProcessMemoryUtilities/Native/NtDll.RVM.cs/#L169">View Source</a>
+  </span>
+  <a id="ProcessMemoryUtilities_Native_NtDll_NtReadVirtualMemory_" data-uid="ProcessMemoryUtilities.Native.NtDll.NtReadVirtualMemory*"></a>
+  <h4 id="ProcessMemoryUtilities_Native_NtDll_NtReadVirtualMemory__1_System_IntPtr_System_IntPtr___0__System_IntPtr__" data-uid="ProcessMemoryUtilities.Native.NtDll.NtReadVirtualMemory``1(System.IntPtr,System.IntPtr,``0@,System.IntPtr@)">NtReadVirtualMemory&lt;T&gt;(IntPtr, IntPtr, ref T, out IntPtr)</h4>
+  <div class="markdown level1 summary"><p>ReadProcessMemory copies the data in the specified address range from the address space of the specified process into the specified buffer of the current process. Any process that has a handle with PROCESS_VM_READ access can call the function. The entire area to be read must be accessible, and if it is not accessible, the function fails.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static uint NtReadVirtualMemory&lt;T&gt;(IntPtr handle, IntPtr baseAddress, ref T buffer, out IntPtr numberOfBytesRead)
+    where T : struct</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><span class="parametername">handle</span></td>
+        <td><p>A handle to the process with memory that is being read. The handle must have PROCESS_VM_READ access to the process.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><span class="parametername">baseAddress</span></td>
+        <td><p>A pointer to the base address in the specified process from which to read. Before any data transfer occurs, the system verifies that all data in the base address and memory of the specified size is accessible for read access, and if it is not accessible the function fails.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">buffer</span></td>
+        <td><p>A pointer to a buffer that receives the contents from the address space of the specified process.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><span class="parametername">numberOfBytesRead</span></td>
+        <td><p>A pointer to a variable that receives the number of bytes transferred into the specified buffer. If lpNumberOfBytesRead is IntPtr.Zero, the parameter is ignored.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint32">UInt32</a></td>
+        <td><p>Returns an NTSTATUS success or error code.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/michel-pi/ProcessMemoryUtilities.Net/new/master/apiSpec/new?filename=ProcessMemoryUtilities_Native_NtDll_NtReadVirtualMemoryArray__1_System_IntPtr_System_IntPtr___0___.md&amp;value=---%0Auid%3A%20ProcessMemoryUtilities.Native.NtDll.NtReadVirtualMemoryArray%60%601(System.IntPtr%2CSystem.IntPtr%2C%60%600%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/michel-pi/ProcessMemoryUtilities.Net/blob/master/source/ProcessMemoryUtilities/Native/NtDll.RVM.cs/#L382">View Source</a>
+  </span>
+  <a id="ProcessMemoryUtilities_Native_NtDll_NtReadVirtualMemoryArray_" data-uid="ProcessMemoryUtilities.Native.NtDll.NtReadVirtualMemoryArray*"></a>
+  <h4 id="ProcessMemoryUtilities_Native_NtDll_NtReadVirtualMemoryArray__1_System_IntPtr_System_IntPtr___0___" data-uid="ProcessMemoryUtilities.Native.NtDll.NtReadVirtualMemoryArray``1(System.IntPtr,System.IntPtr,``0[])">NtReadVirtualMemoryArray&lt;T&gt;(IntPtr, IntPtr, T[])</h4>
+  <div class="markdown level1 summary"><p>ReadProcessMemory copies the data in the specified address range from the address space of the specified process into the specified buffer of the current process. Any process that has a handle with PROCESS_VM_READ access can call the function. The entire area to be read must be accessible, and if it is not accessible, the function fails.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static uint NtReadVirtualMemoryArray&lt;T&gt;(IntPtr handle, IntPtr baseAddress, T[] buffer)
+    where T : struct</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><span class="parametername">handle</span></td>
+        <td><p>A handle to the process with memory that is being read. The handle must have PROCESS_VM_READ access to the process.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><span class="parametername">baseAddress</span></td>
+        <td><p>A pointer to the base address in the specified process from which to read. Before any data transfer occurs, the system verifies that all data in the base address and memory of the specified size is accessible for read access, and if it is not accessible the function fails.</p>
+</td>
+      </tr>
+      <tr>
+        <td>T[]</td>
+        <td><span class="parametername">buffer</span></td>
+        <td><p>A pointer to a buffer that receives the contents from the address space of the specified process.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint32">UInt32</a></td>
+        <td><p>Returns an NTSTATUS success or error code.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/michel-pi/ProcessMemoryUtilities.Net/new/master/apiSpec/new?filename=ProcessMemoryUtilities_Native_NtDll_NtReadVirtualMemoryArray__1_System_IntPtr_System_IntPtr___0___System_Int32_.md&amp;value=---%0Auid%3A%20ProcessMemoryUtilities.Native.NtDll.NtReadVirtualMemoryArray%60%601(System.IntPtr%2CSystem.IntPtr%2C%60%600%5B%5D%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/michel-pi/ProcessMemoryUtilities.Net/blob/master/source/ProcessMemoryUtilities/Native/NtDll.RVM.cs/#L349">View Source</a>
+  </span>
+  <a id="ProcessMemoryUtilities_Native_NtDll_NtReadVirtualMemoryArray_" data-uid="ProcessMemoryUtilities.Native.NtDll.NtReadVirtualMemoryArray*"></a>
+  <h4 id="ProcessMemoryUtilities_Native_NtDll_NtReadVirtualMemoryArray__1_System_IntPtr_System_IntPtr___0___System_Int32_" data-uid="ProcessMemoryUtilities.Native.NtDll.NtReadVirtualMemoryArray``1(System.IntPtr,System.IntPtr,``0[],System.Int32)">NtReadVirtualMemoryArray&lt;T&gt;(IntPtr, IntPtr, T[], Int32)</h4>
+  <div class="markdown level1 summary"><p>ReadProcessMemory copies the data in the specified address range from the address space of the specified process into the specified buffer of the current process. Any process that has a handle with PROCESS_VM_READ access can call the function. The entire area to be read must be accessible, and if it is not accessible, the function fails.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static uint NtReadVirtualMemoryArray&lt;T&gt;(IntPtr handle, IntPtr baseAddress, T[] buffer, int offset)
+    where T : struct</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><span class="parametername">handle</span></td>
+        <td><p>A handle to the process with memory that is being read. The handle must have PROCESS_VM_READ access to the process.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><span class="parametername">baseAddress</span></td>
+        <td><p>A pointer to the base address in the specified process from which to read. Before any data transfer occurs, the system verifies that all data in the base address and memory of the specified size is accessible for read access, and if it is not accessible the function fails.</p>
+</td>
+      </tr>
+      <tr>
+        <td>T[]</td>
+        <td><span class="parametername">buffer</span></td>
+        <td><p>A pointer to a buffer that receives the contents from the address space of the specified process.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">offset</span></td>
+        <td><p>A byte offset from inside the array to copy to.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint32">UInt32</a></td>
+        <td><p>Returns an NTSTATUS success or error code.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/michel-pi/ProcessMemoryUtilities.Net/new/master/apiSpec/new?filename=ProcessMemoryUtilities_Native_NtDll_NtReadVirtualMemoryArray__1_System_IntPtr_System_IntPtr___0___System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20ProcessMemoryUtilities.Native.NtDll.NtReadVirtualMemoryArray%60%601(System.IntPtr%2CSystem.IntPtr%2C%60%600%5B%5D%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/michel-pi/ProcessMemoryUtilities.Net/blob/master/source/ProcessMemoryUtilities/Native/NtDll.RVM.cs/#L230">View Source</a>
+  </span>
+  <a id="ProcessMemoryUtilities_Native_NtDll_NtReadVirtualMemoryArray_" data-uid="ProcessMemoryUtilities.Native.NtDll.NtReadVirtualMemoryArray*"></a>
+  <h4 id="ProcessMemoryUtilities_Native_NtDll_NtReadVirtualMemoryArray__1_System_IntPtr_System_IntPtr___0___System_Int32_System_Int32_" data-uid="ProcessMemoryUtilities.Native.NtDll.NtReadVirtualMemoryArray``1(System.IntPtr,System.IntPtr,``0[],System.Int32,System.Int32)">NtReadVirtualMemoryArray&lt;T&gt;(IntPtr, IntPtr, T[], Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>ReadProcessMemory copies the data in the specified address range from the address space of the specified process into the specified buffer of the current process. Any process that has a handle with PROCESS_VM_READ access can call the function. The entire area to be read must be accessible, and if it is not accessible, the function fails.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static uint NtReadVirtualMemoryArray&lt;T&gt;(IntPtr handle, IntPtr baseAddress, T[] buffer, int offset, int length)
+    where T : struct</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><span class="parametername">handle</span></td>
+        <td><p>A handle to the process with memory that is being read. The handle must have PROCESS_VM_READ access to the process.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><span class="parametername">baseAddress</span></td>
+        <td><p>A pointer to the base address in the specified process from which to read. Before any data transfer occurs, the system verifies that all data in the base address and memory of the specified size is accessible for read access, and if it is not accessible the function fails.</p>
+</td>
+      </tr>
+      <tr>
+        <td>T[]</td>
+        <td><span class="parametername">buffer</span></td>
+        <td><p>A pointer to a buffer that receives the contents from the address space of the specified process.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">offset</span></td>
+        <td><p>A byte offset from inside the array to copy to.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">length</span></td>
+        <td><p>The number of bytes to copy to the array.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint32">UInt32</a></td>
+        <td><p>Returns an NTSTATUS success or error code.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/michel-pi/ProcessMemoryUtilities.Net/new/master/apiSpec/new?filename=ProcessMemoryUtilities_Native_NtDll_NtReadVirtualMemoryArray__1_System_IntPtr_System_IntPtr___0___System_Int32_System_Int32_System_IntPtr__.md&amp;value=---%0Auid%3A%20ProcessMemoryUtilities.Native.NtDll.NtReadVirtualMemoryArray%60%601(System.IntPtr%2CSystem.IntPtr%2C%60%600%5B%5D%2CSystem.Int32%2CSystem.Int32%2CSystem.IntPtr%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/michel-pi/ProcessMemoryUtilities.Net/blob/master/source/ProcessMemoryUtilities/Native/NtDll.RVM.cs/#L283">View Source</a>
+  </span>
+  <a id="ProcessMemoryUtilities_Native_NtDll_NtReadVirtualMemoryArray_" data-uid="ProcessMemoryUtilities.Native.NtDll.NtReadVirtualMemoryArray*"></a>
+  <h4 id="ProcessMemoryUtilities_Native_NtDll_NtReadVirtualMemoryArray__1_System_IntPtr_System_IntPtr___0___System_Int32_System_Int32_System_IntPtr__" data-uid="ProcessMemoryUtilities.Native.NtDll.NtReadVirtualMemoryArray``1(System.IntPtr,System.IntPtr,``0[],System.Int32,System.Int32,System.IntPtr@)">NtReadVirtualMemoryArray&lt;T&gt;(IntPtr, IntPtr, T[], Int32, Int32, out IntPtr)</h4>
+  <div class="markdown level1 summary"><p>ReadProcessMemory copies the data in the specified address range from the address space of the specified process into the specified buffer of the current process. Any process that has a handle with PROCESS_VM_READ access can call the function. The entire area to be read must be accessible, and if it is not accessible, the function fails.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static uint NtReadVirtualMemoryArray&lt;T&gt;(IntPtr handle, IntPtr baseAddress, T[] buffer, int offset, int length, out IntPtr numberOfBytesRead)
+    where T : struct</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><span class="parametername">handle</span></td>
+        <td><p>A handle to the process with memory that is being read. The handle must have PROCESS_VM_READ access to the process.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><span class="parametername">baseAddress</span></td>
+        <td><p>A pointer to the base address in the specified process from which to read. Before any data transfer occurs, the system verifies that all data in the base address and memory of the specified size is accessible for read access, and if it is not accessible the function fails.</p>
+</td>
+      </tr>
+      <tr>
+        <td>T[]</td>
+        <td><span class="parametername">buffer</span></td>
+        <td><p>A pointer to a buffer that receives the contents from the address space of the specified process.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">offset</span></td>
+        <td><p>A byte offset from inside the array to copy to.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">length</span></td>
+        <td><p>The number of bytes to copy to the array.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><span class="parametername">numberOfBytesRead</span></td>
+        <td><p>A pointer to a variable that receives the number of bytes transferred into the specified buffer. If lpNumberOfBytesRead is IntPtr.Zero, the parameter is ignored.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint32">UInt32</a></td>
+        <td><p>Returns an NTSTATUS success or error code.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/michel-pi/ProcessMemoryUtilities.Net/new/master/apiSpec/new?filename=ProcessMemoryUtilities_Native_NtDll_NtReadVirtualMemoryArray__1_System_IntPtr_System_IntPtr___0___System_Int32_System_IntPtr__.md&amp;value=---%0Auid%3A%20ProcessMemoryUtilities.Native.NtDll.NtReadVirtualMemoryArray%60%601(System.IntPtr%2CSystem.IntPtr%2C%60%600%5B%5D%2CSystem.Int32%2CSystem.IntPtr%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/michel-pi/ProcessMemoryUtilities.Net/blob/master/source/ProcessMemoryUtilities/Native/NtDll.RVM.cs/#L366">View Source</a>
+  </span>
+  <a id="ProcessMemoryUtilities_Native_NtDll_NtReadVirtualMemoryArray_" data-uid="ProcessMemoryUtilities.Native.NtDll.NtReadVirtualMemoryArray*"></a>
+  <h4 id="ProcessMemoryUtilities_Native_NtDll_NtReadVirtualMemoryArray__1_System_IntPtr_System_IntPtr___0___System_Int32_System_IntPtr__" data-uid="ProcessMemoryUtilities.Native.NtDll.NtReadVirtualMemoryArray``1(System.IntPtr,System.IntPtr,``0[],System.Int32,System.IntPtr@)">NtReadVirtualMemoryArray&lt;T&gt;(IntPtr, IntPtr, T[], Int32, out IntPtr)</h4>
+  <div class="markdown level1 summary"><p>ReadProcessMemory copies the data in the specified address range from the address space of the specified process into the specified buffer of the current process. Any process that has a handle with PROCESS_VM_READ access can call the function. The entire area to be read must be accessible, and if it is not accessible, the function fails.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static uint NtReadVirtualMemoryArray&lt;T&gt;(IntPtr handle, IntPtr baseAddress, T[] buffer, int offset, out IntPtr numberOfBytesRead)
+    where T : struct</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><span class="parametername">handle</span></td>
+        <td><p>A handle to the process with memory that is being read. The handle must have PROCESS_VM_READ access to the process.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><span class="parametername">baseAddress</span></td>
+        <td><p>A pointer to the base address in the specified process from which to read. Before any data transfer occurs, the system verifies that all data in the base address and memory of the specified size is accessible for read access, and if it is not accessible the function fails.</p>
+</td>
+      </tr>
+      <tr>
+        <td>T[]</td>
+        <td><span class="parametername">buffer</span></td>
+        <td><p>A pointer to a buffer that receives the contents from the address space of the specified process.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">offset</span></td>
+        <td><p>A byte offset from inside the array to copy to.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><span class="parametername">numberOfBytesRead</span></td>
+        <td><p>A pointer to a variable that receives the number of bytes transferred into the specified buffer.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint32">UInt32</a></td>
+        <td><p>Returns an NTSTATUS success or error code.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/michel-pi/ProcessMemoryUtilities.Net/new/master/apiSpec/new?filename=ProcessMemoryUtilities_Native_NtDll_NtReadVirtualMemoryArray__1_System_IntPtr_System_IntPtr___0___System_IntPtr__.md&amp;value=---%0Auid%3A%20ProcessMemoryUtilities.Native.NtDll.NtReadVirtualMemoryArray%60%601(System.IntPtr%2CSystem.IntPtr%2C%60%600%5B%5D%2CSystem.IntPtr%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/michel-pi/ProcessMemoryUtilities.Net/blob/master/source/ProcessMemoryUtilities/Native/NtDll.RVM.cs/#L397">View Source</a>
+  </span>
+  <a id="ProcessMemoryUtilities_Native_NtDll_NtReadVirtualMemoryArray_" data-uid="ProcessMemoryUtilities.Native.NtDll.NtReadVirtualMemoryArray*"></a>
+  <h4 id="ProcessMemoryUtilities_Native_NtDll_NtReadVirtualMemoryArray__1_System_IntPtr_System_IntPtr___0___System_IntPtr__" data-uid="ProcessMemoryUtilities.Native.NtDll.NtReadVirtualMemoryArray``1(System.IntPtr,System.IntPtr,``0[],System.IntPtr@)">NtReadVirtualMemoryArray&lt;T&gt;(IntPtr, IntPtr, T[], out IntPtr)</h4>
+  <div class="markdown level1 summary"><p>ReadProcessMemory copies the data in the specified address range from the address space of the specified process into the specified buffer of the current process. Any process that has a handle with PROCESS_VM_READ access can call the function. The entire area to be read must be accessible, and if it is not accessible, the function fails.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static uint NtReadVirtualMemoryArray&lt;T&gt;(IntPtr handle, IntPtr baseAddress, T[] buffer, out IntPtr numberOfBytesRead)
+    where T : struct</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><span class="parametername">handle</span></td>
+        <td><p>A handle to the process with memory that is being read. The handle must have PROCESS_VM_READ access to the process.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><span class="parametername">baseAddress</span></td>
+        <td><p>A pointer to the base address in the specified process from which to read. Before any data transfer occurs, the system verifies that all data in the base address and memory of the specified size is accessible for read access, and if it is not accessible the function fails.</p>
+</td>
+      </tr>
+      <tr>
+        <td>T[]</td>
+        <td><span class="parametername">buffer</span></td>
+        <td><p>A pointer to a buffer that receives the contents from the address space of the specified process.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><span class="parametername">numberOfBytesRead</span></td>
+        <td><p>A pointer to a variable that receives the number of bytes transferred into the specified buffer.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint32">UInt32</a></td>
+        <td><p>Returns an NTSTATUS success or error code.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/michel-pi/ProcessMemoryUtilities.Net/new/master/apiSpec/new?filename=ProcessMemoryUtilities_Native_NtDll_NtReadVirtualMemoryPartial__1_System_IntPtr_System_IntPtr___0__System_Int32_.md&amp;value=---%0Auid%3A%20ProcessMemoryUtilities.Native.NtDll.NtReadVirtualMemoryPartial%60%601(System.IntPtr%2CSystem.IntPtr%2C%60%600%40%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/michel-pi/ProcessMemoryUtilities.Net/blob/master/source/ProcessMemoryUtilities/Native/NtDll.RVM.cs/#L537">View Source</a>
+  </span>
+  <a id="ProcessMemoryUtilities_Native_NtDll_NtReadVirtualMemoryPartial_" data-uid="ProcessMemoryUtilities.Native.NtDll.NtReadVirtualMemoryPartial*"></a>
+  <h4 id="ProcessMemoryUtilities_Native_NtDll_NtReadVirtualMemoryPartial__1_System_IntPtr_System_IntPtr___0__System_Int32_" data-uid="ProcessMemoryUtilities.Native.NtDll.NtReadVirtualMemoryPartial``1(System.IntPtr,System.IntPtr,``0@,System.Int32)">NtReadVirtualMemoryPartial&lt;T&gt;(IntPtr, IntPtr, ref T, Int32)</h4>
+  <div class="markdown level1 summary"><p>ReadProcessMemory copies the data in the specified address range from the address space of the specified process into the specified buffer of the current process. Any process that has a handle with PROCESS_VM_READ access can call the function. The entire area to be read must be accessible, and if it is not accessible, the function fails.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static uint NtReadVirtualMemoryPartial&lt;T&gt;(IntPtr handle, IntPtr baseAddress, ref T buffer, int offset)
+    where T : struct</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><span class="parametername">handle</span></td>
+        <td><p>A handle to the process with memory that is being read. The handle must have PROCESS_VM_READ access to the process.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><span class="parametername">baseAddress</span></td>
+        <td><p>A pointer to the base address in the specified process from which to read. Before any data transfer occurs, the system verifies that all data in the base address and memory of the specified size is accessible for read access, and if it is not accessible the function fails.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">buffer</span></td>
+        <td><p>A pointer to a buffer that receives the contents from the address space of the specified process.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">offset</span></td>
+        <td><p>A byte offset from the start of the buffer.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint32">UInt32</a></td>
+        <td><p>Returns an NTSTATUS success or error code.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/michel-pi/ProcessMemoryUtilities.Net/new/master/apiSpec/new?filename=ProcessMemoryUtilities_Native_NtDll_NtReadVirtualMemoryPartial__1_System_IntPtr_System_IntPtr___0__System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20ProcessMemoryUtilities.Native.NtDll.NtReadVirtualMemoryPartial%60%601(System.IntPtr%2CSystem.IntPtr%2C%60%600%40%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/michel-pi/ProcessMemoryUtilities.Net/blob/master/source/ProcessMemoryUtilities/Native/NtDll.RVM.cs/#L414">View Source</a>
+  </span>
+  <a id="ProcessMemoryUtilities_Native_NtDll_NtReadVirtualMemoryPartial_" data-uid="ProcessMemoryUtilities.Native.NtDll.NtReadVirtualMemoryPartial*"></a>
+  <h4 id="ProcessMemoryUtilities_Native_NtDll_NtReadVirtualMemoryPartial__1_System_IntPtr_System_IntPtr___0__System_Int32_System_Int32_" data-uid="ProcessMemoryUtilities.Native.NtDll.NtReadVirtualMemoryPartial``1(System.IntPtr,System.IntPtr,``0@,System.Int32,System.Int32)">NtReadVirtualMemoryPartial&lt;T&gt;(IntPtr, IntPtr, ref T, Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>ReadProcessMemory copies the data in the specified address range from the address space of the specified process into the specified buffer of the current process. Any process that has a handle with PROCESS_VM_READ access can call the function. The entire area to be read must be accessible, and if it is not accessible, the function fails.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static uint NtReadVirtualMemoryPartial&lt;T&gt;(IntPtr handle, IntPtr baseAddress, ref T buffer, int offset, int length)
+    where T : struct</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><span class="parametername">handle</span></td>
+        <td><p>A handle to the process with memory that is being read. The handle must have PROCESS_VM_READ access to the process.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><span class="parametername">baseAddress</span></td>
+        <td><p>A pointer to the base address in the specified process from which to read. Before any data transfer occurs, the system verifies that all data in the base address and memory of the specified size is accessible for read access, and if it is not accessible the function fails.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">buffer</span></td>
+        <td><p>A pointer to a buffer that receives the contents from the address space of the specified process.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">offset</span></td>
+        <td><p>A byte offset from the start of the buffer.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">length</span></td>
+        <td><p>The number of bytes to copy to the buffer.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint32">UInt32</a></td>
+        <td><p>Returns an NTSTATUS success or error code.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/michel-pi/ProcessMemoryUtilities.Net/new/master/apiSpec/new?filename=ProcessMemoryUtilities_Native_NtDll_NtReadVirtualMemoryPartial__1_System_IntPtr_System_IntPtr___0__System_Int32_System_Int32_System_IntPtr__.md&amp;value=---%0Auid%3A%20ProcessMemoryUtilities.Native.NtDll.NtReadVirtualMemoryPartial%60%601(System.IntPtr%2CSystem.IntPtr%2C%60%600%40%2CSystem.Int32%2CSystem.Int32%2CSystem.IntPtr%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/michel-pi/ProcessMemoryUtilities.Net/blob/master/source/ProcessMemoryUtilities/Native/NtDll.RVM.cs/#L469">View Source</a>
+  </span>
+  <a id="ProcessMemoryUtilities_Native_NtDll_NtReadVirtualMemoryPartial_" data-uid="ProcessMemoryUtilities.Native.NtDll.NtReadVirtualMemoryPartial*"></a>
+  <h4 id="ProcessMemoryUtilities_Native_NtDll_NtReadVirtualMemoryPartial__1_System_IntPtr_System_IntPtr___0__System_Int32_System_Int32_System_IntPtr__" data-uid="ProcessMemoryUtilities.Native.NtDll.NtReadVirtualMemoryPartial``1(System.IntPtr,System.IntPtr,``0@,System.Int32,System.Int32,System.IntPtr@)">NtReadVirtualMemoryPartial&lt;T&gt;(IntPtr, IntPtr, ref T, Int32, Int32, out IntPtr)</h4>
+  <div class="markdown level1 summary"><p>ReadProcessMemory copies the data in the specified address range from the address space of the specified process into the specified buffer of the current process. Any process that has a handle with PROCESS_VM_READ access can call the function. The entire area to be read must be accessible, and if it is not accessible, the function fails.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static uint NtReadVirtualMemoryPartial&lt;T&gt;(IntPtr handle, IntPtr baseAddress, ref T buffer, int offset, int length, out IntPtr numberOfBytesRead)
+    where T : struct</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><span class="parametername">handle</span></td>
+        <td><p>A handle to the process with memory that is being read. The handle must have PROCESS_VM_READ access to the process.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><span class="parametername">baseAddress</span></td>
+        <td><p>A pointer to the base address in the specified process from which to read. Before any data transfer occurs, the system verifies that all data in the base address and memory of the specified size is accessible for read access, and if it is not accessible the function fails.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">buffer</span></td>
+        <td><p>A pointer to a buffer that receives the contents from the address space of the specified process.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">offset</span></td>
+        <td><p>A byte offset from the start of the buffer.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">length</span></td>
+        <td><p>The number of bytes to copy to the buffer.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><span class="parametername">numberOfBytesRead</span></td>
+        <td><p>A pointer to a variable that receives the number of bytes transferred into the specified buffer.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint32">UInt32</a></td>
+        <td><p>Returns an NTSTATUS success or error code.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/michel-pi/ProcessMemoryUtilities.Net/new/master/apiSpec/new?filename=ProcessMemoryUtilities_Native_NtDll_NtReadVirtualMemoryPartial__1_System_IntPtr_System_IntPtr___0__System_Int32_System_IntPtr__.md&amp;value=---%0Auid%3A%20ProcessMemoryUtilities.Native.NtDll.NtReadVirtualMemoryPartial%60%601(System.IntPtr%2CSystem.IntPtr%2C%60%600%40%2CSystem.Int32%2CSystem.IntPtr%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/michel-pi/ProcessMemoryUtilities.Net/blob/master/source/ProcessMemoryUtilities/Native/NtDll.RVM.cs/#L554">View Source</a>
+  </span>
+  <a id="ProcessMemoryUtilities_Native_NtDll_NtReadVirtualMemoryPartial_" data-uid="ProcessMemoryUtilities.Native.NtDll.NtReadVirtualMemoryPartial*"></a>
+  <h4 id="ProcessMemoryUtilities_Native_NtDll_NtReadVirtualMemoryPartial__1_System_IntPtr_System_IntPtr___0__System_Int32_System_IntPtr__" data-uid="ProcessMemoryUtilities.Native.NtDll.NtReadVirtualMemoryPartial``1(System.IntPtr,System.IntPtr,``0@,System.Int32,System.IntPtr@)">NtReadVirtualMemoryPartial&lt;T&gt;(IntPtr, IntPtr, ref T, Int32, out IntPtr)</h4>
+  <div class="markdown level1 summary"><p>ReadProcessMemory copies the data in the specified address range from the address space of the specified process into the specified buffer of the current process. Any process that has a handle with PROCESS_VM_READ access can call the function. The entire area to be read must be accessible, and if it is not accessible, the function fails.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static uint NtReadVirtualMemoryPartial&lt;T&gt;(IntPtr handle, IntPtr baseAddress, ref T buffer, int offset, out IntPtr numberOfBytesRead)
+    where T : struct</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><span class="parametername">handle</span></td>
+        <td><p>A handle to the process with memory that is being read. The handle must have PROCESS_VM_READ access to the process.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><span class="parametername">baseAddress</span></td>
+        <td><p>A pointer to the base address in the specified process from which to read. Before any data transfer occurs, the system verifies that all data in the base address and memory of the specified size is accessible for read access, and if it is not accessible the function fails.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">buffer</span></td>
+        <td><p>A pointer to a buffer that receives the contents from the address space of the specified process.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">offset</span></td>
+        <td><p>A byte offset from the start of the buffer.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><span class="parametername">numberOfBytesRead</span></td>
+        <td><p>A pointer to a variable that receives the number of bytes transferred into the specified buffer.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint32">UInt32</a></td>
+        <td><p>Returns an NTSTATUS success or error code.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/michel-pi/ProcessMemoryUtilities.Net/new/master/apiSpec/new?filename=ProcessMemoryUtilities_Native_NtDll_NtSuccess_System_UInt32_.md&amp;value=---%0Auid%3A%20ProcessMemoryUtilities.Native.NtDll.NtSuccess(System.UInt32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/michel-pi/ProcessMemoryUtilities.Net/blob/master/source/ProcessMemoryUtilities/Native/NtDll.cs/#L66">View Source</a>
+  </span>
+  <a id="ProcessMemoryUtilities_Native_NtDll_NtSuccess_" data-uid="ProcessMemoryUtilities.Native.NtDll.NtSuccess*"></a>
+  <h4 id="ProcessMemoryUtilities_Native_NtDll_NtSuccess_System_UInt32_" data-uid="ProcessMemoryUtilities.Native.NtDll.NtSuccess(System.UInt32)">NtSuccess(UInt32)</h4>
+  <div class="markdown level1 summary"><p>Checks if the specified NTSTATUS is a success or informational type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool NtSuccess(uint value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint32">UInt32</a></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>A NTSTATUS value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p>Returns true if the specified NTSTATUS is a success or informational type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/michel-pi/ProcessMemoryUtilities.Net/new/master/apiSpec/new?filename=ProcessMemoryUtilities_Native_NtDll_NtSuccessOnly_System_UInt32_.md&amp;value=---%0Auid%3A%20ProcessMemoryUtilities.Native.NtDll.NtSuccessOnly(System.UInt32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/michel-pi/ProcessMemoryUtilities.Net/blob/master/source/ProcessMemoryUtilities/Native/NtDll.cs/#L75">View Source</a>
+  </span>
+  <a id="ProcessMemoryUtilities_Native_NtDll_NtSuccessOnly_" data-uid="ProcessMemoryUtilities.Native.NtDll.NtSuccessOnly*"></a>
+  <h4 id="ProcessMemoryUtilities_Native_NtDll_NtSuccessOnly_System_UInt32_" data-uid="ProcessMemoryUtilities.Native.NtDll.NtSuccessOnly(System.UInt32)">NtSuccessOnly(UInt32)</h4>
+  <div class="markdown level1 summary"><p>Checks if the specified NTSTATUS is a success type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool NtSuccessOnly(uint value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint32">UInt32</a></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>A NTSTATUS value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p>Returns true if the specified NTSTATUS is a success type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/michel-pi/ProcessMemoryUtilities.Net/new/master/apiSpec/new?filename=ProcessMemoryUtilities_Native_NtDll_NtWarning_System_UInt32_.md&amp;value=---%0Auid%3A%20ProcessMemoryUtilities.Native.NtDll.NtWarning(System.UInt32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/michel-pi/ProcessMemoryUtilities.Net/blob/master/source/ProcessMemoryUtilities/Native/NtDll.cs/#L93">View Source</a>
+  </span>
+  <a id="ProcessMemoryUtilities_Native_NtDll_NtWarning_" data-uid="ProcessMemoryUtilities.Native.NtDll.NtWarning*"></a>
+  <h4 id="ProcessMemoryUtilities_Native_NtDll_NtWarning_System_UInt32_" data-uid="ProcessMemoryUtilities.Native.NtDll.NtWarning(System.UInt32)">NtWarning(UInt32)</h4>
+  <div class="markdown level1 summary"><p>Checks if the specified NTSTATUS is a warning type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool NtWarning(uint value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint32">UInt32</a></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>A NTSTATUS value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p>Returns true if the specified NTSTATUS is a warning type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/michel-pi/ProcessMemoryUtilities.Net/new/master/apiSpec/new?filename=ProcessMemoryUtilities_Native_NtDll_NtWriteVirtualMemory_System_IntPtr_System_IntPtr_System_IntPtr_System_IntPtr_.md&amp;value=---%0Auid%3A%20ProcessMemoryUtilities.Native.NtDll.NtWriteVirtualMemory(System.IntPtr%2CSystem.IntPtr%2CSystem.IntPtr%2CSystem.IntPtr)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/michel-pi/ProcessMemoryUtilities.Net/blob/master/source/ProcessMemoryUtilities/Native/NtDll.WVM.cs/#L109">View Source</a>
+  </span>
+  <a id="ProcessMemoryUtilities_Native_NtDll_NtWriteVirtualMemory_" data-uid="ProcessMemoryUtilities.Native.NtDll.NtWriteVirtualMemory*"></a>
+  <h4 id="ProcessMemoryUtilities_Native_NtDll_NtWriteVirtualMemory_System_IntPtr_System_IntPtr_System_IntPtr_System_IntPtr_" data-uid="ProcessMemoryUtilities.Native.NtDll.NtWriteVirtualMemory(System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr)">NtWriteVirtualMemory(IntPtr, IntPtr, IntPtr, IntPtr)</h4>
+  <div class="markdown level1 summary"><p>WriteProcessMemory copies the data from the specified buffer in the current process to the address range of the specified process. Any process that has a handle with PROCESS_VM_WRITE and PROCESS_VM_OPERATION access to the process to be written to can call the function. Typically but not always, the process with address space that is being written to is being debugged. The entire area to be written to must be accessible, and if it is not accessible, the function fails.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static uint NtWriteVirtualMemory(IntPtr handle, IntPtr baseAddress, IntPtr buffer, IntPtr size)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><span class="parametername">handle</span></td>
+        <td><p>A handle to the process memory to be modified. The handle must have PROCESS_VM_WRITE and PROCESS_VM_OPERATION access to the process.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><span class="parametername">baseAddress</span></td>
+        <td><p>A pointer to the base address in the specified process to which data is written. Before data transfer occurs, the system verifies that all data in the base address and memory of the specified size is accessible for write access, and if it is not accessible, the function fails.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><span class="parametername">buffer</span></td>
+        <td><p>A pointer to the buffer that contains data to be written in the address space of the specified process.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><span class="parametername">size</span></td>
+        <td><p>The number of bytes to be written to the specified process.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint32">UInt32</a></td>
+        <td><p>Returns an NTSTATUS success or error code.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/michel-pi/ProcessMemoryUtilities.Net/new/master/apiSpec/new?filename=ProcessMemoryUtilities_Native_NtDll_NtWriteVirtualMemory_System_IntPtr_System_IntPtr_System_IntPtr_System_IntPtr_System_IntPtr_.md&amp;value=---%0Auid%3A%20ProcessMemoryUtilities.Native.NtDll.NtWriteVirtualMemory(System.IntPtr%2CSystem.IntPtr%2CSystem.IntPtr%2CSystem.IntPtr%2CSystem.IntPtr)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/michel-pi/ProcessMemoryUtilities.Net/blob/master/source/ProcessMemoryUtilities/Native/NtDll.WVM.cs/#L21">View Source</a>
+  </span>
+  <a id="ProcessMemoryUtilities_Native_NtDll_NtWriteVirtualMemory_" data-uid="ProcessMemoryUtilities.Native.NtDll.NtWriteVirtualMemory*"></a>
+  <h4 id="ProcessMemoryUtilities_Native_NtDll_NtWriteVirtualMemory_System_IntPtr_System_IntPtr_System_IntPtr_System_IntPtr_System_IntPtr_" data-uid="ProcessMemoryUtilities.Native.NtDll.NtWriteVirtualMemory(System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr)">NtWriteVirtualMemory(IntPtr, IntPtr, IntPtr, IntPtr, IntPtr)</h4>
+  <div class="markdown level1 summary"><p>WriteProcessMemory copies the data from the specified buffer in the current process to the address range of the specified process. Any process that has a handle with PROCESS_VM_WRITE and PROCESS_VM_OPERATION access to the process to be written to can call the function. Typically but not always, the process with address space that is being written to is being debugged. The entire area to be written to must be accessible, and if it is not accessible, the function fails.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static uint NtWriteVirtualMemory(IntPtr handle, IntPtr baseAddress, IntPtr buffer, IntPtr size, IntPtr numberOfBytesWritten)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><span class="parametername">handle</span></td>
+        <td><p>A handle to the process memory to be modified. The handle must have PROCESS_VM_WRITE and PROCESS_VM_OPERATION access to the process.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><span class="parametername">baseAddress</span></td>
+        <td><p>A pointer to the base address in the specified process to which data is written. Before data transfer occurs, the system verifies that all data in the base address and memory of the specified size is accessible for write access, and if it is not accessible, the function fails.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><span class="parametername">buffer</span></td>
+        <td><p>A pointer to the buffer that contains data to be written in the address space of the specified process.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><span class="parametername">size</span></td>
+        <td><p>The number of bytes to be written to the specified process.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><span class="parametername">numberOfBytesWritten</span></td>
+        <td><p>A pointer to a variable that receives the number of bytes transferred into the specified process. This parameter is optional. If lpNumberOfBytesWritten is IntPtr.Zero, the parameter is ignored.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint32">UInt32</a></td>
+        <td><p>Returns an NTSTATUS success or error code.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/michel-pi/ProcessMemoryUtilities.Net/new/master/apiSpec/new?filename=ProcessMemoryUtilities_Native_NtDll_NtWriteVirtualMemory_System_IntPtr_System_IntPtr_System_IntPtr_System_IntPtr_System_IntPtr__.md&amp;value=---%0Auid%3A%20ProcessMemoryUtilities.Native.NtDll.NtWriteVirtualMemory(System.IntPtr%2CSystem.IntPtr%2CSystem.IntPtr%2CSystem.IntPtr%2CSystem.IntPtr%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/michel-pi/ProcessMemoryUtilities.Net/blob/master/source/ProcessMemoryUtilities/Native/NtDll.WVM.cs/#L57">View Source</a>
+  </span>
+  <a id="ProcessMemoryUtilities_Native_NtDll_NtWriteVirtualMemory_" data-uid="ProcessMemoryUtilities.Native.NtDll.NtWriteVirtualMemory*"></a>
+  <h4 id="ProcessMemoryUtilities_Native_NtDll_NtWriteVirtualMemory_System_IntPtr_System_IntPtr_System_IntPtr_System_IntPtr_System_IntPtr__" data-uid="ProcessMemoryUtilities.Native.NtDll.NtWriteVirtualMemory(System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr@)">NtWriteVirtualMemory(IntPtr, IntPtr, IntPtr, IntPtr, out IntPtr)</h4>
+  <div class="markdown level1 summary"><p>WriteProcessMemory copies the data from the specified buffer in the current process to the address range of the specified process. Any process that has a handle with PROCESS_VM_WRITE and PROCESS_VM_OPERATION access to the process to be written to can call the function. Typically but not always, the process with address space that is being written to is being debugged. The entire area to be written to must be accessible, and if it is not accessible, the function fails.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static uint NtWriteVirtualMemory(IntPtr handle, IntPtr baseAddress, IntPtr buffer, IntPtr size, out IntPtr numberOfBytesWritten)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><span class="parametername">handle</span></td>
+        <td><p>A handle to the process memory to be modified. The handle must have PROCESS_VM_WRITE and PROCESS_VM_OPERATION access to the process.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><span class="parametername">baseAddress</span></td>
+        <td><p>A pointer to the base address in the specified process to which data is written. Before data transfer occurs, the system verifies that all data in the base address and memory of the specified size is accessible for write access, and if it is not accessible, the function fails.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><span class="parametername">buffer</span></td>
+        <td><p>A pointer to the buffer that contains data to be written in the address space of the specified process.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><span class="parametername">size</span></td>
+        <td><p>The number of bytes to be written to the specified process.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><span class="parametername">numberOfBytesWritten</span></td>
+        <td><p>A pointer to a variable that receives the number of bytes transferred into the specified buffer.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint32">UInt32</a></td>
+        <td><p>Returns an NTSTATUS success or error code.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/michel-pi/ProcessMemoryUtilities.Net/new/master/apiSpec/new?filename=ProcessMemoryUtilities_Native_NtDll_NtWriteVirtualMemory__1_System_IntPtr_System_IntPtr___0__.md&amp;value=---%0Auid%3A%20ProcessMemoryUtilities.Native.NtDll.NtWriteVirtualMemory%60%601(System.IntPtr%2CSystem.IntPtr%2C%60%600%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/michel-pi/ProcessMemoryUtilities.Net/blob/master/source/ProcessMemoryUtilities/Native/NtDll.WVM.cs/#L124">View Source</a>
+  </span>
+  <a id="ProcessMemoryUtilities_Native_NtDll_NtWriteVirtualMemory_" data-uid="ProcessMemoryUtilities.Native.NtDll.NtWriteVirtualMemory*"></a>
+  <h4 id="ProcessMemoryUtilities_Native_NtDll_NtWriteVirtualMemory__1_System_IntPtr_System_IntPtr___0__" data-uid="ProcessMemoryUtilities.Native.NtDll.NtWriteVirtualMemory``1(System.IntPtr,System.IntPtr,``0@)">NtWriteVirtualMemory&lt;T&gt;(IntPtr, IntPtr, ref T)</h4>
+  <div class="markdown level1 summary"><p>WriteProcessMemory copies the data from the specified buffer in the current process to the address range of the specified process. Any process that has a handle with PROCESS_VM_WRITE and PROCESS_VM_OPERATION access to the process to be written to can call the function. Typically but not always, the process with address space that is being written to is being debugged. The entire area to be written to must be accessible, and if it is not accessible, the function fails.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static uint NtWriteVirtualMemory&lt;T&gt;(IntPtr handle, IntPtr baseAddress, ref T buffer)
+    where T : struct</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><span class="parametername">handle</span></td>
+        <td><p>A handle to the process memory to be modified. The handle must have PROCESS_VM_WRITE and PROCESS_VM_OPERATION access to the process.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><span class="parametername">baseAddress</span></td>
+        <td><p>A pointer to the base address in the specified process to which data is written. Before data transfer occurs, the system verifies that all data in the base address and memory of the specified size is accessible for write access, and if it is not accessible, the function fails.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">buffer</span></td>
+        <td><p>A pointer to the buffer that contains data to be written in the address space of the specified process.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint32">UInt32</a></td>
+        <td><p>Returns an NTSTATUS success or error code.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/michel-pi/ProcessMemoryUtilities.Net/new/master/apiSpec/new?filename=ProcessMemoryUtilities_Native_NtDll_NtWriteVirtualMemory__1_System_IntPtr_System_IntPtr___0__System_IntPtr__.md&amp;value=---%0Auid%3A%20ProcessMemoryUtilities.Native.NtDll.NtWriteVirtualMemory%60%601(System.IntPtr%2CSystem.IntPtr%2C%60%600%40%2CSystem.IntPtr%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/michel-pi/ProcessMemoryUtilities.Net/blob/master/source/ProcessMemoryUtilities/Native/NtDll.WVM.cs/#L169">View Source</a>
+  </span>
+  <a id="ProcessMemoryUtilities_Native_NtDll_NtWriteVirtualMemory_" data-uid="ProcessMemoryUtilities.Native.NtDll.NtWriteVirtualMemory*"></a>
+  <h4 id="ProcessMemoryUtilities_Native_NtDll_NtWriteVirtualMemory__1_System_IntPtr_System_IntPtr___0__System_IntPtr__" data-uid="ProcessMemoryUtilities.Native.NtDll.NtWriteVirtualMemory``1(System.IntPtr,System.IntPtr,``0@,System.IntPtr@)">NtWriteVirtualMemory&lt;T&gt;(IntPtr, IntPtr, ref T, out IntPtr)</h4>
+  <div class="markdown level1 summary"><p>WriteProcessMemory copies the data from the specified buffer in the current process to the address range of the specified process. Any process that has a handle with PROCESS_VM_WRITE and PROCESS_VM_OPERATION access to the process to be written to can call the function. Typically but not always, the process with address space that is being written to is being debugged. The entire area to be written to must be accessible, and if it is not accessible, the function fails.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static uint NtWriteVirtualMemory&lt;T&gt;(IntPtr handle, IntPtr baseAddress, ref T buffer, out IntPtr numberOfBytesWritten)
+    where T : struct</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><span class="parametername">handle</span></td>
+        <td><p>A handle to the process memory to be modified. The handle must have PROCESS_VM_WRITE and PROCESS_VM_OPERATION access to the process.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><span class="parametername">baseAddress</span></td>
+        <td><p>A pointer to the base address in the specified process to which data is written. Before data transfer occurs, the system verifies that all data in the base address and memory of the specified size is accessible for write access, and if it is not accessible, the function fails.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">buffer</span></td>
+        <td><p>A pointer to the buffer that contains data to be written in the address space of the specified process.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><span class="parametername">numberOfBytesWritten</span></td>
+        <td><p>A pointer to a variable that receives the number of bytes transferred into the specified process. This parameter is optional. If lpNumberOfBytesWritten is IntPtr.Zero, the parameter is ignored.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint32">UInt32</a></td>
+        <td><p>Returns an NTSTATUS success or error code.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/michel-pi/ProcessMemoryUtilities.Net/new/master/apiSpec/new?filename=ProcessMemoryUtilities_Native_NtDll_NtWriteVirtualMemoryArray__1_System_IntPtr_System_IntPtr___0___.md&amp;value=---%0Auid%3A%20ProcessMemoryUtilities.Native.NtDll.NtWriteVirtualMemoryArray%60%601(System.IntPtr%2CSystem.IntPtr%2C%60%600%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/michel-pi/ProcessMemoryUtilities.Net/blob/master/source/ProcessMemoryUtilities/Native/NtDll.WVM.cs/#L382">View Source</a>
+  </span>
+  <a id="ProcessMemoryUtilities_Native_NtDll_NtWriteVirtualMemoryArray_" data-uid="ProcessMemoryUtilities.Native.NtDll.NtWriteVirtualMemoryArray*"></a>
+  <h4 id="ProcessMemoryUtilities_Native_NtDll_NtWriteVirtualMemoryArray__1_System_IntPtr_System_IntPtr___0___" data-uid="ProcessMemoryUtilities.Native.NtDll.NtWriteVirtualMemoryArray``1(System.IntPtr,System.IntPtr,``0[])">NtWriteVirtualMemoryArray&lt;T&gt;(IntPtr, IntPtr, T[])</h4>
+  <div class="markdown level1 summary"><p>WriteProcessMemory copies the data from the specified buffer in the current process to the address range of the specified process. Any process that has a handle with PROCESS_VM_WRITE and PROCESS_VM_OPERATION access to the process to be written to can call the function. Typically but not always, the process with address space that is being written to is being debugged. The entire area to be written to must be accessible, and if it is not accessible, the function fails.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static uint NtWriteVirtualMemoryArray&lt;T&gt;(IntPtr handle, IntPtr baseAddress, T[] buffer)
+    where T : struct</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><span class="parametername">handle</span></td>
+        <td><p>A handle to the process memory to be modified. The handle must have PROCESS_VM_WRITE and PROCESS_VM_OPERATION access to the process.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><span class="parametername">baseAddress</span></td>
+        <td><p>A pointer to the base address in the specified process to which data is written. Before data transfer occurs, the system verifies that all data in the base address and memory of the specified size is accessible for write access, and if it is not accessible, the function fails.</p>
+</td>
+      </tr>
+      <tr>
+        <td>T[]</td>
+        <td><span class="parametername">buffer</span></td>
+        <td><p>A pointer to the buffer that contains data to be written in the address space of the specified process.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint32">UInt32</a></td>
+        <td><p>Returns an NTSTATUS success or error code.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/michel-pi/ProcessMemoryUtilities.Net/new/master/apiSpec/new?filename=ProcessMemoryUtilities_Native_NtDll_NtWriteVirtualMemoryArray__1_System_IntPtr_System_IntPtr___0___System_Int32_.md&amp;value=---%0Auid%3A%20ProcessMemoryUtilities.Native.NtDll.NtWriteVirtualMemoryArray%60%601(System.IntPtr%2CSystem.IntPtr%2C%60%600%5B%5D%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/michel-pi/ProcessMemoryUtilities.Net/blob/master/source/ProcessMemoryUtilities/Native/NtDll.WVM.cs/#L349">View Source</a>
+  </span>
+  <a id="ProcessMemoryUtilities_Native_NtDll_NtWriteVirtualMemoryArray_" data-uid="ProcessMemoryUtilities.Native.NtDll.NtWriteVirtualMemoryArray*"></a>
+  <h4 id="ProcessMemoryUtilities_Native_NtDll_NtWriteVirtualMemoryArray__1_System_IntPtr_System_IntPtr___0___System_Int32_" data-uid="ProcessMemoryUtilities.Native.NtDll.NtWriteVirtualMemoryArray``1(System.IntPtr,System.IntPtr,``0[],System.Int32)">NtWriteVirtualMemoryArray&lt;T&gt;(IntPtr, IntPtr, T[], Int32)</h4>
+  <div class="markdown level1 summary"><p>WriteProcessMemory copies the data from the specified buffer in the current process to the address range of the specified process. Any process that has a handle with PROCESS_VM_WRITE and PROCESS_VM_OPERATION access to the process to be written to can call the function. Typically but not always, the process with address space that is being written to is being debugged. The entire area to be written to must be accessible, and if it is not accessible, the function fails.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static uint NtWriteVirtualMemoryArray&lt;T&gt;(IntPtr handle, IntPtr baseAddress, T[] buffer, int offset)
+    where T : struct</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><span class="parametername">handle</span></td>
+        <td><p>A handle to the process memory to be modified. The handle must have PROCESS_VM_WRITE and PROCESS_VM_OPERATION access to the process.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><span class="parametername">baseAddress</span></td>
+        <td><p>A pointer to the base address in the specified process to which data is written. Before data transfer occurs, the system verifies that all data in the base address and memory of the specified size is accessible for write access, and if it is not accessible, the function fails.</p>
+</td>
+      </tr>
+      <tr>
+        <td>T[]</td>
+        <td><span class="parametername">buffer</span></td>
+        <td><p>A pointer to the buffer that contains data to be written in the address space of the specified process.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">offset</span></td>
+        <td><p>A byte offset from inside the array to copy from.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint32">UInt32</a></td>
+        <td><p>Returns an NTSTATUS success or error code.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/michel-pi/ProcessMemoryUtilities.Net/new/master/apiSpec/new?filename=ProcessMemoryUtilities_Native_NtDll_NtWriteVirtualMemoryArray__1_System_IntPtr_System_IntPtr___0___System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20ProcessMemoryUtilities.Native.NtDll.NtWriteVirtualMemoryArray%60%601(System.IntPtr%2CSystem.IntPtr%2C%60%600%5B%5D%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/michel-pi/ProcessMemoryUtilities.Net/blob/master/source/ProcessMemoryUtilities/Native/NtDll.WVM.cs/#L230">View Source</a>
+  </span>
+  <a id="ProcessMemoryUtilities_Native_NtDll_NtWriteVirtualMemoryArray_" data-uid="ProcessMemoryUtilities.Native.NtDll.NtWriteVirtualMemoryArray*"></a>
+  <h4 id="ProcessMemoryUtilities_Native_NtDll_NtWriteVirtualMemoryArray__1_System_IntPtr_System_IntPtr___0___System_Int32_System_Int32_" data-uid="ProcessMemoryUtilities.Native.NtDll.NtWriteVirtualMemoryArray``1(System.IntPtr,System.IntPtr,``0[],System.Int32,System.Int32)">NtWriteVirtualMemoryArray&lt;T&gt;(IntPtr, IntPtr, T[], Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>WriteProcessMemory copies the data from the specified buffer in the current process to the address range of the specified process. Any process that has a handle with PROCESS_VM_WRITE and PROCESS_VM_OPERATION access to the process to be written to can call the function. Typically but not always, the process with address space that is being written to is being debugged. The entire area to be written to must be accessible, and if it is not accessible, the function fails.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static uint NtWriteVirtualMemoryArray&lt;T&gt;(IntPtr handle, IntPtr baseAddress, T[] buffer, int offset, int length)
+    where T : struct</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><span class="parametername">handle</span></td>
+        <td><p>A handle to the process memory to be modified. The handle must have PROCESS_VM_WRITE and PROCESS_VM_OPERATION access to the process.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><span class="parametername">baseAddress</span></td>
+        <td><p>A pointer to the base address in the specified process to which data is written. Before data transfer occurs, the system verifies that all data in the base address and memory of the specified size is accessible for write access, and if it is not accessible, the function fails.</p>
+</td>
+      </tr>
+      <tr>
+        <td>T[]</td>
+        <td><span class="parametername">buffer</span></td>
+        <td><p>A pointer to the buffer that contains data to be written in the address space of the specified process.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">offset</span></td>
+        <td><p>A byte offset from inside the array to copy from.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">length</span></td>
+        <td><p>The number of bytes to copy from the array.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint32">UInt32</a></td>
+        <td><p>Returns an NTSTATUS success or error code.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/michel-pi/ProcessMemoryUtilities.Net/new/master/apiSpec/new?filename=ProcessMemoryUtilities_Native_NtDll_NtWriteVirtualMemoryArray__1_System_IntPtr_System_IntPtr___0___System_Int32_System_Int32_System_IntPtr__.md&amp;value=---%0Auid%3A%20ProcessMemoryUtilities.Native.NtDll.NtWriteVirtualMemoryArray%60%601(System.IntPtr%2CSystem.IntPtr%2C%60%600%5B%5D%2CSystem.Int32%2CSystem.Int32%2CSystem.IntPtr%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/michel-pi/ProcessMemoryUtilities.Net/blob/master/source/ProcessMemoryUtilities/Native/NtDll.WVM.cs/#L283">View Source</a>
+  </span>
+  <a id="ProcessMemoryUtilities_Native_NtDll_NtWriteVirtualMemoryArray_" data-uid="ProcessMemoryUtilities.Native.NtDll.NtWriteVirtualMemoryArray*"></a>
+  <h4 id="ProcessMemoryUtilities_Native_NtDll_NtWriteVirtualMemoryArray__1_System_IntPtr_System_IntPtr___0___System_Int32_System_Int32_System_IntPtr__" data-uid="ProcessMemoryUtilities.Native.NtDll.NtWriteVirtualMemoryArray``1(System.IntPtr,System.IntPtr,``0[],System.Int32,System.Int32,System.IntPtr@)">NtWriteVirtualMemoryArray&lt;T&gt;(IntPtr, IntPtr, T[], Int32, Int32, out IntPtr)</h4>
+  <div class="markdown level1 summary"><p>WriteProcessMemory copies the data from the specified buffer in the current process to the address range of the specified process. Any process that has a handle with PROCESS_VM_WRITE and PROCESS_VM_OPERATION access to the process to be written to can call the function. Typically but not always, the process with address space that is being written to is being debugged. The entire area to be written to must be accessible, and if it is not accessible, the function fails.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static uint NtWriteVirtualMemoryArray&lt;T&gt;(IntPtr handle, IntPtr baseAddress, T[] buffer, int offset, int length, out IntPtr numberOfBytesWritten)
+    where T : struct</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><span class="parametername">handle</span></td>
+        <td><p>A handle to the process memory to be modified. The handle must have PROCESS_VM_WRITE and PROCESS_VM_OPERATION access to the process.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><span class="parametername">baseAddress</span></td>
+        <td><p>A pointer to the base address in the specified process to which data is written. Before data transfer occurs, the system verifies that all data in the base address and memory of the specified size is accessible for write access, and if it is not accessible, the function fails.</p>
+</td>
+      </tr>
+      <tr>
+        <td>T[]</td>
+        <td><span class="parametername">buffer</span></td>
+        <td><p>A pointer to the buffer that contains data to be written in the address space of the specified process.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">offset</span></td>
+        <td><p>A byte offset from inside the array to copy from.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">length</span></td>
+        <td><p>The number of bytes to copy from the array.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><span class="parametername">numberOfBytesWritten</span></td>
+        <td><p>A pointer to a variable that receives the number of bytes transferred into the specified process. This parameter is optional. If lpNumberOfBytesWritten is IntPtr.Zero, the parameter is ignored.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint32">UInt32</a></td>
+        <td><p>Returns an NTSTATUS success or error code.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/michel-pi/ProcessMemoryUtilities.Net/new/master/apiSpec/new?filename=ProcessMemoryUtilities_Native_NtDll_NtWriteVirtualMemoryArray__1_System_IntPtr_System_IntPtr___0___System_Int32_System_IntPtr__.md&amp;value=---%0Auid%3A%20ProcessMemoryUtilities.Native.NtDll.NtWriteVirtualMemoryArray%60%601(System.IntPtr%2CSystem.IntPtr%2C%60%600%5B%5D%2CSystem.Int32%2CSystem.IntPtr%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/michel-pi/ProcessMemoryUtilities.Net/blob/master/source/ProcessMemoryUtilities/Native/NtDll.WVM.cs/#L366">View Source</a>
+  </span>
+  <a id="ProcessMemoryUtilities_Native_NtDll_NtWriteVirtualMemoryArray_" data-uid="ProcessMemoryUtilities.Native.NtDll.NtWriteVirtualMemoryArray*"></a>
+  <h4 id="ProcessMemoryUtilities_Native_NtDll_NtWriteVirtualMemoryArray__1_System_IntPtr_System_IntPtr___0___System_Int32_System_IntPtr__" data-uid="ProcessMemoryUtilities.Native.NtDll.NtWriteVirtualMemoryArray``1(System.IntPtr,System.IntPtr,``0[],System.Int32,System.IntPtr@)">NtWriteVirtualMemoryArray&lt;T&gt;(IntPtr, IntPtr, T[], Int32, out IntPtr)</h4>
+  <div class="markdown level1 summary"><p>WriteProcessMemory copies the data from the specified buffer in the current process to the address range of the specified process. Any process that has a handle with PROCESS_VM_WRITE and PROCESS_VM_OPERATION access to the process to be written to can call the function. Typically but not always, the process with address space that is being written to is being debugged. The entire area to be written to must be accessible, and if it is not accessible, the function fails.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static uint NtWriteVirtualMemoryArray&lt;T&gt;(IntPtr handle, IntPtr baseAddress, T[] buffer, int offset, out IntPtr numberOfBytesWritten)
+    where T : struct</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><span class="parametername">handle</span></td>
+        <td><p>A handle to the process memory to be modified. The handle must have PROCESS_VM_WRITE and PROCESS_VM_OPERATION access to the process.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><span class="parametername">baseAddress</span></td>
+        <td><p>A pointer to the base address in the specified process to which data is written. Before data transfer occurs, the system verifies that all data in the base address and memory of the specified size is accessible for write access, and if it is not accessible, the function fails.</p>
+</td>
+      </tr>
+      <tr>
+        <td>T[]</td>
+        <td><span class="parametername">buffer</span></td>
+        <td><p>A pointer to the buffer that contains data to be written in the address space of the specified process.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">offset</span></td>
+        <td><p>A byte offset from inside the array to copy from.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><span class="parametername">numberOfBytesWritten</span></td>
+        <td><p>A pointer to a variable that receives the number of bytes transferred into the specified buffer.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint32">UInt32</a></td>
+        <td><p>Returns an NTSTATUS success or error code.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/michel-pi/ProcessMemoryUtilities.Net/new/master/apiSpec/new?filename=ProcessMemoryUtilities_Native_NtDll_NtWriteVirtualMemoryArray__1_System_IntPtr_System_IntPtr___0___System_IntPtr__.md&amp;value=---%0Auid%3A%20ProcessMemoryUtilities.Native.NtDll.NtWriteVirtualMemoryArray%60%601(System.IntPtr%2CSystem.IntPtr%2C%60%600%5B%5D%2CSystem.IntPtr%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/michel-pi/ProcessMemoryUtilities.Net/blob/master/source/ProcessMemoryUtilities/Native/NtDll.WVM.cs/#L397">View Source</a>
+  </span>
+  <a id="ProcessMemoryUtilities_Native_NtDll_NtWriteVirtualMemoryArray_" data-uid="ProcessMemoryUtilities.Native.NtDll.NtWriteVirtualMemoryArray*"></a>
+  <h4 id="ProcessMemoryUtilities_Native_NtDll_NtWriteVirtualMemoryArray__1_System_IntPtr_System_IntPtr___0___System_IntPtr__" data-uid="ProcessMemoryUtilities.Native.NtDll.NtWriteVirtualMemoryArray``1(System.IntPtr,System.IntPtr,``0[],System.IntPtr@)">NtWriteVirtualMemoryArray&lt;T&gt;(IntPtr, IntPtr, T[], out IntPtr)</h4>
+  <div class="markdown level1 summary"><p>WriteProcessMemory copies the data from the specified buffer in the current process to the address range of the specified process. Any process that has a handle with PROCESS_VM_WRITE and PROCESS_VM_OPERATION access to the process to be written to can call the function. Typically but not always, the process with address space that is being written to is being debugged. The entire area to be written to must be accessible, and if it is not accessible, the function fails.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static uint NtWriteVirtualMemoryArray&lt;T&gt;(IntPtr handle, IntPtr baseAddress, T[] buffer, out IntPtr numberOfBytesWritten)
+    where T : struct</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><span class="parametername">handle</span></td>
+        <td><p>A handle to the process memory to be modified. The handle must have PROCESS_VM_WRITE and PROCESS_VM_OPERATION access to the process.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><span class="parametername">baseAddress</span></td>
+        <td><p>A pointer to the base address in the specified process to which data is written. Before data transfer occurs, the system verifies that all data in the base address and memory of the specified size is accessible for write access, and if it is not accessible, the function fails.</p>
+</td>
+      </tr>
+      <tr>
+        <td>T[]</td>
+        <td><span class="parametername">buffer</span></td>
+        <td><p>A pointer to the buffer that contains data to be written in the address space of the specified process.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><span class="parametername">numberOfBytesWritten</span></td>
+        <td><p>A pointer to a variable that receives the number of bytes transferred into the specified buffer.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint32">UInt32</a></td>
+        <td><p>Returns an NTSTATUS success or error code.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/michel-pi/ProcessMemoryUtilities.Net/new/master/apiSpec/new?filename=ProcessMemoryUtilities_Native_NtDll_NtWriteVirtualMemoryPartial__1_System_IntPtr_System_IntPtr___0__System_Int32_.md&amp;value=---%0Auid%3A%20ProcessMemoryUtilities.Native.NtDll.NtWriteVirtualMemoryPartial%60%601(System.IntPtr%2CSystem.IntPtr%2C%60%600%40%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/michel-pi/ProcessMemoryUtilities.Net/blob/master/source/ProcessMemoryUtilities/Native/NtDll.WVM.cs/#L537">View Source</a>
+  </span>
+  <a id="ProcessMemoryUtilities_Native_NtDll_NtWriteVirtualMemoryPartial_" data-uid="ProcessMemoryUtilities.Native.NtDll.NtWriteVirtualMemoryPartial*"></a>
+  <h4 id="ProcessMemoryUtilities_Native_NtDll_NtWriteVirtualMemoryPartial__1_System_IntPtr_System_IntPtr___0__System_Int32_" data-uid="ProcessMemoryUtilities.Native.NtDll.NtWriteVirtualMemoryPartial``1(System.IntPtr,System.IntPtr,``0@,System.Int32)">NtWriteVirtualMemoryPartial&lt;T&gt;(IntPtr, IntPtr, ref T, Int32)</h4>
+  <div class="markdown level1 summary"><p>WriteProcessMemory copies the data from the specified buffer in the current process to the address range of the specified process. Any process that has a handle with PROCESS_VM_WRITE and PROCESS_VM_OPERATION access to the process to be written to can call the function. Typically but not always, the process with address space that is being written to is being debugged. The entire area to be written to must be accessible, and if it is not accessible, the function fails.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static uint NtWriteVirtualMemoryPartial&lt;T&gt;(IntPtr handle, IntPtr baseAddress, ref T buffer, int offset)
+    where T : struct</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><span class="parametername">handle</span></td>
+        <td><p>A handle to the process memory to be modified. The handle must have PROCESS_VM_WRITE and PROCESS_VM_OPERATION access to the process.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><span class="parametername">baseAddress</span></td>
+        <td><p>A pointer to the base address in the specified process to which data is written. Before data transfer occurs, the system verifies that all data in the base address and memory of the specified size is accessible for write access, and if it is not accessible, the function fails.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">buffer</span></td>
+        <td><p>A pointer to the buffer that contains data to be written in the address space of the specified process.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">offset</span></td>
+        <td><p>A byte offset from the start of the buffer.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint32">UInt32</a></td>
+        <td><p>Returns an NTSTATUS success or error code.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/michel-pi/ProcessMemoryUtilities.Net/new/master/apiSpec/new?filename=ProcessMemoryUtilities_Native_NtDll_NtWriteVirtualMemoryPartial__1_System_IntPtr_System_IntPtr___0__System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20ProcessMemoryUtilities.Native.NtDll.NtWriteVirtualMemoryPartial%60%601(System.IntPtr%2CSystem.IntPtr%2C%60%600%40%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/michel-pi/ProcessMemoryUtilities.Net/blob/master/source/ProcessMemoryUtilities/Native/NtDll.WVM.cs/#L414">View Source</a>
+  </span>
+  <a id="ProcessMemoryUtilities_Native_NtDll_NtWriteVirtualMemoryPartial_" data-uid="ProcessMemoryUtilities.Native.NtDll.NtWriteVirtualMemoryPartial*"></a>
+  <h4 id="ProcessMemoryUtilities_Native_NtDll_NtWriteVirtualMemoryPartial__1_System_IntPtr_System_IntPtr___0__System_Int32_System_Int32_" data-uid="ProcessMemoryUtilities.Native.NtDll.NtWriteVirtualMemoryPartial``1(System.IntPtr,System.IntPtr,``0@,System.Int32,System.Int32)">NtWriteVirtualMemoryPartial&lt;T&gt;(IntPtr, IntPtr, ref T, Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>WriteProcessMemory copies the data from the specified buffer in the current process to the address range of the specified process. Any process that has a handle with PROCESS_VM_WRITE and PROCESS_VM_OPERATION access to the process to be written to can call the function. Typically but not always, the process with address space that is being written to is being debugged. The entire area to be written to must be accessible, and if it is not accessible, the function fails.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static uint NtWriteVirtualMemoryPartial&lt;T&gt;(IntPtr handle, IntPtr baseAddress, ref T buffer, int offset, int length)
+    where T : struct</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><span class="parametername">handle</span></td>
+        <td><p>A handle to the process memory to be modified. The handle must have PROCESS_VM_WRITE and PROCESS_VM_OPERATION access to the process.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><span class="parametername">baseAddress</span></td>
+        <td><p>A pointer to the base address in the specified process to which data is written. Before data transfer occurs, the system verifies that all data in the base address and memory of the specified size is accessible for write access, and if it is not accessible, the function fails.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">buffer</span></td>
+        <td><p>A pointer to the buffer that contains data to be written in the address space of the specified process.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">offset</span></td>
+        <td><p>A byte offset from the start of the buffer.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">length</span></td>
+        <td><p>The number of bytes to copy to the buffer.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint32">UInt32</a></td>
+        <td><p>Returns an NTSTATUS success or error code.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/michel-pi/ProcessMemoryUtilities.Net/new/master/apiSpec/new?filename=ProcessMemoryUtilities_Native_NtDll_NtWriteVirtualMemoryPartial__1_System_IntPtr_System_IntPtr___0__System_Int32_System_Int32_System_IntPtr__.md&amp;value=---%0Auid%3A%20ProcessMemoryUtilities.Native.NtDll.NtWriteVirtualMemoryPartial%60%601(System.IntPtr%2CSystem.IntPtr%2C%60%600%40%2CSystem.Int32%2CSystem.Int32%2CSystem.IntPtr%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/michel-pi/ProcessMemoryUtilities.Net/blob/master/source/ProcessMemoryUtilities/Native/NtDll.WVM.cs/#L469">View Source</a>
+  </span>
+  <a id="ProcessMemoryUtilities_Native_NtDll_NtWriteVirtualMemoryPartial_" data-uid="ProcessMemoryUtilities.Native.NtDll.NtWriteVirtualMemoryPartial*"></a>
+  <h4 id="ProcessMemoryUtilities_Native_NtDll_NtWriteVirtualMemoryPartial__1_System_IntPtr_System_IntPtr___0__System_Int32_System_Int32_System_IntPtr__" data-uid="ProcessMemoryUtilities.Native.NtDll.NtWriteVirtualMemoryPartial``1(System.IntPtr,System.IntPtr,``0@,System.Int32,System.Int32,System.IntPtr@)">NtWriteVirtualMemoryPartial&lt;T&gt;(IntPtr, IntPtr, ref T, Int32, Int32, out IntPtr)</h4>
+  <div class="markdown level1 summary"><p>WriteProcessMemory copies the data from the specified buffer in the current process to the address range of the specified process. Any process that has a handle with PROCESS_VM_WRITE and PROCESS_VM_OPERATION access to the process to be written to can call the function. Typically but not always, the process with address space that is being written to is being debugged. The entire area to be written to must be accessible, and if it is not accessible, the function fails.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static uint NtWriteVirtualMemoryPartial&lt;T&gt;(IntPtr handle, IntPtr baseAddress, ref T buffer, int offset, int length, out IntPtr numberOfBytesWritten)
+    where T : struct</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><span class="parametername">handle</span></td>
+        <td><p>A handle to the process memory to be modified. The handle must have PROCESS_VM_WRITE and PROCESS_VM_OPERATION access to the process.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><span class="parametername">baseAddress</span></td>
+        <td><p>A pointer to the base address in the specified process to which data is written. Before data transfer occurs, the system verifies that all data in the base address and memory of the specified size is accessible for write access, and if it is not accessible, the function fails.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">buffer</span></td>
+        <td><p>A pointer to the buffer that contains data to be written in the address space of the specified process.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">offset</span></td>
+        <td><p>A byte offset from the start of the buffer.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">length</span></td>
+        <td><p>The number of bytes to copy to the buffer.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><span class="parametername">numberOfBytesWritten</span></td>
+        <td><p>A pointer to a variable that receives the number of bytes transferred into the specified buffer.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint32">UInt32</a></td>
+        <td><p>Returns an NTSTATUS success or error code.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/michel-pi/ProcessMemoryUtilities.Net/new/master/apiSpec/new?filename=ProcessMemoryUtilities_Native_NtDll_NtWriteVirtualMemoryPartial__1_System_IntPtr_System_IntPtr___0__System_Int32_System_IntPtr__.md&amp;value=---%0Auid%3A%20ProcessMemoryUtilities.Native.NtDll.NtWriteVirtualMemoryPartial%60%601(System.IntPtr%2CSystem.IntPtr%2C%60%600%40%2CSystem.Int32%2CSystem.IntPtr%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/michel-pi/ProcessMemoryUtilities.Net/blob/master/source/ProcessMemoryUtilities/Native/NtDll.WVM.cs/#L554">View Source</a>
+  </span>
+  <a id="ProcessMemoryUtilities_Native_NtDll_NtWriteVirtualMemoryPartial_" data-uid="ProcessMemoryUtilities.Native.NtDll.NtWriteVirtualMemoryPartial*"></a>
+  <h4 id="ProcessMemoryUtilities_Native_NtDll_NtWriteVirtualMemoryPartial__1_System_IntPtr_System_IntPtr___0__System_Int32_System_IntPtr__" data-uid="ProcessMemoryUtilities.Native.NtDll.NtWriteVirtualMemoryPartial``1(System.IntPtr,System.IntPtr,``0@,System.Int32,System.IntPtr@)">NtWriteVirtualMemoryPartial&lt;T&gt;(IntPtr, IntPtr, ref T, Int32, out IntPtr)</h4>
+  <div class="markdown level1 summary"><p>WriteProcessMemory copies the data from the specified buffer in the current process to the address range of the specified process. Any process that has a handle with PROCESS_VM_WRITE and PROCESS_VM_OPERATION access to the process to be written to can call the function. Typically but not always, the process with address space that is being written to is being debugged. The entire area to be written to must be accessible, and if it is not accessible, the function fails.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static uint NtWriteVirtualMemoryPartial&lt;T&gt;(IntPtr handle, IntPtr baseAddress, ref T buffer, int offset, out IntPtr numberOfBytesWritten)
+    where T : struct</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><span class="parametername">handle</span></td>
+        <td><p>A handle to the process memory to be modified. The handle must have PROCESS_VM_WRITE and PROCESS_VM_OPERATION access to the process.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><span class="parametername">baseAddress</span></td>
+        <td><p>A pointer to the base address in the specified process to which data is written. Before data transfer occurs, the system verifies that all data in the base address and memory of the specified size is accessible for write access, and if it is not accessible, the function fails.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">buffer</span></td>
+        <td><p>A pointer to the buffer that contains data to be written in the address space of the specified process.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">offset</span></td>
+        <td><p>A byte offset from the start of the buffer.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><span class="parametername">numberOfBytesWritten</span></td>
+        <td><p>A pointer to a variable that receives the number of bytes transferred into the specified buffer.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint32">UInt32</a></td>
+        <td><p>Returns an NTSTATUS success or error code.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/michel-pi/ProcessMemoryUtilities.Net/new/master/apiSpec/new?filename=ProcessMemoryUtilities_Native_NtDll_RtlNtStatusToDosError_System_UInt32_.md&amp;value=---%0Auid%3A%20ProcessMemoryUtilities.Native.NtDll.RtlNtStatusToDosError(System.UInt32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/michel-pi/ProcessMemoryUtilities.Net/blob/master/source/ProcessMemoryUtilities/Native/NtDll.cs/#L47">View Source</a>
+  </span>
+  <a id="ProcessMemoryUtilities_Native_NtDll_RtlNtStatusToDosError_" data-uid="ProcessMemoryUtilities.Native.NtDll.RtlNtStatusToDosError*"></a>
+  <h4 id="ProcessMemoryUtilities_Native_NtDll_RtlNtStatusToDosError_System_UInt32_" data-uid="ProcessMemoryUtilities.Native.NtDll.RtlNtStatusToDosError(System.UInt32)">RtlNtStatusToDosError(UInt32)</h4>
+  <div class="markdown level1 summary"><p>Converts the specified NTSTATUS code to its equivalent system error code.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static uint RtlNtStatusToDosError(uint value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint32">UInt32</a></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The NTSTATUS code to be converted.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint32">UInt32</a></td>
+        <td><p>The function returns the corresponding system error code.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/michel-pi/ProcessMemoryUtilities.Net/new/master/apiSpec/new?filename=ProcessMemoryUtilities_Native_NtDll.md&amp;value=---%0Auid%3A%20ProcessMemoryUtilities.Native.NtDll%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/michel-pi/ProcessMemoryUtilities.Net/blob/master/source/ProcessMemoryUtilities/Native/NtDll.WVM.cs/#L10" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            ProcessMemoryUtilities.Net (c) 2020
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,297 @@
+{
+  "homepages": [],
+  "source_base_path": "C:/Users/Michel/Documents/Github/Public/ProcessMemoryUtilities.Net/docfx_project",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      },
+      "is_incremental": false
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProcessMemoryUtilities.Managed.NativeWrapper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProcessMemoryUtilities.Managed.NativeWrapper.html",
+          "hash": "RCOy6TMJfEbQ6QBVm7TpBQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProcessMemoryUtilities.Managed.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProcessMemoryUtilities.Managed.html",
+          "hash": "f9eptStKbTlvSRkrvg9dww=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProcessMemoryUtilities.Native.AllocationType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProcessMemoryUtilities.Native.AllocationType.html",
+          "hash": "r/xhDIvqdj6Sl5DzHM4KTw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProcessMemoryUtilities.Native.FreeType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProcessMemoryUtilities.Native.FreeType.html",
+          "hash": "xQ8is6J0na8ecKQM0hYfsQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProcessMemoryUtilities.Native.Kernel32.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProcessMemoryUtilities.Native.Kernel32.html",
+          "hash": "69I3uVj3VyVtdxWDVnrqhA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProcessMemoryUtilities.Native.MemoryProtectionFlags.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProcessMemoryUtilities.Native.MemoryProtectionFlags.html",
+          "hash": "jOEPmEzaE0DW14Zo9UVYWw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProcessMemoryUtilities.Native.NtDll.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProcessMemoryUtilities.Native.NtDll.html",
+          "hash": "7KVkYw9T77X/YfHSjPd4Rw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProcessMemoryUtilities.Native.NtStatus.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProcessMemoryUtilities.Native.NtStatus.html",
+          "hash": "b7WJ23k1L+iGTbrokYmpCg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProcessMemoryUtilities.Native.ProcessAccessFlags.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProcessMemoryUtilities.Native.ProcessAccessFlags.html",
+          "hash": "1oK7EvoJV3xxbjmatAipwA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProcessMemoryUtilities.Native.ThreadCreationFlags.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProcessMemoryUtilities.Native.ThreadCreationFlags.html",
+          "hash": "+ACOVtBbcYyj6R7JknqazQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProcessMemoryUtilities.Native.WaitObjectResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProcessMemoryUtilities.Native.WaitObjectResult.html",
+          "hash": "Bc2QAAx1LmeUIQ6TvKLzUA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProcessMemoryUtilities.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProcessMemoryUtilities.Native.html",
+          "hash": "npC5t+K436CCnsMNu9l/0w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/index.html",
+          "hash": "5Psn8hg/VOqUXhlrUMBe8w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html",
+          "hash": "GoX4so86f27XeRBvIAp0Pg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/intro.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/intro.html",
+          "hash": "M7deirXafwFWzZatYByTXQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "articles/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "articles/toc.html",
+          "hash": "gB8AESyvNru97tzIZofEEg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "sL/r+HceMGAN/QlUkbvwVw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "langwordMapping.yml",
+      "output": {
+        "resource": {
+          "relative_path": "langwordMapping.yml"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "EIhwD2+o19OxxQFCB6JJTg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": true,
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        },
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build",
+          "total_file_count": 12,
+          "skipped_file_count": 12
+        },
+        "ConceptualDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build",
+          "total_file_count": 3,
+          "skipped_file_count": 1
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot support incremental post processing, the reason is: should not trace intermediate info.",
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

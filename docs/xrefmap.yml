@@ -1,0 +1,1514 @@
+### YamlMime:XRefMap
+sorted: true
+references:
+- uid: ProcessMemoryUtilities.Managed
+  name: ProcessMemoryUtilities.Managed
+  href: api/ProcessMemoryUtilities.Managed.html
+  commentId: N:ProcessMemoryUtilities.Managed
+  fullName: ProcessMemoryUtilities.Managed
+  nameWithType: ProcessMemoryUtilities.Managed
+- uid: ProcessMemoryUtilities.Managed.NativeWrapper
+  name: NativeWrapper
+  href: api/ProcessMemoryUtilities.Managed.NativeWrapper.html
+  commentId: T:ProcessMemoryUtilities.Managed.NativeWrapper
+  fullName: ProcessMemoryUtilities.Managed.NativeWrapper
+  nameWithType: NativeWrapper
+- uid: ProcessMemoryUtilities.Managed.NativeWrapper.CaptureErrors
+  name: CaptureErrors
+  href: api/ProcessMemoryUtilities.Managed.NativeWrapper.html#ProcessMemoryUtilities_Managed_NativeWrapper_CaptureErrors
+  commentId: P:ProcessMemoryUtilities.Managed.NativeWrapper.CaptureErrors
+  fullName: ProcessMemoryUtilities.Managed.NativeWrapper.CaptureErrors
+  nameWithType: NativeWrapper.CaptureErrors
+- uid: ProcessMemoryUtilities.Managed.NativeWrapper.CaptureErrors*
+  name: CaptureErrors
+  href: api/ProcessMemoryUtilities.Managed.NativeWrapper.html#ProcessMemoryUtilities_Managed_NativeWrapper_CaptureErrors_
+  commentId: Overload:ProcessMemoryUtilities.Managed.NativeWrapper.CaptureErrors
+  isSpec: "True"
+  fullName: ProcessMemoryUtilities.Managed.NativeWrapper.CaptureErrors
+  nameWithType: NativeWrapper.CaptureErrors
+- uid: ProcessMemoryUtilities.Managed.NativeWrapper.CloseHandle(System.IntPtr)
+  name: CloseHandle(IntPtr)
+  href: api/ProcessMemoryUtilities.Managed.NativeWrapper.html#ProcessMemoryUtilities_Managed_NativeWrapper_CloseHandle_System_IntPtr_
+  commentId: M:ProcessMemoryUtilities.Managed.NativeWrapper.CloseHandle(System.IntPtr)
+  fullName: ProcessMemoryUtilities.Managed.NativeWrapper.CloseHandle(System.IntPtr)
+  nameWithType: NativeWrapper.CloseHandle(IntPtr)
+- uid: ProcessMemoryUtilities.Managed.NativeWrapper.CloseHandle*
+  name: CloseHandle
+  href: api/ProcessMemoryUtilities.Managed.NativeWrapper.html#ProcessMemoryUtilities_Managed_NativeWrapper_CloseHandle_
+  commentId: Overload:ProcessMemoryUtilities.Managed.NativeWrapper.CloseHandle
+  isSpec: "True"
+  fullName: ProcessMemoryUtilities.Managed.NativeWrapper.CloseHandle
+  nameWithType: NativeWrapper.CloseHandle
+- uid: ProcessMemoryUtilities.Managed.NativeWrapper.CreateRemoteThread(System.IntPtr,System.IntPtr,System.IntPtr)
+  name: CreateRemoteThread(IntPtr, IntPtr, IntPtr)
+  href: api/ProcessMemoryUtilities.Managed.NativeWrapper.html#ProcessMemoryUtilities_Managed_NativeWrapper_CreateRemoteThread_System_IntPtr_System_IntPtr_System_IntPtr_
+  commentId: M:ProcessMemoryUtilities.Managed.NativeWrapper.CreateRemoteThread(System.IntPtr,System.IntPtr,System.IntPtr)
+  fullName: ProcessMemoryUtilities.Managed.NativeWrapper.CreateRemoteThread(System.IntPtr, System.IntPtr, System.IntPtr)
+  nameWithType: NativeWrapper.CreateRemoteThread(IntPtr, IntPtr, IntPtr)
+- uid: ProcessMemoryUtilities.Managed.NativeWrapper.CreateRemoteThread(System.IntPtr,System.IntPtr,System.IntPtr,ProcessMemoryUtilities.Native.ThreadCreationFlags)
+  name: CreateRemoteThread(IntPtr, IntPtr, IntPtr, ThreadCreationFlags)
+  href: api/ProcessMemoryUtilities.Managed.NativeWrapper.html#ProcessMemoryUtilities_Managed_NativeWrapper_CreateRemoteThread_System_IntPtr_System_IntPtr_System_IntPtr_ProcessMemoryUtilities_Native_ThreadCreationFlags_
+  commentId: M:ProcessMemoryUtilities.Managed.NativeWrapper.CreateRemoteThread(System.IntPtr,System.IntPtr,System.IntPtr,ProcessMemoryUtilities.Native.ThreadCreationFlags)
+  fullName: ProcessMemoryUtilities.Managed.NativeWrapper.CreateRemoteThread(System.IntPtr, System.IntPtr, System.IntPtr, ProcessMemoryUtilities.Native.ThreadCreationFlags)
+  nameWithType: NativeWrapper.CreateRemoteThread(IntPtr, IntPtr, IntPtr, ThreadCreationFlags)
+- uid: ProcessMemoryUtilities.Managed.NativeWrapper.CreateRemoteThread(System.IntPtr,System.IntPtr,System.IntPtr,ProcessMemoryUtilities.Native.ThreadCreationFlags,System.UInt32@)
+  name: CreateRemoteThread(IntPtr, IntPtr, IntPtr, ThreadCreationFlags, out UInt32)
+  href: api/ProcessMemoryUtilities.Managed.NativeWrapper.html#ProcessMemoryUtilities_Managed_NativeWrapper_CreateRemoteThread_System_IntPtr_System_IntPtr_System_IntPtr_ProcessMemoryUtilities_Native_ThreadCreationFlags_System_UInt32__
+  commentId: M:ProcessMemoryUtilities.Managed.NativeWrapper.CreateRemoteThread(System.IntPtr,System.IntPtr,System.IntPtr,ProcessMemoryUtilities.Native.ThreadCreationFlags,System.UInt32@)
+  name.vb: CreateRemoteThread(IntPtr, IntPtr, IntPtr, ThreadCreationFlags, ByRef UInt32)
+  fullName: ProcessMemoryUtilities.Managed.NativeWrapper.CreateRemoteThread(System.IntPtr, System.IntPtr, System.IntPtr, ProcessMemoryUtilities.Native.ThreadCreationFlags, out System.UInt32)
+  fullName.vb: ProcessMemoryUtilities.Managed.NativeWrapper.CreateRemoteThread(System.IntPtr, System.IntPtr, System.IntPtr, ProcessMemoryUtilities.Native.ThreadCreationFlags, ByRef System.UInt32)
+  nameWithType: NativeWrapper.CreateRemoteThread(IntPtr, IntPtr, IntPtr, ThreadCreationFlags, out UInt32)
+  nameWithType.vb: NativeWrapper.CreateRemoteThread(IntPtr, IntPtr, IntPtr, ThreadCreationFlags, ByRef UInt32)
+- uid: ProcessMemoryUtilities.Managed.NativeWrapper.CreateRemoteThread(System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr,ProcessMemoryUtilities.Native.ThreadCreationFlags,System.IntPtr)
+  name: CreateRemoteThread(IntPtr, IntPtr, IntPtr, IntPtr, IntPtr, ThreadCreationFlags, IntPtr)
+  href: api/ProcessMemoryUtilities.Managed.NativeWrapper.html#ProcessMemoryUtilities_Managed_NativeWrapper_CreateRemoteThread_System_IntPtr_System_IntPtr_System_IntPtr_System_IntPtr_System_IntPtr_ProcessMemoryUtilities_Native_ThreadCreationFlags_System_IntPtr_
+  commentId: M:ProcessMemoryUtilities.Managed.NativeWrapper.CreateRemoteThread(System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr,ProcessMemoryUtilities.Native.ThreadCreationFlags,System.IntPtr)
+  fullName: ProcessMemoryUtilities.Managed.NativeWrapper.CreateRemoteThread(System.IntPtr, System.IntPtr, System.IntPtr, System.IntPtr, System.IntPtr, ProcessMemoryUtilities.Native.ThreadCreationFlags, System.IntPtr)
+  nameWithType: NativeWrapper.CreateRemoteThread(IntPtr, IntPtr, IntPtr, IntPtr, IntPtr, ThreadCreationFlags, IntPtr)
+- uid: ProcessMemoryUtilities.Managed.NativeWrapper.CreateRemoteThread(System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr,ProcessMemoryUtilities.Native.ThreadCreationFlags,System.UInt32@)
+  name: CreateRemoteThread(IntPtr, IntPtr, IntPtr, IntPtr, IntPtr, ThreadCreationFlags, out UInt32)
+  href: api/ProcessMemoryUtilities.Managed.NativeWrapper.html#ProcessMemoryUtilities_Managed_NativeWrapper_CreateRemoteThread_System_IntPtr_System_IntPtr_System_IntPtr_System_IntPtr_System_IntPtr_ProcessMemoryUtilities_Native_ThreadCreationFlags_System_UInt32__
+  commentId: M:ProcessMemoryUtilities.Managed.NativeWrapper.CreateRemoteThread(System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr,ProcessMemoryUtilities.Native.ThreadCreationFlags,System.UInt32@)
+  name.vb: CreateRemoteThread(IntPtr, IntPtr, IntPtr, IntPtr, IntPtr, ThreadCreationFlags, ByRef UInt32)
+  fullName: ProcessMemoryUtilities.Managed.NativeWrapper.CreateRemoteThread(System.IntPtr, System.IntPtr, System.IntPtr, System.IntPtr, System.IntPtr, ProcessMemoryUtilities.Native.ThreadCreationFlags, out System.UInt32)
+  fullName.vb: ProcessMemoryUtilities.Managed.NativeWrapper.CreateRemoteThread(System.IntPtr, System.IntPtr, System.IntPtr, System.IntPtr, System.IntPtr, ProcessMemoryUtilities.Native.ThreadCreationFlags, ByRef System.UInt32)
+  nameWithType: NativeWrapper.CreateRemoteThread(IntPtr, IntPtr, IntPtr, IntPtr, IntPtr, ThreadCreationFlags, out UInt32)
+  nameWithType.vb: NativeWrapper.CreateRemoteThread(IntPtr, IntPtr, IntPtr, IntPtr, IntPtr, ThreadCreationFlags, ByRef UInt32)
+- uid: ProcessMemoryUtilities.Managed.NativeWrapper.CreateRemoteThread*
+  name: CreateRemoteThread
+  href: api/ProcessMemoryUtilities.Managed.NativeWrapper.html#ProcessMemoryUtilities_Managed_NativeWrapper_CreateRemoteThread_
+  commentId: Overload:ProcessMemoryUtilities.Managed.NativeWrapper.CreateRemoteThread
+  isSpec: "True"
+  fullName: ProcessMemoryUtilities.Managed.NativeWrapper.CreateRemoteThread
+  nameWithType: NativeWrapper.CreateRemoteThread
+- uid: ProcessMemoryUtilities.Managed.NativeWrapper.GetRealWaitObjectResult(ProcessMemoryUtilities.Native.WaitObjectResult)
+  name: GetRealWaitObjectResult(WaitObjectResult)
+  href: api/ProcessMemoryUtilities.Managed.NativeWrapper.html#ProcessMemoryUtilities_Managed_NativeWrapper_GetRealWaitObjectResult_ProcessMemoryUtilities_Native_WaitObjectResult_
+  commentId: M:ProcessMemoryUtilities.Managed.NativeWrapper.GetRealWaitObjectResult(ProcessMemoryUtilities.Native.WaitObjectResult)
+  fullName: ProcessMemoryUtilities.Managed.NativeWrapper.GetRealWaitObjectResult(ProcessMemoryUtilities.Native.WaitObjectResult)
+  nameWithType: NativeWrapper.GetRealWaitObjectResult(WaitObjectResult)
+- uid: ProcessMemoryUtilities.Managed.NativeWrapper.GetRealWaitObjectResult(ProcessMemoryUtilities.Native.WaitObjectResult,System.Int32@)
+  name: GetRealWaitObjectResult(WaitObjectResult, out Int32)
+  href: api/ProcessMemoryUtilities.Managed.NativeWrapper.html#ProcessMemoryUtilities_Managed_NativeWrapper_GetRealWaitObjectResult_ProcessMemoryUtilities_Native_WaitObjectResult_System_Int32__
+  commentId: M:ProcessMemoryUtilities.Managed.NativeWrapper.GetRealWaitObjectResult(ProcessMemoryUtilities.Native.WaitObjectResult,System.Int32@)
+  name.vb: GetRealWaitObjectResult(WaitObjectResult, ByRef Int32)
+  fullName: ProcessMemoryUtilities.Managed.NativeWrapper.GetRealWaitObjectResult(ProcessMemoryUtilities.Native.WaitObjectResult, out System.Int32)
+  fullName.vb: ProcessMemoryUtilities.Managed.NativeWrapper.GetRealWaitObjectResult(ProcessMemoryUtilities.Native.WaitObjectResult, ByRef System.Int32)
+  nameWithType: NativeWrapper.GetRealWaitObjectResult(WaitObjectResult, out Int32)
+  nameWithType.vb: NativeWrapper.GetRealWaitObjectResult(WaitObjectResult, ByRef Int32)
+- uid: ProcessMemoryUtilities.Managed.NativeWrapper.GetRealWaitObjectResult*
+  name: GetRealWaitObjectResult
+  href: api/ProcessMemoryUtilities.Managed.NativeWrapper.html#ProcessMemoryUtilities_Managed_NativeWrapper_GetRealWaitObjectResult_
+  commentId: Overload:ProcessMemoryUtilities.Managed.NativeWrapper.GetRealWaitObjectResult
+  isSpec: "True"
+  fullName: ProcessMemoryUtilities.Managed.NativeWrapper.GetRealWaitObjectResult
+  nameWithType: NativeWrapper.GetRealWaitObjectResult
+- uid: ProcessMemoryUtilities.Managed.NativeWrapper.HasError
+  name: HasError
+  href: api/ProcessMemoryUtilities.Managed.NativeWrapper.html#ProcessMemoryUtilities_Managed_NativeWrapper_HasError
+  commentId: P:ProcessMemoryUtilities.Managed.NativeWrapper.HasError
+  fullName: ProcessMemoryUtilities.Managed.NativeWrapper.HasError
+  nameWithType: NativeWrapper.HasError
+- uid: ProcessMemoryUtilities.Managed.NativeWrapper.HasError*
+  name: HasError
+  href: api/ProcessMemoryUtilities.Managed.NativeWrapper.html#ProcessMemoryUtilities_Managed_NativeWrapper_HasError_
+  commentId: Overload:ProcessMemoryUtilities.Managed.NativeWrapper.HasError
+  isSpec: "True"
+  fullName: ProcessMemoryUtilities.Managed.NativeWrapper.HasError
+  nameWithType: NativeWrapper.HasError
+- uid: ProcessMemoryUtilities.Managed.NativeWrapper.INFINITE
+  name: INFINITE
+  href: api/ProcessMemoryUtilities.Managed.NativeWrapper.html#ProcessMemoryUtilities_Managed_NativeWrapper_INFINITE
+  commentId: F:ProcessMemoryUtilities.Managed.NativeWrapper.INFINITE
+  fullName: ProcessMemoryUtilities.Managed.NativeWrapper.INFINITE
+  nameWithType: NativeWrapper.INFINITE
+- uid: ProcessMemoryUtilities.Managed.NativeWrapper.LastError
+  name: LastError
+  href: api/ProcessMemoryUtilities.Managed.NativeWrapper.html#ProcessMemoryUtilities_Managed_NativeWrapper_LastError
+  commentId: P:ProcessMemoryUtilities.Managed.NativeWrapper.LastError
+  fullName: ProcessMemoryUtilities.Managed.NativeWrapper.LastError
+  nameWithType: NativeWrapper.LastError
+- uid: ProcessMemoryUtilities.Managed.NativeWrapper.LastError*
+  name: LastError
+  href: api/ProcessMemoryUtilities.Managed.NativeWrapper.html#ProcessMemoryUtilities_Managed_NativeWrapper_LastError_
+  commentId: Overload:ProcessMemoryUtilities.Managed.NativeWrapper.LastError
+  isSpec: "True"
+  fullName: ProcessMemoryUtilities.Managed.NativeWrapper.LastError
+  nameWithType: NativeWrapper.LastError
+- uid: ProcessMemoryUtilities.Managed.NativeWrapper.OpenProcess(ProcessMemoryUtilities.Native.ProcessAccessFlags,System.Boolean,System.Int32)
+  name: OpenProcess(ProcessAccessFlags, Boolean, Int32)
+  href: api/ProcessMemoryUtilities.Managed.NativeWrapper.html#ProcessMemoryUtilities_Managed_NativeWrapper_OpenProcess_ProcessMemoryUtilities_Native_ProcessAccessFlags_System_Boolean_System_Int32_
+  commentId: M:ProcessMemoryUtilities.Managed.NativeWrapper.OpenProcess(ProcessMemoryUtilities.Native.ProcessAccessFlags,System.Boolean,System.Int32)
+  fullName: ProcessMemoryUtilities.Managed.NativeWrapper.OpenProcess(ProcessMemoryUtilities.Native.ProcessAccessFlags, System.Boolean, System.Int32)
+  nameWithType: NativeWrapper.OpenProcess(ProcessAccessFlags, Boolean, Int32)
+- uid: ProcessMemoryUtilities.Managed.NativeWrapper.OpenProcess(ProcessMemoryUtilities.Native.ProcessAccessFlags,System.Int32)
+  name: OpenProcess(ProcessAccessFlags, Int32)
+  href: api/ProcessMemoryUtilities.Managed.NativeWrapper.html#ProcessMemoryUtilities_Managed_NativeWrapper_OpenProcess_ProcessMemoryUtilities_Native_ProcessAccessFlags_System_Int32_
+  commentId: M:ProcessMemoryUtilities.Managed.NativeWrapper.OpenProcess(ProcessMemoryUtilities.Native.ProcessAccessFlags,System.Int32)
+  fullName: ProcessMemoryUtilities.Managed.NativeWrapper.OpenProcess(ProcessMemoryUtilities.Native.ProcessAccessFlags, System.Int32)
+  nameWithType: NativeWrapper.OpenProcess(ProcessAccessFlags, Int32)
+- uid: ProcessMemoryUtilities.Managed.NativeWrapper.OpenProcess*
+  name: OpenProcess
+  href: api/ProcessMemoryUtilities.Managed.NativeWrapper.html#ProcessMemoryUtilities_Managed_NativeWrapper_OpenProcess_
+  commentId: Overload:ProcessMemoryUtilities.Managed.NativeWrapper.OpenProcess
+  isSpec: "True"
+  fullName: ProcessMemoryUtilities.Managed.NativeWrapper.OpenProcess
+  nameWithType: NativeWrapper.OpenProcess
+- uid: ProcessMemoryUtilities.Managed.NativeWrapper.ReadProcessMemory(System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr)
+  name: ReadProcessMemory(IntPtr, IntPtr, IntPtr, IntPtr)
+  href: api/ProcessMemoryUtilities.Managed.NativeWrapper.html#ProcessMemoryUtilities_Managed_NativeWrapper_ReadProcessMemory_System_IntPtr_System_IntPtr_System_IntPtr_System_IntPtr_
+  commentId: M:ProcessMemoryUtilities.Managed.NativeWrapper.ReadProcessMemory(System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr)
+  fullName: ProcessMemoryUtilities.Managed.NativeWrapper.ReadProcessMemory(System.IntPtr, System.IntPtr, System.IntPtr, System.IntPtr)
+  nameWithType: NativeWrapper.ReadProcessMemory(IntPtr, IntPtr, IntPtr, IntPtr)
+- uid: ProcessMemoryUtilities.Managed.NativeWrapper.ReadProcessMemory(System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr)
+  name: ReadProcessMemory(IntPtr, IntPtr, IntPtr, IntPtr, IntPtr)
+  href: api/ProcessMemoryUtilities.Managed.NativeWrapper.html#ProcessMemoryUtilities_Managed_NativeWrapper_ReadProcessMemory_System_IntPtr_System_IntPtr_System_IntPtr_System_IntPtr_System_IntPtr_
+  commentId: M:ProcessMemoryUtilities.Managed.NativeWrapper.ReadProcessMemory(System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr)
+  fullName: ProcessMemoryUtilities.Managed.NativeWrapper.ReadProcessMemory(System.IntPtr, System.IntPtr, System.IntPtr, System.IntPtr, System.IntPtr)
+  nameWithType: NativeWrapper.ReadProcessMemory(IntPtr, IntPtr, IntPtr, IntPtr, IntPtr)
+- uid: ProcessMemoryUtilities.Managed.NativeWrapper.ReadProcessMemory(System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr@)
+  name: ReadProcessMemory(IntPtr, IntPtr, IntPtr, IntPtr, out IntPtr)
+  href: api/ProcessMemoryUtilities.Managed.NativeWrapper.html#ProcessMemoryUtilities_Managed_NativeWrapper_ReadProcessMemory_System_IntPtr_System_IntPtr_System_IntPtr_System_IntPtr_System_IntPtr__
+  commentId: M:ProcessMemoryUtilities.Managed.NativeWrapper.ReadProcessMemory(System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr@)
+  name.vb: ReadProcessMemory(IntPtr, IntPtr, IntPtr, IntPtr, ByRef IntPtr)
+  fullName: ProcessMemoryUtilities.Managed.NativeWrapper.ReadProcessMemory(System.IntPtr, System.IntPtr, System.IntPtr, System.IntPtr, out System.IntPtr)
+  fullName.vb: ProcessMemoryUtilities.Managed.NativeWrapper.ReadProcessMemory(System.IntPtr, System.IntPtr, System.IntPtr, System.IntPtr, ByRef System.IntPtr)
+  nameWithType: NativeWrapper.ReadProcessMemory(IntPtr, IntPtr, IntPtr, IntPtr, out IntPtr)
+  nameWithType.vb: NativeWrapper.ReadProcessMemory(IntPtr, IntPtr, IntPtr, IntPtr, ByRef IntPtr)
+- uid: ProcessMemoryUtilities.Managed.NativeWrapper.ReadProcessMemory*
+  name: ReadProcessMemory
+  href: api/ProcessMemoryUtilities.Managed.NativeWrapper.html#ProcessMemoryUtilities_Managed_NativeWrapper_ReadProcessMemory_
+  commentId: Overload:ProcessMemoryUtilities.Managed.NativeWrapper.ReadProcessMemory
+  isSpec: "True"
+  fullName: ProcessMemoryUtilities.Managed.NativeWrapper.ReadProcessMemory
+  nameWithType: NativeWrapper.ReadProcessMemory
+- uid: ProcessMemoryUtilities.Managed.NativeWrapper.ReadProcessMemory``1(System.IntPtr,System.IntPtr,``0@)
+  name: ReadProcessMemory<T>(IntPtr, IntPtr, ref T)
+  href: api/ProcessMemoryUtilities.Managed.NativeWrapper.html#ProcessMemoryUtilities_Managed_NativeWrapper_ReadProcessMemory__1_System_IntPtr_System_IntPtr___0__
+  commentId: M:ProcessMemoryUtilities.Managed.NativeWrapper.ReadProcessMemory``1(System.IntPtr,System.IntPtr,``0@)
+  name.vb: ReadProcessMemory(Of T)(IntPtr, IntPtr, ByRef T)
+  fullName: ProcessMemoryUtilities.Managed.NativeWrapper.ReadProcessMemory<T>(System.IntPtr, System.IntPtr, ref T)
+  fullName.vb: ProcessMemoryUtilities.Managed.NativeWrapper.ReadProcessMemory(Of T)(System.IntPtr, System.IntPtr, ByRef T)
+  nameWithType: NativeWrapper.ReadProcessMemory<T>(IntPtr, IntPtr, ref T)
+  nameWithType.vb: NativeWrapper.ReadProcessMemory(Of T)(IntPtr, IntPtr, ByRef T)
+- uid: ProcessMemoryUtilities.Managed.NativeWrapper.ReadProcessMemory``1(System.IntPtr,System.IntPtr,``0@,System.IntPtr@)
+  name: ReadProcessMemory<T>(IntPtr, IntPtr, ref T, out IntPtr)
+  href: api/ProcessMemoryUtilities.Managed.NativeWrapper.html#ProcessMemoryUtilities_Managed_NativeWrapper_ReadProcessMemory__1_System_IntPtr_System_IntPtr___0__System_IntPtr__
+  commentId: M:ProcessMemoryUtilities.Managed.NativeWrapper.ReadProcessMemory``1(System.IntPtr,System.IntPtr,``0@,System.IntPtr@)
+  name.vb: ReadProcessMemory(Of T)(IntPtr, IntPtr, ByRef T, ByRef IntPtr)
+  fullName: ProcessMemoryUtilities.Managed.NativeWrapper.ReadProcessMemory<T>(System.IntPtr, System.IntPtr, ref T, out System.IntPtr)
+  fullName.vb: ProcessMemoryUtilities.Managed.NativeWrapper.ReadProcessMemory(Of T)(System.IntPtr, System.IntPtr, ByRef T, ByRef System.IntPtr)
+  nameWithType: NativeWrapper.ReadProcessMemory<T>(IntPtr, IntPtr, ref T, out IntPtr)
+  nameWithType.vb: NativeWrapper.ReadProcessMemory(Of T)(IntPtr, IntPtr, ByRef T, ByRef IntPtr)
+- uid: ProcessMemoryUtilities.Managed.NativeWrapper.ReadProcessMemoryArray*
+  name: ReadProcessMemoryArray
+  href: api/ProcessMemoryUtilities.Managed.NativeWrapper.html#ProcessMemoryUtilities_Managed_NativeWrapper_ReadProcessMemoryArray_
+  commentId: Overload:ProcessMemoryUtilities.Managed.NativeWrapper.ReadProcessMemoryArray
+  isSpec: "True"
+  fullName: ProcessMemoryUtilities.Managed.NativeWrapper.ReadProcessMemoryArray
+  nameWithType: NativeWrapper.ReadProcessMemoryArray
+- uid: ProcessMemoryUtilities.Managed.NativeWrapper.ReadProcessMemoryArray``1(System.IntPtr,System.IntPtr,``0[])
+  name: ReadProcessMemoryArray<T>(IntPtr, IntPtr, T[])
+  href: api/ProcessMemoryUtilities.Managed.NativeWrapper.html#ProcessMemoryUtilities_Managed_NativeWrapper_ReadProcessMemoryArray__1_System_IntPtr_System_IntPtr___0___
+  commentId: M:ProcessMemoryUtilities.Managed.NativeWrapper.ReadProcessMemoryArray``1(System.IntPtr,System.IntPtr,``0[])
+  name.vb: ReadProcessMemoryArray(Of T)(IntPtr, IntPtr, T())
+  fullName: ProcessMemoryUtilities.Managed.NativeWrapper.ReadProcessMemoryArray<T>(System.IntPtr, System.IntPtr, T[])
+  fullName.vb: ProcessMemoryUtilities.Managed.NativeWrapper.ReadProcessMemoryArray(Of T)(System.IntPtr, System.IntPtr, T())
+  nameWithType: NativeWrapper.ReadProcessMemoryArray<T>(IntPtr, IntPtr, T[])
+  nameWithType.vb: NativeWrapper.ReadProcessMemoryArray(Of T)(IntPtr, IntPtr, T())
+- uid: ProcessMemoryUtilities.Managed.NativeWrapper.ReadProcessMemoryArray``1(System.IntPtr,System.IntPtr,``0[],System.Int32)
+  name: ReadProcessMemoryArray<T>(IntPtr, IntPtr, T[], Int32)
+  href: api/ProcessMemoryUtilities.Managed.NativeWrapper.html#ProcessMemoryUtilities_Managed_NativeWrapper_ReadProcessMemoryArray__1_System_IntPtr_System_IntPtr___0___System_Int32_
+  commentId: M:ProcessMemoryUtilities.Managed.NativeWrapper.ReadProcessMemoryArray``1(System.IntPtr,System.IntPtr,``0[],System.Int32)
+  name.vb: ReadProcessMemoryArray(Of T)(IntPtr, IntPtr, T(), Int32)
+  fullName: ProcessMemoryUtilities.Managed.NativeWrapper.ReadProcessMemoryArray<T>(System.IntPtr, System.IntPtr, T[], System.Int32)
+  fullName.vb: ProcessMemoryUtilities.Managed.NativeWrapper.ReadProcessMemoryArray(Of T)(System.IntPtr, System.IntPtr, T(), System.Int32)
+  nameWithType: NativeWrapper.ReadProcessMemoryArray<T>(IntPtr, IntPtr, T[], Int32)
+  nameWithType.vb: NativeWrapper.ReadProcessMemoryArray(Of T)(IntPtr, IntPtr, T(), Int32)
+- uid: ProcessMemoryUtilities.Managed.NativeWrapper.ReadProcessMemoryArray``1(System.IntPtr,System.IntPtr,``0[],System.Int32,System.Int32)
+  name: ReadProcessMemoryArray<T>(IntPtr, IntPtr, T[], Int32, Int32)
+  href: api/ProcessMemoryUtilities.Managed.NativeWrapper.html#ProcessMemoryUtilities_Managed_NativeWrapper_ReadProcessMemoryArray__1_System_IntPtr_System_IntPtr___0___System_Int32_System_Int32_
+  commentId: M:ProcessMemoryUtilities.Managed.NativeWrapper.ReadProcessMemoryArray``1(System.IntPtr,System.IntPtr,``0[],System.Int32,System.Int32)
+  name.vb: ReadProcessMemoryArray(Of T)(IntPtr, IntPtr, T(), Int32, Int32)
+  fullName: ProcessMemoryUtilities.Managed.NativeWrapper.ReadProcessMemoryArray<T>(System.IntPtr, System.IntPtr, T[], System.Int32, System.Int32)
+  fullName.vb: ProcessMemoryUtilities.Managed.NativeWrapper.ReadProcessMemoryArray(Of T)(System.IntPtr, System.IntPtr, T(), System.Int32, System.Int32)
+  nameWithType: NativeWrapper.ReadProcessMemoryArray<T>(IntPtr, IntPtr, T[], Int32, Int32)
+  nameWithType.vb: NativeWrapper.ReadProcessMemoryArray(Of T)(IntPtr, IntPtr, T(), Int32, Int32)
+- uid: ProcessMemoryUtilities.Managed.NativeWrapper.ReadProcessMemoryArray``1(System.IntPtr,System.IntPtr,``0[],System.Int32,System.Int32,System.IntPtr@)
+  name: ReadProcessMemoryArray<T>(IntPtr, IntPtr, T[], Int32, Int32, out IntPtr)
+  href: api/ProcessMemoryUtilities.Managed.NativeWrapper.html#ProcessMemoryUtilities_Managed_NativeWrapper_ReadProcessMemoryArray__1_System_IntPtr_System_IntPtr___0___System_Int32_System_Int32_System_IntPtr__
+  commentId: M:ProcessMemoryUtilities.Managed.NativeWrapper.ReadProcessMemoryArray``1(System.IntPtr,System.IntPtr,``0[],System.Int32,System.Int32,System.IntPtr@)
+  name.vb: ReadProcessMemoryArray(Of T)(IntPtr, IntPtr, T(), Int32, Int32, ByRef IntPtr)
+  fullName: ProcessMemoryUtilities.Managed.NativeWrapper.ReadProcessMemoryArray<T>(System.IntPtr, System.IntPtr, T[], System.Int32, System.Int32, out System.IntPtr)
+  fullName.vb: ProcessMemoryUtilities.Managed.NativeWrapper.ReadProcessMemoryArray(Of T)(System.IntPtr, System.IntPtr, T(), System.Int32, System.Int32, ByRef System.IntPtr)
+  nameWithType: NativeWrapper.ReadProcessMemoryArray<T>(IntPtr, IntPtr, T[], Int32, Int32, out IntPtr)
+  nameWithType.vb: NativeWrapper.ReadProcessMemoryArray(Of T)(IntPtr, IntPtr, T(), Int32, Int32, ByRef IntPtr)
+- uid: ProcessMemoryUtilities.Managed.NativeWrapper.ReadProcessMemoryArray``1(System.IntPtr,System.IntPtr,``0[],System.Int32,System.IntPtr@)
+  name: ReadProcessMemoryArray<T>(IntPtr, IntPtr, T[], Int32, out IntPtr)
+  href: api/ProcessMemoryUtilities.Managed.NativeWrapper.html#ProcessMemoryUtilities_Managed_NativeWrapper_ReadProcessMemoryArray__1_System_IntPtr_System_IntPtr___0___System_Int32_System_IntPtr__
+  commentId: M:ProcessMemoryUtilities.Managed.NativeWrapper.ReadProcessMemoryArray``1(System.IntPtr,System.IntPtr,``0[],System.Int32,System.IntPtr@)
+  name.vb: ReadProcessMemoryArray(Of T)(IntPtr, IntPtr, T(), Int32, ByRef IntPtr)
+  fullName: ProcessMemoryUtilities.Managed.NativeWrapper.ReadProcessMemoryArray<T>(System.IntPtr, System.IntPtr, T[], System.Int32, out System.IntPtr)
+  fullName.vb: ProcessMemoryUtilities.Managed.NativeWrapper.ReadProcessMemoryArray(Of T)(System.IntPtr, System.IntPtr, T(), System.Int32, ByRef System.IntPtr)
+  nameWithType: NativeWrapper.ReadProcessMemoryArray<T>(IntPtr, IntPtr, T[], Int32, out IntPtr)
+  nameWithType.vb: NativeWrapper.ReadProcessMemoryArray(Of T)(IntPtr, IntPtr, T(), Int32, ByRef IntPtr)
+- uid: ProcessMemoryUtilities.Managed.NativeWrapper.ReadProcessMemoryArray``1(System.IntPtr,System.IntPtr,``0[],System.IntPtr@)
+  name: ReadProcessMemoryArray<T>(IntPtr, IntPtr, T[], out IntPtr)
+  href: api/ProcessMemoryUtilities.Managed.NativeWrapper.html#ProcessMemoryUtilities_Managed_NativeWrapper_ReadProcessMemoryArray__1_System_IntPtr_System_IntPtr___0___System_IntPtr__
+  commentId: M:ProcessMemoryUtilities.Managed.NativeWrapper.ReadProcessMemoryArray``1(System.IntPtr,System.IntPtr,``0[],System.IntPtr@)
+  name.vb: ReadProcessMemoryArray(Of T)(IntPtr, IntPtr, T(), ByRef IntPtr)
+  fullName: ProcessMemoryUtilities.Managed.NativeWrapper.ReadProcessMemoryArray<T>(System.IntPtr, System.IntPtr, T[], out System.IntPtr)
+  fullName.vb: ProcessMemoryUtilities.Managed.NativeWrapper.ReadProcessMemoryArray(Of T)(System.IntPtr, System.IntPtr, T(), ByRef System.IntPtr)
+  nameWithType: NativeWrapper.ReadProcessMemoryArray<T>(IntPtr, IntPtr, T[], out IntPtr)
+  nameWithType.vb: NativeWrapper.ReadProcessMemoryArray(Of T)(IntPtr, IntPtr, T(), ByRef IntPtr)
+- uid: ProcessMemoryUtilities.Managed.NativeWrapper.ReadProcessMemoryPartial*
+  name: ReadProcessMemoryPartial
+  href: api/ProcessMemoryUtilities.Managed.NativeWrapper.html#ProcessMemoryUtilities_Managed_NativeWrapper_ReadProcessMemoryPartial_
+  commentId: Overload:ProcessMemoryUtilities.Managed.NativeWrapper.ReadProcessMemoryPartial
+  isSpec: "True"
+  fullName: ProcessMemoryUtilities.Managed.NativeWrapper.ReadProcessMemoryPartial
+  nameWithType: NativeWrapper.ReadProcessMemoryPartial
+- uid: ProcessMemoryUtilities.Managed.NativeWrapper.ReadProcessMemoryPartial``1(System.IntPtr,System.IntPtr,``0@,System.Int32)
+  name: ReadProcessMemoryPartial<T>(IntPtr, IntPtr, ref T, Int32)
+  href: api/ProcessMemoryUtilities.Managed.NativeWrapper.html#ProcessMemoryUtilities_Managed_NativeWrapper_ReadProcessMemoryPartial__1_System_IntPtr_System_IntPtr___0__System_Int32_
+  commentId: M:ProcessMemoryUtilities.Managed.NativeWrapper.ReadProcessMemoryPartial``1(System.IntPtr,System.IntPtr,``0@,System.Int32)
+  name.vb: ReadProcessMemoryPartial(Of T)(IntPtr, IntPtr, ByRef T, Int32)
+  fullName: ProcessMemoryUtilities.Managed.NativeWrapper.ReadProcessMemoryPartial<T>(System.IntPtr, System.IntPtr, ref T, System.Int32)
+  fullName.vb: ProcessMemoryUtilities.Managed.NativeWrapper.ReadProcessMemoryPartial(Of T)(System.IntPtr, System.IntPtr, ByRef T, System.Int32)
+  nameWithType: NativeWrapper.ReadProcessMemoryPartial<T>(IntPtr, IntPtr, ref T, Int32)
+  nameWithType.vb: NativeWrapper.ReadProcessMemoryPartial(Of T)(IntPtr, IntPtr, ByRef T, Int32)
+- uid: ProcessMemoryUtilities.Managed.NativeWrapper.ReadProcessMemoryPartial``1(System.IntPtr,System.IntPtr,``0@,System.Int32,System.Int32)
+  name: ReadProcessMemoryPartial<T>(IntPtr, IntPtr, ref T, Int32, Int32)
+  href: api/ProcessMemoryUtilities.Managed.NativeWrapper.html#ProcessMemoryUtilities_Managed_NativeWrapper_ReadProcessMemoryPartial__1_System_IntPtr_System_IntPtr___0__System_Int32_System_Int32_
+  commentId: M:ProcessMemoryUtilities.Managed.NativeWrapper.ReadProcessMemoryPartial``1(System.IntPtr,System.IntPtr,``0@,System.Int32,System.Int32)
+  name.vb: ReadProcessMemoryPartial(Of T)(IntPtr, IntPtr, ByRef T, Int32, Int32)
+  fullName: ProcessMemoryUtilities.Managed.NativeWrapper.ReadProcessMemoryPartial<T>(System.IntPtr, System.IntPtr, ref T, System.Int32, System.Int32)
+  fullName.vb: ProcessMemoryUtilities.Managed.NativeWrapper.ReadProcessMemoryPartial(Of T)(System.IntPtr, System.IntPtr, ByRef T, System.Int32, System.Int32)
+  nameWithType: NativeWrapper.ReadProcessMemoryPartial<T>(IntPtr, IntPtr, ref T, Int32, Int32)
+  nameWithType.vb: NativeWrapper.ReadProcessMemoryPartial(Of T)(IntPtr, IntPtr, ByRef T, Int32, Int32)
+- uid: ProcessMemoryUtilities.Managed.NativeWrapper.ReadProcessMemoryPartial``1(System.IntPtr,System.IntPtr,``0@,System.Int32,System.Int32,System.IntPtr@)
+  name: ReadProcessMemoryPartial<T>(IntPtr, IntPtr, ref T, Int32, Int32, out IntPtr)
+  href: api/ProcessMemoryUtilities.Managed.NativeWrapper.html#ProcessMemoryUtilities_Managed_NativeWrapper_ReadProcessMemoryPartial__1_System_IntPtr_System_IntPtr___0__System_Int32_System_Int32_System_IntPtr__
+  commentId: M:ProcessMemoryUtilities.Managed.NativeWrapper.ReadProcessMemoryPartial``1(System.IntPtr,System.IntPtr,``0@,System.Int32,System.Int32,System.IntPtr@)
+  name.vb: ReadProcessMemoryPartial(Of T)(IntPtr, IntPtr, ByRef T, Int32, Int32, ByRef IntPtr)
+  fullName: ProcessMemoryUtilities.Managed.NativeWrapper.ReadProcessMemoryPartial<T>(System.IntPtr, System.IntPtr, ref T, System.Int32, System.Int32, out System.IntPtr)
+  fullName.vb: ProcessMemoryUtilities.Managed.NativeWrapper.ReadProcessMemoryPartial(Of T)(System.IntPtr, System.IntPtr, ByRef T, System.Int32, System.Int32, ByRef System.IntPtr)
+  nameWithType: NativeWrapper.ReadProcessMemoryPartial<T>(IntPtr, IntPtr, ref T, Int32, Int32, out IntPtr)
+  nameWithType.vb: NativeWrapper.ReadProcessMemoryPartial(Of T)(IntPtr, IntPtr, ByRef T, Int32, Int32, ByRef IntPtr)
+- uid: ProcessMemoryUtilities.Managed.NativeWrapper.ReadProcessMemoryPartial``1(System.IntPtr,System.IntPtr,``0@,System.Int32,System.IntPtr@)
+  name: ReadProcessMemoryPartial<T>(IntPtr, IntPtr, ref T, Int32, out IntPtr)
+  href: api/ProcessMemoryUtilities.Managed.NativeWrapper.html#ProcessMemoryUtilities_Managed_NativeWrapper_ReadProcessMemoryPartial__1_System_IntPtr_System_IntPtr___0__System_Int32_System_IntPtr__
+  commentId: M:ProcessMemoryUtilities.Managed.NativeWrapper.ReadProcessMemoryPartial``1(System.IntPtr,System.IntPtr,``0@,System.Int32,System.IntPtr@)
+  name.vb: ReadProcessMemoryPartial(Of T)(IntPtr, IntPtr, ByRef T, Int32, ByRef IntPtr)
+  fullName: ProcessMemoryUtilities.Managed.NativeWrapper.ReadProcessMemoryPartial<T>(System.IntPtr, System.IntPtr, ref T, System.Int32, out System.IntPtr)
+  fullName.vb: ProcessMemoryUtilities.Managed.NativeWrapper.ReadProcessMemoryPartial(Of T)(System.IntPtr, System.IntPtr, ByRef T, System.Int32, ByRef System.IntPtr)
+  nameWithType: NativeWrapper.ReadProcessMemoryPartial<T>(IntPtr, IntPtr, ref T, Int32, out IntPtr)
+  nameWithType.vb: NativeWrapper.ReadProcessMemoryPartial(Of T)(IntPtr, IntPtr, ByRef T, Int32, ByRef IntPtr)
+- uid: ProcessMemoryUtilities.Managed.NativeWrapper.VirtualAllocEx(System.IntPtr,System.IntPtr,System.IntPtr,ProcessMemoryUtilities.Native.AllocationType,ProcessMemoryUtilities.Native.MemoryProtectionFlags)
+  name: VirtualAllocEx(IntPtr, IntPtr, IntPtr, AllocationType, MemoryProtectionFlags)
+  href: api/ProcessMemoryUtilities.Managed.NativeWrapper.html#ProcessMemoryUtilities_Managed_NativeWrapper_VirtualAllocEx_System_IntPtr_System_IntPtr_System_IntPtr_ProcessMemoryUtilities_Native_AllocationType_ProcessMemoryUtilities_Native_MemoryProtectionFlags_
+  commentId: M:ProcessMemoryUtilities.Managed.NativeWrapper.VirtualAllocEx(System.IntPtr,System.IntPtr,System.IntPtr,ProcessMemoryUtilities.Native.AllocationType,ProcessMemoryUtilities.Native.MemoryProtectionFlags)
+  fullName: ProcessMemoryUtilities.Managed.NativeWrapper.VirtualAllocEx(System.IntPtr, System.IntPtr, System.IntPtr, ProcessMemoryUtilities.Native.AllocationType, ProcessMemoryUtilities.Native.MemoryProtectionFlags)
+  nameWithType: NativeWrapper.VirtualAllocEx(IntPtr, IntPtr, IntPtr, AllocationType, MemoryProtectionFlags)
+- uid: ProcessMemoryUtilities.Managed.NativeWrapper.VirtualAllocEx*
+  name: VirtualAllocEx
+  href: api/ProcessMemoryUtilities.Managed.NativeWrapper.html#ProcessMemoryUtilities_Managed_NativeWrapper_VirtualAllocEx_
+  commentId: Overload:ProcessMemoryUtilities.Managed.NativeWrapper.VirtualAllocEx
+  isSpec: "True"
+  fullName: ProcessMemoryUtilities.Managed.NativeWrapper.VirtualAllocEx
+  nameWithType: NativeWrapper.VirtualAllocEx
+- uid: ProcessMemoryUtilities.Managed.NativeWrapper.VirtualFreeEx(System.IntPtr,System.IntPtr,System.IntPtr,ProcessMemoryUtilities.Native.FreeType)
+  name: VirtualFreeEx(IntPtr, IntPtr, IntPtr, FreeType)
+  href: api/ProcessMemoryUtilities.Managed.NativeWrapper.html#ProcessMemoryUtilities_Managed_NativeWrapper_VirtualFreeEx_System_IntPtr_System_IntPtr_System_IntPtr_ProcessMemoryUtilities_Native_FreeType_
+  commentId: M:ProcessMemoryUtilities.Managed.NativeWrapper.VirtualFreeEx(System.IntPtr,System.IntPtr,System.IntPtr,ProcessMemoryUtilities.Native.FreeType)
+  fullName: ProcessMemoryUtilities.Managed.NativeWrapper.VirtualFreeEx(System.IntPtr, System.IntPtr, System.IntPtr, ProcessMemoryUtilities.Native.FreeType)
+  nameWithType: NativeWrapper.VirtualFreeEx(IntPtr, IntPtr, IntPtr, FreeType)
+- uid: ProcessMemoryUtilities.Managed.NativeWrapper.VirtualFreeEx*
+  name: VirtualFreeEx
+  href: api/ProcessMemoryUtilities.Managed.NativeWrapper.html#ProcessMemoryUtilities_Managed_NativeWrapper_VirtualFreeEx_
+  commentId: Overload:ProcessMemoryUtilities.Managed.NativeWrapper.VirtualFreeEx
+  isSpec: "True"
+  fullName: ProcessMemoryUtilities.Managed.NativeWrapper.VirtualFreeEx
+  nameWithType: NativeWrapper.VirtualFreeEx
+- uid: ProcessMemoryUtilities.Managed.NativeWrapper.VirtualProtectEx(System.IntPtr,System.IntPtr,System.IntPtr,ProcessMemoryUtilities.Native.MemoryProtectionFlags,ProcessMemoryUtilities.Native.MemoryProtectionFlags@)
+  name: VirtualProtectEx(IntPtr, IntPtr, IntPtr, MemoryProtectionFlags, out MemoryProtectionFlags)
+  href: api/ProcessMemoryUtilities.Managed.NativeWrapper.html#ProcessMemoryUtilities_Managed_NativeWrapper_VirtualProtectEx_System_IntPtr_System_IntPtr_System_IntPtr_ProcessMemoryUtilities_Native_MemoryProtectionFlags_ProcessMemoryUtilities_Native_MemoryProtectionFlags__
+  commentId: M:ProcessMemoryUtilities.Managed.NativeWrapper.VirtualProtectEx(System.IntPtr,System.IntPtr,System.IntPtr,ProcessMemoryUtilities.Native.MemoryProtectionFlags,ProcessMemoryUtilities.Native.MemoryProtectionFlags@)
+  name.vb: VirtualProtectEx(IntPtr, IntPtr, IntPtr, MemoryProtectionFlags, ByRef MemoryProtectionFlags)
+  fullName: ProcessMemoryUtilities.Managed.NativeWrapper.VirtualProtectEx(System.IntPtr, System.IntPtr, System.IntPtr, ProcessMemoryUtilities.Native.MemoryProtectionFlags, out ProcessMemoryUtilities.Native.MemoryProtectionFlags)
+  fullName.vb: ProcessMemoryUtilities.Managed.NativeWrapper.VirtualProtectEx(System.IntPtr, System.IntPtr, System.IntPtr, ProcessMemoryUtilities.Native.MemoryProtectionFlags, ByRef ProcessMemoryUtilities.Native.MemoryProtectionFlags)
+  nameWithType: NativeWrapper.VirtualProtectEx(IntPtr, IntPtr, IntPtr, MemoryProtectionFlags, out MemoryProtectionFlags)
+  nameWithType.vb: NativeWrapper.VirtualProtectEx(IntPtr, IntPtr, IntPtr, MemoryProtectionFlags, ByRef MemoryProtectionFlags)
+- uid: ProcessMemoryUtilities.Managed.NativeWrapper.VirtualProtectEx*
+  name: VirtualProtectEx
+  href: api/ProcessMemoryUtilities.Managed.NativeWrapper.html#ProcessMemoryUtilities_Managed_NativeWrapper_VirtualProtectEx_
+  commentId: Overload:ProcessMemoryUtilities.Managed.NativeWrapper.VirtualProtectEx
+  isSpec: "True"
+  fullName: ProcessMemoryUtilities.Managed.NativeWrapper.VirtualProtectEx
+  nameWithType: NativeWrapper.VirtualProtectEx
+- uid: ProcessMemoryUtilities.Managed.NativeWrapper.WaitForSingleObject(System.IntPtr,System.UInt32)
+  name: WaitForSingleObject(IntPtr, UInt32)
+  href: api/ProcessMemoryUtilities.Managed.NativeWrapper.html#ProcessMemoryUtilities_Managed_NativeWrapper_WaitForSingleObject_System_IntPtr_System_UInt32_
+  commentId: M:ProcessMemoryUtilities.Managed.NativeWrapper.WaitForSingleObject(System.IntPtr,System.UInt32)
+  fullName: ProcessMemoryUtilities.Managed.NativeWrapper.WaitForSingleObject(System.IntPtr, System.UInt32)
+  nameWithType: NativeWrapper.WaitForSingleObject(IntPtr, UInt32)
+- uid: ProcessMemoryUtilities.Managed.NativeWrapper.WaitForSingleObject*
+  name: WaitForSingleObject
+  href: api/ProcessMemoryUtilities.Managed.NativeWrapper.html#ProcessMemoryUtilities_Managed_NativeWrapper_WaitForSingleObject_
+  commentId: Overload:ProcessMemoryUtilities.Managed.NativeWrapper.WaitForSingleObject
+  isSpec: "True"
+  fullName: ProcessMemoryUtilities.Managed.NativeWrapper.WaitForSingleObject
+  nameWithType: NativeWrapper.WaitForSingleObject
+- uid: ProcessMemoryUtilities.Managed.NativeWrapper.WriteProcessMemory(System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr)
+  name: WriteProcessMemory(IntPtr, IntPtr, IntPtr, IntPtr)
+  href: api/ProcessMemoryUtilities.Managed.NativeWrapper.html#ProcessMemoryUtilities_Managed_NativeWrapper_WriteProcessMemory_System_IntPtr_System_IntPtr_System_IntPtr_System_IntPtr_
+  commentId: M:ProcessMemoryUtilities.Managed.NativeWrapper.WriteProcessMemory(System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr)
+  fullName: ProcessMemoryUtilities.Managed.NativeWrapper.WriteProcessMemory(System.IntPtr, System.IntPtr, System.IntPtr, System.IntPtr)
+  nameWithType: NativeWrapper.WriteProcessMemory(IntPtr, IntPtr, IntPtr, IntPtr)
+- uid: ProcessMemoryUtilities.Managed.NativeWrapper.WriteProcessMemory(System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr)
+  name: WriteProcessMemory(IntPtr, IntPtr, IntPtr, IntPtr, IntPtr)
+  href: api/ProcessMemoryUtilities.Managed.NativeWrapper.html#ProcessMemoryUtilities_Managed_NativeWrapper_WriteProcessMemory_System_IntPtr_System_IntPtr_System_IntPtr_System_IntPtr_System_IntPtr_
+  commentId: M:ProcessMemoryUtilities.Managed.NativeWrapper.WriteProcessMemory(System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr)
+  fullName: ProcessMemoryUtilities.Managed.NativeWrapper.WriteProcessMemory(System.IntPtr, System.IntPtr, System.IntPtr, System.IntPtr, System.IntPtr)
+  nameWithType: NativeWrapper.WriteProcessMemory(IntPtr, IntPtr, IntPtr, IntPtr, IntPtr)
+- uid: ProcessMemoryUtilities.Managed.NativeWrapper.WriteProcessMemory(System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr@)
+  name: WriteProcessMemory(IntPtr, IntPtr, IntPtr, IntPtr, out IntPtr)
+  href: api/ProcessMemoryUtilities.Managed.NativeWrapper.html#ProcessMemoryUtilities_Managed_NativeWrapper_WriteProcessMemory_System_IntPtr_System_IntPtr_System_IntPtr_System_IntPtr_System_IntPtr__
+  commentId: M:ProcessMemoryUtilities.Managed.NativeWrapper.WriteProcessMemory(System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr@)
+  name.vb: WriteProcessMemory(IntPtr, IntPtr, IntPtr, IntPtr, ByRef IntPtr)
+  fullName: ProcessMemoryUtilities.Managed.NativeWrapper.WriteProcessMemory(System.IntPtr, System.IntPtr, System.IntPtr, System.IntPtr, out System.IntPtr)
+  fullName.vb: ProcessMemoryUtilities.Managed.NativeWrapper.WriteProcessMemory(System.IntPtr, System.IntPtr, System.IntPtr, System.IntPtr, ByRef System.IntPtr)
+  nameWithType: NativeWrapper.WriteProcessMemory(IntPtr, IntPtr, IntPtr, IntPtr, out IntPtr)
+  nameWithType.vb: NativeWrapper.WriteProcessMemory(IntPtr, IntPtr, IntPtr, IntPtr, ByRef IntPtr)
+- uid: ProcessMemoryUtilities.Managed.NativeWrapper.WriteProcessMemory*
+  name: WriteProcessMemory
+  href: api/ProcessMemoryUtilities.Managed.NativeWrapper.html#ProcessMemoryUtilities_Managed_NativeWrapper_WriteProcessMemory_
+  commentId: Overload:ProcessMemoryUtilities.Managed.NativeWrapper.WriteProcessMemory
+  isSpec: "True"
+  fullName: ProcessMemoryUtilities.Managed.NativeWrapper.WriteProcessMemory
+  nameWithType: NativeWrapper.WriteProcessMemory
+- uid: ProcessMemoryUtilities.Managed.NativeWrapper.WriteProcessMemory``1(System.IntPtr,System.IntPtr,``0@)
+  name: WriteProcessMemory<T>(IntPtr, IntPtr, ref T)
+  href: api/ProcessMemoryUtilities.Managed.NativeWrapper.html#ProcessMemoryUtilities_Managed_NativeWrapper_WriteProcessMemory__1_System_IntPtr_System_IntPtr___0__
+  commentId: M:ProcessMemoryUtilities.Managed.NativeWrapper.WriteProcessMemory``1(System.IntPtr,System.IntPtr,``0@)
+  name.vb: WriteProcessMemory(Of T)(IntPtr, IntPtr, ByRef T)
+  fullName: ProcessMemoryUtilities.Managed.NativeWrapper.WriteProcessMemory<T>(System.IntPtr, System.IntPtr, ref T)
+  fullName.vb: ProcessMemoryUtilities.Managed.NativeWrapper.WriteProcessMemory(Of T)(System.IntPtr, System.IntPtr, ByRef T)
+  nameWithType: NativeWrapper.WriteProcessMemory<T>(IntPtr, IntPtr, ref T)
+  nameWithType.vb: NativeWrapper.WriteProcessMemory(Of T)(IntPtr, IntPtr, ByRef T)
+- uid: ProcessMemoryUtilities.Managed.NativeWrapper.WriteProcessMemory``1(System.IntPtr,System.IntPtr,``0@,System.IntPtr@)
+  name: WriteProcessMemory<T>(IntPtr, IntPtr, ref T, out IntPtr)
+  href: api/ProcessMemoryUtilities.Managed.NativeWrapper.html#ProcessMemoryUtilities_Managed_NativeWrapper_WriteProcessMemory__1_System_IntPtr_System_IntPtr___0__System_IntPtr__
+  commentId: M:ProcessMemoryUtilities.Managed.NativeWrapper.WriteProcessMemory``1(System.IntPtr,System.IntPtr,``0@,System.IntPtr@)
+  name.vb: WriteProcessMemory(Of T)(IntPtr, IntPtr, ByRef T, ByRef IntPtr)
+  fullName: ProcessMemoryUtilities.Managed.NativeWrapper.WriteProcessMemory<T>(System.IntPtr, System.IntPtr, ref T, out System.IntPtr)
+  fullName.vb: ProcessMemoryUtilities.Managed.NativeWrapper.WriteProcessMemory(Of T)(System.IntPtr, System.IntPtr, ByRef T, ByRef System.IntPtr)
+  nameWithType: NativeWrapper.WriteProcessMemory<T>(IntPtr, IntPtr, ref T, out IntPtr)
+  nameWithType.vb: NativeWrapper.WriteProcessMemory(Of T)(IntPtr, IntPtr, ByRef T, ByRef IntPtr)
+- uid: ProcessMemoryUtilities.Managed.NativeWrapper.WriteProcessMemoryArray*
+  name: WriteProcessMemoryArray
+  href: api/ProcessMemoryUtilities.Managed.NativeWrapper.html#ProcessMemoryUtilities_Managed_NativeWrapper_WriteProcessMemoryArray_
+  commentId: Overload:ProcessMemoryUtilities.Managed.NativeWrapper.WriteProcessMemoryArray
+  isSpec: "True"
+  fullName: ProcessMemoryUtilities.Managed.NativeWrapper.WriteProcessMemoryArray
+  nameWithType: NativeWrapper.WriteProcessMemoryArray
+- uid: ProcessMemoryUtilities.Managed.NativeWrapper.WriteProcessMemoryArray``1(System.IntPtr,System.IntPtr,``0[])
+  name: WriteProcessMemoryArray<T>(IntPtr, IntPtr, T[])
+  href: api/ProcessMemoryUtilities.Managed.NativeWrapper.html#ProcessMemoryUtilities_Managed_NativeWrapper_WriteProcessMemoryArray__1_System_IntPtr_System_IntPtr___0___
+  commentId: M:ProcessMemoryUtilities.Managed.NativeWrapper.WriteProcessMemoryArray``1(System.IntPtr,System.IntPtr,``0[])
+  name.vb: WriteProcessMemoryArray(Of T)(IntPtr, IntPtr, T())
+  fullName: ProcessMemoryUtilities.Managed.NativeWrapper.WriteProcessMemoryArray<T>(System.IntPtr, System.IntPtr, T[])
+  fullName.vb: ProcessMemoryUtilities.Managed.NativeWrapper.WriteProcessMemoryArray(Of T)(System.IntPtr, System.IntPtr, T())
+  nameWithType: NativeWrapper.WriteProcessMemoryArray<T>(IntPtr, IntPtr, T[])
+  nameWithType.vb: NativeWrapper.WriteProcessMemoryArray(Of T)(IntPtr, IntPtr, T())
+- uid: ProcessMemoryUtilities.Managed.NativeWrapper.WriteProcessMemoryArray``1(System.IntPtr,System.IntPtr,``0[],System.Int32)
+  name: WriteProcessMemoryArray<T>(IntPtr, IntPtr, T[], Int32)
+  href: api/ProcessMemoryUtilities.Managed.NativeWrapper.html#ProcessMemoryUtilities_Managed_NativeWrapper_WriteProcessMemoryArray__1_System_IntPtr_System_IntPtr___0___System_Int32_
+  commentId: M:ProcessMemoryUtilities.Managed.NativeWrapper.WriteProcessMemoryArray``1(System.IntPtr,System.IntPtr,``0[],System.Int32)
+  name.vb: WriteProcessMemoryArray(Of T)(IntPtr, IntPtr, T(), Int32)
+  fullName: ProcessMemoryUtilities.Managed.NativeWrapper.WriteProcessMemoryArray<T>(System.IntPtr, System.IntPtr, T[], System.Int32)
+  fullName.vb: ProcessMemoryUtilities.Managed.NativeWrapper.WriteProcessMemoryArray(Of T)(System.IntPtr, System.IntPtr, T(), System.Int32)
+  nameWithType: NativeWrapper.WriteProcessMemoryArray<T>(IntPtr, IntPtr, T[], Int32)
+  nameWithType.vb: NativeWrapper.WriteProcessMemoryArray(Of T)(IntPtr, IntPtr, T(), Int32)
+- uid: ProcessMemoryUtilities.Managed.NativeWrapper.WriteProcessMemoryArray``1(System.IntPtr,System.IntPtr,``0[],System.Int32,System.Int32)
+  name: WriteProcessMemoryArray<T>(IntPtr, IntPtr, T[], Int32, Int32)
+  href: api/ProcessMemoryUtilities.Managed.NativeWrapper.html#ProcessMemoryUtilities_Managed_NativeWrapper_WriteProcessMemoryArray__1_System_IntPtr_System_IntPtr___0___System_Int32_System_Int32_
+  commentId: M:ProcessMemoryUtilities.Managed.NativeWrapper.WriteProcessMemoryArray``1(System.IntPtr,System.IntPtr,``0[],System.Int32,System.Int32)
+  name.vb: WriteProcessMemoryArray(Of T)(IntPtr, IntPtr, T(), Int32, Int32)
+  fullName: ProcessMemoryUtilities.Managed.NativeWrapper.WriteProcessMemoryArray<T>(System.IntPtr, System.IntPtr, T[], System.Int32, System.Int32)
+  fullName.vb: ProcessMemoryUtilities.Managed.NativeWrapper.WriteProcessMemoryArray(Of T)(System.IntPtr, System.IntPtr, T(), System.Int32, System.Int32)
+  nameWithType: NativeWrapper.WriteProcessMemoryArray<T>(IntPtr, IntPtr, T[], Int32, Int32)
+  nameWithType.vb: NativeWrapper.WriteProcessMemoryArray(Of T)(IntPtr, IntPtr, T(), Int32, Int32)
+- uid: ProcessMemoryUtilities.Managed.NativeWrapper.WriteProcessMemoryArray``1(System.IntPtr,System.IntPtr,``0[],System.Int32,System.Int32,System.IntPtr@)
+  name: WriteProcessMemoryArray<T>(IntPtr, IntPtr, T[], Int32, Int32, out IntPtr)
+  href: api/ProcessMemoryUtilities.Managed.NativeWrapper.html#ProcessMemoryUtilities_Managed_NativeWrapper_WriteProcessMemoryArray__1_System_IntPtr_System_IntPtr___0___System_Int32_System_Int32_System_IntPtr__
+  commentId: M:ProcessMemoryUtilities.Managed.NativeWrapper.WriteProcessMemoryArray``1(System.IntPtr,System.IntPtr,``0[],System.Int32,System.Int32,System.IntPtr@)
+  name.vb: WriteProcessMemoryArray(Of T)(IntPtr, IntPtr, T(), Int32, Int32, ByRef IntPtr)
+  fullName: ProcessMemoryUtilities.Managed.NativeWrapper.WriteProcessMemoryArray<T>(System.IntPtr, System.IntPtr, T[], System.Int32, System.Int32, out System.IntPtr)
+  fullName.vb: ProcessMemoryUtilities.Managed.NativeWrapper.WriteProcessMemoryArray(Of T)(System.IntPtr, System.IntPtr, T(), System.Int32, System.Int32, ByRef System.IntPtr)
+  nameWithType: NativeWrapper.WriteProcessMemoryArray<T>(IntPtr, IntPtr, T[], Int32, Int32, out IntPtr)
+  nameWithType.vb: NativeWrapper.WriteProcessMemoryArray(Of T)(IntPtr, IntPtr, T(), Int32, Int32, ByRef IntPtr)
+- uid: ProcessMemoryUtilities.Managed.NativeWrapper.WriteProcessMemoryArray``1(System.IntPtr,System.IntPtr,``0[],System.Int32,System.IntPtr@)
+  name: WriteProcessMemoryArray<T>(IntPtr, IntPtr, T[], Int32, out IntPtr)
+  href: api/ProcessMemoryUtilities.Managed.NativeWrapper.html#ProcessMemoryUtilities_Managed_NativeWrapper_WriteProcessMemoryArray__1_System_IntPtr_System_IntPtr___0___System_Int32_System_IntPtr__
+  commentId: M:ProcessMemoryUtilities.Managed.NativeWrapper.WriteProcessMemoryArray``1(System.IntPtr,System.IntPtr,``0[],System.Int32,System.IntPtr@)
+  name.vb: WriteProcessMemoryArray(Of T)(IntPtr, IntPtr, T(), Int32, ByRef IntPtr)
+  fullName: ProcessMemoryUtilities.Managed.NativeWrapper.WriteProcessMemoryArray<T>(System.IntPtr, System.IntPtr, T[], System.Int32, out System.IntPtr)
+  fullName.vb: ProcessMemoryUtilities.Managed.NativeWrapper.WriteProcessMemoryArray(Of T)(System.IntPtr, System.IntPtr, T(), System.Int32, ByRef System.IntPtr)
+  nameWithType: NativeWrapper.WriteProcessMemoryArray<T>(IntPtr, IntPtr, T[], Int32, out IntPtr)
+  nameWithType.vb: NativeWrapper.WriteProcessMemoryArray(Of T)(IntPtr, IntPtr, T(), Int32, ByRef IntPtr)
+- uid: ProcessMemoryUtilities.Managed.NativeWrapper.WriteProcessMemoryArray``1(System.IntPtr,System.IntPtr,``0[],System.IntPtr@)
+  name: WriteProcessMemoryArray<T>(IntPtr, IntPtr, T[], out IntPtr)
+  href: api/ProcessMemoryUtilities.Managed.NativeWrapper.html#ProcessMemoryUtilities_Managed_NativeWrapper_WriteProcessMemoryArray__1_System_IntPtr_System_IntPtr___0___System_IntPtr__
+  commentId: M:ProcessMemoryUtilities.Managed.NativeWrapper.WriteProcessMemoryArray``1(System.IntPtr,System.IntPtr,``0[],System.IntPtr@)
+  name.vb: WriteProcessMemoryArray(Of T)(IntPtr, IntPtr, T(), ByRef IntPtr)
+  fullName: ProcessMemoryUtilities.Managed.NativeWrapper.WriteProcessMemoryArray<T>(System.IntPtr, System.IntPtr, T[], out System.IntPtr)
+  fullName.vb: ProcessMemoryUtilities.Managed.NativeWrapper.WriteProcessMemoryArray(Of T)(System.IntPtr, System.IntPtr, T(), ByRef System.IntPtr)
+  nameWithType: NativeWrapper.WriteProcessMemoryArray<T>(IntPtr, IntPtr, T[], out IntPtr)
+  nameWithType.vb: NativeWrapper.WriteProcessMemoryArray(Of T)(IntPtr, IntPtr, T(), ByRef IntPtr)
+- uid: ProcessMemoryUtilities.Managed.NativeWrapper.WriteProcessMemoryPartial*
+  name: WriteProcessMemoryPartial
+  href: api/ProcessMemoryUtilities.Managed.NativeWrapper.html#ProcessMemoryUtilities_Managed_NativeWrapper_WriteProcessMemoryPartial_
+  commentId: Overload:ProcessMemoryUtilities.Managed.NativeWrapper.WriteProcessMemoryPartial
+  isSpec: "True"
+  fullName: ProcessMemoryUtilities.Managed.NativeWrapper.WriteProcessMemoryPartial
+  nameWithType: NativeWrapper.WriteProcessMemoryPartial
+- uid: ProcessMemoryUtilities.Managed.NativeWrapper.WriteProcessMemoryPartial``1(System.IntPtr,System.IntPtr,``0@,System.Int32)
+  name: WriteProcessMemoryPartial<T>(IntPtr, IntPtr, ref T, Int32)
+  href: api/ProcessMemoryUtilities.Managed.NativeWrapper.html#ProcessMemoryUtilities_Managed_NativeWrapper_WriteProcessMemoryPartial__1_System_IntPtr_System_IntPtr___0__System_Int32_
+  commentId: M:ProcessMemoryUtilities.Managed.NativeWrapper.WriteProcessMemoryPartial``1(System.IntPtr,System.IntPtr,``0@,System.Int32)
+  name.vb: WriteProcessMemoryPartial(Of T)(IntPtr, IntPtr, ByRef T, Int32)
+  fullName: ProcessMemoryUtilities.Managed.NativeWrapper.WriteProcessMemoryPartial<T>(System.IntPtr, System.IntPtr, ref T, System.Int32)
+  fullName.vb: ProcessMemoryUtilities.Managed.NativeWrapper.WriteProcessMemoryPartial(Of T)(System.IntPtr, System.IntPtr, ByRef T, System.Int32)
+  nameWithType: NativeWrapper.WriteProcessMemoryPartial<T>(IntPtr, IntPtr, ref T, Int32)
+  nameWithType.vb: NativeWrapper.WriteProcessMemoryPartial(Of T)(IntPtr, IntPtr, ByRef T, Int32)
+- uid: ProcessMemoryUtilities.Managed.NativeWrapper.WriteProcessMemoryPartial``1(System.IntPtr,System.IntPtr,``0@,System.Int32,System.Int32)
+  name: WriteProcessMemoryPartial<T>(IntPtr, IntPtr, ref T, Int32, Int32)
+  href: api/ProcessMemoryUtilities.Managed.NativeWrapper.html#ProcessMemoryUtilities_Managed_NativeWrapper_WriteProcessMemoryPartial__1_System_IntPtr_System_IntPtr___0__System_Int32_System_Int32_
+  commentId: M:ProcessMemoryUtilities.Managed.NativeWrapper.WriteProcessMemoryPartial``1(System.IntPtr,System.IntPtr,``0@,System.Int32,System.Int32)
+  name.vb: WriteProcessMemoryPartial(Of T)(IntPtr, IntPtr, ByRef T, Int32, Int32)
+  fullName: ProcessMemoryUtilities.Managed.NativeWrapper.WriteProcessMemoryPartial<T>(System.IntPtr, System.IntPtr, ref T, System.Int32, System.Int32)
+  fullName.vb: ProcessMemoryUtilities.Managed.NativeWrapper.WriteProcessMemoryPartial(Of T)(System.IntPtr, System.IntPtr, ByRef T, System.Int32, System.Int32)
+  nameWithType: NativeWrapper.WriteProcessMemoryPartial<T>(IntPtr, IntPtr, ref T, Int32, Int32)
+  nameWithType.vb: NativeWrapper.WriteProcessMemoryPartial(Of T)(IntPtr, IntPtr, ByRef T, Int32, Int32)
+- uid: ProcessMemoryUtilities.Managed.NativeWrapper.WriteProcessMemoryPartial``1(System.IntPtr,System.IntPtr,``0@,System.Int32,System.Int32,System.IntPtr@)
+  name: WriteProcessMemoryPartial<T>(IntPtr, IntPtr, ref T, Int32, Int32, out IntPtr)
+  href: api/ProcessMemoryUtilities.Managed.NativeWrapper.html#ProcessMemoryUtilities_Managed_NativeWrapper_WriteProcessMemoryPartial__1_System_IntPtr_System_IntPtr___0__System_Int32_System_Int32_System_IntPtr__
+  commentId: M:ProcessMemoryUtilities.Managed.NativeWrapper.WriteProcessMemoryPartial``1(System.IntPtr,System.IntPtr,``0@,System.Int32,System.Int32,System.IntPtr@)
+  name.vb: WriteProcessMemoryPartial(Of T)(IntPtr, IntPtr, ByRef T, Int32, Int32, ByRef IntPtr)
+  fullName: ProcessMemoryUtilities.Managed.NativeWrapper.WriteProcessMemoryPartial<T>(System.IntPtr, System.IntPtr, ref T, System.Int32, System.Int32, out System.IntPtr)
+  fullName.vb: ProcessMemoryUtilities.Managed.NativeWrapper.WriteProcessMemoryPartial(Of T)(System.IntPtr, System.IntPtr, ByRef T, System.Int32, System.Int32, ByRef System.IntPtr)
+  nameWithType: NativeWrapper.WriteProcessMemoryPartial<T>(IntPtr, IntPtr, ref T, Int32, Int32, out IntPtr)
+  nameWithType.vb: NativeWrapper.WriteProcessMemoryPartial(Of T)(IntPtr, IntPtr, ByRef T, Int32, Int32, ByRef IntPtr)
+- uid: ProcessMemoryUtilities.Managed.NativeWrapper.WriteProcessMemoryPartial``1(System.IntPtr,System.IntPtr,``0@,System.Int32,System.IntPtr@)
+  name: WriteProcessMemoryPartial<T>(IntPtr, IntPtr, ref T, Int32, out IntPtr)
+  href: api/ProcessMemoryUtilities.Managed.NativeWrapper.html#ProcessMemoryUtilities_Managed_NativeWrapper_WriteProcessMemoryPartial__1_System_IntPtr_System_IntPtr___0__System_Int32_System_IntPtr__
+  commentId: M:ProcessMemoryUtilities.Managed.NativeWrapper.WriteProcessMemoryPartial``1(System.IntPtr,System.IntPtr,``0@,System.Int32,System.IntPtr@)
+  name.vb: WriteProcessMemoryPartial(Of T)(IntPtr, IntPtr, ByRef T, Int32, ByRef IntPtr)
+  fullName: ProcessMemoryUtilities.Managed.NativeWrapper.WriteProcessMemoryPartial<T>(System.IntPtr, System.IntPtr, ref T, System.Int32, out System.IntPtr)
+  fullName.vb: ProcessMemoryUtilities.Managed.NativeWrapper.WriteProcessMemoryPartial(Of T)(System.IntPtr, System.IntPtr, ByRef T, System.Int32, ByRef System.IntPtr)
+  nameWithType: NativeWrapper.WriteProcessMemoryPartial<T>(IntPtr, IntPtr, ref T, Int32, out IntPtr)
+  nameWithType.vb: NativeWrapper.WriteProcessMemoryPartial(Of T)(IntPtr, IntPtr, ByRef T, Int32, ByRef IntPtr)
+- uid: ProcessMemoryUtilities.Native
+  name: ProcessMemoryUtilities.Native
+  href: api/ProcessMemoryUtilities.Native.html
+  commentId: N:ProcessMemoryUtilities.Native
+  fullName: ProcessMemoryUtilities.Native
+  nameWithType: ProcessMemoryUtilities.Native
+- uid: ProcessMemoryUtilities.Native.AllocationType
+  name: AllocationType
+  href: api/ProcessMemoryUtilities.Native.AllocationType.html
+  commentId: T:ProcessMemoryUtilities.Native.AllocationType
+  fullName: ProcessMemoryUtilities.Native.AllocationType
+  nameWithType: AllocationType
+- uid: ProcessMemoryUtilities.Native.AllocationType.Commit
+  name: Commit
+  href: api/ProcessMemoryUtilities.Native.AllocationType.html#ProcessMemoryUtilities_Native_AllocationType_Commit
+  commentId: F:ProcessMemoryUtilities.Native.AllocationType.Commit
+  fullName: ProcessMemoryUtilities.Native.AllocationType.Commit
+  nameWithType: AllocationType.Commit
+- uid: ProcessMemoryUtilities.Native.AllocationType.Invalid
+  name: Invalid
+  href: api/ProcessMemoryUtilities.Native.AllocationType.html#ProcessMemoryUtilities_Native_AllocationType_Invalid
+  commentId: F:ProcessMemoryUtilities.Native.AllocationType.Invalid
+  fullName: ProcessMemoryUtilities.Native.AllocationType.Invalid
+  nameWithType: AllocationType.Invalid
+- uid: ProcessMemoryUtilities.Native.AllocationType.LargePages
+  name: LargePages
+  href: api/ProcessMemoryUtilities.Native.AllocationType.html#ProcessMemoryUtilities_Native_AllocationType_LargePages
+  commentId: F:ProcessMemoryUtilities.Native.AllocationType.LargePages
+  fullName: ProcessMemoryUtilities.Native.AllocationType.LargePages
+  nameWithType: AllocationType.LargePages
+- uid: ProcessMemoryUtilities.Native.AllocationType.Physical
+  name: Physical
+  href: api/ProcessMemoryUtilities.Native.AllocationType.html#ProcessMemoryUtilities_Native_AllocationType_Physical
+  commentId: F:ProcessMemoryUtilities.Native.AllocationType.Physical
+  fullName: ProcessMemoryUtilities.Native.AllocationType.Physical
+  nameWithType: AllocationType.Physical
+- uid: ProcessMemoryUtilities.Native.AllocationType.Reserve
+  name: Reserve
+  href: api/ProcessMemoryUtilities.Native.AllocationType.html#ProcessMemoryUtilities_Native_AllocationType_Reserve
+  commentId: F:ProcessMemoryUtilities.Native.AllocationType.Reserve
+  fullName: ProcessMemoryUtilities.Native.AllocationType.Reserve
+  nameWithType: AllocationType.Reserve
+- uid: ProcessMemoryUtilities.Native.AllocationType.Reset
+  name: Reset
+  href: api/ProcessMemoryUtilities.Native.AllocationType.html#ProcessMemoryUtilities_Native_AllocationType_Reset
+  commentId: F:ProcessMemoryUtilities.Native.AllocationType.Reset
+  fullName: ProcessMemoryUtilities.Native.AllocationType.Reset
+  nameWithType: AllocationType.Reset
+- uid: ProcessMemoryUtilities.Native.AllocationType.ResetUndo
+  name: ResetUndo
+  href: api/ProcessMemoryUtilities.Native.AllocationType.html#ProcessMemoryUtilities_Native_AllocationType_ResetUndo
+  commentId: F:ProcessMemoryUtilities.Native.AllocationType.ResetUndo
+  fullName: ProcessMemoryUtilities.Native.AllocationType.ResetUndo
+  nameWithType: AllocationType.ResetUndo
+- uid: ProcessMemoryUtilities.Native.AllocationType.TopDown
+  name: TopDown
+  href: api/ProcessMemoryUtilities.Native.AllocationType.html#ProcessMemoryUtilities_Native_AllocationType_TopDown
+  commentId: F:ProcessMemoryUtilities.Native.AllocationType.TopDown
+  fullName: ProcessMemoryUtilities.Native.AllocationType.TopDown
+  nameWithType: AllocationType.TopDown
+- uid: ProcessMemoryUtilities.Native.AllocationType.WriteWatch
+  name: WriteWatch
+  href: api/ProcessMemoryUtilities.Native.AllocationType.html#ProcessMemoryUtilities_Native_AllocationType_WriteWatch
+  commentId: F:ProcessMemoryUtilities.Native.AllocationType.WriteWatch
+  fullName: ProcessMemoryUtilities.Native.AllocationType.WriteWatch
+  nameWithType: AllocationType.WriteWatch
+- uid: ProcessMemoryUtilities.Native.FreeType
+  name: FreeType
+  href: api/ProcessMemoryUtilities.Native.FreeType.html
+  commentId: T:ProcessMemoryUtilities.Native.FreeType
+  fullName: ProcessMemoryUtilities.Native.FreeType
+  nameWithType: FreeType
+- uid: ProcessMemoryUtilities.Native.FreeType.CoalescePlaceholders
+  name: CoalescePlaceholders
+  href: api/ProcessMemoryUtilities.Native.FreeType.html#ProcessMemoryUtilities_Native_FreeType_CoalescePlaceholders
+  commentId: F:ProcessMemoryUtilities.Native.FreeType.CoalescePlaceholders
+  fullName: ProcessMemoryUtilities.Native.FreeType.CoalescePlaceholders
+  nameWithType: FreeType.CoalescePlaceholders
+- uid: ProcessMemoryUtilities.Native.FreeType.Decommit
+  name: Decommit
+  href: api/ProcessMemoryUtilities.Native.FreeType.html#ProcessMemoryUtilities_Native_FreeType_Decommit
+  commentId: F:ProcessMemoryUtilities.Native.FreeType.Decommit
+  fullName: ProcessMemoryUtilities.Native.FreeType.Decommit
+  nameWithType: FreeType.Decommit
+- uid: ProcessMemoryUtilities.Native.FreeType.Invalid
+  name: Invalid
+  href: api/ProcessMemoryUtilities.Native.FreeType.html#ProcessMemoryUtilities_Native_FreeType_Invalid
+  commentId: F:ProcessMemoryUtilities.Native.FreeType.Invalid
+  fullName: ProcessMemoryUtilities.Native.FreeType.Invalid
+  nameWithType: FreeType.Invalid
+- uid: ProcessMemoryUtilities.Native.FreeType.PreservePlaceholder
+  name: PreservePlaceholder
+  href: api/ProcessMemoryUtilities.Native.FreeType.html#ProcessMemoryUtilities_Native_FreeType_PreservePlaceholder
+  commentId: F:ProcessMemoryUtilities.Native.FreeType.PreservePlaceholder
+  fullName: ProcessMemoryUtilities.Native.FreeType.PreservePlaceholder
+  nameWithType: FreeType.PreservePlaceholder
+- uid: ProcessMemoryUtilities.Native.FreeType.Release
+  name: Release
+  href: api/ProcessMemoryUtilities.Native.FreeType.html#ProcessMemoryUtilities_Native_FreeType_Release
+  commentId: F:ProcessMemoryUtilities.Native.FreeType.Release
+  fullName: ProcessMemoryUtilities.Native.FreeType.Release
+  nameWithType: FreeType.Release
+- uid: ProcessMemoryUtilities.Native.Kernel32
+  name: Kernel32
+  href: api/ProcessMemoryUtilities.Native.Kernel32.html
+  commentId: T:ProcessMemoryUtilities.Native.Kernel32
+  fullName: ProcessMemoryUtilities.Native.Kernel32
+  nameWithType: Kernel32
+- uid: ProcessMemoryUtilities.Native.Kernel32.CreateRemoteThreadEx(System.IntPtr,System.IntPtr,System.IntPtr)
+  name: CreateRemoteThreadEx(IntPtr, IntPtr, IntPtr)
+  href: api/ProcessMemoryUtilities.Native.Kernel32.html#ProcessMemoryUtilities_Native_Kernel32_CreateRemoteThreadEx_System_IntPtr_System_IntPtr_System_IntPtr_
+  commentId: M:ProcessMemoryUtilities.Native.Kernel32.CreateRemoteThreadEx(System.IntPtr,System.IntPtr,System.IntPtr)
+  fullName: ProcessMemoryUtilities.Native.Kernel32.CreateRemoteThreadEx(System.IntPtr, System.IntPtr, System.IntPtr)
+  nameWithType: Kernel32.CreateRemoteThreadEx(IntPtr, IntPtr, IntPtr)
+- uid: ProcessMemoryUtilities.Native.Kernel32.CreateRemoteThreadEx(System.IntPtr,System.IntPtr,System.IntPtr,ProcessMemoryUtilities.Native.ThreadCreationFlags)
+  name: CreateRemoteThreadEx(IntPtr, IntPtr, IntPtr, ThreadCreationFlags)
+  href: api/ProcessMemoryUtilities.Native.Kernel32.html#ProcessMemoryUtilities_Native_Kernel32_CreateRemoteThreadEx_System_IntPtr_System_IntPtr_System_IntPtr_ProcessMemoryUtilities_Native_ThreadCreationFlags_
+  commentId: M:ProcessMemoryUtilities.Native.Kernel32.CreateRemoteThreadEx(System.IntPtr,System.IntPtr,System.IntPtr,ProcessMemoryUtilities.Native.ThreadCreationFlags)
+  fullName: ProcessMemoryUtilities.Native.Kernel32.CreateRemoteThreadEx(System.IntPtr, System.IntPtr, System.IntPtr, ProcessMemoryUtilities.Native.ThreadCreationFlags)
+  nameWithType: Kernel32.CreateRemoteThreadEx(IntPtr, IntPtr, IntPtr, ThreadCreationFlags)
+- uid: ProcessMemoryUtilities.Native.Kernel32.CreateRemoteThreadEx(System.IntPtr,System.IntPtr,System.IntPtr,ProcessMemoryUtilities.Native.ThreadCreationFlags,System.UInt32@)
+  name: CreateRemoteThreadEx(IntPtr, IntPtr, IntPtr, ThreadCreationFlags, out UInt32)
+  href: api/ProcessMemoryUtilities.Native.Kernel32.html#ProcessMemoryUtilities_Native_Kernel32_CreateRemoteThreadEx_System_IntPtr_System_IntPtr_System_IntPtr_ProcessMemoryUtilities_Native_ThreadCreationFlags_System_UInt32__
+  commentId: M:ProcessMemoryUtilities.Native.Kernel32.CreateRemoteThreadEx(System.IntPtr,System.IntPtr,System.IntPtr,ProcessMemoryUtilities.Native.ThreadCreationFlags,System.UInt32@)
+  name.vb: CreateRemoteThreadEx(IntPtr, IntPtr, IntPtr, ThreadCreationFlags, ByRef UInt32)
+  fullName: ProcessMemoryUtilities.Native.Kernel32.CreateRemoteThreadEx(System.IntPtr, System.IntPtr, System.IntPtr, ProcessMemoryUtilities.Native.ThreadCreationFlags, out System.UInt32)
+  fullName.vb: ProcessMemoryUtilities.Native.Kernel32.CreateRemoteThreadEx(System.IntPtr, System.IntPtr, System.IntPtr, ProcessMemoryUtilities.Native.ThreadCreationFlags, ByRef System.UInt32)
+  nameWithType: Kernel32.CreateRemoteThreadEx(IntPtr, IntPtr, IntPtr, ThreadCreationFlags, out UInt32)
+  nameWithType.vb: Kernel32.CreateRemoteThreadEx(IntPtr, IntPtr, IntPtr, ThreadCreationFlags, ByRef UInt32)
+- uid: ProcessMemoryUtilities.Native.Kernel32.CreateRemoteThreadEx(System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr,ProcessMemoryUtilities.Native.ThreadCreationFlags,System.IntPtr,System.IntPtr)
+  name: CreateRemoteThreadEx(IntPtr, IntPtr, IntPtr, IntPtr, IntPtr, ThreadCreationFlags, IntPtr, IntPtr)
+  href: api/ProcessMemoryUtilities.Native.Kernel32.html#ProcessMemoryUtilities_Native_Kernel32_CreateRemoteThreadEx_System_IntPtr_System_IntPtr_System_IntPtr_System_IntPtr_System_IntPtr_ProcessMemoryUtilities_Native_ThreadCreationFlags_System_IntPtr_System_IntPtr_
+  commentId: M:ProcessMemoryUtilities.Native.Kernel32.CreateRemoteThreadEx(System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr,ProcessMemoryUtilities.Native.ThreadCreationFlags,System.IntPtr,System.IntPtr)
+  fullName: ProcessMemoryUtilities.Native.Kernel32.CreateRemoteThreadEx(System.IntPtr, System.IntPtr, System.IntPtr, System.IntPtr, System.IntPtr, ProcessMemoryUtilities.Native.ThreadCreationFlags, System.IntPtr, System.IntPtr)
+  nameWithType: Kernel32.CreateRemoteThreadEx(IntPtr, IntPtr, IntPtr, IntPtr, IntPtr, ThreadCreationFlags, IntPtr, IntPtr)
+- uid: ProcessMemoryUtilities.Native.Kernel32.CreateRemoteThreadEx(System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr,ProcessMemoryUtilities.Native.ThreadCreationFlags,System.IntPtr,System.UInt32@)
+  name: CreateRemoteThreadEx(IntPtr, IntPtr, IntPtr, IntPtr, IntPtr, ThreadCreationFlags, IntPtr, out UInt32)
+  href: api/ProcessMemoryUtilities.Native.Kernel32.html#ProcessMemoryUtilities_Native_Kernel32_CreateRemoteThreadEx_System_IntPtr_System_IntPtr_System_IntPtr_System_IntPtr_System_IntPtr_ProcessMemoryUtilities_Native_ThreadCreationFlags_System_IntPtr_System_UInt32__
+  commentId: M:ProcessMemoryUtilities.Native.Kernel32.CreateRemoteThreadEx(System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr,ProcessMemoryUtilities.Native.ThreadCreationFlags,System.IntPtr,System.UInt32@)
+  name.vb: CreateRemoteThreadEx(IntPtr, IntPtr, IntPtr, IntPtr, IntPtr, ThreadCreationFlags, IntPtr, ByRef UInt32)
+  fullName: ProcessMemoryUtilities.Native.Kernel32.CreateRemoteThreadEx(System.IntPtr, System.IntPtr, System.IntPtr, System.IntPtr, System.IntPtr, ProcessMemoryUtilities.Native.ThreadCreationFlags, System.IntPtr, out System.UInt32)
+  fullName.vb: ProcessMemoryUtilities.Native.Kernel32.CreateRemoteThreadEx(System.IntPtr, System.IntPtr, System.IntPtr, System.IntPtr, System.IntPtr, ProcessMemoryUtilities.Native.ThreadCreationFlags, System.IntPtr, ByRef System.UInt32)
+  nameWithType: Kernel32.CreateRemoteThreadEx(IntPtr, IntPtr, IntPtr, IntPtr, IntPtr, ThreadCreationFlags, IntPtr, out UInt32)
+  nameWithType.vb: Kernel32.CreateRemoteThreadEx(IntPtr, IntPtr, IntPtr, IntPtr, IntPtr, ThreadCreationFlags, IntPtr, ByRef UInt32)
+- uid: ProcessMemoryUtilities.Native.Kernel32.CreateRemoteThreadEx*
+  name: CreateRemoteThreadEx
+  href: api/ProcessMemoryUtilities.Native.Kernel32.html#ProcessMemoryUtilities_Native_Kernel32_CreateRemoteThreadEx_
+  commentId: Overload:ProcessMemoryUtilities.Native.Kernel32.CreateRemoteThreadEx
+  isSpec: "True"
+  fullName: ProcessMemoryUtilities.Native.Kernel32.CreateRemoteThreadEx
+  nameWithType: Kernel32.CreateRemoteThreadEx
+- uid: ProcessMemoryUtilities.Native.Kernel32.GetRealWaitObjectResult(ProcessMemoryUtilities.Native.WaitObjectResult)
+  name: GetRealWaitObjectResult(WaitObjectResult)
+  href: api/ProcessMemoryUtilities.Native.Kernel32.html#ProcessMemoryUtilities_Native_Kernel32_GetRealWaitObjectResult_ProcessMemoryUtilities_Native_WaitObjectResult_
+  commentId: M:ProcessMemoryUtilities.Native.Kernel32.GetRealWaitObjectResult(ProcessMemoryUtilities.Native.WaitObjectResult)
+  fullName: ProcessMemoryUtilities.Native.Kernel32.GetRealWaitObjectResult(ProcessMemoryUtilities.Native.WaitObjectResult)
+  nameWithType: Kernel32.GetRealWaitObjectResult(WaitObjectResult)
+- uid: ProcessMemoryUtilities.Native.Kernel32.GetRealWaitObjectResult(ProcessMemoryUtilities.Native.WaitObjectResult,System.Int32@)
+  name: GetRealWaitObjectResult(WaitObjectResult, out Int32)
+  href: api/ProcessMemoryUtilities.Native.Kernel32.html#ProcessMemoryUtilities_Native_Kernel32_GetRealWaitObjectResult_ProcessMemoryUtilities_Native_WaitObjectResult_System_Int32__
+  commentId: M:ProcessMemoryUtilities.Native.Kernel32.GetRealWaitObjectResult(ProcessMemoryUtilities.Native.WaitObjectResult,System.Int32@)
+  name.vb: GetRealWaitObjectResult(WaitObjectResult, ByRef Int32)
+  fullName: ProcessMemoryUtilities.Native.Kernel32.GetRealWaitObjectResult(ProcessMemoryUtilities.Native.WaitObjectResult, out System.Int32)
+  fullName.vb: ProcessMemoryUtilities.Native.Kernel32.GetRealWaitObjectResult(ProcessMemoryUtilities.Native.WaitObjectResult, ByRef System.Int32)
+  nameWithType: Kernel32.GetRealWaitObjectResult(WaitObjectResult, out Int32)
+  nameWithType.vb: Kernel32.GetRealWaitObjectResult(WaitObjectResult, ByRef Int32)
+- uid: ProcessMemoryUtilities.Native.Kernel32.GetRealWaitObjectResult*
+  name: GetRealWaitObjectResult
+  href: api/ProcessMemoryUtilities.Native.Kernel32.html#ProcessMemoryUtilities_Native_Kernel32_GetRealWaitObjectResult_
+  commentId: Overload:ProcessMemoryUtilities.Native.Kernel32.GetRealWaitObjectResult
+  isSpec: "True"
+  fullName: ProcessMemoryUtilities.Native.Kernel32.GetRealWaitObjectResult
+  nameWithType: Kernel32.GetRealWaitObjectResult
+- uid: ProcessMemoryUtilities.Native.Kernel32.INFINITE
+  name: INFINITE
+  href: api/ProcessMemoryUtilities.Native.Kernel32.html#ProcessMemoryUtilities_Native_Kernel32_INFINITE
+  commentId: F:ProcessMemoryUtilities.Native.Kernel32.INFINITE
+  fullName: ProcessMemoryUtilities.Native.Kernel32.INFINITE
+  nameWithType: Kernel32.INFINITE
+- uid: ProcessMemoryUtilities.Native.Kernel32.OpenProcess(ProcessMemoryUtilities.Native.ProcessAccessFlags,System.Boolean,System.Int32)
+  name: OpenProcess(ProcessAccessFlags, Boolean, Int32)
+  href: api/ProcessMemoryUtilities.Native.Kernel32.html#ProcessMemoryUtilities_Native_Kernel32_OpenProcess_ProcessMemoryUtilities_Native_ProcessAccessFlags_System_Boolean_System_Int32_
+  commentId: M:ProcessMemoryUtilities.Native.Kernel32.OpenProcess(ProcessMemoryUtilities.Native.ProcessAccessFlags,System.Boolean,System.Int32)
+  fullName: ProcessMemoryUtilities.Native.Kernel32.OpenProcess(ProcessMemoryUtilities.Native.ProcessAccessFlags, System.Boolean, System.Int32)
+  nameWithType: Kernel32.OpenProcess(ProcessAccessFlags, Boolean, Int32)
+- uid: ProcessMemoryUtilities.Native.Kernel32.OpenProcess(ProcessMemoryUtilities.Native.ProcessAccessFlags,System.Int32)
+  name: OpenProcess(ProcessAccessFlags, Int32)
+  href: api/ProcessMemoryUtilities.Native.Kernel32.html#ProcessMemoryUtilities_Native_Kernel32_OpenProcess_ProcessMemoryUtilities_Native_ProcessAccessFlags_System_Int32_
+  commentId: M:ProcessMemoryUtilities.Native.Kernel32.OpenProcess(ProcessMemoryUtilities.Native.ProcessAccessFlags,System.Int32)
+  fullName: ProcessMemoryUtilities.Native.Kernel32.OpenProcess(ProcessMemoryUtilities.Native.ProcessAccessFlags, System.Int32)
+  nameWithType: Kernel32.OpenProcess(ProcessAccessFlags, Int32)
+- uid: ProcessMemoryUtilities.Native.Kernel32.OpenProcess*
+  name: OpenProcess
+  href: api/ProcessMemoryUtilities.Native.Kernel32.html#ProcessMemoryUtilities_Native_Kernel32_OpenProcess_
+  commentId: Overload:ProcessMemoryUtilities.Native.Kernel32.OpenProcess
+  isSpec: "True"
+  fullName: ProcessMemoryUtilities.Native.Kernel32.OpenProcess
+  nameWithType: Kernel32.OpenProcess
+- uid: ProcessMemoryUtilities.Native.Kernel32.WaitForSingleObject(System.IntPtr,System.UInt32)
+  name: WaitForSingleObject(IntPtr, UInt32)
+  href: api/ProcessMemoryUtilities.Native.Kernel32.html#ProcessMemoryUtilities_Native_Kernel32_WaitForSingleObject_System_IntPtr_System_UInt32_
+  commentId: M:ProcessMemoryUtilities.Native.Kernel32.WaitForSingleObject(System.IntPtr,System.UInt32)
+  fullName: ProcessMemoryUtilities.Native.Kernel32.WaitForSingleObject(System.IntPtr, System.UInt32)
+  nameWithType: Kernel32.WaitForSingleObject(IntPtr, UInt32)
+- uid: ProcessMemoryUtilities.Native.Kernel32.WaitForSingleObject*
+  name: WaitForSingleObject
+  href: api/ProcessMemoryUtilities.Native.Kernel32.html#ProcessMemoryUtilities_Native_Kernel32_WaitForSingleObject_
+  commentId: Overload:ProcessMemoryUtilities.Native.Kernel32.WaitForSingleObject
+  isSpec: "True"
+  fullName: ProcessMemoryUtilities.Native.Kernel32.WaitForSingleObject
+  nameWithType: Kernel32.WaitForSingleObject
+- uid: ProcessMemoryUtilities.Native.MemoryProtectionFlags
+  name: MemoryProtectionFlags
+  href: api/ProcessMemoryUtilities.Native.MemoryProtectionFlags.html
+  commentId: T:ProcessMemoryUtilities.Native.MemoryProtectionFlags
+  fullName: ProcessMemoryUtilities.Native.MemoryProtectionFlags
+  nameWithType: MemoryProtectionFlags
+- uid: ProcessMemoryUtilities.Native.MemoryProtectionFlags.Execute
+  name: Execute
+  href: api/ProcessMemoryUtilities.Native.MemoryProtectionFlags.html#ProcessMemoryUtilities_Native_MemoryProtectionFlags_Execute
+  commentId: F:ProcessMemoryUtilities.Native.MemoryProtectionFlags.Execute
+  fullName: ProcessMemoryUtilities.Native.MemoryProtectionFlags.Execute
+  nameWithType: MemoryProtectionFlags.Execute
+- uid: ProcessMemoryUtilities.Native.MemoryProtectionFlags.ExecuteRead
+  name: ExecuteRead
+  href: api/ProcessMemoryUtilities.Native.MemoryProtectionFlags.html#ProcessMemoryUtilities_Native_MemoryProtectionFlags_ExecuteRead
+  commentId: F:ProcessMemoryUtilities.Native.MemoryProtectionFlags.ExecuteRead
+  fullName: ProcessMemoryUtilities.Native.MemoryProtectionFlags.ExecuteRead
+  nameWithType: MemoryProtectionFlags.ExecuteRead
+- uid: ProcessMemoryUtilities.Native.MemoryProtectionFlags.ExecuteReadWrite
+  name: ExecuteReadWrite
+  href: api/ProcessMemoryUtilities.Native.MemoryProtectionFlags.html#ProcessMemoryUtilities_Native_MemoryProtectionFlags_ExecuteReadWrite
+  commentId: F:ProcessMemoryUtilities.Native.MemoryProtectionFlags.ExecuteReadWrite
+  fullName: ProcessMemoryUtilities.Native.MemoryProtectionFlags.ExecuteReadWrite
+  nameWithType: MemoryProtectionFlags.ExecuteReadWrite
+- uid: ProcessMemoryUtilities.Native.MemoryProtectionFlags.ExecuteWriteCopy
+  name: ExecuteWriteCopy
+  href: api/ProcessMemoryUtilities.Native.MemoryProtectionFlags.html#ProcessMemoryUtilities_Native_MemoryProtectionFlags_ExecuteWriteCopy
+  commentId: F:ProcessMemoryUtilities.Native.MemoryProtectionFlags.ExecuteWriteCopy
+  fullName: ProcessMemoryUtilities.Native.MemoryProtectionFlags.ExecuteWriteCopy
+  nameWithType: MemoryProtectionFlags.ExecuteWriteCopy
+- uid: ProcessMemoryUtilities.Native.MemoryProtectionFlags.GuardModifierflag
+  name: GuardModifierflag
+  href: api/ProcessMemoryUtilities.Native.MemoryProtectionFlags.html#ProcessMemoryUtilities_Native_MemoryProtectionFlags_GuardModifierflag
+  commentId: F:ProcessMemoryUtilities.Native.MemoryProtectionFlags.GuardModifierflag
+  fullName: ProcessMemoryUtilities.Native.MemoryProtectionFlags.GuardModifierflag
+  nameWithType: MemoryProtectionFlags.GuardModifierflag
+- uid: ProcessMemoryUtilities.Native.MemoryProtectionFlags.Invalid
+  name: Invalid
+  href: api/ProcessMemoryUtilities.Native.MemoryProtectionFlags.html#ProcessMemoryUtilities_Native_MemoryProtectionFlags_Invalid
+  commentId: F:ProcessMemoryUtilities.Native.MemoryProtectionFlags.Invalid
+  fullName: ProcessMemoryUtilities.Native.MemoryProtectionFlags.Invalid
+  nameWithType: MemoryProtectionFlags.Invalid
+- uid: ProcessMemoryUtilities.Native.MemoryProtectionFlags.NoAccess
+  name: NoAccess
+  href: api/ProcessMemoryUtilities.Native.MemoryProtectionFlags.html#ProcessMemoryUtilities_Native_MemoryProtectionFlags_NoAccess
+  commentId: F:ProcessMemoryUtilities.Native.MemoryProtectionFlags.NoAccess
+  fullName: ProcessMemoryUtilities.Native.MemoryProtectionFlags.NoAccess
+  nameWithType: MemoryProtectionFlags.NoAccess
+- uid: ProcessMemoryUtilities.Native.MemoryProtectionFlags.NoCacheModifierflag
+  name: NoCacheModifierflag
+  href: api/ProcessMemoryUtilities.Native.MemoryProtectionFlags.html#ProcessMemoryUtilities_Native_MemoryProtectionFlags_NoCacheModifierflag
+  commentId: F:ProcessMemoryUtilities.Native.MemoryProtectionFlags.NoCacheModifierflag
+  fullName: ProcessMemoryUtilities.Native.MemoryProtectionFlags.NoCacheModifierflag
+  nameWithType: MemoryProtectionFlags.NoCacheModifierflag
+- uid: ProcessMemoryUtilities.Native.MemoryProtectionFlags.ReadOnly
+  name: ReadOnly
+  href: api/ProcessMemoryUtilities.Native.MemoryProtectionFlags.html#ProcessMemoryUtilities_Native_MemoryProtectionFlags_ReadOnly
+  commentId: F:ProcessMemoryUtilities.Native.MemoryProtectionFlags.ReadOnly
+  fullName: ProcessMemoryUtilities.Native.MemoryProtectionFlags.ReadOnly
+  nameWithType: MemoryProtectionFlags.ReadOnly
+- uid: ProcessMemoryUtilities.Native.MemoryProtectionFlags.ReadWrite
+  name: ReadWrite
+  href: api/ProcessMemoryUtilities.Native.MemoryProtectionFlags.html#ProcessMemoryUtilities_Native_MemoryProtectionFlags_ReadWrite
+  commentId: F:ProcessMemoryUtilities.Native.MemoryProtectionFlags.ReadWrite
+  fullName: ProcessMemoryUtilities.Native.MemoryProtectionFlags.ReadWrite
+  nameWithType: MemoryProtectionFlags.ReadWrite
+- uid: ProcessMemoryUtilities.Native.MemoryProtectionFlags.WriteCombineModifierflag
+  name: WriteCombineModifierflag
+  href: api/ProcessMemoryUtilities.Native.MemoryProtectionFlags.html#ProcessMemoryUtilities_Native_MemoryProtectionFlags_WriteCombineModifierflag
+  commentId: F:ProcessMemoryUtilities.Native.MemoryProtectionFlags.WriteCombineModifierflag
+  fullName: ProcessMemoryUtilities.Native.MemoryProtectionFlags.WriteCombineModifierflag
+  nameWithType: MemoryProtectionFlags.WriteCombineModifierflag
+- uid: ProcessMemoryUtilities.Native.MemoryProtectionFlags.WriteCopy
+  name: WriteCopy
+  href: api/ProcessMemoryUtilities.Native.MemoryProtectionFlags.html#ProcessMemoryUtilities_Native_MemoryProtectionFlags_WriteCopy
+  commentId: F:ProcessMemoryUtilities.Native.MemoryProtectionFlags.WriteCopy
+  fullName: ProcessMemoryUtilities.Native.MemoryProtectionFlags.WriteCopy
+  nameWithType: MemoryProtectionFlags.WriteCopy
+- uid: ProcessMemoryUtilities.Native.NtDll
+  name: NtDll
+  href: api/ProcessMemoryUtilities.Native.NtDll.html
+  commentId: T:ProcessMemoryUtilities.Native.NtDll
+  fullName: ProcessMemoryUtilities.Native.NtDll
+  nameWithType: NtDll
+- uid: ProcessMemoryUtilities.Native.NtDll.NtAllocateVirtualMemory(System.IntPtr,System.IntPtr,ProcessMemoryUtilities.Native.AllocationType,ProcessMemoryUtilities.Native.MemoryProtectionFlags,System.IntPtr@)
+  name: NtAllocateVirtualMemory(IntPtr, IntPtr, AllocationType, MemoryProtectionFlags, out IntPtr)
+  href: api/ProcessMemoryUtilities.Native.NtDll.html#ProcessMemoryUtilities_Native_NtDll_NtAllocateVirtualMemory_System_IntPtr_System_IntPtr_ProcessMemoryUtilities_Native_AllocationType_ProcessMemoryUtilities_Native_MemoryProtectionFlags_System_IntPtr__
+  commentId: M:ProcessMemoryUtilities.Native.NtDll.NtAllocateVirtualMemory(System.IntPtr,System.IntPtr,ProcessMemoryUtilities.Native.AllocationType,ProcessMemoryUtilities.Native.MemoryProtectionFlags,System.IntPtr@)
+  name.vb: NtAllocateVirtualMemory(IntPtr, IntPtr, AllocationType, MemoryProtectionFlags, ByRef IntPtr)
+  fullName: ProcessMemoryUtilities.Native.NtDll.NtAllocateVirtualMemory(System.IntPtr, System.IntPtr, ProcessMemoryUtilities.Native.AllocationType, ProcessMemoryUtilities.Native.MemoryProtectionFlags, out System.IntPtr)
+  fullName.vb: ProcessMemoryUtilities.Native.NtDll.NtAllocateVirtualMemory(System.IntPtr, System.IntPtr, ProcessMemoryUtilities.Native.AllocationType, ProcessMemoryUtilities.Native.MemoryProtectionFlags, ByRef System.IntPtr)
+  nameWithType: NtDll.NtAllocateVirtualMemory(IntPtr, IntPtr, AllocationType, MemoryProtectionFlags, out IntPtr)
+  nameWithType.vb: NtDll.NtAllocateVirtualMemory(IntPtr, IntPtr, AllocationType, MemoryProtectionFlags, ByRef IntPtr)
+- uid: ProcessMemoryUtilities.Native.NtDll.NtAllocateVirtualMemory*
+  name: NtAllocateVirtualMemory
+  href: api/ProcessMemoryUtilities.Native.NtDll.html#ProcessMemoryUtilities_Native_NtDll_NtAllocateVirtualMemory_
+  commentId: Overload:ProcessMemoryUtilities.Native.NtDll.NtAllocateVirtualMemory
+  isSpec: "True"
+  fullName: ProcessMemoryUtilities.Native.NtDll.NtAllocateVirtualMemory
+  nameWithType: NtDll.NtAllocateVirtualMemory
+- uid: ProcessMemoryUtilities.Native.NtDll.NtClose(System.IntPtr)
+  name: NtClose(IntPtr)
+  href: api/ProcessMemoryUtilities.Native.NtDll.html#ProcessMemoryUtilities_Native_NtDll_NtClose_System_IntPtr_
+  commentId: M:ProcessMemoryUtilities.Native.NtDll.NtClose(System.IntPtr)
+  fullName: ProcessMemoryUtilities.Native.NtDll.NtClose(System.IntPtr)
+  nameWithType: NtDll.NtClose(IntPtr)
+- uid: ProcessMemoryUtilities.Native.NtDll.NtClose*
+  name: NtClose
+  href: api/ProcessMemoryUtilities.Native.NtDll.html#ProcessMemoryUtilities_Native_NtDll_NtClose_
+  commentId: Overload:ProcessMemoryUtilities.Native.NtDll.NtClose
+  isSpec: "True"
+  fullName: ProcessMemoryUtilities.Native.NtDll.NtClose
+  nameWithType: NtDll.NtClose
+- uid: ProcessMemoryUtilities.Native.NtDll.NtError(System.UInt32)
+  name: NtError(UInt32)
+  href: api/ProcessMemoryUtilities.Native.NtDll.html#ProcessMemoryUtilities_Native_NtDll_NtError_System_UInt32_
+  commentId: M:ProcessMemoryUtilities.Native.NtDll.NtError(System.UInt32)
+  fullName: ProcessMemoryUtilities.Native.NtDll.NtError(System.UInt32)
+  nameWithType: NtDll.NtError(UInt32)
+- uid: ProcessMemoryUtilities.Native.NtDll.NtError*
+  name: NtError
+  href: api/ProcessMemoryUtilities.Native.NtDll.html#ProcessMemoryUtilities_Native_NtDll_NtError_
+  commentId: Overload:ProcessMemoryUtilities.Native.NtDll.NtError
+  isSpec: "True"
+  fullName: ProcessMemoryUtilities.Native.NtDll.NtError
+  nameWithType: NtDll.NtError
+- uid: ProcessMemoryUtilities.Native.NtDll.NtFreeVirtualMemory(System.IntPtr,System.IntPtr,System.IntPtr,ProcessMemoryUtilities.Native.FreeType)
+  name: NtFreeVirtualMemory(IntPtr, IntPtr, IntPtr, FreeType)
+  href: api/ProcessMemoryUtilities.Native.NtDll.html#ProcessMemoryUtilities_Native_NtDll_NtFreeVirtualMemory_System_IntPtr_System_IntPtr_System_IntPtr_ProcessMemoryUtilities_Native_FreeType_
+  commentId: M:ProcessMemoryUtilities.Native.NtDll.NtFreeVirtualMemory(System.IntPtr,System.IntPtr,System.IntPtr,ProcessMemoryUtilities.Native.FreeType)
+  fullName: ProcessMemoryUtilities.Native.NtDll.NtFreeVirtualMemory(System.IntPtr, System.IntPtr, System.IntPtr, ProcessMemoryUtilities.Native.FreeType)
+  nameWithType: NtDll.NtFreeVirtualMemory(IntPtr, IntPtr, IntPtr, FreeType)
+- uid: ProcessMemoryUtilities.Native.NtDll.NtFreeVirtualMemory*
+  name: NtFreeVirtualMemory
+  href: api/ProcessMemoryUtilities.Native.NtDll.html#ProcessMemoryUtilities_Native_NtDll_NtFreeVirtualMemory_
+  commentId: Overload:ProcessMemoryUtilities.Native.NtDll.NtFreeVirtualMemory
+  isSpec: "True"
+  fullName: ProcessMemoryUtilities.Native.NtDll.NtFreeVirtualMemory
+  nameWithType: NtDll.NtFreeVirtualMemory
+- uid: ProcessMemoryUtilities.Native.NtDll.NtInformation(System.UInt32)
+  name: NtInformation(UInt32)
+  href: api/ProcessMemoryUtilities.Native.NtDll.html#ProcessMemoryUtilities_Native_NtDll_NtInformation_System_UInt32_
+  commentId: M:ProcessMemoryUtilities.Native.NtDll.NtInformation(System.UInt32)
+  fullName: ProcessMemoryUtilities.Native.NtDll.NtInformation(System.UInt32)
+  nameWithType: NtDll.NtInformation(UInt32)
+- uid: ProcessMemoryUtilities.Native.NtDll.NtInformation*
+  name: NtInformation
+  href: api/ProcessMemoryUtilities.Native.NtDll.html#ProcessMemoryUtilities_Native_NtDll_NtInformation_
+  commentId: Overload:ProcessMemoryUtilities.Native.NtDll.NtInformation
+  isSpec: "True"
+  fullName: ProcessMemoryUtilities.Native.NtDll.NtInformation
+  nameWithType: NtDll.NtInformation
+- uid: ProcessMemoryUtilities.Native.NtDll.NtOpenProcess(ProcessMemoryUtilities.Native.ProcessAccessFlags,System.Boolean,System.Int32,System.IntPtr@)
+  name: NtOpenProcess(ProcessAccessFlags, Boolean, Int32, out IntPtr)
+  href: api/ProcessMemoryUtilities.Native.NtDll.html#ProcessMemoryUtilities_Native_NtDll_NtOpenProcess_ProcessMemoryUtilities_Native_ProcessAccessFlags_System_Boolean_System_Int32_System_IntPtr__
+  commentId: M:ProcessMemoryUtilities.Native.NtDll.NtOpenProcess(ProcessMemoryUtilities.Native.ProcessAccessFlags,System.Boolean,System.Int32,System.IntPtr@)
+  name.vb: NtOpenProcess(ProcessAccessFlags, Boolean, Int32, ByRef IntPtr)
+  fullName: ProcessMemoryUtilities.Native.NtDll.NtOpenProcess(ProcessMemoryUtilities.Native.ProcessAccessFlags, System.Boolean, System.Int32, out System.IntPtr)
+  fullName.vb: ProcessMemoryUtilities.Native.NtDll.NtOpenProcess(ProcessMemoryUtilities.Native.ProcessAccessFlags, System.Boolean, System.Int32, ByRef System.IntPtr)
+  nameWithType: NtDll.NtOpenProcess(ProcessAccessFlags, Boolean, Int32, out IntPtr)
+  nameWithType.vb: NtDll.NtOpenProcess(ProcessAccessFlags, Boolean, Int32, ByRef IntPtr)
+- uid: ProcessMemoryUtilities.Native.NtDll.NtOpenProcess(ProcessMemoryUtilities.Native.ProcessAccessFlags,System.Int32,System.IntPtr@)
+  name: NtOpenProcess(ProcessAccessFlags, Int32, out IntPtr)
+  href: api/ProcessMemoryUtilities.Native.NtDll.html#ProcessMemoryUtilities_Native_NtDll_NtOpenProcess_ProcessMemoryUtilities_Native_ProcessAccessFlags_System_Int32_System_IntPtr__
+  commentId: M:ProcessMemoryUtilities.Native.NtDll.NtOpenProcess(ProcessMemoryUtilities.Native.ProcessAccessFlags,System.Int32,System.IntPtr@)
+  name.vb: NtOpenProcess(ProcessAccessFlags, Int32, ByRef IntPtr)
+  fullName: ProcessMemoryUtilities.Native.NtDll.NtOpenProcess(ProcessMemoryUtilities.Native.ProcessAccessFlags, System.Int32, out System.IntPtr)
+  fullName.vb: ProcessMemoryUtilities.Native.NtDll.NtOpenProcess(ProcessMemoryUtilities.Native.ProcessAccessFlags, System.Int32, ByRef System.IntPtr)
+  nameWithType: NtDll.NtOpenProcess(ProcessAccessFlags, Int32, out IntPtr)
+  nameWithType.vb: NtDll.NtOpenProcess(ProcessAccessFlags, Int32, ByRef IntPtr)
+- uid: ProcessMemoryUtilities.Native.NtDll.NtOpenProcess*
+  name: NtOpenProcess
+  href: api/ProcessMemoryUtilities.Native.NtDll.html#ProcessMemoryUtilities_Native_NtDll_NtOpenProcess_
+  commentId: Overload:ProcessMemoryUtilities.Native.NtDll.NtOpenProcess
+  isSpec: "True"
+  fullName: ProcessMemoryUtilities.Native.NtDll.NtOpenProcess
+  nameWithType: NtDll.NtOpenProcess
+- uid: ProcessMemoryUtilities.Native.NtDll.NtProtectVirtualMemory(System.IntPtr,System.IntPtr,System.IntPtr,ProcessMemoryUtilities.Native.MemoryProtectionFlags,ProcessMemoryUtilities.Native.MemoryProtectionFlags@)
+  name: NtProtectVirtualMemory(IntPtr, IntPtr, IntPtr, MemoryProtectionFlags, out MemoryProtectionFlags)
+  href: api/ProcessMemoryUtilities.Native.NtDll.html#ProcessMemoryUtilities_Native_NtDll_NtProtectVirtualMemory_System_IntPtr_System_IntPtr_System_IntPtr_ProcessMemoryUtilities_Native_MemoryProtectionFlags_ProcessMemoryUtilities_Native_MemoryProtectionFlags__
+  commentId: M:ProcessMemoryUtilities.Native.NtDll.NtProtectVirtualMemory(System.IntPtr,System.IntPtr,System.IntPtr,ProcessMemoryUtilities.Native.MemoryProtectionFlags,ProcessMemoryUtilities.Native.MemoryProtectionFlags@)
+  name.vb: NtProtectVirtualMemory(IntPtr, IntPtr, IntPtr, MemoryProtectionFlags, ByRef MemoryProtectionFlags)
+  fullName: ProcessMemoryUtilities.Native.NtDll.NtProtectVirtualMemory(System.IntPtr, System.IntPtr, System.IntPtr, ProcessMemoryUtilities.Native.MemoryProtectionFlags, out ProcessMemoryUtilities.Native.MemoryProtectionFlags)
+  fullName.vb: ProcessMemoryUtilities.Native.NtDll.NtProtectVirtualMemory(System.IntPtr, System.IntPtr, System.IntPtr, ProcessMemoryUtilities.Native.MemoryProtectionFlags, ByRef ProcessMemoryUtilities.Native.MemoryProtectionFlags)
+  nameWithType: NtDll.NtProtectVirtualMemory(IntPtr, IntPtr, IntPtr, MemoryProtectionFlags, out MemoryProtectionFlags)
+  nameWithType.vb: NtDll.NtProtectVirtualMemory(IntPtr, IntPtr, IntPtr, MemoryProtectionFlags, ByRef MemoryProtectionFlags)
+- uid: ProcessMemoryUtilities.Native.NtDll.NtProtectVirtualMemory*
+  name: NtProtectVirtualMemory
+  href: api/ProcessMemoryUtilities.Native.NtDll.html#ProcessMemoryUtilities_Native_NtDll_NtProtectVirtualMemory_
+  commentId: Overload:ProcessMemoryUtilities.Native.NtDll.NtProtectVirtualMemory
+  isSpec: "True"
+  fullName: ProcessMemoryUtilities.Native.NtDll.NtProtectVirtualMemory
+  nameWithType: NtDll.NtProtectVirtualMemory
+- uid: ProcessMemoryUtilities.Native.NtDll.NtReadVirtualMemory(System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr)
+  name: NtReadVirtualMemory(IntPtr, IntPtr, IntPtr, IntPtr)
+  href: api/ProcessMemoryUtilities.Native.NtDll.html#ProcessMemoryUtilities_Native_NtDll_NtReadVirtualMemory_System_IntPtr_System_IntPtr_System_IntPtr_System_IntPtr_
+  commentId: M:ProcessMemoryUtilities.Native.NtDll.NtReadVirtualMemory(System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr)
+  fullName: ProcessMemoryUtilities.Native.NtDll.NtReadVirtualMemory(System.IntPtr, System.IntPtr, System.IntPtr, System.IntPtr)
+  nameWithType: NtDll.NtReadVirtualMemory(IntPtr, IntPtr, IntPtr, IntPtr)
+- uid: ProcessMemoryUtilities.Native.NtDll.NtReadVirtualMemory(System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr)
+  name: NtReadVirtualMemory(IntPtr, IntPtr, IntPtr, IntPtr, IntPtr)
+  href: api/ProcessMemoryUtilities.Native.NtDll.html#ProcessMemoryUtilities_Native_NtDll_NtReadVirtualMemory_System_IntPtr_System_IntPtr_System_IntPtr_System_IntPtr_System_IntPtr_
+  commentId: M:ProcessMemoryUtilities.Native.NtDll.NtReadVirtualMemory(System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr)
+  fullName: ProcessMemoryUtilities.Native.NtDll.NtReadVirtualMemory(System.IntPtr, System.IntPtr, System.IntPtr, System.IntPtr, System.IntPtr)
+  nameWithType: NtDll.NtReadVirtualMemory(IntPtr, IntPtr, IntPtr, IntPtr, IntPtr)
+- uid: ProcessMemoryUtilities.Native.NtDll.NtReadVirtualMemory(System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr@)
+  name: NtReadVirtualMemory(IntPtr, IntPtr, IntPtr, IntPtr, out IntPtr)
+  href: api/ProcessMemoryUtilities.Native.NtDll.html#ProcessMemoryUtilities_Native_NtDll_NtReadVirtualMemory_System_IntPtr_System_IntPtr_System_IntPtr_System_IntPtr_System_IntPtr__
+  commentId: M:ProcessMemoryUtilities.Native.NtDll.NtReadVirtualMemory(System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr@)
+  name.vb: NtReadVirtualMemory(IntPtr, IntPtr, IntPtr, IntPtr, ByRef IntPtr)
+  fullName: ProcessMemoryUtilities.Native.NtDll.NtReadVirtualMemory(System.IntPtr, System.IntPtr, System.IntPtr, System.IntPtr, out System.IntPtr)
+  fullName.vb: ProcessMemoryUtilities.Native.NtDll.NtReadVirtualMemory(System.IntPtr, System.IntPtr, System.IntPtr, System.IntPtr, ByRef System.IntPtr)
+  nameWithType: NtDll.NtReadVirtualMemory(IntPtr, IntPtr, IntPtr, IntPtr, out IntPtr)
+  nameWithType.vb: NtDll.NtReadVirtualMemory(IntPtr, IntPtr, IntPtr, IntPtr, ByRef IntPtr)
+- uid: ProcessMemoryUtilities.Native.NtDll.NtReadVirtualMemory*
+  name: NtReadVirtualMemory
+  href: api/ProcessMemoryUtilities.Native.NtDll.html#ProcessMemoryUtilities_Native_NtDll_NtReadVirtualMemory_
+  commentId: Overload:ProcessMemoryUtilities.Native.NtDll.NtReadVirtualMemory
+  isSpec: "True"
+  fullName: ProcessMemoryUtilities.Native.NtDll.NtReadVirtualMemory
+  nameWithType: NtDll.NtReadVirtualMemory
+- uid: ProcessMemoryUtilities.Native.NtDll.NtReadVirtualMemory``1(System.IntPtr,System.IntPtr,``0@)
+  name: NtReadVirtualMemory<T>(IntPtr, IntPtr, ref T)
+  href: api/ProcessMemoryUtilities.Native.NtDll.html#ProcessMemoryUtilities_Native_NtDll_NtReadVirtualMemory__1_System_IntPtr_System_IntPtr___0__
+  commentId: M:ProcessMemoryUtilities.Native.NtDll.NtReadVirtualMemory``1(System.IntPtr,System.IntPtr,``0@)
+  name.vb: NtReadVirtualMemory(Of T)(IntPtr, IntPtr, ByRef T)
+  fullName: ProcessMemoryUtilities.Native.NtDll.NtReadVirtualMemory<T>(System.IntPtr, System.IntPtr, ref T)
+  fullName.vb: ProcessMemoryUtilities.Native.NtDll.NtReadVirtualMemory(Of T)(System.IntPtr, System.IntPtr, ByRef T)
+  nameWithType: NtDll.NtReadVirtualMemory<T>(IntPtr, IntPtr, ref T)
+  nameWithType.vb: NtDll.NtReadVirtualMemory(Of T)(IntPtr, IntPtr, ByRef T)
+- uid: ProcessMemoryUtilities.Native.NtDll.NtReadVirtualMemory``1(System.IntPtr,System.IntPtr,``0@,System.IntPtr@)
+  name: NtReadVirtualMemory<T>(IntPtr, IntPtr, ref T, out IntPtr)
+  href: api/ProcessMemoryUtilities.Native.NtDll.html#ProcessMemoryUtilities_Native_NtDll_NtReadVirtualMemory__1_System_IntPtr_System_IntPtr___0__System_IntPtr__
+  commentId: M:ProcessMemoryUtilities.Native.NtDll.NtReadVirtualMemory``1(System.IntPtr,System.IntPtr,``0@,System.IntPtr@)
+  name.vb: NtReadVirtualMemory(Of T)(IntPtr, IntPtr, ByRef T, ByRef IntPtr)
+  fullName: ProcessMemoryUtilities.Native.NtDll.NtReadVirtualMemory<T>(System.IntPtr, System.IntPtr, ref T, out System.IntPtr)
+  fullName.vb: ProcessMemoryUtilities.Native.NtDll.NtReadVirtualMemory(Of T)(System.IntPtr, System.IntPtr, ByRef T, ByRef System.IntPtr)
+  nameWithType: NtDll.NtReadVirtualMemory<T>(IntPtr, IntPtr, ref T, out IntPtr)
+  nameWithType.vb: NtDll.NtReadVirtualMemory(Of T)(IntPtr, IntPtr, ByRef T, ByRef IntPtr)
+- uid: ProcessMemoryUtilities.Native.NtDll.NtReadVirtualMemoryArray*
+  name: NtReadVirtualMemoryArray
+  href: api/ProcessMemoryUtilities.Native.NtDll.html#ProcessMemoryUtilities_Native_NtDll_NtReadVirtualMemoryArray_
+  commentId: Overload:ProcessMemoryUtilities.Native.NtDll.NtReadVirtualMemoryArray
+  isSpec: "True"
+  fullName: ProcessMemoryUtilities.Native.NtDll.NtReadVirtualMemoryArray
+  nameWithType: NtDll.NtReadVirtualMemoryArray
+- uid: ProcessMemoryUtilities.Native.NtDll.NtReadVirtualMemoryArray``1(System.IntPtr,System.IntPtr,``0[])
+  name: NtReadVirtualMemoryArray<T>(IntPtr, IntPtr, T[])
+  href: api/ProcessMemoryUtilities.Native.NtDll.html#ProcessMemoryUtilities_Native_NtDll_NtReadVirtualMemoryArray__1_System_IntPtr_System_IntPtr___0___
+  commentId: M:ProcessMemoryUtilities.Native.NtDll.NtReadVirtualMemoryArray``1(System.IntPtr,System.IntPtr,``0[])
+  name.vb: NtReadVirtualMemoryArray(Of T)(IntPtr, IntPtr, T())
+  fullName: ProcessMemoryUtilities.Native.NtDll.NtReadVirtualMemoryArray<T>(System.IntPtr, System.IntPtr, T[])
+  fullName.vb: ProcessMemoryUtilities.Native.NtDll.NtReadVirtualMemoryArray(Of T)(System.IntPtr, System.IntPtr, T())
+  nameWithType: NtDll.NtReadVirtualMemoryArray<T>(IntPtr, IntPtr, T[])
+  nameWithType.vb: NtDll.NtReadVirtualMemoryArray(Of T)(IntPtr, IntPtr, T())
+- uid: ProcessMemoryUtilities.Native.NtDll.NtReadVirtualMemoryArray``1(System.IntPtr,System.IntPtr,``0[],System.Int32)
+  name: NtReadVirtualMemoryArray<T>(IntPtr, IntPtr, T[], Int32)
+  href: api/ProcessMemoryUtilities.Native.NtDll.html#ProcessMemoryUtilities_Native_NtDll_NtReadVirtualMemoryArray__1_System_IntPtr_System_IntPtr___0___System_Int32_
+  commentId: M:ProcessMemoryUtilities.Native.NtDll.NtReadVirtualMemoryArray``1(System.IntPtr,System.IntPtr,``0[],System.Int32)
+  name.vb: NtReadVirtualMemoryArray(Of T)(IntPtr, IntPtr, T(), Int32)
+  fullName: ProcessMemoryUtilities.Native.NtDll.NtReadVirtualMemoryArray<T>(System.IntPtr, System.IntPtr, T[], System.Int32)
+  fullName.vb: ProcessMemoryUtilities.Native.NtDll.NtReadVirtualMemoryArray(Of T)(System.IntPtr, System.IntPtr, T(), System.Int32)
+  nameWithType: NtDll.NtReadVirtualMemoryArray<T>(IntPtr, IntPtr, T[], Int32)
+  nameWithType.vb: NtDll.NtReadVirtualMemoryArray(Of T)(IntPtr, IntPtr, T(), Int32)
+- uid: ProcessMemoryUtilities.Native.NtDll.NtReadVirtualMemoryArray``1(System.IntPtr,System.IntPtr,``0[],System.Int32,System.Int32)
+  name: NtReadVirtualMemoryArray<T>(IntPtr, IntPtr, T[], Int32, Int32)
+  href: api/ProcessMemoryUtilities.Native.NtDll.html#ProcessMemoryUtilities_Native_NtDll_NtReadVirtualMemoryArray__1_System_IntPtr_System_IntPtr___0___System_Int32_System_Int32_
+  commentId: M:ProcessMemoryUtilities.Native.NtDll.NtReadVirtualMemoryArray``1(System.IntPtr,System.IntPtr,``0[],System.Int32,System.Int32)
+  name.vb: NtReadVirtualMemoryArray(Of T)(IntPtr, IntPtr, T(), Int32, Int32)
+  fullName: ProcessMemoryUtilities.Native.NtDll.NtReadVirtualMemoryArray<T>(System.IntPtr, System.IntPtr, T[], System.Int32, System.Int32)
+  fullName.vb: ProcessMemoryUtilities.Native.NtDll.NtReadVirtualMemoryArray(Of T)(System.IntPtr, System.IntPtr, T(), System.Int32, System.Int32)
+  nameWithType: NtDll.NtReadVirtualMemoryArray<T>(IntPtr, IntPtr, T[], Int32, Int32)
+  nameWithType.vb: NtDll.NtReadVirtualMemoryArray(Of T)(IntPtr, IntPtr, T(), Int32, Int32)
+- uid: ProcessMemoryUtilities.Native.NtDll.NtReadVirtualMemoryArray``1(System.IntPtr,System.IntPtr,``0[],System.Int32,System.Int32,System.IntPtr@)
+  name: NtReadVirtualMemoryArray<T>(IntPtr, IntPtr, T[], Int32, Int32, out IntPtr)
+  href: api/ProcessMemoryUtilities.Native.NtDll.html#ProcessMemoryUtilities_Native_NtDll_NtReadVirtualMemoryArray__1_System_IntPtr_System_IntPtr___0___System_Int32_System_Int32_System_IntPtr__
+  commentId: M:ProcessMemoryUtilities.Native.NtDll.NtReadVirtualMemoryArray``1(System.IntPtr,System.IntPtr,``0[],System.Int32,System.Int32,System.IntPtr@)
+  name.vb: NtReadVirtualMemoryArray(Of T)(IntPtr, IntPtr, T(), Int32, Int32, ByRef IntPtr)
+  fullName: ProcessMemoryUtilities.Native.NtDll.NtReadVirtualMemoryArray<T>(System.IntPtr, System.IntPtr, T[], System.Int32, System.Int32, out System.IntPtr)
+  fullName.vb: ProcessMemoryUtilities.Native.NtDll.NtReadVirtualMemoryArray(Of T)(System.IntPtr, System.IntPtr, T(), System.Int32, System.Int32, ByRef System.IntPtr)
+  nameWithType: NtDll.NtReadVirtualMemoryArray<T>(IntPtr, IntPtr, T[], Int32, Int32, out IntPtr)
+  nameWithType.vb: NtDll.NtReadVirtualMemoryArray(Of T)(IntPtr, IntPtr, T(), Int32, Int32, ByRef IntPtr)
+- uid: ProcessMemoryUtilities.Native.NtDll.NtReadVirtualMemoryArray``1(System.IntPtr,System.IntPtr,``0[],System.Int32,System.IntPtr@)
+  name: NtReadVirtualMemoryArray<T>(IntPtr, IntPtr, T[], Int32, out IntPtr)
+  href: api/ProcessMemoryUtilities.Native.NtDll.html#ProcessMemoryUtilities_Native_NtDll_NtReadVirtualMemoryArray__1_System_IntPtr_System_IntPtr___0___System_Int32_System_IntPtr__
+  commentId: M:ProcessMemoryUtilities.Native.NtDll.NtReadVirtualMemoryArray``1(System.IntPtr,System.IntPtr,``0[],System.Int32,System.IntPtr@)
+  name.vb: NtReadVirtualMemoryArray(Of T)(IntPtr, IntPtr, T(), Int32, ByRef IntPtr)
+  fullName: ProcessMemoryUtilities.Native.NtDll.NtReadVirtualMemoryArray<T>(System.IntPtr, System.IntPtr, T[], System.Int32, out System.IntPtr)
+  fullName.vb: ProcessMemoryUtilities.Native.NtDll.NtReadVirtualMemoryArray(Of T)(System.IntPtr, System.IntPtr, T(), System.Int32, ByRef System.IntPtr)
+  nameWithType: NtDll.NtReadVirtualMemoryArray<T>(IntPtr, IntPtr, T[], Int32, out IntPtr)
+  nameWithType.vb: NtDll.NtReadVirtualMemoryArray(Of T)(IntPtr, IntPtr, T(), Int32, ByRef IntPtr)
+- uid: ProcessMemoryUtilities.Native.NtDll.NtReadVirtualMemoryArray``1(System.IntPtr,System.IntPtr,``0[],System.IntPtr@)
+  name: NtReadVirtualMemoryArray<T>(IntPtr, IntPtr, T[], out IntPtr)
+  href: api/ProcessMemoryUtilities.Native.NtDll.html#ProcessMemoryUtilities_Native_NtDll_NtReadVirtualMemoryArray__1_System_IntPtr_System_IntPtr___0___System_IntPtr__
+  commentId: M:ProcessMemoryUtilities.Native.NtDll.NtReadVirtualMemoryArray``1(System.IntPtr,System.IntPtr,``0[],System.IntPtr@)
+  name.vb: NtReadVirtualMemoryArray(Of T)(IntPtr, IntPtr, T(), ByRef IntPtr)
+  fullName: ProcessMemoryUtilities.Native.NtDll.NtReadVirtualMemoryArray<T>(System.IntPtr, System.IntPtr, T[], out System.IntPtr)
+  fullName.vb: ProcessMemoryUtilities.Native.NtDll.NtReadVirtualMemoryArray(Of T)(System.IntPtr, System.IntPtr, T(), ByRef System.IntPtr)
+  nameWithType: NtDll.NtReadVirtualMemoryArray<T>(IntPtr, IntPtr, T[], out IntPtr)
+  nameWithType.vb: NtDll.NtReadVirtualMemoryArray(Of T)(IntPtr, IntPtr, T(), ByRef IntPtr)
+- uid: ProcessMemoryUtilities.Native.NtDll.NtReadVirtualMemoryPartial*
+  name: NtReadVirtualMemoryPartial
+  href: api/ProcessMemoryUtilities.Native.NtDll.html#ProcessMemoryUtilities_Native_NtDll_NtReadVirtualMemoryPartial_
+  commentId: Overload:ProcessMemoryUtilities.Native.NtDll.NtReadVirtualMemoryPartial
+  isSpec: "True"
+  fullName: ProcessMemoryUtilities.Native.NtDll.NtReadVirtualMemoryPartial
+  nameWithType: NtDll.NtReadVirtualMemoryPartial
+- uid: ProcessMemoryUtilities.Native.NtDll.NtReadVirtualMemoryPartial``1(System.IntPtr,System.IntPtr,``0@,System.Int32)
+  name: NtReadVirtualMemoryPartial<T>(IntPtr, IntPtr, ref T, Int32)
+  href: api/ProcessMemoryUtilities.Native.NtDll.html#ProcessMemoryUtilities_Native_NtDll_NtReadVirtualMemoryPartial__1_System_IntPtr_System_IntPtr___0__System_Int32_
+  commentId: M:ProcessMemoryUtilities.Native.NtDll.NtReadVirtualMemoryPartial``1(System.IntPtr,System.IntPtr,``0@,System.Int32)
+  name.vb: NtReadVirtualMemoryPartial(Of T)(IntPtr, IntPtr, ByRef T, Int32)
+  fullName: ProcessMemoryUtilities.Native.NtDll.NtReadVirtualMemoryPartial<T>(System.IntPtr, System.IntPtr, ref T, System.Int32)
+  fullName.vb: ProcessMemoryUtilities.Native.NtDll.NtReadVirtualMemoryPartial(Of T)(System.IntPtr, System.IntPtr, ByRef T, System.Int32)
+  nameWithType: NtDll.NtReadVirtualMemoryPartial<T>(IntPtr, IntPtr, ref T, Int32)
+  nameWithType.vb: NtDll.NtReadVirtualMemoryPartial(Of T)(IntPtr, IntPtr, ByRef T, Int32)
+- uid: ProcessMemoryUtilities.Native.NtDll.NtReadVirtualMemoryPartial``1(System.IntPtr,System.IntPtr,``0@,System.Int32,System.Int32)
+  name: NtReadVirtualMemoryPartial<T>(IntPtr, IntPtr, ref T, Int32, Int32)
+  href: api/ProcessMemoryUtilities.Native.NtDll.html#ProcessMemoryUtilities_Native_NtDll_NtReadVirtualMemoryPartial__1_System_IntPtr_System_IntPtr___0__System_Int32_System_Int32_
+  commentId: M:ProcessMemoryUtilities.Native.NtDll.NtReadVirtualMemoryPartial``1(System.IntPtr,System.IntPtr,``0@,System.Int32,System.Int32)
+  name.vb: NtReadVirtualMemoryPartial(Of T)(IntPtr, IntPtr, ByRef T, Int32, Int32)
+  fullName: ProcessMemoryUtilities.Native.NtDll.NtReadVirtualMemoryPartial<T>(System.IntPtr, System.IntPtr, ref T, System.Int32, System.Int32)
+  fullName.vb: ProcessMemoryUtilities.Native.NtDll.NtReadVirtualMemoryPartial(Of T)(System.IntPtr, System.IntPtr, ByRef T, System.Int32, System.Int32)
+  nameWithType: NtDll.NtReadVirtualMemoryPartial<T>(IntPtr, IntPtr, ref T, Int32, Int32)
+  nameWithType.vb: NtDll.NtReadVirtualMemoryPartial(Of T)(IntPtr, IntPtr, ByRef T, Int32, Int32)
+- uid: ProcessMemoryUtilities.Native.NtDll.NtReadVirtualMemoryPartial``1(System.IntPtr,System.IntPtr,``0@,System.Int32,System.Int32,System.IntPtr@)
+  name: NtReadVirtualMemoryPartial<T>(IntPtr, IntPtr, ref T, Int32, Int32, out IntPtr)
+  href: api/ProcessMemoryUtilities.Native.NtDll.html#ProcessMemoryUtilities_Native_NtDll_NtReadVirtualMemoryPartial__1_System_IntPtr_System_IntPtr___0__System_Int32_System_Int32_System_IntPtr__
+  commentId: M:ProcessMemoryUtilities.Native.NtDll.NtReadVirtualMemoryPartial``1(System.IntPtr,System.IntPtr,``0@,System.Int32,System.Int32,System.IntPtr@)
+  name.vb: NtReadVirtualMemoryPartial(Of T)(IntPtr, IntPtr, ByRef T, Int32, Int32, ByRef IntPtr)
+  fullName: ProcessMemoryUtilities.Native.NtDll.NtReadVirtualMemoryPartial<T>(System.IntPtr, System.IntPtr, ref T, System.Int32, System.Int32, out System.IntPtr)
+  fullName.vb: ProcessMemoryUtilities.Native.NtDll.NtReadVirtualMemoryPartial(Of T)(System.IntPtr, System.IntPtr, ByRef T, System.Int32, System.Int32, ByRef System.IntPtr)
+  nameWithType: NtDll.NtReadVirtualMemoryPartial<T>(IntPtr, IntPtr, ref T, Int32, Int32, out IntPtr)
+  nameWithType.vb: NtDll.NtReadVirtualMemoryPartial(Of T)(IntPtr, IntPtr, ByRef T, Int32, Int32, ByRef IntPtr)
+- uid: ProcessMemoryUtilities.Native.NtDll.NtReadVirtualMemoryPartial``1(System.IntPtr,System.IntPtr,``0@,System.Int32,System.IntPtr@)
+  name: NtReadVirtualMemoryPartial<T>(IntPtr, IntPtr, ref T, Int32, out IntPtr)
+  href: api/ProcessMemoryUtilities.Native.NtDll.html#ProcessMemoryUtilities_Native_NtDll_NtReadVirtualMemoryPartial__1_System_IntPtr_System_IntPtr___0__System_Int32_System_IntPtr__
+  commentId: M:ProcessMemoryUtilities.Native.NtDll.NtReadVirtualMemoryPartial``1(System.IntPtr,System.IntPtr,``0@,System.Int32,System.IntPtr@)
+  name.vb: NtReadVirtualMemoryPartial(Of T)(IntPtr, IntPtr, ByRef T, Int32, ByRef IntPtr)
+  fullName: ProcessMemoryUtilities.Native.NtDll.NtReadVirtualMemoryPartial<T>(System.IntPtr, System.IntPtr, ref T, System.Int32, out System.IntPtr)
+  fullName.vb: ProcessMemoryUtilities.Native.NtDll.NtReadVirtualMemoryPartial(Of T)(System.IntPtr, System.IntPtr, ByRef T, System.Int32, ByRef System.IntPtr)
+  nameWithType: NtDll.NtReadVirtualMemoryPartial<T>(IntPtr, IntPtr, ref T, Int32, out IntPtr)
+  nameWithType.vb: NtDll.NtReadVirtualMemoryPartial(Of T)(IntPtr, IntPtr, ByRef T, Int32, ByRef IntPtr)
+- uid: ProcessMemoryUtilities.Native.NtDll.NtSuccess(System.UInt32)
+  name: NtSuccess(UInt32)
+  href: api/ProcessMemoryUtilities.Native.NtDll.html#ProcessMemoryUtilities_Native_NtDll_NtSuccess_System_UInt32_
+  commentId: M:ProcessMemoryUtilities.Native.NtDll.NtSuccess(System.UInt32)
+  fullName: ProcessMemoryUtilities.Native.NtDll.NtSuccess(System.UInt32)
+  nameWithType: NtDll.NtSuccess(UInt32)
+- uid: ProcessMemoryUtilities.Native.NtDll.NtSuccess*
+  name: NtSuccess
+  href: api/ProcessMemoryUtilities.Native.NtDll.html#ProcessMemoryUtilities_Native_NtDll_NtSuccess_
+  commentId: Overload:ProcessMemoryUtilities.Native.NtDll.NtSuccess
+  isSpec: "True"
+  fullName: ProcessMemoryUtilities.Native.NtDll.NtSuccess
+  nameWithType: NtDll.NtSuccess
+- uid: ProcessMemoryUtilities.Native.NtDll.NtSuccessOnly(System.UInt32)
+  name: NtSuccessOnly(UInt32)
+  href: api/ProcessMemoryUtilities.Native.NtDll.html#ProcessMemoryUtilities_Native_NtDll_NtSuccessOnly_System_UInt32_
+  commentId: M:ProcessMemoryUtilities.Native.NtDll.NtSuccessOnly(System.UInt32)
+  fullName: ProcessMemoryUtilities.Native.NtDll.NtSuccessOnly(System.UInt32)
+  nameWithType: NtDll.NtSuccessOnly(UInt32)
+- uid: ProcessMemoryUtilities.Native.NtDll.NtSuccessOnly*
+  name: NtSuccessOnly
+  href: api/ProcessMemoryUtilities.Native.NtDll.html#ProcessMemoryUtilities_Native_NtDll_NtSuccessOnly_
+  commentId: Overload:ProcessMemoryUtilities.Native.NtDll.NtSuccessOnly
+  isSpec: "True"
+  fullName: ProcessMemoryUtilities.Native.NtDll.NtSuccessOnly
+  nameWithType: NtDll.NtSuccessOnly
+- uid: ProcessMemoryUtilities.Native.NtDll.NtWarning(System.UInt32)
+  name: NtWarning(UInt32)
+  href: api/ProcessMemoryUtilities.Native.NtDll.html#ProcessMemoryUtilities_Native_NtDll_NtWarning_System_UInt32_
+  commentId: M:ProcessMemoryUtilities.Native.NtDll.NtWarning(System.UInt32)
+  fullName: ProcessMemoryUtilities.Native.NtDll.NtWarning(System.UInt32)
+  nameWithType: NtDll.NtWarning(UInt32)
+- uid: ProcessMemoryUtilities.Native.NtDll.NtWarning*
+  name: NtWarning
+  href: api/ProcessMemoryUtilities.Native.NtDll.html#ProcessMemoryUtilities_Native_NtDll_NtWarning_
+  commentId: Overload:ProcessMemoryUtilities.Native.NtDll.NtWarning
+  isSpec: "True"
+  fullName: ProcessMemoryUtilities.Native.NtDll.NtWarning
+  nameWithType: NtDll.NtWarning
+- uid: ProcessMemoryUtilities.Native.NtDll.NtWriteVirtualMemory(System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr)
+  name: NtWriteVirtualMemory(IntPtr, IntPtr, IntPtr, IntPtr)
+  href: api/ProcessMemoryUtilities.Native.NtDll.html#ProcessMemoryUtilities_Native_NtDll_NtWriteVirtualMemory_System_IntPtr_System_IntPtr_System_IntPtr_System_IntPtr_
+  commentId: M:ProcessMemoryUtilities.Native.NtDll.NtWriteVirtualMemory(System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr)
+  fullName: ProcessMemoryUtilities.Native.NtDll.NtWriteVirtualMemory(System.IntPtr, System.IntPtr, System.IntPtr, System.IntPtr)
+  nameWithType: NtDll.NtWriteVirtualMemory(IntPtr, IntPtr, IntPtr, IntPtr)
+- uid: ProcessMemoryUtilities.Native.NtDll.NtWriteVirtualMemory(System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr)
+  name: NtWriteVirtualMemory(IntPtr, IntPtr, IntPtr, IntPtr, IntPtr)
+  href: api/ProcessMemoryUtilities.Native.NtDll.html#ProcessMemoryUtilities_Native_NtDll_NtWriteVirtualMemory_System_IntPtr_System_IntPtr_System_IntPtr_System_IntPtr_System_IntPtr_
+  commentId: M:ProcessMemoryUtilities.Native.NtDll.NtWriteVirtualMemory(System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr)
+  fullName: ProcessMemoryUtilities.Native.NtDll.NtWriteVirtualMemory(System.IntPtr, System.IntPtr, System.IntPtr, System.IntPtr, System.IntPtr)
+  nameWithType: NtDll.NtWriteVirtualMemory(IntPtr, IntPtr, IntPtr, IntPtr, IntPtr)
+- uid: ProcessMemoryUtilities.Native.NtDll.NtWriteVirtualMemory(System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr@)
+  name: NtWriteVirtualMemory(IntPtr, IntPtr, IntPtr, IntPtr, out IntPtr)
+  href: api/ProcessMemoryUtilities.Native.NtDll.html#ProcessMemoryUtilities_Native_NtDll_NtWriteVirtualMemory_System_IntPtr_System_IntPtr_System_IntPtr_System_IntPtr_System_IntPtr__
+  commentId: M:ProcessMemoryUtilities.Native.NtDll.NtWriteVirtualMemory(System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr@)
+  name.vb: NtWriteVirtualMemory(IntPtr, IntPtr, IntPtr, IntPtr, ByRef IntPtr)
+  fullName: ProcessMemoryUtilities.Native.NtDll.NtWriteVirtualMemory(System.IntPtr, System.IntPtr, System.IntPtr, System.IntPtr, out System.IntPtr)
+  fullName.vb: ProcessMemoryUtilities.Native.NtDll.NtWriteVirtualMemory(System.IntPtr, System.IntPtr, System.IntPtr, System.IntPtr, ByRef System.IntPtr)
+  nameWithType: NtDll.NtWriteVirtualMemory(IntPtr, IntPtr, IntPtr, IntPtr, out IntPtr)
+  nameWithType.vb: NtDll.NtWriteVirtualMemory(IntPtr, IntPtr, IntPtr, IntPtr, ByRef IntPtr)
+- uid: ProcessMemoryUtilities.Native.NtDll.NtWriteVirtualMemory*
+  name: NtWriteVirtualMemory
+  href: api/ProcessMemoryUtilities.Native.NtDll.html#ProcessMemoryUtilities_Native_NtDll_NtWriteVirtualMemory_
+  commentId: Overload:ProcessMemoryUtilities.Native.NtDll.NtWriteVirtualMemory
+  isSpec: "True"
+  fullName: ProcessMemoryUtilities.Native.NtDll.NtWriteVirtualMemory
+  nameWithType: NtDll.NtWriteVirtualMemory
+- uid: ProcessMemoryUtilities.Native.NtDll.NtWriteVirtualMemory``1(System.IntPtr,System.IntPtr,``0@)
+  name: NtWriteVirtualMemory<T>(IntPtr, IntPtr, ref T)
+  href: api/ProcessMemoryUtilities.Native.NtDll.html#ProcessMemoryUtilities_Native_NtDll_NtWriteVirtualMemory__1_System_IntPtr_System_IntPtr___0__
+  commentId: M:ProcessMemoryUtilities.Native.NtDll.NtWriteVirtualMemory``1(System.IntPtr,System.IntPtr,``0@)
+  name.vb: NtWriteVirtualMemory(Of T)(IntPtr, IntPtr, ByRef T)
+  fullName: ProcessMemoryUtilities.Native.NtDll.NtWriteVirtualMemory<T>(System.IntPtr, System.IntPtr, ref T)
+  fullName.vb: ProcessMemoryUtilities.Native.NtDll.NtWriteVirtualMemory(Of T)(System.IntPtr, System.IntPtr, ByRef T)
+  nameWithType: NtDll.NtWriteVirtualMemory<T>(IntPtr, IntPtr, ref T)
+  nameWithType.vb: NtDll.NtWriteVirtualMemory(Of T)(IntPtr, IntPtr, ByRef T)
+- uid: ProcessMemoryUtilities.Native.NtDll.NtWriteVirtualMemory``1(System.IntPtr,System.IntPtr,``0@,System.IntPtr@)
+  name: NtWriteVirtualMemory<T>(IntPtr, IntPtr, ref T, out IntPtr)
+  href: api/ProcessMemoryUtilities.Native.NtDll.html#ProcessMemoryUtilities_Native_NtDll_NtWriteVirtualMemory__1_System_IntPtr_System_IntPtr___0__System_IntPtr__
+  commentId: M:ProcessMemoryUtilities.Native.NtDll.NtWriteVirtualMemory``1(System.IntPtr,System.IntPtr,``0@,System.IntPtr@)
+  name.vb: NtWriteVirtualMemory(Of T)(IntPtr, IntPtr, ByRef T, ByRef IntPtr)
+  fullName: ProcessMemoryUtilities.Native.NtDll.NtWriteVirtualMemory<T>(System.IntPtr, System.IntPtr, ref T, out System.IntPtr)
+  fullName.vb: ProcessMemoryUtilities.Native.NtDll.NtWriteVirtualMemory(Of T)(System.IntPtr, System.IntPtr, ByRef T, ByRef System.IntPtr)
+  nameWithType: NtDll.NtWriteVirtualMemory<T>(IntPtr, IntPtr, ref T, out IntPtr)
+  nameWithType.vb: NtDll.NtWriteVirtualMemory(Of T)(IntPtr, IntPtr, ByRef T, ByRef IntPtr)
+- uid: ProcessMemoryUtilities.Native.NtDll.NtWriteVirtualMemoryArray*
+  name: NtWriteVirtualMemoryArray
+  href: api/ProcessMemoryUtilities.Native.NtDll.html#ProcessMemoryUtilities_Native_NtDll_NtWriteVirtualMemoryArray_
+  commentId: Overload:ProcessMemoryUtilities.Native.NtDll.NtWriteVirtualMemoryArray
+  isSpec: "True"
+  fullName: ProcessMemoryUtilities.Native.NtDll.NtWriteVirtualMemoryArray
+  nameWithType: NtDll.NtWriteVirtualMemoryArray
+- uid: ProcessMemoryUtilities.Native.NtDll.NtWriteVirtualMemoryArray``1(System.IntPtr,System.IntPtr,``0[])
+  name: NtWriteVirtualMemoryArray<T>(IntPtr, IntPtr, T[])
+  href: api/ProcessMemoryUtilities.Native.NtDll.html#ProcessMemoryUtilities_Native_NtDll_NtWriteVirtualMemoryArray__1_System_IntPtr_System_IntPtr___0___
+  commentId: M:ProcessMemoryUtilities.Native.NtDll.NtWriteVirtualMemoryArray``1(System.IntPtr,System.IntPtr,``0[])
+  name.vb: NtWriteVirtualMemoryArray(Of T)(IntPtr, IntPtr, T())
+  fullName: ProcessMemoryUtilities.Native.NtDll.NtWriteVirtualMemoryArray<T>(System.IntPtr, System.IntPtr, T[])
+  fullName.vb: ProcessMemoryUtilities.Native.NtDll.NtWriteVirtualMemoryArray(Of T)(System.IntPtr, System.IntPtr, T())
+  nameWithType: NtDll.NtWriteVirtualMemoryArray<T>(IntPtr, IntPtr, T[])
+  nameWithType.vb: NtDll.NtWriteVirtualMemoryArray(Of T)(IntPtr, IntPtr, T())
+- uid: ProcessMemoryUtilities.Native.NtDll.NtWriteVirtualMemoryArray``1(System.IntPtr,System.IntPtr,``0[],System.Int32)
+  name: NtWriteVirtualMemoryArray<T>(IntPtr, IntPtr, T[], Int32)
+  href: api/ProcessMemoryUtilities.Native.NtDll.html#ProcessMemoryUtilities_Native_NtDll_NtWriteVirtualMemoryArray__1_System_IntPtr_System_IntPtr___0___System_Int32_
+  commentId: M:ProcessMemoryUtilities.Native.NtDll.NtWriteVirtualMemoryArray``1(System.IntPtr,System.IntPtr,``0[],System.Int32)
+  name.vb: NtWriteVirtualMemoryArray(Of T)(IntPtr, IntPtr, T(), Int32)
+  fullName: ProcessMemoryUtilities.Native.NtDll.NtWriteVirtualMemoryArray<T>(System.IntPtr, System.IntPtr, T[], System.Int32)
+  fullName.vb: ProcessMemoryUtilities.Native.NtDll.NtWriteVirtualMemoryArray(Of T)(System.IntPtr, System.IntPtr, T(), System.Int32)
+  nameWithType: NtDll.NtWriteVirtualMemoryArray<T>(IntPtr, IntPtr, T[], Int32)
+  nameWithType.vb: NtDll.NtWriteVirtualMemoryArray(Of T)(IntPtr, IntPtr, T(), Int32)
+- uid: ProcessMemoryUtilities.Native.NtDll.NtWriteVirtualMemoryArray``1(System.IntPtr,System.IntPtr,``0[],System.Int32,System.Int32)
+  name: NtWriteVirtualMemoryArray<T>(IntPtr, IntPtr, T[], Int32, Int32)
+  href: api/ProcessMemoryUtilities.Native.NtDll.html#ProcessMemoryUtilities_Native_NtDll_NtWriteVirtualMemoryArray__1_System_IntPtr_System_IntPtr___0___System_Int32_System_Int32_
+  commentId: M:ProcessMemoryUtilities.Native.NtDll.NtWriteVirtualMemoryArray``1(System.IntPtr,System.IntPtr,``0[],System.Int32,System.Int32)
+  name.vb: NtWriteVirtualMemoryArray(Of T)(IntPtr, IntPtr, T(), Int32, Int32)
+  fullName: ProcessMemoryUtilities.Native.NtDll.NtWriteVirtualMemoryArray<T>(System.IntPtr, System.IntPtr, T[], System.Int32, System.Int32)
+  fullName.vb: ProcessMemoryUtilities.Native.NtDll.NtWriteVirtualMemoryArray(Of T)(System.IntPtr, System.IntPtr, T(), System.Int32, System.Int32)
+  nameWithType: NtDll.NtWriteVirtualMemoryArray<T>(IntPtr, IntPtr, T[], Int32, Int32)
+  nameWithType.vb: NtDll.NtWriteVirtualMemoryArray(Of T)(IntPtr, IntPtr, T(), Int32, Int32)
+- uid: ProcessMemoryUtilities.Native.NtDll.NtWriteVirtualMemoryArray``1(System.IntPtr,System.IntPtr,``0[],System.Int32,System.Int32,System.IntPtr@)
+  name: NtWriteVirtualMemoryArray<T>(IntPtr, IntPtr, T[], Int32, Int32, out IntPtr)
+  href: api/ProcessMemoryUtilities.Native.NtDll.html#ProcessMemoryUtilities_Native_NtDll_NtWriteVirtualMemoryArray__1_System_IntPtr_System_IntPtr___0___System_Int32_System_Int32_System_IntPtr__
+  commentId: M:ProcessMemoryUtilities.Native.NtDll.NtWriteVirtualMemoryArray``1(System.IntPtr,System.IntPtr,``0[],System.Int32,System.Int32,System.IntPtr@)
+  name.vb: NtWriteVirtualMemoryArray(Of T)(IntPtr, IntPtr, T(), Int32, Int32, ByRef IntPtr)
+  fullName: ProcessMemoryUtilities.Native.NtDll.NtWriteVirtualMemoryArray<T>(System.IntPtr, System.IntPtr, T[], System.Int32, System.Int32, out System.IntPtr)
+  fullName.vb: ProcessMemoryUtilities.Native.NtDll.NtWriteVirtualMemoryArray(Of T)(System.IntPtr, System.IntPtr, T(), System.Int32, System.Int32, ByRef System.IntPtr)
+  nameWithType: NtDll.NtWriteVirtualMemoryArray<T>(IntPtr, IntPtr, T[], Int32, Int32, out IntPtr)
+  nameWithType.vb: NtDll.NtWriteVirtualMemoryArray(Of T)(IntPtr, IntPtr, T(), Int32, Int32, ByRef IntPtr)
+- uid: ProcessMemoryUtilities.Native.NtDll.NtWriteVirtualMemoryArray``1(System.IntPtr,System.IntPtr,``0[],System.Int32,System.IntPtr@)
+  name: NtWriteVirtualMemoryArray<T>(IntPtr, IntPtr, T[], Int32, out IntPtr)
+  href: api/ProcessMemoryUtilities.Native.NtDll.html#ProcessMemoryUtilities_Native_NtDll_NtWriteVirtualMemoryArray__1_System_IntPtr_System_IntPtr___0___System_Int32_System_IntPtr__
+  commentId: M:ProcessMemoryUtilities.Native.NtDll.NtWriteVirtualMemoryArray``1(System.IntPtr,System.IntPtr,``0[],System.Int32,System.IntPtr@)
+  name.vb: NtWriteVirtualMemoryArray(Of T)(IntPtr, IntPtr, T(), Int32, ByRef IntPtr)
+  fullName: ProcessMemoryUtilities.Native.NtDll.NtWriteVirtualMemoryArray<T>(System.IntPtr, System.IntPtr, T[], System.Int32, out System.IntPtr)
+  fullName.vb: ProcessMemoryUtilities.Native.NtDll.NtWriteVirtualMemoryArray(Of T)(System.IntPtr, System.IntPtr, T(), System.Int32, ByRef System.IntPtr)
+  nameWithType: NtDll.NtWriteVirtualMemoryArray<T>(IntPtr, IntPtr, T[], Int32, out IntPtr)
+  nameWithType.vb: NtDll.NtWriteVirtualMemoryArray(Of T)(IntPtr, IntPtr, T(), Int32, ByRef IntPtr)
+- uid: ProcessMemoryUtilities.Native.NtDll.NtWriteVirtualMemoryArray``1(System.IntPtr,System.IntPtr,``0[],System.IntPtr@)
+  name: NtWriteVirtualMemoryArray<T>(IntPtr, IntPtr, T[], out IntPtr)
+  href: api/ProcessMemoryUtilities.Native.NtDll.html#ProcessMemoryUtilities_Native_NtDll_NtWriteVirtualMemoryArray__1_System_IntPtr_System_IntPtr___0___System_IntPtr__
+  commentId: M:ProcessMemoryUtilities.Native.NtDll.NtWriteVirtualMemoryArray``1(System.IntPtr,System.IntPtr,``0[],System.IntPtr@)
+  name.vb: NtWriteVirtualMemoryArray(Of T)(IntPtr, IntPtr, T(), ByRef IntPtr)
+  fullName: ProcessMemoryUtilities.Native.NtDll.NtWriteVirtualMemoryArray<T>(System.IntPtr, System.IntPtr, T[], out System.IntPtr)
+  fullName.vb: ProcessMemoryUtilities.Native.NtDll.NtWriteVirtualMemoryArray(Of T)(System.IntPtr, System.IntPtr, T(), ByRef System.IntPtr)
+  nameWithType: NtDll.NtWriteVirtualMemoryArray<T>(IntPtr, IntPtr, T[], out IntPtr)
+  nameWithType.vb: NtDll.NtWriteVirtualMemoryArray(Of T)(IntPtr, IntPtr, T(), ByRef IntPtr)
+- uid: ProcessMemoryUtilities.Native.NtDll.NtWriteVirtualMemoryPartial*
+  name: NtWriteVirtualMemoryPartial
+  href: api/ProcessMemoryUtilities.Native.NtDll.html#ProcessMemoryUtilities_Native_NtDll_NtWriteVirtualMemoryPartial_
+  commentId: Overload:ProcessMemoryUtilities.Native.NtDll.NtWriteVirtualMemoryPartial
+  isSpec: "True"
+  fullName: ProcessMemoryUtilities.Native.NtDll.NtWriteVirtualMemoryPartial
+  nameWithType: NtDll.NtWriteVirtualMemoryPartial
+- uid: ProcessMemoryUtilities.Native.NtDll.NtWriteVirtualMemoryPartial``1(System.IntPtr,System.IntPtr,``0@,System.Int32)
+  name: NtWriteVirtualMemoryPartial<T>(IntPtr, IntPtr, ref T, Int32)
+  href: api/ProcessMemoryUtilities.Native.NtDll.html#ProcessMemoryUtilities_Native_NtDll_NtWriteVirtualMemoryPartial__1_System_IntPtr_System_IntPtr___0__System_Int32_
+  commentId: M:ProcessMemoryUtilities.Native.NtDll.NtWriteVirtualMemoryPartial``1(System.IntPtr,System.IntPtr,``0@,System.Int32)
+  name.vb: NtWriteVirtualMemoryPartial(Of T)(IntPtr, IntPtr, ByRef T, Int32)
+  fullName: ProcessMemoryUtilities.Native.NtDll.NtWriteVirtualMemoryPartial<T>(System.IntPtr, System.IntPtr, ref T, System.Int32)
+  fullName.vb: ProcessMemoryUtilities.Native.NtDll.NtWriteVirtualMemoryPartial(Of T)(System.IntPtr, System.IntPtr, ByRef T, System.Int32)
+  nameWithType: NtDll.NtWriteVirtualMemoryPartial<T>(IntPtr, IntPtr, ref T, Int32)
+  nameWithType.vb: NtDll.NtWriteVirtualMemoryPartial(Of T)(IntPtr, IntPtr, ByRef T, Int32)
+- uid: ProcessMemoryUtilities.Native.NtDll.NtWriteVirtualMemoryPartial``1(System.IntPtr,System.IntPtr,``0@,System.Int32,System.Int32)
+  name: NtWriteVirtualMemoryPartial<T>(IntPtr, IntPtr, ref T, Int32, Int32)
+  href: api/ProcessMemoryUtilities.Native.NtDll.html#ProcessMemoryUtilities_Native_NtDll_NtWriteVirtualMemoryPartial__1_System_IntPtr_System_IntPtr___0__System_Int32_System_Int32_
+  commentId: M:ProcessMemoryUtilities.Native.NtDll.NtWriteVirtualMemoryPartial``1(System.IntPtr,System.IntPtr,``0@,System.Int32,System.Int32)
+  name.vb: NtWriteVirtualMemoryPartial(Of T)(IntPtr, IntPtr, ByRef T, Int32, Int32)
+  fullName: ProcessMemoryUtilities.Native.NtDll.NtWriteVirtualMemoryPartial<T>(System.IntPtr, System.IntPtr, ref T, System.Int32, System.Int32)
+  fullName.vb: ProcessMemoryUtilities.Native.NtDll.NtWriteVirtualMemoryPartial(Of T)(System.IntPtr, System.IntPtr, ByRef T, System.Int32, System.Int32)
+  nameWithType: NtDll.NtWriteVirtualMemoryPartial<T>(IntPtr, IntPtr, ref T, Int32, Int32)
+  nameWithType.vb: NtDll.NtWriteVirtualMemoryPartial(Of T)(IntPtr, IntPtr, ByRef T, Int32, Int32)
+- uid: ProcessMemoryUtilities.Native.NtDll.NtWriteVirtualMemoryPartial``1(System.IntPtr,System.IntPtr,``0@,System.Int32,System.Int32,System.IntPtr@)
+  name: NtWriteVirtualMemoryPartial<T>(IntPtr, IntPtr, ref T, Int32, Int32, out IntPtr)
+  href: api/ProcessMemoryUtilities.Native.NtDll.html#ProcessMemoryUtilities_Native_NtDll_NtWriteVirtualMemoryPartial__1_System_IntPtr_System_IntPtr___0__System_Int32_System_Int32_System_IntPtr__
+  commentId: M:ProcessMemoryUtilities.Native.NtDll.NtWriteVirtualMemoryPartial``1(System.IntPtr,System.IntPtr,``0@,System.Int32,System.Int32,System.IntPtr@)
+  name.vb: NtWriteVirtualMemoryPartial(Of T)(IntPtr, IntPtr, ByRef T, Int32, Int32, ByRef IntPtr)
+  fullName: ProcessMemoryUtilities.Native.NtDll.NtWriteVirtualMemoryPartial<T>(System.IntPtr, System.IntPtr, ref T, System.Int32, System.Int32, out System.IntPtr)
+  fullName.vb: ProcessMemoryUtilities.Native.NtDll.NtWriteVirtualMemoryPartial(Of T)(System.IntPtr, System.IntPtr, ByRef T, System.Int32, System.Int32, ByRef System.IntPtr)
+  nameWithType: NtDll.NtWriteVirtualMemoryPartial<T>(IntPtr, IntPtr, ref T, Int32, Int32, out IntPtr)
+  nameWithType.vb: NtDll.NtWriteVirtualMemoryPartial(Of T)(IntPtr, IntPtr, ByRef T, Int32, Int32, ByRef IntPtr)
+- uid: ProcessMemoryUtilities.Native.NtDll.NtWriteVirtualMemoryPartial``1(System.IntPtr,System.IntPtr,``0@,System.Int32,System.IntPtr@)
+  name: NtWriteVirtualMemoryPartial<T>(IntPtr, IntPtr, ref T, Int32, out IntPtr)
+  href: api/ProcessMemoryUtilities.Native.NtDll.html#ProcessMemoryUtilities_Native_NtDll_NtWriteVirtualMemoryPartial__1_System_IntPtr_System_IntPtr___0__System_Int32_System_IntPtr__
+  commentId: M:ProcessMemoryUtilities.Native.NtDll.NtWriteVirtualMemoryPartial``1(System.IntPtr,System.IntPtr,``0@,System.Int32,System.IntPtr@)
+  name.vb: NtWriteVirtualMemoryPartial(Of T)(IntPtr, IntPtr, ByRef T, Int32, ByRef IntPtr)
+  fullName: ProcessMemoryUtilities.Native.NtDll.NtWriteVirtualMemoryPartial<T>(System.IntPtr, System.IntPtr, ref T, System.Int32, out System.IntPtr)
+  fullName.vb: ProcessMemoryUtilities.Native.NtDll.NtWriteVirtualMemoryPartial(Of T)(System.IntPtr, System.IntPtr, ByRef T, System.Int32, ByRef System.IntPtr)
+  nameWithType: NtDll.NtWriteVirtualMemoryPartial<T>(IntPtr, IntPtr, ref T, Int32, out IntPtr)
+  nameWithType.vb: NtDll.NtWriteVirtualMemoryPartial(Of T)(IntPtr, IntPtr, ByRef T, Int32, ByRef IntPtr)
+- uid: ProcessMemoryUtilities.Native.NtDll.RtlNtStatusToDosError(System.UInt32)
+  name: RtlNtStatusToDosError(UInt32)
+  href: api/ProcessMemoryUtilities.Native.NtDll.html#ProcessMemoryUtilities_Native_NtDll_RtlNtStatusToDosError_System_UInt32_
+  commentId: M:ProcessMemoryUtilities.Native.NtDll.RtlNtStatusToDosError(System.UInt32)
+  fullName: ProcessMemoryUtilities.Native.NtDll.RtlNtStatusToDosError(System.UInt32)
+  nameWithType: NtDll.RtlNtStatusToDosError(UInt32)
+- uid: ProcessMemoryUtilities.Native.NtDll.RtlNtStatusToDosError*
+  name: RtlNtStatusToDosError
+  href: api/ProcessMemoryUtilities.Native.NtDll.html#ProcessMemoryUtilities_Native_NtDll_RtlNtStatusToDosError_
+  commentId: Overload:ProcessMemoryUtilities.Native.NtDll.RtlNtStatusToDosError
+  isSpec: "True"
+  fullName: ProcessMemoryUtilities.Native.NtDll.RtlNtStatusToDosError
+  nameWithType: NtDll.RtlNtStatusToDosError
+- uid: ProcessMemoryUtilities.Native.NtStatus
+  name: NtStatus
+  href: api/ProcessMemoryUtilities.Native.NtStatus.html
+  commentId: T:ProcessMemoryUtilities.Native.NtStatus
+  fullName: ProcessMemoryUtilities.Native.NtStatus
+  nameWithType: NtStatus
+- uid: ProcessMemoryUtilities.Native.NtStatus.ACCESS_DENIED
+  name: ACCESS_DENIED
+  href: api/ProcessMemoryUtilities.Native.NtStatus.html#ProcessMemoryUtilities_Native_NtStatus_ACCESS_DENIED
+  commentId: F:ProcessMemoryUtilities.Native.NtStatus.ACCESS_DENIED
+  fullName: ProcessMemoryUtilities.Native.NtStatus.ACCESS_DENIED
+  nameWithType: NtStatus.ACCESS_DENIED
+- uid: ProcessMemoryUtilities.Native.NtStatus.ACCESS_VIOLATION
+  name: ACCESS_VIOLATION
+  href: api/ProcessMemoryUtilities.Native.NtStatus.html#ProcessMemoryUtilities_Native_NtStatus_ACCESS_VIOLATION
+  commentId: F:ProcessMemoryUtilities.Native.NtStatus.ACCESS_VIOLATION
+  fullName: ProcessMemoryUtilities.Native.NtStatus.ACCESS_VIOLATION
+  nameWithType: NtStatus.ACCESS_VIOLATION
+- uid: ProcessMemoryUtilities.Native.NtStatus.DATATYPE_MISALIGNMENT
+  name: DATATYPE_MISALIGNMENT
+  href: api/ProcessMemoryUtilities.Native.NtStatus.html#ProcessMemoryUtilities_Native_NtStatus_DATATYPE_MISALIGNMENT
+  commentId: F:ProcessMemoryUtilities.Native.NtStatus.DATATYPE_MISALIGNMENT
+  fullName: ProcessMemoryUtilities.Native.NtStatus.DATATYPE_MISALIGNMENT
+  nameWithType: NtStatus.DATATYPE_MISALIGNMENT
+- uid: ProcessMemoryUtilities.Native.NtStatus.INSUFFICIENT_RESOURCES
+  name: INSUFFICIENT_RESOURCES
+  href: api/ProcessMemoryUtilities.Native.NtStatus.html#ProcessMemoryUtilities_Native_NtStatus_INSUFFICIENT_RESOURCES
+  commentId: F:ProcessMemoryUtilities.Native.NtStatus.INSUFFICIENT_RESOURCES
+  fullName: ProcessMemoryUtilities.Native.NtStatus.INSUFFICIENT_RESOURCES
+  nameWithType: NtStatus.INSUFFICIENT_RESOURCES
+- uid: ProcessMemoryUtilities.Native.NtStatus.INVALID_HANDLE
+  name: INVALID_HANDLE
+  href: api/ProcessMemoryUtilities.Native.NtStatus.html#ProcessMemoryUtilities_Native_NtStatus_INVALID_HANDLE
+  commentId: F:ProcessMemoryUtilities.Native.NtStatus.INVALID_HANDLE
+  fullName: ProcessMemoryUtilities.Native.NtStatus.INVALID_HANDLE
+  nameWithType: NtStatus.INVALID_HANDLE
+- uid: ProcessMemoryUtilities.Native.NtStatus.OBJECT_TYPE_MISMATCH
+  name: OBJECT_TYPE_MISMATCH
+  href: api/ProcessMemoryUtilities.Native.NtStatus.html#ProcessMemoryUtilities_Native_NtStatus_OBJECT_TYPE_MISMATCH
+  commentId: F:ProcessMemoryUtilities.Native.NtStatus.OBJECT_TYPE_MISMATCH
+  fullName: ProcessMemoryUtilities.Native.NtStatus.OBJECT_TYPE_MISMATCH
+  nameWithType: NtStatus.OBJECT_TYPE_MISMATCH
+- uid: ProcessMemoryUtilities.Native.NtStatus.PARTIAL_COPY
+  name: PARTIAL_COPY
+  href: api/ProcessMemoryUtilities.Native.NtStatus.html#ProcessMemoryUtilities_Native_NtStatus_PARTIAL_COPY
+  commentId: F:ProcessMemoryUtilities.Native.NtStatus.PARTIAL_COPY
+  fullName: ProcessMemoryUtilities.Native.NtStatus.PARTIAL_COPY
+  nameWithType: NtStatus.PARTIAL_COPY
+- uid: ProcessMemoryUtilities.Native.NtStatus.PROCESS_IS_TERMINATING
+  name: PROCESS_IS_TERMINATING
+  href: api/ProcessMemoryUtilities.Native.NtStatus.html#ProcessMemoryUtilities_Native_NtStatus_PROCESS_IS_TERMINATING
+  commentId: F:ProcessMemoryUtilities.Native.NtStatus.PROCESS_IS_TERMINATING
+  fullName: ProcessMemoryUtilities.Native.NtStatus.PROCESS_IS_TERMINATING
+  nameWithType: NtStatus.PROCESS_IS_TERMINATING
+- uid: ProcessMemoryUtilities.Native.NtStatus.SUCCESS
+  name: SUCCESS
+  href: api/ProcessMemoryUtilities.Native.NtStatus.html#ProcessMemoryUtilities_Native_NtStatus_SUCCESS
+  commentId: F:ProcessMemoryUtilities.Native.NtStatus.SUCCESS
+  fullName: ProcessMemoryUtilities.Native.NtStatus.SUCCESS
+  nameWithType: NtStatus.SUCCESS
+- uid: ProcessMemoryUtilities.Native.ProcessAccessFlags
+  name: ProcessAccessFlags
+  href: api/ProcessMemoryUtilities.Native.ProcessAccessFlags.html
+  commentId: T:ProcessMemoryUtilities.Native.ProcessAccessFlags
+  fullName: ProcessMemoryUtilities.Native.ProcessAccessFlags
+  nameWithType: ProcessAccessFlags
+- uid: ProcessMemoryUtilities.Native.ProcessAccessFlags.All
+  name: All
+  href: api/ProcessMemoryUtilities.Native.ProcessAccessFlags.html#ProcessMemoryUtilities_Native_ProcessAccessFlags_All
+  commentId: F:ProcessMemoryUtilities.Native.ProcessAccessFlags.All
+  fullName: ProcessMemoryUtilities.Native.ProcessAccessFlags.All
+  nameWithType: ProcessAccessFlags.All
+- uid: ProcessMemoryUtilities.Native.ProcessAccessFlags.Allocate
+  name: Allocate
+  href: api/ProcessMemoryUtilities.Native.ProcessAccessFlags.html#ProcessMemoryUtilities_Native_ProcessAccessFlags_Allocate
+  commentId: F:ProcessMemoryUtilities.Native.ProcessAccessFlags.Allocate
+  fullName: ProcessMemoryUtilities.Native.ProcessAccessFlags.Allocate
+  nameWithType: ProcessAccessFlags.Allocate
+- uid: ProcessMemoryUtilities.Native.ProcessAccessFlags.CreateProcess
+  name: CreateProcess
+  href: api/ProcessMemoryUtilities.Native.ProcessAccessFlags.html#ProcessMemoryUtilities_Native_ProcessAccessFlags_CreateProcess
+  commentId: F:ProcessMemoryUtilities.Native.ProcessAccessFlags.CreateProcess
+  fullName: ProcessMemoryUtilities.Native.ProcessAccessFlags.CreateProcess
+  nameWithType: ProcessAccessFlags.CreateProcess
+- uid: ProcessMemoryUtilities.Native.ProcessAccessFlags.CreateThread
+  name: CreateThread
+  href: api/ProcessMemoryUtilities.Native.ProcessAccessFlags.html#ProcessMemoryUtilities_Native_ProcessAccessFlags_CreateThread
+  commentId: F:ProcessMemoryUtilities.Native.ProcessAccessFlags.CreateThread
+  fullName: ProcessMemoryUtilities.Native.ProcessAccessFlags.CreateThread
+  nameWithType: ProcessAccessFlags.CreateThread
+- uid: ProcessMemoryUtilities.Native.ProcessAccessFlags.DuplicateHandle
+  name: DuplicateHandle
+  href: api/ProcessMemoryUtilities.Native.ProcessAccessFlags.html#ProcessMemoryUtilities_Native_ProcessAccessFlags_DuplicateHandle
+  commentId: F:ProcessMemoryUtilities.Native.ProcessAccessFlags.DuplicateHandle
+  fullName: ProcessMemoryUtilities.Native.ProcessAccessFlags.DuplicateHandle
+  nameWithType: ProcessAccessFlags.DuplicateHandle
+- uid: ProcessMemoryUtilities.Native.ProcessAccessFlags.Execute
+  name: Execute
+  href: api/ProcessMemoryUtilities.Native.ProcessAccessFlags.html#ProcessMemoryUtilities_Native_ProcessAccessFlags_Execute
+  commentId: F:ProcessMemoryUtilities.Native.ProcessAccessFlags.Execute
+  fullName: ProcessMemoryUtilities.Native.ProcessAccessFlags.Execute
+  nameWithType: ProcessAccessFlags.Execute
+- uid: ProcessMemoryUtilities.Native.ProcessAccessFlags.Information
+  name: Information
+  href: api/ProcessMemoryUtilities.Native.ProcessAccessFlags.html#ProcessMemoryUtilities_Native_ProcessAccessFlags_Information
+  commentId: F:ProcessMemoryUtilities.Native.ProcessAccessFlags.Information
+  fullName: ProcessMemoryUtilities.Native.ProcessAccessFlags.Information
+  nameWithType: ProcessAccessFlags.Information
+- uid: ProcessMemoryUtilities.Native.ProcessAccessFlags.Invalid
+  name: Invalid
+  href: api/ProcessMemoryUtilities.Native.ProcessAccessFlags.html#ProcessMemoryUtilities_Native_ProcessAccessFlags_Invalid
+  commentId: F:ProcessMemoryUtilities.Native.ProcessAccessFlags.Invalid
+  fullName: ProcessMemoryUtilities.Native.ProcessAccessFlags.Invalid
+  nameWithType: ProcessAccessFlags.Invalid
+- uid: ProcessMemoryUtilities.Native.ProcessAccessFlags.QueryInformation
+  name: QueryInformation
+  href: api/ProcessMemoryUtilities.Native.ProcessAccessFlags.html#ProcessMemoryUtilities_Native_ProcessAccessFlags_QueryInformation
+  commentId: F:ProcessMemoryUtilities.Native.ProcessAccessFlags.QueryInformation
+  fullName: ProcessMemoryUtilities.Native.ProcessAccessFlags.QueryInformation
+  nameWithType: ProcessAccessFlags.QueryInformation
+- uid: ProcessMemoryUtilities.Native.ProcessAccessFlags.QueryLimitedInformation
+  name: QueryLimitedInformation
+  href: api/ProcessMemoryUtilities.Native.ProcessAccessFlags.html#ProcessMemoryUtilities_Native_ProcessAccessFlags_QueryLimitedInformation
+  commentId: F:ProcessMemoryUtilities.Native.ProcessAccessFlags.QueryLimitedInformation
+  fullName: ProcessMemoryUtilities.Native.ProcessAccessFlags.QueryLimitedInformation
+  nameWithType: ProcessAccessFlags.QueryLimitedInformation
+- uid: ProcessMemoryUtilities.Native.ProcessAccessFlags.Read
+  name: Read
+  href: api/ProcessMemoryUtilities.Native.ProcessAccessFlags.html#ProcessMemoryUtilities_Native_ProcessAccessFlags_Read
+  commentId: F:ProcessMemoryUtilities.Native.ProcessAccessFlags.Read
+  fullName: ProcessMemoryUtilities.Native.ProcessAccessFlags.Read
+  nameWithType: ProcessAccessFlags.Read
+- uid: ProcessMemoryUtilities.Native.ProcessAccessFlags.ReadWrite
+  name: ReadWrite
+  href: api/ProcessMemoryUtilities.Native.ProcessAccessFlags.html#ProcessMemoryUtilities_Native_ProcessAccessFlags_ReadWrite
+  commentId: F:ProcessMemoryUtilities.Native.ProcessAccessFlags.ReadWrite
+  fullName: ProcessMemoryUtilities.Native.ProcessAccessFlags.ReadWrite
+  nameWithType: ProcessAccessFlags.ReadWrite
+- uid: ProcessMemoryUtilities.Native.ProcessAccessFlags.SetInformation
+  name: SetInformation
+  href: api/ProcessMemoryUtilities.Native.ProcessAccessFlags.html#ProcessMemoryUtilities_Native_ProcessAccessFlags_SetInformation
+  commentId: F:ProcessMemoryUtilities.Native.ProcessAccessFlags.SetInformation
+  fullName: ProcessMemoryUtilities.Native.ProcessAccessFlags.SetInformation
+  nameWithType: ProcessAccessFlags.SetInformation
+- uid: ProcessMemoryUtilities.Native.ProcessAccessFlags.SetQuota
+  name: SetQuota
+  href: api/ProcessMemoryUtilities.Native.ProcessAccessFlags.html#ProcessMemoryUtilities_Native_ProcessAccessFlags_SetQuota
+  commentId: F:ProcessMemoryUtilities.Native.ProcessAccessFlags.SetQuota
+  fullName: ProcessMemoryUtilities.Native.ProcessAccessFlags.SetQuota
+  nameWithType: ProcessAccessFlags.SetQuota
+- uid: ProcessMemoryUtilities.Native.ProcessAccessFlags.SuspendResume
+  name: SuspendResume
+  href: api/ProcessMemoryUtilities.Native.ProcessAccessFlags.html#ProcessMemoryUtilities_Native_ProcessAccessFlags_SuspendResume
+  commentId: F:ProcessMemoryUtilities.Native.ProcessAccessFlags.SuspendResume
+  fullName: ProcessMemoryUtilities.Native.ProcessAccessFlags.SuspendResume
+  nameWithType: ProcessAccessFlags.SuspendResume
+- uid: ProcessMemoryUtilities.Native.ProcessAccessFlags.Synchronize
+  name: Synchronize
+  href: api/ProcessMemoryUtilities.Native.ProcessAccessFlags.html#ProcessMemoryUtilities_Native_ProcessAccessFlags_Synchronize
+  commentId: F:ProcessMemoryUtilities.Native.ProcessAccessFlags.Synchronize
+  fullName: ProcessMemoryUtilities.Native.ProcessAccessFlags.Synchronize
+  nameWithType: ProcessAccessFlags.Synchronize
+- uid: ProcessMemoryUtilities.Native.ProcessAccessFlags.Terminate
+  name: Terminate
+  href: api/ProcessMemoryUtilities.Native.ProcessAccessFlags.html#ProcessMemoryUtilities_Native_ProcessAccessFlags_Terminate
+  commentId: F:ProcessMemoryUtilities.Native.ProcessAccessFlags.Terminate
+  fullName: ProcessMemoryUtilities.Native.ProcessAccessFlags.Terminate
+  nameWithType: ProcessAccessFlags.Terminate
+- uid: ProcessMemoryUtilities.Native.ProcessAccessFlags.VirtualMemoryOperation
+  name: VirtualMemoryOperation
+  href: api/ProcessMemoryUtilities.Native.ProcessAccessFlags.html#ProcessMemoryUtilities_Native_ProcessAccessFlags_VirtualMemoryOperation
+  commentId: F:ProcessMemoryUtilities.Native.ProcessAccessFlags.VirtualMemoryOperation
+  fullName: ProcessMemoryUtilities.Native.ProcessAccessFlags.VirtualMemoryOperation
+  nameWithType: ProcessAccessFlags.VirtualMemoryOperation
+- uid: ProcessMemoryUtilities.Native.ProcessAccessFlags.VirtualMemoryRead
+  name: VirtualMemoryRead
+  href: api/ProcessMemoryUtilities.Native.ProcessAccessFlags.html#ProcessMemoryUtilities_Native_ProcessAccessFlags_VirtualMemoryRead
+  commentId: F:ProcessMemoryUtilities.Native.ProcessAccessFlags.VirtualMemoryRead
+  fullName: ProcessMemoryUtilities.Native.ProcessAccessFlags.VirtualMemoryRead
+  nameWithType: ProcessAccessFlags.VirtualMemoryRead
+- uid: ProcessMemoryUtilities.Native.ProcessAccessFlags.VirtualMemoryWrite
+  name: VirtualMemoryWrite
+  href: api/ProcessMemoryUtilities.Native.ProcessAccessFlags.html#ProcessMemoryUtilities_Native_ProcessAccessFlags_VirtualMemoryWrite
+  commentId: F:ProcessMemoryUtilities.Native.ProcessAccessFlags.VirtualMemoryWrite
+  fullName: ProcessMemoryUtilities.Native.ProcessAccessFlags.VirtualMemoryWrite
+  nameWithType: ProcessAccessFlags.VirtualMemoryWrite
+- uid: ProcessMemoryUtilities.Native.ProcessAccessFlags.Write
+  name: Write
+  href: api/ProcessMemoryUtilities.Native.ProcessAccessFlags.html#ProcessMemoryUtilities_Native_ProcessAccessFlags_Write
+  commentId: F:ProcessMemoryUtilities.Native.ProcessAccessFlags.Write
+  fullName: ProcessMemoryUtilities.Native.ProcessAccessFlags.Write
+  nameWithType: ProcessAccessFlags.Write
+- uid: ProcessMemoryUtilities.Native.ThreadCreationFlags
+  name: ThreadCreationFlags
+  href: api/ProcessMemoryUtilities.Native.ThreadCreationFlags.html
+  commentId: T:ProcessMemoryUtilities.Native.ThreadCreationFlags
+  fullName: ProcessMemoryUtilities.Native.ThreadCreationFlags
+  nameWithType: ThreadCreationFlags
+- uid: ProcessMemoryUtilities.Native.ThreadCreationFlags.Immediately
+  name: Immediately
+  href: api/ProcessMemoryUtilities.Native.ThreadCreationFlags.html#ProcessMemoryUtilities_Native_ThreadCreationFlags_Immediately
+  commentId: F:ProcessMemoryUtilities.Native.ThreadCreationFlags.Immediately
+  fullName: ProcessMemoryUtilities.Native.ThreadCreationFlags.Immediately
+  nameWithType: ThreadCreationFlags.Immediately
+- uid: ProcessMemoryUtilities.Native.ThreadCreationFlags.StackSizeParamIsAReservation
+  name: StackSizeParamIsAReservation
+  href: api/ProcessMemoryUtilities.Native.ThreadCreationFlags.html#ProcessMemoryUtilities_Native_ThreadCreationFlags_StackSizeParamIsAReservation
+  commentId: F:ProcessMemoryUtilities.Native.ThreadCreationFlags.StackSizeParamIsAReservation
+  fullName: ProcessMemoryUtilities.Native.ThreadCreationFlags.StackSizeParamIsAReservation
+  nameWithType: ThreadCreationFlags.StackSizeParamIsAReservation
+- uid: ProcessMemoryUtilities.Native.ThreadCreationFlags.Suspended
+  name: Suspended
+  href: api/ProcessMemoryUtilities.Native.ThreadCreationFlags.html#ProcessMemoryUtilities_Native_ThreadCreationFlags_Suspended
+  commentId: F:ProcessMemoryUtilities.Native.ThreadCreationFlags.Suspended
+  fullName: ProcessMemoryUtilities.Native.ThreadCreationFlags.Suspended
+  nameWithType: ThreadCreationFlags.Suspended
+- uid: ProcessMemoryUtilities.Native.WaitObjectResult
+  name: WaitObjectResult
+  href: api/ProcessMemoryUtilities.Native.WaitObjectResult.html
+  commentId: T:ProcessMemoryUtilities.Native.WaitObjectResult
+  fullName: ProcessMemoryUtilities.Native.WaitObjectResult
+  nameWithType: WaitObjectResult
+- uid: ProcessMemoryUtilities.Native.WaitObjectResult.Abandoned
+  name: Abandoned
+  href: api/ProcessMemoryUtilities.Native.WaitObjectResult.html#ProcessMemoryUtilities_Native_WaitObjectResult_Abandoned
+  commentId: F:ProcessMemoryUtilities.Native.WaitObjectResult.Abandoned
+  fullName: ProcessMemoryUtilities.Native.WaitObjectResult.Abandoned
+  nameWithType: WaitObjectResult.Abandoned
+- uid: ProcessMemoryUtilities.Native.WaitObjectResult.Failed
+  name: Failed
+  href: api/ProcessMemoryUtilities.Native.WaitObjectResult.html#ProcessMemoryUtilities_Native_WaitObjectResult_Failed
+  commentId: F:ProcessMemoryUtilities.Native.WaitObjectResult.Failed
+  fullName: ProcessMemoryUtilities.Native.WaitObjectResult.Failed
+  nameWithType: WaitObjectResult.Failed
+- uid: ProcessMemoryUtilities.Native.WaitObjectResult.Success
+  name: Success
+  href: api/ProcessMemoryUtilities.Native.WaitObjectResult.html#ProcessMemoryUtilities_Native_WaitObjectResult_Success
+  commentId: F:ProcessMemoryUtilities.Native.WaitObjectResult.Success
+  fullName: ProcessMemoryUtilities.Native.WaitObjectResult.Success
+  nameWithType: WaitObjectResult.Success
+- uid: ProcessMemoryUtilities.Native.WaitObjectResult.Timeout
+  name: Timeout
+  href: api/ProcessMemoryUtilities.Native.WaitObjectResult.html#ProcessMemoryUtilities_Native_WaitObjectResult_Timeout
+  commentId: F:ProcessMemoryUtilities.Native.WaitObjectResult.Timeout
+  fullName: ProcessMemoryUtilities.Native.WaitObjectResult.Timeout
+  nameWithType: WaitObjectResult.Timeout

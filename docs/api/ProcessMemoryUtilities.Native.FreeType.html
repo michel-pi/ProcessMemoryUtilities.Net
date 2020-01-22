@@ -1,0 +1,184 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Enum FreeType
+   | ProcessMemoryUtilities.Net Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Enum FreeType
+   | ProcessMemoryUtilities.Net Documentation ">
+    <meta name="generator" content="docfx 2.48.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="ProcessMemoryUtilities.Native.FreeType">
+  
+  
+  <h1 id="ProcessMemoryUtilities_Native_FreeType" data-uid="ProcessMemoryUtilities.Native.FreeType" class="text-break">Enum FreeType
+  </h1>
+  <div class="markdown level0 summary"><p>Defines the different types of free operations.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="ProcessMemoryUtilities.Native.html">ProcessMemoryUtilities.Native</a></h6>
+  <h6><strong>Assembly</strong>: ProcessMemoryUtilities.Native.dll</h6>
+  <h5 id="ProcessMemoryUtilities_Native_FreeType_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Flags]
+public enum FreeType : uint</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    <thead>
+    <tbody>
+      <tr>
+        <td id="ProcessMemoryUtilities_Native_FreeType_CoalescePlaceholders">CoalescePlaceholders</td>
+        <td><p>To coalesce two adjacent placeholders, specify MEM_RELEASE | MEM_COALESCE_PLACEHOLDERS. When you coalesce placeholders, lpAddress and
+dwSize must exactly match those of the placeholder.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ProcessMemoryUtilities_Native_FreeType_Decommit">Decommit</td>
+        <td><p>Decommits the specified region of committed pages. After the operation, the pages are in the reserved state. The function does not fail if
+you attempt to decommit an uncommitted page. This means that you can decommit a range of pages without first determining their current
+commitment state. Do not use this value with MEM_RELEASE. The MEM_DECOMMIT value is not supported when the lpAddress parameter provides the
+base address for an enclave.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ProcessMemoryUtilities_Native_FreeType_Invalid">Invalid</td>
+        <td><p>An invalid value.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ProcessMemoryUtilities_Native_FreeType_PreservePlaceholder">PreservePlaceholder</td>
+        <td><p>Frees an allocation back to a placeholder (after you've replaced a placeholder with a private allocation using VirtualAlloc2 or
+Virtual2AllocFromApp). To split a placeholder into two placeholders, specify MEM_RELEASE | MEM_PRESERVE_PLACEHOLDER.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="ProcessMemoryUtilities_Native_FreeType_Release">Release</td>
+        <td><p>Releases the specified region of pages, or placeholder (for a placeholder, the address space is released and available for other
+allocations). After the operation, the pages are in the free state. If you specify this value, dwSize must be 0 (zero), and lpAddress must
+point to the base address returned by the VirtualAllocEx function when the region is reserved. The function fails if either of these
+conditions is not met. If any pages in the region are committed currently, the function first decommits, and then releases them. The
+function does not fail if you attempt to release pages that are in different states, some reserved and some committed. This means that you
+can release a range of pages without first determining the current commitment state. Do not use this value with MEM_DECOMMIT.</p>
+</td>
+      </tr>
+    </tbody>
+  </thead></thead></table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/michel-pi/ProcessMemoryUtilities.Net/new/master/apiSpec/new?filename=ProcessMemoryUtilities_Native_FreeType.md&amp;value=---%0Auid%3A%20ProcessMemoryUtilities.Native.FreeType%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/michel-pi/ProcessMemoryUtilities.Net/blob/master/source/ProcessMemoryUtilities/Native/Enums.cs/#L86" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            ProcessMemoryUtilities.Net (c) 2020
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,4 +1,0 @@
-var searchData=
-[
-  ['openprocess',['OpenProcess',['../class_process_memory_utilities_1_1_native_1_1_kernel32.html#ab126d14888250eb376d7386509ca261e',1,'ProcessMemoryUtilities.Native.Kernel32.OpenProcess(ProcessAccessFlags desiredAccess, bool inheritHandle, int processId)'],['../class_process_memory_utilities_1_1_native_1_1_kernel32.html#a6465d6bc92aef152ea3f6bc7e78c5538',1,'ProcessMemoryUtilities.Native.Kernel32.OpenProcess(ProcessAccessFlags desiredAccess, int processId)'],['../class_process_memory_utilities_1_1_managed_1_1_native_wrapper.html#a124ac6635ca029c0e7d2ae8da8961328',1,'ProcessMemoryUtilities.Managed.NativeWrapper.OpenProcess(ProcessAccessFlags desiredAccess, bool inheritHandle, int processId)'],['../class_process_memory_utilities_1_1_managed_1_1_native_wrapper.html#a7c15196764d44ecf1b7b3b75bea2c37c',1,'ProcessMemoryUtilities.Managed.NativeWrapper.OpenProcess(ProcessAccessFlags desiredAccess, int processId)']]]
-];
