@@ -3,11 +3,11 @@
   <PropertyGroup>
     <TargetFrameworks>net452;net47;net48;netstandard2.0</TargetFrameworks>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Version>1.3.3</Version>
+    <Version>1.3.4</Version>
     <Authors>michel-pi</Authors>
     <PackageId>ProcessMemoryUtilities.Net</PackageId>
     <Product>ProcessMemoryUtilities.Net</Product>
-    <Copyright>Copyright (c) 2019 michel-pi</Copyright>
+    <Copyright>Copyright (c) 2020 michel-pi</Copyright>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
     <PackageProjectUrl>https://github.com/michel-pi/ProcessMemoryUtilities.Net</PackageProjectUrl>
     <RepositoryUrl>https://github.com/michel-pi/ProcessMemoryUtilities.Net</RepositoryUrl>

@@ -118,6 +118,13 @@ namespace ProcessMemoryUtilities.Managed
                 {
                     offset = numberOfBytesWritten.ToInt32();
 
+                    if (offset == 0)
+                    {
+                        if (CaptureErrors) LastError = unchecked((int)NtStatus.INVALID_HANDLE);
+
+                        return false;
+                    }
+
                     baseAddress += offset;
                     buffer += offset;
                     size -= offset;
@@ -449,6 +456,13 @@ namespace ProcessMemoryUtilities.Managed
                 else if (status == (uint)NtStatus.PARTIAL_COPY)
                 {
                     previousWrite = numberOfBytesWritten.ToInt32();
+
+                    if (previousWrite == 0)
+                    {
+                        if (CaptureErrors) LastError = unchecked((int)NtStatus.INVALID_HANDLE);
+
+                        return false;
+                    }
 
                     baseAddress += previousWrite;
                     offset += previousWrite;
