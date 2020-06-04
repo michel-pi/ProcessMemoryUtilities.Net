@@ -13,7 +13,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
     <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
     <DefineConstants />
-    <DocumentationFile>C:\Users\Michel\Documents\Github\Public\ProcessMemoryWrapper.Net\source\ProcessMemoryUtilities\ProcessMemoryUtilities.Native.xml</DocumentationFile>
+    <DocumentationFile>C:\Users\Michel\Documents\Github\Public\ProcessMemoryUtilities.Net\source\ProcessMemoryUtilities\ProcessMemoryUtilities.Native.xml</DocumentationFile>
     <DebugType>none</DebugType>
     <DebugSymbols>false</DebugSymbols>
   </PropertyGroup>
