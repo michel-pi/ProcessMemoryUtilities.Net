@@ -12,7 +12,7 @@
     <DefineConstants />
     <DebugType>none</DebugType>
     <DebugSymbols>false</DebugSymbols>
-    <DocumentationFile>C:\Users\Michel\Documents\Github\Public\ProcessMemoryUtilities.Net\source\ProcessMemoryUtilities.Managed\ProcessMemoryUtilities.Managed.xml</DocumentationFile>
+    <DocumentationFile>ProcessMemoryUtilities.Managed.xml</DocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>

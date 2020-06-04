@@ -25,7 +25,7 @@
     <DefineConstants />
     <DebugType>none</DebugType>
     <DebugSymbols>false</DebugSymbols>
-    <DocumentationFile>C:\Users\Michel\Documents\Github\Public\ProcessMemoryWrapper.Net\source\NugetBuild\ProcessMemoryUtilities.xml</DocumentationFile>
+    <DocumentationFile>ProcessMemoryUtilities.xml</DocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>
