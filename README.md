@@ -17,11 +17,7 @@ All methods are tested and working under 32bit and 64bit windows and are well do
 
 ## NuGet
 
-I am currently recovering my NuGet account for which i lost the 2-factor-authentication. You can get the current version from the [Github Package Registry](https://github.com/michel-pi/ProcessMemoryUtilities.Net/packages/20404 "ProcessMemoryUtilities.Net Github Package").
-
-    Install-Package ProcessMemoryUtilities.Net
-
-This library is also available in the [Github Package Registry](https://github.com/michel-pi/ProcessMemoryUtilities.Net/packages/20404 "ProcessMemoryUtilities.Net Github Package").
+This library is available in the [NuGet Gallery](https://www.nuget.org/packages/ProcessMemoryUtilities.Net/).
 
 ## Features
 
